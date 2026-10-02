@@ -31,6 +31,14 @@ body.intro-transitioning .hero-content{animation:portada-content 1.9s cubic-bezi
 @keyframes hint-away{to{opacity:0;transform:translateY(12px)}}
 @keyframes portada-image{0%,15%{transform:scale(1.08);filter:saturate(.4) blur(4px)}100%{transform:scale(1);filter:saturate(.4) blur(0)}}
 @keyframes portada-content{0%,36%{opacity:0;transform:translateY(26px)}100%{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){
+ .emblem-stage{width:min(60vw,260px,46svh)}
+ .opening-bottom{bottom:max(28px,env(safe-area-inset-bottom));padding-bottom:10px}
+ .opening.leaving .emblem-stage{animation-name:emblem-passage-mobile}
+ body.intro-transitioning .hero-image{animation-name:portada-image-mobile}
+}
+@keyframes emblem-passage-mobile{0%{transform:scale(1);opacity:1;filter:none}22%{transform:scale(1.08);opacity:1;filter:none}52%{transform:scale(1.48);opacity:.8;filter:none}78%{transform:scale(1.92);opacity:.22;filter:none}100%{transform:scale(2.3);opacity:0;filter:none}}
+@keyframes portada-image-mobile{0%,15%{transform:scale(1.035)}100%{transform:scale(1)}}
 @media(prefers-reduced-motion:reduce){.opening.leaving{display:none}body.intro-transitioning .hero-content,body.intro-transitioning .hero-image{opacity:1;transform:none;filter:none}}
 .reading-heading{position:relative;padding:145px max(var(--side),calc((100vw - 1100px)/2)) 70px;background:radial-gradient(ellipse at 100% 90%,#37291855,transparent 65%),#11120f}
 .reading-back{display:inline-block;color:#c0baa8;font-size:13px;margin-bottom:45px;border-bottom:1px solid #ffffff33;padding-bottom:5px}
