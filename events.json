@@ -1,0 +1,14 @@
+{
+  "events": [
+    {"id":"2026-10-24-torneo","title":"Torneo de Capacitación","date":"2026-10-24","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2026-12-12-cierre","title":"Torneo de Capacitación + Mesa de Examen (Cierre de año)","date":"2026-12-12","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2027-02-20-torneo","title":"Torneo de Capacitación","date":"2027-02-20","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2027-03-13-examen","title":"Mesa de Examen","date":"2027-03-13","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2027-04-24-torneo","title":"Torneo de Capacitación","date":"2027-04-24","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2027-06-12-jornada","title":"Torneo de Capacitación + Mesa de Examen","date":"2027-06-12","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2027-08-28-torneo","title":"Torneo de Capacitación","date":"2027-08-28","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2027-09-11-examen","title":"Mesa de Examen","date":"2027-09-11","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2027-10-23-torneo","title":"Torneo de Capacitación","date":"2027-10-23","time":"","location":"","sede":"","description":"","published":true},
+    {"id":"2027-12-11-cierre","title":"Torneo de Capacitación + Mesa de Examen (Cierre de año)","date":"2027-12-11","time":"","location":"","sede":"","description":"","published":true}
+  ]
+}

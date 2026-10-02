@@ -120,6 +120,13 @@ function formatReading(record) {
       } else gallery=null;
     });
   }
+  if(record.slug==='escuela') {
+    content.querySelectorAll(':scope>ul').forEach(list=>{
+      list.classList.add('history-timeline');
+      list.querySelectorAll(':scope>li').forEach(item=>item.classList.add('timeline-step','reveal'));
+    });
+    observeSections();
+  }
 }
 document.querySelector('#close-photo').addEventListener('click',()=>document.querySelector('#photo-viewer').close());
 function observeSections() {
@@ -216,6 +223,14 @@ function showRoute(initial=false) {
   const record = hash.startsWith('#/') ? records.find(item=>item.slug===slug) : null;
   const detail=document.querySelector('#sede-detail');
   detail.hidden=true;
+  const features=document.querySelector('#features');features.hidden=true;
+  document.querySelector('.article-related')?.remove();
+  document.querySelector('#reading .reading-back').href='#/';
+  document.querySelector('#reading .reading-back').textContent='← Volver al inicio';
+  if(['camino-marcial','calendario','evento'].includes(slug)) {
+    deactivateIntro();home.hidden=true;reading.hidden=true;features.hidden=false;
+    SchoolFeatures.route(parts);closeMenu();return;
+  }
   if(slug==='sedes' && parts[1]) {
     const sede=sedes.find(item=>item.slug===parts[1] || String(item.index)===parts[1]);
     if(sede) {
@@ -229,6 +244,7 @@ function showRoute(initial=false) {
     document.querySelector('#reading-content').innerHTML=record.html;
     document.querySelector('#reading-category').textContent=record.type==='post'?'ARTÍCULOS · TAIKACHISU':'LA ESCUELA · TAIKACHISU';
     formatReading(record);
+    SchoolFeatures.decorateArticle(record);
     if(slug==='contacto') {
       const form=document.querySelector('#reading-content form');
       if(form) {
@@ -251,7 +267,7 @@ function showRoute(initial=false) {
   closeMenu();
 }
 addEventListener('hashchange',()=>showRoute());
-fetch('content.json').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(data=>{
+fetch('content.json').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   records=data.records;
   document.querySelector('#hero-image').src=data.assets['https://taikachisu.com/wp-content/uploads/2017/02/Sifu002.jpg'];
   document.querySelector('#practice-image').src=data.assets['https://taikachisu.com/wp-content/uploads/2026/01/central.jpg'];
@@ -259,9 +275,11 @@ fetch('content.json').then(response=>{if(!response.ok)throw new Error('content')
   const school=records.find(item=>item.slug==='escuela');
   document.querySelector('#practice-text').textContent=documentFor(practice).querySelector('p')?.textContent || '';
   document.querySelector('#school-text').textContent=[...documentFor(school).querySelectorAll('p')].find(p=>p.textContent.trim().length>30)?.textContent || '';
-  const articles=records.filter(item=>item.type==='post');
-  document.querySelector('#article-list').innerHTML=articles.map((item,index)=>`<a class="article-row reveal" href="#/${escapeHTML(item.slug)}"><span>${String(index+1).padStart(2,'0')}</span><h3>${escapeHTML(item.title)}</h3></a>`).join('');
   sedes=readSedes(records.find(item=>item.slug==='sedes'));
+  const articles=await SchoolFeatures.init(records,sedes);
+  records=[...records.filter(item=>item.type!=='post'),...articles];
+  SchoolFeatures.setupMotion();
+  const management=document.createElement('a');management.href='admin.html';management.className='management-link';management.textContent='Gestión de la escuela';document.querySelector('.footer-bottom').append(management);
   [...new Set(sedes.map(sede=>sede.locality))].sort().forEach(city=>{const option=document.createElement('option');option.value=city;option.textContent=city;locality.append(option);});
   renderSedes();showRoute(true);
 }).catch(()=>{
