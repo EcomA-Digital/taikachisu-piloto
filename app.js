@@ -277,6 +277,8 @@ fetch('content.json').then(response=>{if(!response.ok)throw new Error('content')
   const school=records.find(item=>item.slug==='escuela');
   document.querySelector('#practice-text').textContent=documentFor(practice).querySelector('p')?.textContent || '';
   document.querySelector('#school-text').textContent=[...documentFor(school).querySelectorAll('p')].find(p=>p.textContent.trim().length>30)?.textContent || '';
+  const style=records.find(r=>r.slug==='que-es-taikachisu-wushu-kung-fu');
+  document.querySelector('#style-text').textContent=style?[...documentFor(style).querySelectorAll('p')].find(p=>p.textContent.trim().length>40)?.textContent||'':'';
   sedes=readSedes(records.find(item=>item.slug==='sedes'));
   const articles=await SchoolFeatures.init(records,sedes);
   records=[...records.filter(item=>item.type!=='post'),...articles];
