@@ -41,6 +41,62 @@ body.intro-transitioning .hero-content{animation:portada-content 1.9s cubic-bezi
 @keyframes portada-image-mobile{0%,15%{transform:scale(1.035)}100%{transform:scale(1)}}
 @media(prefers-reduced-motion:reduce){.opening.leaving{display:none}body.intro-transitioning .hero-content,body.intro-transitioning .hero-image{opacity:1;transform:none;filter:none}}
 .reading-heading{position:relative;padding:145px max(var(--side),calc((100vw - 1100px)/2)) 70px;background:radial-gradient(ellipse at 100% 90%,#37291855,transparent 65%),#11120f}
+/* Individual kwoons: dark photographic opening, clear practice and location sections. */
+.sede-card{padding:0;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
+.sede-photo{position:relative;display:block;background:#eae9e1;padding:14px}
+.sede-card .sede-photo img{aspect-ratio:1.65;object-fit:contain;margin:0}
+.sede-photo>span{position:absolute;left:22px;bottom:22px;padding:5px 10px;background:#11120fe8;color:#f4bd45;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.sede-card-body{padding:24px;display:flex;flex-direction:column;flex:1}
+.sede-card .sede-teacher{color:var(--ink);font-weight:500;line-height:1.6;margin-bottom:14px}
+.sede-card .sede-address{margin-bottom:20px}
+.sede-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:22px}
+.sede-tags>span{font-size:11px;letter-spacing:.025em;border:1px solid #b9a57866;padding:4px 9px;line-height:1.5}
+.sede-card-link{margin-top:auto;display:flex;justify-content:space-between;gap:16px;padding-top:17px;border-top:1px solid var(--line);font-size:14px;font-weight:600}
+.sede-card-link>span{color:#886519;font-size:20px;line-height:1}
+.sede-card-link:hover{color:#886519}
+.sede-heading{padding:135px var(--side) 65px;background:#11120f}
+.sede-heading>.reading-back{margin-bottom:35px}
+.sede-heading-grid{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center;max-width:1250px;margin:auto}
+.sede-heading h1{font-family:'Libre Caslon Display',Georgia,serif;font-size:clamp(46px,5.5vw,82px);line-height:1.05;margin-bottom:24px;text-wrap:balance}
+.sede-heading h1:focus{outline:none}
+.sede-heading .eyebrow{margin-bottom:20px}.sede-venue{font-size:17px;color:#c9bc9b;letter-spacing:.08em}
+.sede-heading .sede-tags{color:#d5c9ad;margin:25px 0 32px}
+.sede-detail-photo{margin:0;padding:18px;background:#20211c;border:1px solid #ffffff20}
+.sede-detail-photo img{width:100%;height:360px;object-fit:contain}
+.sede-detail-photo figcaption{color:#b9b4a5;font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-top:15px}
+.sede-detail-body{background:var(--paper);color:var(--ink);padding:60px var(--side) 45px}
+.sede-detail-body>section,.sede-detail-end{max-width:1250px;margin-left:auto;margin-right:auto}
+.sede-instructor{display:grid;grid-template-columns:1fr 1fr;column-gap:7%;padding-bottom:55px;border-bottom:1px solid var(--line)}
+.sede-instructor>.eyebrow{grid-column:1/-1;margin-bottom:18px}
+.sede-instructor h2{font-family:'DM Sans',Arial,sans-serif;font-size:clamp(25px,2.6vw,37px);line-height:1.35;letter-spacing:-.02em;margin-bottom:0}
+.sede-notes h3{font-size:13px;letter-spacing:.05em;font-weight:500;color:var(--muted);margin-bottom:14px}
+.sede-notes ul{list-style:none;padding:0;margin:0}.sede-notes li{border-top:1px solid var(--line);padding:10px 0;font-size:14px}
+.sede-notes p{font-size:15px;line-height:1.7}
+.sede-schedule{padding:55px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}
+.sede-section-title{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:35px}
+.sede-section-title h2,.sede-location h2{font-size:clamp(40px,4vw,58px);margin-bottom:0}
+.sede-section-title .eyebrow{margin-bottom:14px}.sede-section-title>span{color:var(--muted);font-size:12px;max-width:200px}
+.schedule-days{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.schedule-day{background:white;border:1px solid var(--line);min-width:0}
+.schedule-day h3{margin:0;padding:17px 22px;background:#eeeadf;font-size:13px;letter-spacing:.08em;text-transform:uppercase;border-top:3px solid #ad873b}
+.schedule-slot{padding:19px 22px;border-bottom:1px solid #eae9e1;display:grid;gap:8px}
+.schedule-slot:last-child{border-bottom:0}.schedule-slot>span{font-size:13px;color:var(--muted)}.schedule-slot strong{font-size:25px;font-weight:500;color:var(--ink);line-height:1.2}
+.schedule-turn{font-size:16px;font-weight:500;margin:30px 0 18px}
+.schedule-pending{padding:24px;background:#eeeadf;border-left:3px solid #ad873b;font-size:21px;margin-bottom:14px}.schedule-groups{font-size:14px;color:var(--muted)}
+.original-schedule{margin-top:28px;color:var(--muted);font-size:13px}.original-schedule summary{cursor:pointer;min-height:44px;display:list-item;padding:10px 0;list-style-position:inside}
+.schedule-table{overflow:auto}.schedule-table table{width:100%;border-collapse:collapse;min-width:400px;background:white}.schedule-table td{border:1px solid var(--line);padding:14px}.schedule-table p{margin-bottom:8px}.schedule-table tr:first-child{background:#eeeadf}
+.sede-location{padding:55px 0;display:grid;grid-template-columns:1fr 1.2fr;gap:7%;align-items:center}
+.sede-location .eyebrow{margin-bottom:14px}.sede-location p:not(.eyebrow){margin:24px 0;color:var(--muted);max-width:380px;line-height:1.8}
+.sede-location iframe{width:100%;height:330px;border:1px solid var(--line);background:#eeeadf}
+.sede-detail-end{padding-top:30px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;align-items:center}
+@media(max-width:760px){
+ .sede-heading{padding:115px 24px 38px}.sede-heading>.reading-back{font-size:12px;margin-bottom:30px}.sede-heading-grid{grid-template-columns:1fr;gap:32px}.sede-heading h1{font-size:46px}.sede-heading .sede-tags{margin:20px 0 25px}
+ .sede-detail-photo{padding:12px}.sede-detail-photo img{height:260px}.sede-detail-photo figcaption{font-size:10px}
+ .sede-detail-body{padding:38px 24px}.sede-instructor{grid-template-columns:1fr;gap:20px;padding-bottom:35px}.sede-instructor>.eyebrow{margin:0}.sede-instructor h2{font-size:27px}.sede-notes li{font-size:13px}
+ .sede-schedule{padding:35px 0}.sede-section-title{display:block;margin-bottom:25px}.sede-section-title>span{display:block;margin-top:18px;max-width:none}.sede-section-title h2,.sede-location h2{font-size:43px}
+ .schedule-days{grid-template-columns:1fr;gap:16px}.schedule-slot{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:17px 20px}.schedule-slot>span{max-width:55%;font-size:12px}.schedule-slot strong{font-size:22px;flex-shrink:0}.schedule-day h3{padding:14px 20px}
+ .sede-location{grid-template-columns:1fr;gap:28px;padding:35px 0}.sede-location iframe{height:280px}.sede-detail-end{flex-wrap:wrap}.sede-card-body{padding:22px}
+}
 .reading-back{display:inline-block;color:#c0baa8;font-size:13px;margin-bottom:45px;border-bottom:1px solid #ffffff33;padding-bottom:5px}
 .reading-heading h1{font-size:clamp(48px,6.2vw,88px);max-width:980px;line-height:1.08;text-wrap:balance}
 .heading-rule{display:block;width:80px;height:3px;background:var(--gold);margin-top:40px}
