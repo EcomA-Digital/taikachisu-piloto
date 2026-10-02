@@ -259,7 +259,7 @@ function showRoute(initial=false) {
     home.hidden=false;reading.hidden=true;document.title='Taikachisu · Wushu Kung Fu';
     if(hash || !initial) {
       deactivateIntro();
-      const target = ['sedes','clases','escuela','articulos'].includes(slug) ? document.getElementById(slug) : null;
+      const target = ['sedes','clases','escuela','articulos','practice-film'].includes(slug) ? document.getElementById(slug) : null;
       requestAnimationFrame(()=> target ? target.scrollIntoView({behavior:reducedMotion?'instant':'smooth'}) : scrollTo({top:0,behavior:'instant'}));
     }
     observeSections();

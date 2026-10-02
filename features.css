@@ -57,3 +57,25 @@ body.event-modal-open{overflow:hidden}
 .event-dialog .event-facts dd{font-size:18px}.event-dialog .event-actions{gap:12px;margin-top:26px}.event-dialog .event-actions .button{padding:14px 16px;font-size:13px}.event-dialog .event-description{margin-top:22px;font-size:16px}
 .event-dialog .calendar-note{margin-top:22px}.event-dialog button:focus-visible{outline:2px solid #98702e;outline-offset:3px}
 @media(max-width:760px){.event-dialog{padding:22px;max-width:calc(100vw - 24px);max-height:calc(100svh - 24px)}.event-dialog-top{gap:10px}.event-dialog-top .eyebrow{font-size:9px;letter-spacing:.1em}.event-dialog .event-facts{grid-template-columns:1fr;gap:18px}.event-dialog .event-actions{flex-direction:column}.event-dialog .event-actions .button{width:100%}}
+
+/* Visible martial movement: photographic travel and drawn arcs on desktop and mobile. */
+#hero,#practice-film{--motion-ink:var(--gold)}
+#hero-image{animation:school-photo-drift 8s ease-in-out infinite alternate;animation-play-state:paused;transform-origin:70% 45%}
+.practice-photo img{animation:practice-photo-drift 7s ease-in-out infinite alternate;animation-play-state:paused;transform-origin:center}
+.practice-film .film-photo,.practice-film.visible .film-photo{animation:school-photo-drift 8s ease-in-out infinite alternate;animation-play-state:paused;transform-origin:70% center}
+#hero.motion-active #hero-image,.practice-photo.motion-active img,.practice-film.motion-active .film-photo{animation-play-state:running}
+.martial-atmosphere:after{z-index:-1;background:radial-gradient(ellipse at 75% 65%,#e4af454d,transparent 50%);animation:light-breath 5s ease-in-out infinite alternate}
+.motion-lines{position:absolute;right:-5%;top:5%;width:65%;height:90%;z-index:-1;pointer-events:none;overflow:visible;transform:rotate(-12deg)}
+.motion-line{fill:none;stroke:var(--motion-ink);stroke-linecap:round;stroke-width:4;stroke-dasharray:100;stroke-dashoffset:100;opacity:0;animation:martial-stroke 5s ease-in-out infinite;animation-play-state:paused}
+.motion-line-two{stroke-width:1.7;animation-delay:.35s}.motion-line-three{stroke-width:6;animation-delay:.7s}
+.motion-active .motion-line{animation-play-state:running}
+.motion-toggle{position:absolute;right:var(--side);bottom:75px;z-index:2;min-height:44px;padding:9px 13px;border:1px solid #f4bd4570;background:#0b0b0abf;color:white;font-size:12px;letter-spacing:.02em}
+#hero .motion-toggle{top:110px;bottom:auto}
+.practice-film .motion-toggle{bottom:22px;right:24px}
+body.effects-paused #hero-image,body.effects-paused .practice-photo img,body.effects-paused .practice-film .film-photo,body.effects-paused .motion-line,body.effects-paused .martial-atmosphere:after{animation-play-state:paused!important}
+body.intro-pending #hero-image,body.intro-pending .motion-line{animation-play-state:paused}
+@keyframes school-photo-drift{from{transform:scale(1.02) translateX(0)}to{transform:scale(1.18) translateX(-2%)}}
+@keyframes practice-photo-drift{from{transform:scale(1.03) translate(0,0)}to{transform:scale(1.13) translate(-2%,1%)}}
+@keyframes martial-stroke{0%{stroke-dashoffset:100;opacity:0}10%{opacity:.75}52%{stroke-dashoffset:0;opacity:.75}75%{stroke-dashoffset:0;opacity:.45}95%,100%{stroke-dashoffset:0;opacity:0}}
+@media(max-width:760px){.motion-lines{width:110%;right:-45%;top:10%;height:80%;opacity:.8}.practice-film .motion-lines{right:-40%;top:3%;width:120%}.motion-toggle{bottom:70px;right:24px;font-size:11px}.practice-film .motion-toggle{bottom:18px}.martial-atmosphere:after{animation:light-breath 5s ease-in-out infinite alternate}}
+@media(prefers-reduced-motion:reduce){#hero-image,.practice-photo img,.practice-film .film-photo,.practice-film.visible .film-photo,.motion-line,.martial-atmosphere:after{animation:none!important;transform:none}.motion-line{stroke-dashoffset:0;opacity:.2}.motion-toggle{display:none}}
