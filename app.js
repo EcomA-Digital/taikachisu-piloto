@@ -80,6 +80,8 @@ function deactivateIntro() { dismissIntro(true); }
 function formatReading(record) {
   const content=document.querySelector('#reading-content');
   content.dataset.kind=record.slug;
+  SchoolFeatures.prepareVideos(content);
+
   // Flatten builder wrappers while retaining content and its order.
   [...content.querySelectorAll('div,section')].reverse().forEach(el=>el.replaceWith(...el.childNodes));
   content.querySelectorAll('p').forEach(p=>{if(!p.textContent.trim() && !p.querySelector('img,iframe,input'))p.remove();});

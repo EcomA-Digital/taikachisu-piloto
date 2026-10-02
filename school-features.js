@@ -60,11 +60,26 @@ window.SchoolFeatures=(()=>{
     try{const stored=await SchoolStore.loadPublic();if(stored){articles=stored.articles.map(a=>({...a,type:'post'}));events=stored.events;if(stored.preview){const banner=document.createElement('div');banner.className='preview-banner';banner.innerHTML='Vista de prueba de este navegador · <a href="admin.html">Volver al panel</a>';document.body.prepend(banner);}}}catch(error){console.warn('Contenido editorial: se conserva la copia publicada.',error.message);}
     events=C.filterEvents(events);renderHome();document.addEventListener('click',e=>{const link=e.target.closest('a[href^="#/evento/"]');if(!link||e.button!==0||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();eventDetail(link.getAttribute('href').slice('#/evento/'.length));});return articles;
   }
-  function setupMotion(){
-    const motionTargets=document.querySelectorAll('#hero,.practice-photo,#practice-film');
-    const watch=new IntersectionObserver(entries=>entries.forEach(entry=>{entry.target.classList.toggle('motion-active',entry.isIntersecting);if(entry.target.id==='practice-film')entry.target.classList.toggle('visible',entry.isIntersecting);}),{threshold:.12});motionTargets.forEach(target=>watch.observe(target));
-    document.querySelectorAll('[data-motion-toggle]').forEach(button=>button.addEventListener('click',()=>{const paused=document.body.classList.toggle('effects-paused');document.querySelectorAll('[data-motion-toggle]').forEach(control=>{control.setAttribute('aria-pressed',String(paused));control.textContent=paused?'Activar efectos ▶':'Pausar efectos Ⅱ';});}));
-    document.querySelector('#play-practice').addEventListener('click',()=>{document.querySelector('#practice-video-dialog').showModal();document.querySelector('#practice-video-slot').innerHTML='<iframe title="Práctica de Taikachisu: video de la escuela" src="https://www.youtube-nocookie.com/embed/qitn_9o-9GY?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';});document.querySelector('#close-practice-video').addEventListener('click',()=>document.querySelector('#practice-video-dialog').close());document.querySelector('#practice-video-dialog').addEventListener('close',()=>{document.querySelector('#practice-video-slot').innerHTML='';});
+  let youtubePromise,videoSequence=0;
+  function youtubeAPI(){if(window.YT?.Player)return Promise.resolve(window.YT);if(!youtubePromise)youtubePromise=new Promise((resolve,reject)=>{window.onYouTubeIframeAPIReady=()=>resolve(window.YT);const script=document.createElement('script');script.src='https://www.youtube.com/iframe_api';script.onerror=()=>reject(new Error('No se pudo cargar el reproductor.'));document.head.append(script);});return youtubePromise;}
+  function prepareVideos(root,autoplay=false){
+    root.querySelectorAll('iframe').forEach(frame=>{let url,id;try{url=new URL(frame.src);id=url.pathname.match(/^\/embed\/([a-zA-Z0-9_-]+)$/)?.[1];if(!id||!['www.youtube.com','youtube.com','www.youtube-nocookie.com'].includes(url.hostname))return;}catch{return;}
+      frame.id='school-video-'+(++videoSequence);url.searchParams.set('enablejsapi','1');url.searchParams.set('origin',location.origin);url.searchParams.set('autoplay','0');url.searchParams.set('loop','1');url.searchParams.set('playlist',id);url.searchParams.set('playsinline','1');frame.src=url.href;frame.setAttribute('allow','autoplay; encrypted-media; picture-in-picture; fullscreen');
+      let player,ready=false,visible=false,started=false;const wantsAuto=autoplay&&!matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const watch=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(!visible){if(ready)player.pauseVideo();return;}if(ready){if(wantsAuto)player.playVideo();return;}if(started)return;started=true;youtubeAPI().then(YT=>{if(!frame.isConnected)return;player=new YT.Player(frame.id,{events:{onReady:event=>{ready=true;event.target.mute();event.target.setLoop(true);if(wantsAuto&&visible)event.target.playVideo();}}});}).catch(error=>console.warn(error.message));},{threshold:.15});watch.observe(frame);
+      new MutationObserver(()=>{if(!frame.isConnected){watch.disconnect();if(ready)player.destroy();}}).observe(root,{childList:true});
+    });
   }
-  return {init,route,decorateArticle,setupMotion};
+  function setupMotion(){
+    const hero=document.querySelector('#hero'),slides=[...hero.querySelectorAll('.hero-image')],controls=[...hero.querySelectorAll('[data-hero-slide]')];
+    const reduced=matchMedia('(prefers-reduced-motion: reduce)');let current=0,timer,changing=false;
+    function stop(){clearInterval(timer);timer=null;}
+    async function selectSlide(index){if(changing||index===current)return;changing=true;try{const next=slides[index];if(!next.complete||!next.naturalWidth)await next.decode();slides[current].classList.remove('is-current');next.classList.add('is-current');current=index;controls.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));}catch(error){console.warn('No se pudo mostrar la fotografía.',error.message);}finally{changing=false;}}
+    function sync(){stop();if(hero.classList.contains('motion-active')&&!document.hidden&&!document.body.classList.contains('intro-pending')&&!reduced.matches)timer=setInterval(()=>selectSlide((current+1)%slides.length),6500);}
+    controls.forEach((button,index)=>button.addEventListener('click',()=>{stop();selectSlide(index);}));
+    const watch=new IntersectionObserver(entries=>{entries.forEach(entry=>entry.target.classList.toggle('motion-active',entry.isIntersecting));sync();},{threshold:.12});document.querySelectorAll('#hero,.practice-photo').forEach(target=>watch.observe(target));
+    new MutationObserver(sync).observe(document.body,{attributes:true,attributeFilter:['class']});document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);
+    prepareVideos(document.querySelector('#practice-film'),true);
+  }
+  return {init,route,decorateArticle,setupMotion,prepareVideos};
 })();
