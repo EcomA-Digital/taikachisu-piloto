@@ -67,7 +67,7 @@ window.SchoolFeatures=(()=>{
       frame.id='school-video-'+(++videoSequence);url.searchParams.set('enablejsapi','1');url.searchParams.set('origin',location.origin);url.searchParams.set('autoplay','0');url.searchParams.set('loop','1');url.searchParams.set('playlist',id);url.searchParams.set('playsinline','1');frame.src=url.href;frame.setAttribute('allow','autoplay; encrypted-media; picture-in-picture; fullscreen');
       let player,ready=false,visible=false,started=false;const wantsAuto=autoplay&&!matchMedia('(prefers-reduced-motion: reduce)').matches;
       const watch=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(!visible){if(ready)player.pauseVideo();return;}if(ready){if(wantsAuto)player.playVideo();return;}if(started)return;started=true;youtubeAPI().then(YT=>{if(!frame.isConnected)return;player=new YT.Player(frame.id,{events:{onReady:event=>{ready=true;event.target.mute();event.target.setLoop(true);if(wantsAuto&&visible)event.target.playVideo();}}});}).catch(error=>console.warn(error.message));},{threshold:.15});watch.observe(frame);
-      new MutationObserver(()=>{if(!frame.isConnected){watch.disconnect();if(ready)player.destroy();}}).observe(root,{childList:true});
+      const cleanup=new MutationObserver(()=>{if(!frame.isConnected){watch.disconnect();cleanup.disconnect();if(player)player.destroy();}});cleanup.observe(root,{childList:true});
     });
   }
   function setupMotion(){
