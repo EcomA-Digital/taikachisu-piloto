@@ -271,7 +271,6 @@ function showRoute(initial=false) {
 addEventListener('hashchange',()=>showRoute());
 fetch('content.json').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   records=data.records;
-  document.querySelector('#hero-image').src=data.assets['https://taikachisu.com/wp-content/uploads/2017/02/Sifu002.jpg'];
   document.querySelector('#practice-image').src=data.assets['https://taikachisu.com/wp-content/uploads/2026/01/central.jpg'];
   const practice=records.find(item=>item.slug==='la-practica-de-taikachisu');
   const school=records.find(item=>item.slug==='escuela');
