@@ -223,3 +223,13 @@ body.intro-pending #hero.motion-active .hero-slides .hero-image.is-current{anima
 .hero-slides .hero-image.hero-image--maestro.is-current{animation-name:school-master-drift}
 @keyframes school-master-drift{from{transform:scale(1.22) translateX(0)}to{transform:scale(1.36) translateX(-1%)}}
 @media(prefers-reduced-motion:reduce){.hero-slides .hero-image.hero-image--maestro{transform:scale(1.22)!important}}
+
+/* Dedicated crawlable directory uses the same finder and cards as the home. */
+body[data-page="sedes"] #home>section:not(#sedes){display:none}
+body[data-page="sedes"] #sedes{padding-top:145px;min-height:65vh}
+body[data-page="sedes"] #sedes .section-heading h2{display:none}
+#directory-title{font-family:'Libre Caslon Display',Georgia,serif;font-size:clamp(38px,5vw,66px);line-height:1.1;margin-bottom:30px}
+.article-byline{font-size:13px;line-height:1.6;color:var(--gold);margin:14px 0}
+.seo-event-fallback{padding:110px var(--side) 50px;max-width:1000px;margin:auto}
+.seo-event-fallback h1{font-family:'Libre Caslon Display',Georgia,serif;font-size:clamp(35px,5vw,60px);line-height:1.15}
+@media(max-width:760px){body[data-page="sedes"] #sedes{padding-top:110px}.seo-event-fallback{padding:110px 24px 45px}}

@@ -2,7 +2,7 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const opening = document.querySelector('#opening');
 const spacer = document.querySelector('#intro-spacer');
 const header = document.querySelector('#header');
-let introDismissed = reducedMotion || Boolean(location.hash);
+let introDismissed = reducedMotion || Boolean(location.hash) || Boolean(window.SchoolSEO?.key());
 let stopFire = () => {};
 let introTimer;
 spacer.hidden = true;
@@ -90,6 +90,7 @@ function deactivateIntro() { dismissIntro(true); }
 function formatReading(record) {
   const content=document.querySelector('#reading-content');
   content.dataset.kind=record.slug;
+  content.querySelectorAll('h1').forEach(heading=>{const replacement=document.createElement('h2');replacement.innerHTML=heading.innerHTML;heading.replaceWith(replacement);});
   SchoolFeatures.prepareVideos(content);
 
   // Flatten builder wrappers while retaining content and its order.
@@ -229,8 +230,8 @@ function renderSedeDetail(sede) {
 document.querySelector('#finder').addEventListener('submit',event=>{event.preventDefault();renderSedes(); document.querySelector('#result-count').scrollIntoView({behavior:reducedMotion?'instant':'smooth',block:'center'});});
 locality.addEventListener('change',renderSedes);
 age.addEventListener('change',renderSedes);
-function showRoute(initial=false) {
-  const hash = location.hash;
+function renderRoute(initial=false) {
+  const hash = window.SchoolSEO?.route() || location.hash;
   const parts = hash.replace(/^#\/?/,'').split('/');
   const slug = parts[0];
   const record = hash.startsWith('#/') ? records.find(item=>item.slug===slug) : null;
@@ -238,6 +239,7 @@ function showRoute(initial=false) {
   detail.hidden=true;
   const features=document.querySelector('#features');features.hidden=true;
   document.querySelector('.article-related')?.remove();
+  document.querySelector('#reading-heading-byline')?.remove();
   document.querySelector('#reading .reading-back').href='#/';
   document.querySelector('#reading .reading-back').textContent='← Volver al inicio';
   if(['camino-marcial','calendario','evento'].includes(slug)) {
@@ -263,7 +265,7 @@ function showRoute(initial=false) {
       if(form) {
         form.addEventListener('submit',event=>event.preventDefault());
         const submit=form.querySelector('[type="submit"]');if(submit)submit.disabled=true;
-        const note=document.createElement('p');note.className='contact-note';note.innerHTML='Para enviar una consulta, <a href="https://taikachisu.com/contacto/" target="_blank" rel="noopener">abrí el formulario de contacto de la escuela</a>.';form.append(note);
+        const note=document.createElement('p');note.className='contact-note';note.innerHTML='Para enviar una consulta, <a href="mailto:info@taikachisu.com">escribinos a info@taikachisu.com</a>.';form.append(note);
       }
     }
     document.title = `${record.title} · Taikachisu`;
@@ -280,6 +282,12 @@ function showRoute(initial=false) {
   closeMenu();
 }
 addEventListener('hashchange',()=>showRoute());
+addEventListener('site:navigate',()=>showRoute());
+function showRoute(initial=false) {
+  document.querySelectorAll('#home>section[hidden]').forEach(section=>section.hidden=false);
+  renderRoute(initial);
+  window.SchoolSEO?.apply();
+}
 fetch('content.json?v=20261010-photos1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   records=data.records;
   document.querySelector('#practice-image').src='assets/practica-inicio.jpg';

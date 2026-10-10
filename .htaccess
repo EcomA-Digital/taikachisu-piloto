@@ -1,0 +1,14 @@
+Options -Indexes
+DirectoryIndex index.html
+RewriteEngine On
+Header always set X-Robots-Tag "noindex, nofollow"
+ErrorDocument 404 /preview/404.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ - [R=404,L]
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+</IfModule>
