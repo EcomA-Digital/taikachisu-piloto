@@ -72,7 +72,17 @@ let sedes = [];
 let observer;
 const escapeHTML = text => String(text).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const documentFor = record => parser.parseFromString(record.html,'text/html');
-function closeMenu() { navigation.classList.remove('open'); menu.setAttribute('aria-expanded','false'); }
+function closeNavGroups() { navigation.querySelectorAll('.nav-group[open]').forEach(group => { group.open = false; }); }
+function closeMenu() { navigation.classList.remove('open'); menu.setAttribute('aria-expanded','false'); closeNavGroups(); }
+navigation.querySelectorAll('.nav-group').forEach(group => {
+  group.querySelector('summary').addEventListener('click', () => {
+    navigation.querySelectorAll('.nav-group').forEach(other => { if(other !== group) other.open = false; });
+  });
+});
+document.addEventListener('click', event => { if(!event.target.closest('.header')) closeMenu(); });
+navigation.addEventListener('focusout', () => {
+  requestAnimationFrame(() => { if(!navigation.contains(document.activeElement)) closeNavGroups(); });
+});
 menu.addEventListener('click', () => { const isOpen = menu.getAttribute('aria-expanded') !== 'true'; navigation.classList.toggle('open',isOpen); menu.setAttribute('aria-expanded',String(isOpen)); });
 navigation.addEventListener('click', event => { if(event.target.closest('a')) closeMenu(); });
 addEventListener('keydown', event => { if(event.key === 'Escape') {closeMenu(); menu.focus();} });

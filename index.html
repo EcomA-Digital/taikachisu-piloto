@@ -8,14 +8,18 @@
   <meta name="theme-color" content="#0b0b0a">
   <link rel="icon" type="image/png" href="assets/emblema.png">
   <link rel="stylesheet" href="style.css?v=20261010-palette1">
-  <link rel="stylesheet" href="features.css?v=20261010-mobile2">
+  <link rel="stylesheet" href="features.css?v=20261010-navgroups">
 </head>
 <body>
   <a class="skip-link" href="#sedes">Ir a las sedes</a>
   <header class="header" id="header">
     <a class="brand" href="#/" aria-label="Taikachisu, inicio"><img src="assets/emblema.png" alt="" width="64" height="64"><span>TAIKACHISU<small>wushu kung fu</small></span></a>
     <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="navigation">Menú</button>
-    <nav id="navigation" aria-label="Navegación principal"><a href="#/escuela">Escuela</a><a href="#sedes">Sedes</a><a href="#/calendario">Calendario</a><a class="nav-action" href="#/inscripcion">Inscripción</a></nav>
+    <nav id="navigation" aria-label="Navegación principal">
+      <details class="nav-group"><summary>Asociación</summary><div class="nav-submenu"><a href="#/institucional">Institucional</a><a href="#/maestro">Maestro Alejandro R. Di Grigoli</a><a href="#/documentos-historicos">Documentos históricos</a></div></details>
+      <details class="nav-group"><summary>Escuela</summary><div class="nav-submenu"><a href="#/escuela">La escuela</a><a href="#/que-es-taikachisu-wushu-kung-fu">Qué es Taikachisu</a><a href="#/el-estilo-taikachisu">Estilo</a><a href="#/nuestra-base-filosofica">Base filosófica</a><a href="#/nuestra-tecnica">Nuestra técnica</a><a href="#/la-practica-de-taikachisu">La práctica</a></div></details>
+      <a href="#sedes">Sedes</a><a href="#/calendario">Calendario</a><a class="nav-action" href="#/inscripcion">Inscripción</a>
+    </nav>
   </header>
   <div id="intro-spacer" class="intro-spacer" aria-hidden="true"></div>
   <section class="opening" id="opening" aria-label="Bienvenido a Taikachisu">
@@ -53,6 +57,6 @@
   <script src="firebase-config.js?v=20261002-editorial1" defer></script>
   <script src="school-store.js?v=20261002-editorial1" defer></script>
   <script src="school-features.js?v=20261002-channel1" defer></script>
-  <script src="app.js?v=20261010-photos1" defer></script>
+  <script src="app.js?v=20261010-navgroups" defer></script>
 </body>
 </html>

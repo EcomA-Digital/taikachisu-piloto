@@ -200,3 +200,20 @@ body.intro-pending #hero.motion-active .hero-slides .hero-image.is-current{anima
  .hero-slides:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,#090908ed 0%,#090908ad 35%,#09090800 72%);pointer-events:none}
  .hero-content h1,.hero-content>.eyebrow{text-shadow:0 2px 12px #000c}
 }
+
+/* Institutional and school navigation, with native keyboard/touch disclosure. */
+.header .nav-group{position:relative}
+.header .nav-group summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;padding:12px 0;color:inherit}
+.header .nav-group summary::-webkit-details-marker{display:none}
+.header .nav-group summary::after{content:"";width:6px;height:6px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg);transition:transform .2s}
+.header .nav-group[open] summary{color:var(--gold)}
+.header .nav-group[open] summary::after{transform:rotate(225deg)}
+.header .nav-submenu{position:absolute;top:100%;left:-20px;min-width:270px;padding:10px;background:var(--ink);border:1px solid var(--gold);box-shadow:0 14px 30px #0005}
+.header .nav-submenu a{display:block;padding:12px 10px;font-size:14px;line-height:1.4}
+.header .nav-submenu a:hover,.header .nav-submenu a:focus-visible{color:var(--gold);background:#ffffff0a}
+.header summary:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+@media(max-width:760px){
+ .header .nav-group summary{padding:14px 8px;font-size:16px;justify-content:space-between}
+ .header .nav-submenu{position:static;min-width:0;padding:0 0 8px 12px;border:0;border-left:2px solid var(--gold);margin:0 8px 8px;box-shadow:none;background:transparent}
+ .header .nav-submenu a{padding:12px;font-size:14px}
+}
