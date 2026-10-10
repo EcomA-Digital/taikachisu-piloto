@@ -217,3 +217,9 @@ body.intro-pending #hero.motion-active .hero-slides .hero-image.is-current{anima
  .header .nav-submenu{position:static;min-width:0;padding:0 0 8px 12px;border:0;border-left:2px solid var(--gold);margin:0 8px 8px;box-shadow:none;background:transparent}
  .header .nav-submenu a{padding:12px;font-size:14px}
 }
+
+/* A closer initial frame for the master's demonstration only. */
+.hero-slides .hero-image.hero-image--maestro{transform:scale(1.22);transform-origin:65% 40%}
+.hero-slides .hero-image.hero-image--maestro.is-current{animation-name:school-master-drift}
+@keyframes school-master-drift{from{transform:scale(1.22) translateX(0)}to{transform:scale(1.36) translateX(-1%)}}
+@media(prefers-reduced-motion:reduce){.hero-slides .hero-image.hero-image--maestro{transform:scale(1.22)!important}}
