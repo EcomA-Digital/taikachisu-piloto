@@ -91,6 +91,7 @@ function formatReading(record) {
     const media=link && link.querySelectorAll('img').length===1 ? link : img;
     const figure=img.closest('figure') || document.createElement('figure');
     figure.classList.add('editorial-media');
+    if(img.classList.contains('section-photo')) figure.classList.add('section-media');
     if(!figure.contains(img)) {media.replaceWith(figure);figure.append(media);}
     const enclosing=figure.closest('p,h2,h3,h4');
     if(enclosing) enclosing.after(figure);
@@ -269,9 +270,9 @@ function showRoute(initial=false) {
   closeMenu();
 }
 addEventListener('hashchange',()=>showRoute());
-fetch('content.json').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
+fetch('content.json?v=20261010-photos1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   records=data.records;
-  document.querySelector('#practice-image').src=data.assets['https://taikachisu.com/wp-content/uploads/2026/01/central.jpg'];
+  document.querySelector('#practice-image').src='assets/practica-inicio.jpg';
   const practice=records.find(item=>item.slug==='la-practica-de-taikachisu');
   const school=records.find(item=>item.slug==='escuela');
   document.querySelector('#practice-text').textContent=documentFor(practice).querySelector('p')?.textContent || '';

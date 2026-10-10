@@ -115,3 +115,27 @@ body.intro-pending #hero.motion-active .hero-slides .hero-image.is-current{anima
 .ecoma-credit{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex-shrink:0;text-decoration:none;color:#b4b4a9;opacity:.6;transition:opacity .2s}.ecoma-seal{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#fff;overflow:hidden;border:1px solid #ffffff35}.ecoma-seal img{width:36px;height:36px;object-fit:contain;display:block}.ecoma-credit-copy{font-size:11px;line-height:1.45;letter-spacing:.02em;font-weight:400}.ecoma-credit-copy strong{font-weight:500}.ecoma-credit:hover{opacity:1}.ecoma-credit:focus-visible{opacity:1;outline:2px solid var(--gold);outline-offset:6px}
 @media(max-width:760px){.footer-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:24px}}
 @media(prefers-reduced-motion:reduce){.ecoma-credit{transition:none}}
+
+/* Preserve the supplied photographs' full frame, including portrait photos. */
+.hero-slides{inset:100px var(--side) 70px 40%}
+.hero-slides .hero-image{object-fit:contain;object-position:center;transform:none}
+.hero-slides .hero-image.is-current{animation:hero-photo-breathe 8s ease-in-out both}
+@keyframes hero-photo-breathe{from{transform:scale(.97)}to{transform:scale(1)}}
+.hero-shade{background:linear-gradient(90deg,#090908 0%,#090908ed 24%,#0909088a 48%,#09090810 75%),linear-gradient(0deg,#090908b0,transparent 30%)}
+.school-section-photo{width:100%;height:auto;display:block;margin-top:34px}
+.practice-photo img{width:100%;height:auto;min-height:0;max-height:620px;object-fit:contain;animation:none;transform:none}
+.reading-content .section-media{padding:0;border:0;background:transparent}
+.reading-content .section-media img{width:auto;max-width:100%;height:auto;max-height:680px;object-fit:contain}
+@media(max-width:760px){
+ .hero{height:auto;min-height:0;max-height:none;display:block;padding:90px 24px 85px}
+ .hero-slides{position:relative;inset:auto;z-index:0;height:clamp(300px,100vw,460px);margin:0 -8px 30px}
+ .hero-slides .hero-image{object-position:center}
+ .hero-photo-nav{top:auto;bottom:38px;right:24px}
+ .hero-content{position:relative;z-index:1}
+ .hero-shade{background:linear-gradient(0deg,#090908 15%,#09090800 75%)}
+ .hero h1{font-size:clamp(45px,10.4vw,76px)}
+ .hero-foot{bottom:14px}
+ .reading-content .section-media{margin:30px 0}
+ .reading-content .section-media img{height:auto;max-height:none}
+ .practice-photo img{height:auto;max-height:none}
+}
