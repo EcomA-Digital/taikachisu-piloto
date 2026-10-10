@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /bin/bash /home/taikxxot/repositories/taikachisu-piloto/deploy-hosting.sh
