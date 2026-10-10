@@ -203,11 +203,11 @@ body.intro-pending #hero.motion-active .hero-slides .hero-image.is-current{anima
 
 /* Institutional and school navigation, with native keyboard/touch disclosure. */
 .header .nav-group{position:relative}
-.header .nav-group summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;padding:12px 0;color:inherit}
+.header .nav-group summary{display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;padding:12px 0;color:inherit;line-height:1.4}
 .header .nav-group summary::-webkit-details-marker{display:none}
-.header .nav-group summary::after{content:"";width:6px;height:6px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg);transition:transform .2s}
+.header .nav-group summary::after{content:"";display:block;flex:0 0 12px;width:12px;height:12px;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 4L6 8L10 4' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .2s}
 .header .nav-group[open] summary{color:var(--gold)}
-.header .nav-group[open] summary::after{transform:rotate(225deg)}
+.header .nav-group[open] summary::after{transform:rotate(180deg)}
 .header .nav-submenu{position:absolute;top:100%;left:-20px;min-width:270px;padding:10px;background:var(--ink);border:1px solid var(--gold);box-shadow:0 14px 30px #0005}
 .header .nav-submenu a{display:block;padding:12px 10px;font-size:14px;line-height:1.4}
 .header .nav-submenu a:hover,.header .nav-submenu a:focus-visible{color:var(--gold);background:#ffffff0a}
