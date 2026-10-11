@@ -41,22 +41,7 @@
             "inLanguage": "es-AR",
             "isPartOf": {
               "@id": "https://taikachisu.com/preview/#website"
-            },
-            "breadcrumb": {
-              "@id": "https://taikachisu.com/preview/#breadcrumb"
             }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://taikachisu.com/preview/#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://taikachisu.com/preview/"
-              }
-            ]
           }
         ]
       },

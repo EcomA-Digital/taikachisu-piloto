@@ -11,4 +11,5 @@ ExpiresActive On
 ExpiresByType image/webp "access plus 1 month"
 ExpiresByType image/jpeg "access plus 1 month"
 ExpiresByType image/png "access plus 1 month"
+ExpiresByType font/woff2 "access plus 1 month"
 </IfModule>
