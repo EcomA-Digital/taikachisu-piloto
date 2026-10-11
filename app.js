@@ -287,10 +287,11 @@ function showRoute(initial=false) {
   document.querySelectorAll('#home>section[hidden]').forEach(section=>section.hidden=false);
   renderRoute(initial);
   window.SchoolSEO?.apply();
+  dispatchEvent(new Event('taika:page'));
 }
 fetch('content.json?v=20261010-photos1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   records=data.records;
-  document.querySelector('#practice-image').src='assets/practica-inicio.jpg';
+  document.querySelector('#practice-image').src='assets/practica-inicio.webp';
   const practice=records.find(item=>item.slug==='la-practica-de-taikachisu');
   const school=records.find(item=>item.slug==='escuela');
   document.querySelector('#practice-text').textContent=documentFor(practice).querySelector('p')?.textContent || '';

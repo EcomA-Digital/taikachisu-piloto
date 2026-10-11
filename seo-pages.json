@@ -4,7 +4,7 @@
     "": {
       "title": "Taikachisu | Escuela de Wushu Kung Fu en Argentina",
       "description": "Sitio oficial de la Escuela Taikachisu Wushu Kung Fu y de la Asociación Taika-Chisu Argentina. Conocé su historia, la práctica, las sedes y los horarios.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -118,7 +118,7 @@
     "maestro": {
       "title": "Maestro Alejandro Di Grigoli | Escuela Taikachisu",
       "description": "Conocé la trayectoria del maestro Alejandro Di Grigoli, su formación y su labor en la Asociación Taika-Chisu Wu Shu Kung Fu Argentina.",
-      "image": "https://taikachisu.com/preview/assets/c7b2954dd7a4ca27.jpg",
+      "image": "https://taikachisu.com/preview/assets/c7b2954dd7a4ca27.webp",
       "imageAlt": "MAESTRO ALEJANDRO R. DI GRIGOLI 7° TUAN",
       "type": "website",
       "schema": {
@@ -186,7 +186,7 @@
     "documentos-historicos": {
       "title": "Documentos históricos | Asociación Taikachisu",
       "description": "Te invitamos a recorrer nuestra Galería de Documentos Históricos. Encontrarás notas en diarios y revistas de la Asoc. Taika-Chisu Wu Shu Kung Fu Argentina.",
-      "image": "https://taikachisu.com/preview/assets/8401574c1b0bcb03.jpg",
+      "image": "https://taikachisu.com/preview/assets/8401574c1b0bcb03.webp",
       "imageAlt": "Documentos Históricos",
       "type": "website",
       "schema": {
@@ -254,7 +254,7 @@
     "sedes": {
       "title": "Sedes y horarios de clases de kung fu | Taikachisu",
       "description": "Encontrá una sede Taikachisu para practicar wushu kung fu. Consultá localidades, profesores, grupos de edad, direcciones y horarios de clases.",
-      "image": "https://taikachisu.com/preview/assets/7d770eb45fe1d49e.jpg",
+      "image": "https://taikachisu.com/preview/assets/7d770eb45fe1d49e.webp",
       "imageAlt": "Sedes",
       "type": "website",
       "schema": {
@@ -389,7 +389,7 @@
     "institucional": {
       "title": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
       "description": "Aquí podrás leer la cronología de la ASOCIACIÓN TAIKACHISU (1975) desde sus comienzos hasta la actualidad, sus Objetivos, Organización y Reconocimientos.",
-      "image": "https://taikachisu.com/preview/assets/385666fbfa4179c6.jpg",
+      "image": "https://taikachisu.com/preview/assets/385666fbfa4179c6.webp",
       "imageAlt": "Institucional",
       "type": "website",
       "schema": {
@@ -457,7 +457,7 @@
     "escuela": {
       "title": "La escuela Taikachisu | Historia del Wushu Kung Fu",
       "description": "En esta página se puede leer el desarrollo histórico de la Escuela Taikachisu Wushu Kung Fu, desde su fundación por el Si Gung Juan Carlos Gauna hasta hoy.",
-      "image": "https://taikachisu.com/preview/assets/809655df9cba4983.jpg",
+      "image": "https://taikachisu.com/preview/assets/809655df9cba4983.webp",
       "imageAlt": "LA ESCUELA TAIKACHISU 1963-2017",
       "type": "website",
       "schema": {
@@ -525,7 +525,7 @@
     "secreto-del-estilo-taikachisu": {
       "title": "El verdadero Secreto del Estilo Taikachisu | Taikachisu",
       "description": "En este artículo explicamos un concepto clave para el desarrollo de las cualidades necesarias para la práctica de nuestra disciplina.",
-      "image": "https://taikachisu.com/preview/assets/a02df7463f26ef29.png",
+      "image": "https://taikachisu.com/preview/assets/a02df7463f26ef29.webp",
       "imageAlt": "El verdadero Secreto del Estilo Taikachisu",
       "type": "article",
       "schema": {
@@ -599,7 +599,7 @@
               "@id": "https://taikachisu.com/preview/secreto-del-estilo-taikachisu/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/a02df7463f26ef29.png"
+              "https://taikachisu.com/preview/assets/a02df7463f26ef29.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -624,7 +624,7 @@
     "lao-ying": {
       "title": "Lao ying en conversación con un practicante de Taika | Taikachisu",
       "description": "Algunas reflexiones sobre el sentido de las palabras que heredamos en Taikachisu y la profundidad de lo que significan para nosotros.",
-      "image": "https://taikachisu.com/preview/assets/ca74d86bbf6c3bac.jpg",
+      "image": "https://taikachisu.com/preview/assets/ca74d86bbf6c3bac.webp",
       "imageAlt": "Lao ying en conversación con un practicante de Taika",
       "type": "article",
       "schema": {
@@ -698,7 +698,7 @@
               "@id": "https://taikachisu.com/preview/lao-ying/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/ca74d86bbf6c3bac.jpg"
+              "https://taikachisu.com/preview/assets/ca74d86bbf6c3bac.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -723,7 +723,7 @@
     "que-es-taikachisu-wushu-kung-fu": {
       "title": "QUE ES TAIKACHISU WUSHU KUNG FU? | Taikachisu",
       "description": "A través de un desarrollo técnico especializado, el Taikachisu transmite un conocimiento integral que abarca la salud, el espíritu y la defensa personal.",
-      "image": "https://taikachisu.com/preview/assets/2df5efe9ff16c1d2.jpg",
+      "image": "https://taikachisu.com/preview/assets/2df5efe9ff16c1d2.webp",
       "imageAlt": "QUE ES TAIKACHISU WUSHU KUNG FU?",
       "type": "article",
       "schema": {
@@ -797,7 +797,7 @@
               "@id": "https://taikachisu.com/preview/que-es-taikachisu-wushu-kung-fu/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/2df5efe9ff16c1d2.jpg"
+              "https://taikachisu.com/preview/assets/2df5efe9ff16c1d2.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -822,7 +822,7 @@
     "nuestra-tecnica": {
       "title": "NUESTRA TÉCNICA | Taikachisu",
       "description": "La técnica del Taikachisu está compuesta por tres sistemas estrechamente relacionados entre sí: Boxeo Chadts, Boxeo Chino y Lucha Mongol.",
-      "image": "https://taikachisu.com/preview/assets/421b4b05a7b2c406.jpg",
+      "image": "https://taikachisu.com/preview/assets/421b4b05a7b2c406.webp",
       "imageAlt": "NUESTRA TÉCNICA",
       "type": "article",
       "schema": {
@@ -896,7 +896,7 @@
               "@id": "https://taikachisu.com/preview/nuestra-tecnica/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/421b4b05a7b2c406.jpg"
+              "https://taikachisu.com/preview/assets/421b4b05a7b2c406.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -921,7 +921,7 @@
     "la-practica-de-taikachisu": {
       "title": "LA PRACTICA DE TAIKACHISU | Taikachisu",
       "description": "El criterio de nuestras clases es de formación integral, a través de la cual se busca alcanzar los objetivos de la práctica del Taikachisu.",
-      "image": "https://taikachisu.com/preview/assets/646873663868bea3.jpg",
+      "image": "https://taikachisu.com/preview/assets/646873663868bea3.webp",
       "imageAlt": "LA PRACTICA DE TAIKACHISU",
       "type": "article",
       "schema": {
@@ -995,7 +995,7 @@
               "@id": "https://taikachisu.com/preview/la-practica-de-taikachisu/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/646873663868bea3.jpg"
+              "https://taikachisu.com/preview/assets/646873663868bea3.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -1020,7 +1020,7 @@
     "videos-de-taikachisu": {
       "title": "VIDEOS DE TAIKACHISU 2017 | Taikachisu",
       "description": "En esta sección pueden encontrarse algunos videos de diversos momentos de las clases, en los que se muestran las rutinas que guardan nuestras técnicas.",
-      "image": "https://taikachisu.com/preview/assets/c17c86191712e2e2.jpg",
+      "image": "https://taikachisu.com/preview/assets/c17c86191712e2e2.webp",
       "imageAlt": "VIDEOS DE TAIKACHISU 2017",
       "type": "article",
       "schema": {
@@ -1094,7 +1094,7 @@
               "@id": "https://taikachisu.com/preview/videos-de-taikachisu/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/c17c86191712e2e2.jpg"
+              "https://taikachisu.com/preview/assets/c17c86191712e2e2.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -1119,7 +1119,7 @@
     "nuestra-base-filosofica": {
       "title": "NUESTRA BASE FILOSÓFICA | Taikachisu",
       "description": "Kung Fu: este artículo es un repaso acerca de la enseñanza filosófica y de vida que representa una de las técnicas de combate más antiguas.",
-      "image": "https://taikachisu.com/preview/assets/489558083673ac4b.jpg",
+      "image": "https://taikachisu.com/preview/assets/489558083673ac4b.webp",
       "imageAlt": "NUESTRA BASE FILOSÓFICA",
       "type": "article",
       "schema": {
@@ -1193,7 +1193,7 @@
               "@id": "https://taikachisu.com/preview/nuestra-base-filosofica/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/489558083673ac4b.jpg"
+              "https://taikachisu.com/preview/assets/489558083673ac4b.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -1218,7 +1218,7 @@
     "el-estilo-taikachisu": {
       "title": "EL ESTILO TAIKACHISU | Taikachisu",
       "description": "¿Qué es y de dónde proviene el Taikachisu? Un breve recorrido histórico para conocer cómo se ha ido transmitiendo hasta nuestros días este estilo.",
-      "image": "https://taikachisu.com/preview/assets/1543c591c53a38d1.png",
+      "image": "https://taikachisu.com/preview/assets/1543c591c53a38d1.webp",
       "imageAlt": "EL ESTILO TAIKACHISU",
       "type": "article",
       "schema": {
@@ -1292,7 +1292,7 @@
               "@id": "https://taikachisu.com/preview/el-estilo-taikachisu/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/1543c591c53a38d1.png"
+              "https://taikachisu.com/preview/assets/1543c591c53a38d1.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -1317,7 +1317,7 @@
     "el-camino-del-practicante-de-artes-marciales": {
       "title": "EL CAMINO DEL PRACTICANTE DE ARTES MARCIALES | Taikachisu",
       "description": "Este artículo trata sobre las diversas etapas que debe recorrer el practicante de artes marciales en el camino hacia su búsqueda personal.",
-      "image": "https://taikachisu.com/preview/assets/df10359c3bdc31d3.jpg",
+      "image": "https://taikachisu.com/preview/assets/df10359c3bdc31d3.webp",
       "imageAlt": "EL CAMINO DEL PRACTICANTE DE ARTES MARCIALES",
       "type": "article",
       "schema": {
@@ -1391,7 +1391,7 @@
               "@id": "https://taikachisu.com/preview/el-camino-del-practicante-de-artes-marciales/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/df10359c3bdc31d3.jpg"
+              "https://taikachisu.com/preview/assets/df10359c3bdc31d3.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -1416,7 +1416,7 @@
     "la-filosofia-lo-simple": {
       "title": "LA FILOSOFÍA DE LO SIMPLE | Taikachisu",
       "description": "La base filosófica del Taikachisu se trata de llevar toda situación a su mínima expresión. ¿Cómo se traslada este concepto filosófico a la vida cotidiana?",
-      "image": "https://taikachisu.com/preview/assets/78a7509cb21fad66.jpg",
+      "image": "https://taikachisu.com/preview/assets/78a7509cb21fad66.webp",
       "imageAlt": "LA FILOSOFÍA DE LO SIMPLE",
       "type": "article",
       "schema": {
@@ -1490,7 +1490,7 @@
               "@id": "https://taikachisu.com/preview/la-filosofia-lo-simple/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/78a7509cb21fad66.jpg"
+              "https://taikachisu.com/preview/assets/78a7509cb21fad66.webp"
             ],
             "author": {
               "@type": "Organization",
@@ -1515,7 +1515,7 @@
     "camino-marcial": {
       "title": "El camino marcial | Artículos de kung fu y filosofía",
       "description": "Explorá los artículos de Taikachisu sobre kung fu, técnica, práctica y filosofía. Lecturas de la escuela para acompañar el camino del artista marcial.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -1582,7 +1582,7 @@
     "calendario": {
       "title": "Calendario 2026–2027 | Actividades de Taikachisu",
       "description": "Consultá el calendario Taikachisu 2026–2027: torneos de capacitación y mesas de examen. Revisá las fechas y descargá las actividades.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -1649,7 +1649,7 @@
     "sedes/sede-central": {
       "title": "Clases de kung fu en Longchamps | Taikachisu",
       "description": "Conocé KWOON SEDE CENTRAL de Taikachisu en Longchamps: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/7d770eb45fe1d49e.jpg",
+      "image": "https://taikachisu.com/preview/assets/7d770eb45fe1d49e.webp",
       "imageAlt": "KWOON SEDE CENTRAL · Longchamps",
       "type": "website",
       "schema": {
@@ -1720,7 +1720,7 @@
             "@id": "https://taikachisu.com/preview/sedes/sede-central/#sede",
             "name": "Taikachisu · KWOON SEDE CENTRAL",
             "url": "https://taikachisu.com/preview/sedes/sede-central/",
-            "image": "https://taikachisu.com/preview/assets/7d770eb45fe1d49e.jpg",
+            "image": "https://taikachisu.com/preview/assets/7d770eb45fe1d49e.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -1738,7 +1738,7 @@
     "sedes/nea": {
       "title": "Kung fu en Posadas · NEA | Taikachisu",
       "description": "Conocé KWOON NEA de Taikachisu en Posadas: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/22c614eee29b7981.jpg",
+      "image": "https://taikachisu.com/preview/assets/22c614eee29b7981.webp",
       "imageAlt": "KWOON NEA · Posadas",
       "type": "website",
       "schema": {
@@ -1809,7 +1809,7 @@
             "@id": "https://taikachisu.com/preview/sedes/nea/#sede",
             "name": "Taikachisu · KWOON NEA",
             "url": "https://taikachisu.com/preview/sedes/nea/",
-            "image": "https://taikachisu.com/preview/assets/22c614eee29b7981.jpg",
+            "image": "https://taikachisu.com/preview/assets/22c614eee29b7981.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -1827,7 +1827,7 @@
     "sedes/neuquen": {
       "title": "Clases de kung fu en Neuquén | Taikachisu",
       "description": "Conocé KWOON NEUQUÉN de Taikachisu en Neuquén: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/b40dd35715f3b7bc.jpg",
+      "image": "https://taikachisu.com/preview/assets/b40dd35715f3b7bc.webp",
       "imageAlt": "KWOON NEUQUÉN · Neuquén",
       "type": "website",
       "schema": {
@@ -1898,7 +1898,7 @@
             "@id": "https://taikachisu.com/preview/sedes/neuquen/#sede",
             "name": "Taikachisu · KWOON NEUQUÉN",
             "url": "https://taikachisu.com/preview/sedes/neuquen/",
-            "image": "https://taikachisu.com/preview/assets/b40dd35715f3b7bc.jpg",
+            "image": "https://taikachisu.com/preview/assets/b40dd35715f3b7bc.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -1916,7 +1916,7 @@
     "sedes/lanus": {
       "title": "Clases de kung fu en Lanús | Taikachisu",
       "description": "Conocé KWOON LANÚS de Taikachisu en Lanús: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/c90b7f6bc88528c9.jpg",
+      "image": "https://taikachisu.com/preview/assets/c90b7f6bc88528c9.webp",
       "imageAlt": "KWOON LANÚS · Lanús",
       "type": "website",
       "schema": {
@@ -1987,7 +1987,7 @@
             "@id": "https://taikachisu.com/preview/sedes/lanus/#sede",
             "name": "Taikachisu · KWOON LANÚS",
             "url": "https://taikachisu.com/preview/sedes/lanus/",
-            "image": "https://taikachisu.com/preview/assets/c90b7f6bc88528c9.jpg",
+            "image": "https://taikachisu.com/preview/assets/c90b7f6bc88528c9.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -2005,7 +2005,7 @@
     "sedes/monte-grande": {
       "title": "Clases de kung fu en Monte Grande | Taikachisu",
       "description": "Conocé KWOON M. GRANDE de Taikachisu en Monte Grande: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/4a93a63f620fd97a.jpg",
+      "image": "https://taikachisu.com/preview/assets/4a93a63f620fd97a.webp",
       "imageAlt": "KWOON M. GRANDE · Monte Grande",
       "type": "website",
       "schema": {
@@ -2076,7 +2076,7 @@
             "@id": "https://taikachisu.com/preview/sedes/monte-grande/#sede",
             "name": "Taikachisu · KWOON M. GRANDE",
             "url": "https://taikachisu.com/preview/sedes/monte-grande/",
-            "image": "https://taikachisu.com/preview/assets/4a93a63f620fd97a.jpg",
+            "image": "https://taikachisu.com/preview/assets/4a93a63f620fd97a.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -2094,7 +2094,7 @@
     "sedes/monte-chingolo": {
       "title": "Clases de kung fu en Monte Chingolo | Taikachisu",
       "description": "Conocé KWOON M. CHINGOLO de Taikachisu en Monte Chingolo: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/31e4c837e3bc70fd.png",
+      "image": "https://taikachisu.com/preview/assets/31e4c837e3bc70fd.webp",
       "imageAlt": "KWOON M. CHINGOLO · Monte Chingolo",
       "type": "website",
       "schema": {
@@ -2165,7 +2165,7 @@
             "@id": "https://taikachisu.com/preview/sedes/monte-chingolo/#sede",
             "name": "Taikachisu · KWOON M. CHINGOLO",
             "url": "https://taikachisu.com/preview/sedes/monte-chingolo/",
-            "image": "https://taikachisu.com/preview/assets/31e4c837e3bc70fd.png",
+            "image": "https://taikachisu.com/preview/assets/31e4c837e3bc70fd.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -2183,7 +2183,7 @@
     "sedes/burzaco": {
       "title": "Clases de kung fu en Burzaco | Taikachisu",
       "description": "Conocé KWOON BURZACO de Taikachisu en Burzaco: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/ffafd834135cec51.jpg",
+      "image": "https://taikachisu.com/preview/assets/ffafd834135cec51.webp",
       "imageAlt": "KWOON BURZACO · Burzaco",
       "type": "website",
       "schema": {
@@ -2254,7 +2254,7 @@
             "@id": "https://taikachisu.com/preview/sedes/burzaco/#sede",
             "name": "Taikachisu · KWOON BURZACO",
             "url": "https://taikachisu.com/preview/sedes/burzaco/",
-            "image": "https://taikachisu.com/preview/assets/ffafd834135cec51.jpg",
+            "image": "https://taikachisu.com/preview/assets/ffafd834135cec51.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -2272,7 +2272,7 @@
     "sedes/villa-allende": {
       "title": "Clases de kung fu en Villa Allende | Taikachisu",
       "description": "Conocé KWOON V. ALLENDE - CORDOBA de Taikachisu en Villa Allende: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/0bca3fab32080479.jpg",
+      "image": "https://taikachisu.com/preview/assets/0bca3fab32080479.webp",
       "imageAlt": "KWOON V. ALLENDE - CORDOBA · Villa Allende",
       "type": "website",
       "schema": {
@@ -2343,7 +2343,7 @@
             "@id": "https://taikachisu.com/preview/sedes/villa-allende/#sede",
             "name": "Taikachisu · KWOON V. ALLENDE - CORDOBA",
             "url": "https://taikachisu.com/preview/sedes/villa-allende/",
-            "image": "https://taikachisu.com/preview/assets/0bca3fab32080479.jpg",
+            "image": "https://taikachisu.com/preview/assets/0bca3fab32080479.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -2360,7 +2360,7 @@
     "sedes/asociacion-misionera": {
       "title": "Kung fu en Posadas · ASOCIACIÓN MISIONERA | Taikachisu",
       "description": "Conocé KWOON ASOCIACIÓN MISIONERA de Taikachisu en Posadas: práctica de wushu kung fu, profesor, ubicación y horarios. Consultá cómo comenzar a entrenar.",
-      "image": "https://taikachisu.com/preview/assets/bed95f4054891202.jpg",
+      "image": "https://taikachisu.com/preview/assets/bed95f4054891202.webp",
       "imageAlt": "KWOON ASOCIACIÓN MISIONERA · Posadas",
       "type": "website",
       "schema": {
@@ -2431,7 +2431,7 @@
             "@id": "https://taikachisu.com/preview/sedes/asociacion-misionera/#sede",
             "name": "Taikachisu · KWOON ASOCIACIÓN MISIONERA",
             "url": "https://taikachisu.com/preview/sedes/asociacion-misionera/",
-            "image": "https://taikachisu.com/preview/assets/bed95f4054891202.jpg",
+            "image": "https://taikachisu.com/preview/assets/bed95f4054891202.webp",
             "parentOrganization": {
               "@id": "https://taikachisu.com/preview/#organization"
             },
@@ -2448,7 +2448,7 @@
     "evento/2026-10-24-torneo": {
       "title": "Torneo de Capacitación · 24/10/2026 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Torneo de Capacitación, el 24/10/2026. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -2521,7 +2521,7 @@
     "evento/2026-12-12-cierre": {
       "title": "Torneo de Capacitación + Mesa de Examen (Cierre de año) · 12/12/2026 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Torneo de Capacitación + Mesa de Examen (Cierre de año), el 12/12/2026. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -2594,7 +2594,7 @@
     "evento/2027-02-20-torneo": {
       "title": "Torneo de Capacitación · 20/02/2027 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Torneo de Capacitación, el 20/02/2027. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -2667,7 +2667,7 @@
     "evento/2027-03-13-examen": {
       "title": "Mesa de Examen · 13/03/2027 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Mesa de Examen, el 13/03/2027. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -2740,7 +2740,7 @@
     "evento/2027-04-24-torneo": {
       "title": "Torneo de Capacitación · 24/04/2027 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Torneo de Capacitación, el 24/04/2027. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -2813,7 +2813,7 @@
     "evento/2027-06-12-jornada": {
       "title": "Torneo de Capacitación + Mesa de Examen · 12/06/2027 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Torneo de Capacitación + Mesa de Examen, el 12/06/2027. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -2886,7 +2886,7 @@
     "evento/2027-08-28-torneo": {
       "title": "Torneo de Capacitación · 28/08/2027 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Torneo de Capacitación, el 28/08/2027. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -2959,7 +2959,7 @@
     "evento/2027-09-11-examen": {
       "title": "Mesa de Examen · 11/09/2027 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Mesa de Examen, el 11/09/2027. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -3032,7 +3032,7 @@
     "evento/2027-10-23-torneo": {
       "title": "Torneo de Capacitación · 23/10/2027 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Torneo de Capacitación, el 23/10/2027. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
@@ -3105,7 +3105,7 @@
     "evento/2027-12-11-cierre": {
       "title": "Torneo de Capacitación + Mesa de Examen (Cierre de año) · 11/12/2027 | Taikachisu",
       "description": "Actividad de la Escuela Taikachisu: Torneo de Capacitación + Mesa de Examen (Cierre de año), el 11/12/2027. Consultá el cronograma; horario y lugar a confirmar.",
-      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.jpg",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2.webp",
       "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
       "type": "website",
       "schema": {
