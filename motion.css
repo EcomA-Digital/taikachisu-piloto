@@ -1,0 +1,51 @@
+/* The emblem's outline becomes the circular opening into the home. */
+@property --portal-radius{syntax:'<length>';inherits:false;initial-value:0px}
+.opening{background:var(--black);will-change:auto}
+.opening .emblem-stage{animation:emblem-arrive 1.3s cubic-bezier(.16,1,.3,1) both;isolation:isolate}
+.intro-rings{position:absolute;inset:-7%;width:114%;height:114%;overflow:visible;pointer-events:none;transform:rotate(-90deg)}
+.intro-ring{fill:none;stroke:var(--brand-yellow);stroke-width:1;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100;animation:ring-draw 1.25s cubic-bezier(.3,0,.2,1) both}
+.intro-ring--red{stroke:var(--brand-red);stroke-width:1.8;animation-delay:.15s;transform-origin:center;transform:rotate(100deg)}
+.emblem-stage--2027:after{content:'';position:absolute;inset:0;border-radius:50%;background:linear-gradient(110deg,transparent 45%,#fff3 50%,transparent 55%);background-size:250% 100%;background-position:100% 0;animation:emblem-glint .8s .55s ease-out both;pointer-events:none;clip-path:circle(50%)}
+.opening .opening-bottom{left:24px;right:24px;bottom:max(24px,env(safe-area-inset-bottom));justify-content:center}
+.opening .enter-button{font-size:12px;padding:12px 8px;min-height:44px;color:#bdbdb5;border-bottom:1px solid #ffffff33}
+.opening.leaving{animation:portal-open 1.05s cubic-bezier(.65,0,.2,1) forwards;pointer-events:none;mask-image:radial-gradient(circle at 50% 50%,transparent var(--portal-radius),#000 calc(var(--portal-radius) + 1px))}
+.opening.leaving .emblem-stage{animation:emblem-release .45s ease-out both}
+.opening.leaving .opening-bottom{animation:hint-away .2s ease forwards}
+body.intro-transitioning .hero-content{animation:home-arrive 1.1s cubic-bezier(.16,1,.3,1) both}
+body.intro-transitioning .hero-image{animation:none}
+@keyframes emblem-arrive{0%{opacity:0;transform:scale(.88)}30%{opacity:1}100%{opacity:1;transform:scale(1)}}
+@keyframes emblem-glint{from{background-position:100% 0}to{background-position:0% 0}}
+@keyframes ring-draw{0%{stroke-dashoffset:100;opacity:0}15%{opacity:.9}100%{stroke-dashoffset:0;opacity:.8}}
+@keyframes emblem-release{to{transform:scale(1.18);opacity:0}}
+@keyframes portal-open{0%,12%{--portal-radius:0px;opacity:1}90%{opacity:1}100%{--portal-radius:130vmax;opacity:0}}
+@keyframes home-arrive{0%,20%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}
+
+/* Keep the outgoing photograph in place while the next one sweeps over it. */
+.hero-slides .hero-image{transition:none}
+.hero-slides .hero-image.is-outgoing{opacity:1;z-index:0}
+.hero-slides .hero-image.is-current{z-index:1}
+.hero-slides .hero-image.is-current.is-sweeping{clip-path:circle(0% at 0% 50%);transition:clip-path .95s cubic-bezier(.65,0,.2,1)}
+.hero-slides .hero-image.is-current.is-sweeping.sweep-open{clip-path:circle(150% at 0% 50%)}
+
+/* Drawn arcs remain above the photos, below text and controls on every device. */
+.hero .motion-lines{z-index:1;opacity:.65}
+.hero .hero-content{position:relative;z-index:2}
+.hero .hero-photo-nav{z-index:3}
+.hero .motion-line{animation:arc-breath 12s ease-in-out infinite;animation-play-state:paused}
+.hero.motion-active .motion-line{animation-play-state:running}
+.hero .motion-line-two{stroke:var(--brand-red);animation-delay:.3s}
+.hero .motion-line-three{animation-delay:.6s;stroke-width:3}
+body.intro-pending .hero .motion-line{animation-play-state:paused}
+@keyframes arc-breath{0%{stroke-dashoffset:100;opacity:0}8%{opacity:.75}25%,72%{stroke-dashoffset:0;opacity:.6}90%,100%{stroke-dashoffset:0;opacity:0}}
+
+/* Reveal the whole photo, then settle each title line into its place. */
+.home-motion-ready .home-editorial-photo.reveal{opacity:1;transform:none;transition:none}
+.home-motion-ready .home-editorial-photo img{clip-path:inset(0 100% 0 0);transition:clip-path 1.15s cubic-bezier(.65,0,.2,1)}
+.home-motion-ready .home-editorial--reverse .home-editorial-photo img{clip-path:inset(0 0 0 100%)}
+.home-motion-ready .home-editorial-photo.visible img{clip-path:inset(0 0 0 0)}
+.motion-title-line{display:block;overflow:hidden;padding-bottom:.15em;margin-bottom:-.15em}
+.motion-title-line>span{display:block}
+.home-motion-ready .motion-title-line>span{transform:translateY(115%);opacity:0;transition:transform .85s cubic-bezier(.16,1,.3,1),opacity .5s;transition-delay:calc(var(--line-index)*.1s + .12s)}
+.home-motion-ready .visible .motion-title-line>span{transform:translateY(0);opacity:1}
+@media(max-width:760px){.home-motion-ready .home-editorial-photo img{transition-duration:.8s}.opening .emblem-stage{width:min(64vw,280px,44svh)}.hero .motion-lines{opacity:.55}.hero-slides .hero-image.is-current.is-sweeping{transition-duration:.75s}}
+@media(prefers-reduced-motion:reduce){.opening{display:none!important}.home-motion-ready .home-editorial-photo img,.hero-slides .hero-image.is-current.is-sweeping{clip-path:none!important}.home-motion-ready .motion-title-line>span{opacity:1;transform:none}.hero .motion-line{animation:none;stroke-dashoffset:0;opacity:.2}}

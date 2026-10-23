@@ -1,64 +1,9 @@
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const opening = document.querySelector('#opening');
-const spacer = document.querySelector('#intro-spacer');
 const header = document.querySelector('#header');
-let introDismissed = reducedMotion || Boolean(location.hash) || Boolean(window.SchoolSEO?.key());
-let stopFire = () => {};
-let introTimer;
-spacer.hidden = true;
-history.scrollRestoration = 'manual';
-function dismissIntro(instant = false) {
-  if (introDismissed && !instant) return;
-  introDismissed = true;
-  if (instant) {
-    clearTimeout(introTimer);
-    document.body.classList.remove('intro-pending','intro-transitioning');
-    stopFire();
-  } else {
-    document.body.classList.add('intro-transitioning');
-    // Finish independently of scroll distance, including in a background tab.
-    introTimer = setTimeout(finishIntro, 1950);
-  }
-  opening.classList.add(instant ? 'inactive' : 'leaving');
-  opening.setAttribute('aria-hidden', 'true');
-  header.style.opacity = '1';
-  header.inert = false;
-  document.querySelector('#home').inert = false;
-  document.querySelector('footer').inert = false;
-  if (opening.contains(document.activeElement)) {
-    const heading = document.querySelector('#hero h1');
-    heading.tabIndex = -1; heading.focus({preventScroll:true});
-  }
-}
-function finishIntro() {
-  clearTimeout(introTimer);
-  opening.classList.add('inactive');
-  document.body.classList.remove('intro-pending','intro-transitioning');
-  stopFire();
-}
-opening.addEventListener('animationend', event => {
-  if (event.target === opening && event.animationName === 'opening-reveal' && introDismissed) {
-    finishIntro();
-  }
+const {dismiss: dismissIntro} = SchoolMotion.startIntro({
+  opening, header, home:document.querySelector('#home'), footer:document.querySelector('footer'), reduced:reducedMotion
 });
-document.querySelector('#enter-button').addEventListener('click', () => dismissIntro());
-addEventListener('wheel', event => {
-  if (!introDismissed && event.deltaY > 0) {event.preventDefault();dismissIntro();}
-}, {passive:false});
-let touchY = 0;
-opening.addEventListener('touchstart', event => {touchY=event.touches[0].clientY;}, {passive:true});
-opening.addEventListener('touchmove', event => {
-  if (!introDismissed && touchY-event.touches[0].clientY > 12) {event.preventDefault();dismissIntro();}
-}, {passive:false});
-addEventListener('keydown', event => {
-  if (!introDismissed && ['ArrowDown','PageDown',' ','End'].includes(event.key)) {event.preventDefault();dismissIntro();}
-});
-if (introDismissed) dismissIntro(true);
-else {
-  scrollTo({top:0,behavior:'instant'});
-  document.body.classList.add('intro-pending'); header.inert = true;
-  document.querySelector('#home').inert = true; document.querySelector('footer').inert = true;
-}
 const home = document.querySelector('#home');
 const reading = document.querySelector('#reading');
 const locality = document.querySelector('#locality');
@@ -295,6 +240,7 @@ fetch('content.json?v=20261023-maestro1').then(response=>{if(!response.ok)throw 
   const articles=await SchoolFeatures.init(records,sedes);
   records=[...records.filter(item=>item.type!=='post'),...articles];
   SchoolFeatures.setupMotion();
+  SchoolMotion.initHome();
   const management=document.createElement('a');management.href='admin.html';management.className='management-link';management.textContent='Gestión de la escuela';(document.querySelector('.footer-utilities') || document.querySelector('.footer-bottom')).append(management);
   [...new Set(sedes.map(sede=>sede.locality))].sort().forEach(city=>{const option=document.createElement('option');option.value=city;option.textContent=city;locality.append(option);});
   renderSedes();showRoute(true);

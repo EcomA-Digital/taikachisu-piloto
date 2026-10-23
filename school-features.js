@@ -96,9 +96,29 @@ window.SchoolFeatures=(()=>{
   }
   function setupMotion(){
     const hero=document.querySelector('#hero'),slides=[...hero.querySelectorAll('.hero-image')],controls=[...hero.querySelectorAll('[data-hero-slide]')];
-    const reduced=matchMedia('(prefers-reduced-motion: reduce)');let current=0,timer,changing=false;
+    const reduced=matchMedia('(prefers-reduced-motion: reduce)');let current=0,timer,changing=false,pending=null;
     function stop(){clearInterval(timer);timer=null;}
-    async function selectSlide(index){if(changing||index===current)return;changing=true;try{const next=slides[index];if(next.dataset.src){next.srcset=next.dataset.srcset || '';next.src=next.dataset.src;delete next.dataset.src;delete next.dataset.srcset;}if(!next.complete||!next.naturalWidth)await next.decode();slides[current].classList.remove('is-current');next.classList.add('is-current');current=index;controls.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));}catch(error){console.warn('No se pudo mostrar la fotografía.',error.message);}finally{changing=false;}}
+    async function selectSlide(index){
+      if(changing){pending=index;return;}if(index===current)return;
+      changing=true;
+      try{
+        const next=slides[index],previous=slides[current];
+        if(next.dataset.src){next.srcset=next.dataset.srcset||'';next.src=next.dataset.src;delete next.dataset.src;delete next.dataset.srcset;}
+        if(!next.complete||!next.naturalWidth)await next.decode();
+        previous.classList.remove('is-current');
+        if(!reduced.matches)previous.classList.add('is-outgoing');
+        next.classList.add('is-current');current=index;
+        controls.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
+        if(!reduced.matches){
+          next.classList.add('is-sweeping');
+          next.getBoundingClientRect();
+          next.classList.add('sweep-open');
+          await new Promise(resolve=>setTimeout(resolve,1000));
+          next.classList.remove('is-sweeping','sweep-open');previous.classList.remove('is-outgoing');
+        }
+      }catch(error){console.warn('No se pudo mostrar la fotografía.',error.message);}
+      finally{changing=false;if(pending!==null){const index=pending;pending=null;selectSlide(index);}}
+    }
     function sync(){stop();if(hero.classList.contains('motion-active')&&!document.hidden&&!document.body.classList.contains('intro-pending')&&!reduced.matches)timer=setInterval(()=>selectSlide((current+1)%slides.length),6500);}
     controls.forEach((button,index)=>button.addEventListener('click',()=>{stop();selectSlide(index);}));
     const watch=new IntersectionObserver(entries=>{entries.forEach(entry=>entry.target.classList.toggle('motion-active',entry.isIntersecting));sync();},{threshold:.12});document.querySelectorAll('#hero,.practice-photo').forEach(target=>watch.observe(target));
