@@ -64,9 +64,9 @@ window.SchoolAnalytics = (() => {
     }
   }
   function init() {
-    panel=document.createElement('section');panel.id='statistics-choice';panel.className='statistics-choice';
+    panel=document.createElement('section');panel.id='statistics-choice';panel.className='statistics-choice';panel.hidden=true;
     panel.setAttribute('aria-label','Privacidad y medición de visitas');
-    panel.innerHTML='<div><strong>Medición de visitas</strong><p>Podemos usar Google Analytics para mejorar la web. Estas cookies son opcionales.</p><details><summary>Privacidad y cookies</summary><p>La Asociación Taika-Chisu usa estadísticas de navegación y clics. No enviamos nombres, correos, textos de búsqueda ni contenido de formularios. No activamos personalización publicitaria. Podés cambiar tu elección desde el pie de página.</p><a href="https://policies.google.com/technologies/partner-sites?hl=es" target="_blank" rel="noopener noreferrer">Cómo utiliza Google los datos ↗</a></details></div><div class="statistics-actions"><button type="button" class="button gold" id="accept-statistics">Aceptar estadísticas</button><button type="button" class="underlined" id="reject-statistics">Continuar sin ellas</button></div>';
+    panel.innerHTML='<div><strong>Cookies opcionales</strong><p>Usamos estadísticas para mejorar la web. Vos elegís.</p><details><summary>Privacidad y cookies</summary><p>La Asociación Taika-Chisu usa estadísticas de navegación y clics. No enviamos nombres, correos, textos de búsqueda ni contenido de formularios. No activamos personalización publicitaria. Podés cambiar tu elección desde el pie de página.</p><a href="https://policies.google.com/technologies/partner-sites?hl=es" target="_blank" rel="noopener noreferrer">Cómo utiliza Google los datos ↗</a></details></div><div class="statistics-actions"><button type="button" class="button gold" id="accept-statistics">Aceptar</button><button type="button" class="underlined" id="reject-statistics">Rechazar</button></div>';
     document.body.append(panel);
     panel.querySelector('#accept-statistics').addEventListener('click',()=>choose('accepted'));
     panel.querySelector('#reject-statistics').addEventListener('click',()=>choose('rejected'));
@@ -74,6 +74,19 @@ window.SchoolAnalytics = (() => {
     if(footer){const button=document.createElement('button');button.type='button';button.className='statistics-settings';button.textContent='Privacidad y cookies';button.addEventListener('click',()=>{panel.hidden=false;panel.querySelector('#accept-statistics').focus();});footer.append(button);}
     let saved;try{saved=localStorage.getItem(consentKey);}catch{}
     if(saved==='accepted'||saved==='rejected')choose(saved);
+    else {
+      let revealTimer;
+      const showChoice = () => {
+        clearTimeout(revealTimer);
+        revealTimer = setTimeout(() => {
+          if (!document.body.classList.contains('intro-complete')) return;
+          let current; try { current = localStorage.getItem(consentKey); } catch {}
+          if (current !== 'accepted' && current !== 'rejected') panel.hidden = false;
+        }, 700);
+      };
+      if (document.body.classList.contains('intro-complete')) showChoice();
+      else window.addEventListener('taika:intro-complete', showChoice, {once:true});
+    }
     document.addEventListener('click',event=>{
       const target=event.target.closest('a,button');if(!target)return;
       const href=target.getAttribute('href')||'';

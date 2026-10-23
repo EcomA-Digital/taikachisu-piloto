@@ -8,6 +8,7 @@ window.SchoolMotion = (() => {
     const remember = () => { try { sessionStorage.setItem(sessionKey, 'seen'); } catch {} };
     function finish() {
       clearTimeout(loadTimer); clearTimeout(exitTimer); clearTimeout(deadline);
+      const wasDone = state === 'done';
       state = 'done';
       video.pause();
       // Release the decoder and cancel any pending transfer after a skip/failure.
@@ -16,34 +17,25 @@ window.SchoolMotion = (() => {
       document.body.classList.remove('intro-pending', 'intro-transitioning');
       document.body.classList.add('intro-complete'); header.style.opacity = '1';
       header.inert = home.inert = footer.inert = false;
+      if (!wasDone) window.dispatchEvent(new Event('taika:intro-complete'));
       if (opening.contains(document.activeElement)) {
         const heading = home.querySelector('h1');
         heading.tabIndex = -1; heading.focus({preventScroll:true});
       }
     }
     function prepareFist() {
-      // Sample the actual last frame: keep the emblem's original red mark.
-      const canvas = opening.querySelector('#intro-fist');
-      if (!video.videoWidth || video.readyState < 2) return;
-      try {
-        const w = video.videoWidth, h = video.videoHeight;
-        const x = Math.round(w * .5), y = Math.round(h * .578);
-        canvas.width = Math.round(w * .04); canvas.height = Math.round(h * .065);
-        const ctx = canvas.getContext('2d', {willReadFrequently:true});
-        ctx.drawImage(video, x, y, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
-        const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
-        for (let i = 0; i < pixels.data.length; i += 4) {
-          const r = pixels.data[i], g = pixels.data[i+1], b = pixels.data[i+2];
-          pixels.data[i+3] = Math.round(255 * Math.max(0, Math.min(1, (r - Math.max(g,b) - r * .2) / 18)));
-        }
-        ctx.putImageData(pixels, 0, 0);
-        canvas.style.left = `${x/w*100}%`; canvas.style.top = `${y/h*100}%`;
-        canvas.style.width = `${canvas.width/w*100}%`; canvas.style.height = `${canvas.height/h*100}%`;
-        const stage = canvas.parentElement.getBoundingClientRect();
-        canvas.style.setProperty('--fist-x', `${(.5-(x+canvas.width/2)/w)*stage.width}px`);
-        canvas.style.setProperty('--fist-y', `${(.5-(y+canvas.height/2)/h)*stage.height}px`);
-        canvas.classList.add('ready');
-      } catch { /* Fall back to the same clean fade if a frame cannot be sampled. */ }
+      const image = opening.querySelector('#intro-fist');
+      if (!image.complete || image.naturalWidth < 1000) return;
+      // AI-restored standalone artwork replaces the tiny compressed video crop.
+      const w = video.videoWidth || 960, h = video.videoHeight || 540;
+      const x = w * .5, y = h * .578;
+      const width = w * .04, height = width * image.naturalHeight / image.naturalWidth;
+      image.style.left = `${x/w*100}%`; image.style.top = `${y/h*100}%`;
+      image.style.width = `${width/w*100}%`; image.style.height = `${height/h*100}%`;
+      const stage = image.parentElement.getBoundingClientRect();
+      image.style.setProperty('--fist-x', `${(.5-(x+width/2)/w)*stage.width}px`);
+      image.style.setProperty('--fist-y', `${(.5-(y+height/2)/h)*stage.height}px`);
+      image.classList.add('ready');
     }
     function dismiss(instant = false) {
       if (state === 'done') return;
@@ -70,6 +62,8 @@ window.SchoolMotion = (() => {
     video.addEventListener('playing', () => {
       if (state !== 'waiting') return;
       opening.classList.add('film-playing');
+      const fist = opening.querySelector('#intro-fist');
+      if (!fist.hasAttribute('src')) fist.src = fist.dataset.src;
       clearTimeout(loadTimer);
       // A stalled video must not leave the navigation locked indefinitely.
       clearTimeout(deadline); deadline = setTimeout(skip, 9000);
