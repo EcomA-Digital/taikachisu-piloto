@@ -295,7 +295,7 @@ fetch('content.json?v=20261023-maestro1').then(response=>{if(!response.ok)throw 
   const articles=await SchoolFeatures.init(records,sedes);
   records=[...records.filter(item=>item.type!=='post'),...articles];
   SchoolFeatures.setupMotion();
-  const management=document.createElement('a');management.href='admin.html';management.className='management-link';management.textContent='Gestión de la escuela';document.querySelector('.footer-bottom').append(management);
+  const management=document.createElement('a');management.href='admin.html';management.className='management-link';management.textContent='Gestión de la escuela';(document.querySelector('.footer-utilities') || document.querySelector('.footer-bottom')).append(management);
   [...new Set(sedes.map(sede=>sede.locality))].sort().forEach(city=>{const option=document.createElement('option');option.value=city;option.textContent=city;locality.append(option);});
   renderSedes();showRoute(true);
 }).catch(()=>{

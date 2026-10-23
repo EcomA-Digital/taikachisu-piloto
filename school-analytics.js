@@ -70,7 +70,7 @@ window.SchoolAnalytics = (() => {
     document.body.append(panel);
     panel.querySelector('#accept-statistics').addEventListener('click',()=>choose('accepted'));
     panel.querySelector('#reject-statistics').addEventListener('click',()=>choose('rejected'));
-    const footer=document.querySelector('.footer-bottom');
+    const footer=document.querySelector('.footer-utilities') || document.querySelector('.footer-bottom');
     if(footer){const button=document.createElement('button');button.type='button';button.className='statistics-settings';button.textContent='Privacidad y cookies';button.addEventListener('click',()=>{panel.hidden=false;panel.querySelector('#accept-statistics').focus();});footer.append(button);}
     let saved;try{saved=localStorage.getItem(consentKey);}catch{}
     if(saved==='accepted'||saved==='rejected')choose(saved);
