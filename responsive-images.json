@@ -1,0 +1,3041 @@
+{
+  "images": {
+    "assets/03f68c3b118af705.webp": {
+      "src": "assets/03f68c3b118af705-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 67264,
+      "after_bytes": 47820,
+      "variants": [
+        {
+          "src": "assets/03f68c3b118af705-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 29910
+        },
+        {
+          "src": "assets/03f68c3b118af705-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 47820
+        }
+      ]
+    },
+    "assets/0755f7c0656ebaa6.webp": {
+      "src": "assets/0755f7c0656ebaa6-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 96032,
+      "after_bytes": 65628,
+      "variants": [
+        {
+          "src": "assets/0755f7c0656ebaa6-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 34138
+        },
+        {
+          "src": "assets/0755f7c0656ebaa6-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 65628
+        }
+      ]
+    },
+    "assets/0bca3fab32080479.webp": {
+      "src": "assets/0bca3fab32080479-opt2.webp",
+      "width": 1079,
+      "height": 607,
+      "before_bytes": 127380,
+      "after_bytes": 86086,
+      "variants": [
+        {
+          "src": "assets/0bca3fab32080479-opt2-w480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 28044
+        },
+        {
+          "src": "assets/0bca3fab32080479-opt2-w800.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 58750
+        },
+        {
+          "src": "assets/0bca3fab32080479-opt2.webp",
+          "width": 1079,
+          "height": 607,
+          "bytes": 86086
+        }
+      ]
+    },
+    "assets/0cb16819c70717ad.webp": {
+      "src": "assets/0cb16819c70717ad-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 40150,
+      "after_bytes": 26598,
+      "variants": [
+        {
+          "src": "assets/0cb16819c70717ad-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20484
+        },
+        {
+          "src": "assets/0cb16819c70717ad-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 26598
+        }
+      ]
+    },
+    "assets/0fab4797b04c3d63.webp": {
+      "src": "assets/0fab4797b04c3d63-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 65282,
+      "after_bytes": 48122,
+      "variants": [
+        {
+          "src": "assets/0fab4797b04c3d63-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 34582
+        },
+        {
+          "src": "assets/0fab4797b04c3d63-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 48122
+        }
+      ]
+    },
+    "assets/122e7b921dcf8631.webp": {
+      "src": "assets/122e7b921dcf8631-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 84498,
+      "after_bytes": 57118,
+      "variants": [
+        {
+          "src": "assets/122e7b921dcf8631-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 27550
+        },
+        {
+          "src": "assets/122e7b921dcf8631-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 57118
+        }
+      ]
+    },
+    "assets/124ca5ceed0d241b.webp": {
+      "src": "assets/124ca5ceed0d241b-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 201152,
+      "after_bytes": 156704,
+      "variants": [
+        {
+          "src": "assets/124ca5ceed0d241b-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 100726
+        },
+        {
+          "src": "assets/124ca5ceed0d241b-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 156704
+        }
+      ]
+    },
+    "assets/1500a9d9768b493e.webp": {
+      "src": "assets/1500a9d9768b493e-opt2.webp",
+      "width": 585,
+      "height": 780,
+      "before_bytes": 127298,
+      "after_bytes": 90268,
+      "variants": [
+        {
+          "src": "assets/1500a9d9768b493e-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 67374
+        },
+        {
+          "src": "assets/1500a9d9768b493e-opt2.webp",
+          "width": 585,
+          "height": 780,
+          "bytes": 90268
+        }
+      ]
+    },
+    "assets/177ca07f2f1ac93d.webp": {
+      "src": "assets/177ca07f2f1ac93d-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 115514,
+      "after_bytes": 81684,
+      "variants": [
+        {
+          "src": "assets/177ca07f2f1ac93d-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 64202
+        },
+        {
+          "src": "assets/177ca07f2f1ac93d-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 81684
+        }
+      ]
+    },
+    "assets/1b9c0c9a4c35f988.webp": {
+      "src": "assets/1b9c0c9a4c35f988-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 74914,
+      "after_bytes": 55430,
+      "variants": [
+        {
+          "src": "assets/1b9c0c9a4c35f988-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 39626
+        },
+        {
+          "src": "assets/1b9c0c9a4c35f988-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 55430
+        }
+      ]
+    },
+    "assets/22c614eee29b7981.webp": {
+      "src": "assets/22c614eee29b7981-opt2.webp",
+      "width": 1080,
+      "height": 668,
+      "before_bytes": 103528,
+      "after_bytes": 67942,
+      "variants": [
+        {
+          "src": "assets/22c614eee29b7981-opt2-w480.webp",
+          "width": 480,
+          "height": 297,
+          "bytes": 23634
+        },
+        {
+          "src": "assets/22c614eee29b7981-opt2-w800.webp",
+          "width": 800,
+          "height": 495,
+          "bytes": 46404
+        },
+        {
+          "src": "assets/22c614eee29b7981-opt2.webp",
+          "width": 1080,
+          "height": 668,
+          "bytes": 67942
+        }
+      ]
+    },
+    "assets/2664b76b3c33bf80.webp": {
+      "src": "assets/2664b76b3c33bf80-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 35208,
+      "after_bytes": 23714,
+      "variants": [
+        {
+          "src": "assets/2664b76b3c33bf80-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18852
+        },
+        {
+          "src": "assets/2664b76b3c33bf80-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 23714
+        }
+      ]
+    },
+    "assets/27156554710dcb0a.webp": {
+      "src": "assets/27156554710dcb0a-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 73366,
+      "after_bytes": 53012,
+      "variants": [
+        {
+          "src": "assets/27156554710dcb0a-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 38514
+        },
+        {
+          "src": "assets/27156554710dcb0a-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 53012
+        }
+      ]
+    },
+    "assets/284a15d45087e527.webp": {
+      "src": "assets/284a15d45087e527-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 91710,
+      "after_bytes": 62866,
+      "variants": [
+        {
+          "src": "assets/284a15d45087e527-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 46230
+        },
+        {
+          "src": "assets/284a15d45087e527-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 62866
+        }
+      ]
+    },
+    "assets/2b921d13ee72275d.webp": {
+      "src": "assets/2b921d13ee72275d-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 64654,
+      "after_bytes": 45608,
+      "variants": [
+        {
+          "src": "assets/2b921d13ee72275d-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 33830
+        },
+        {
+          "src": "assets/2b921d13ee72275d-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 45608
+        }
+      ]
+    },
+    "assets/2be36baae43770de.webp": {
+      "src": "assets/2be36baae43770de-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 159166,
+      "after_bytes": 116872,
+      "variants": [
+        {
+          "src": "assets/2be36baae43770de-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 80668
+        },
+        {
+          "src": "assets/2be36baae43770de-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 116872
+        }
+      ]
+    },
+    "assets/2cf41d65f8fb658c.webp": {
+      "src": "assets/2cf41d65f8fb658c-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 82130,
+      "after_bytes": 61482,
+      "variants": [
+        {
+          "src": "assets/2cf41d65f8fb658c-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 42926
+        },
+        {
+          "src": "assets/2cf41d65f8fb658c-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 61482
+        }
+      ]
+    },
+    "assets/2df5efe9ff16c1d2.webp": {
+      "src": "assets/2df5efe9ff16c1d2-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 61240,
+      "after_bytes": 36818,
+      "variants": [
+        {
+          "src": "assets/2df5efe9ff16c1d2-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 18236
+        },
+        {
+          "src": "assets/2df5efe9ff16c1d2-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 36818
+        }
+      ]
+    },
+    "assets/2f605d941c04d295.webp": {
+      "src": "assets/2f605d941c04d295-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 117964,
+      "after_bytes": 80518,
+      "variants": [
+        {
+          "src": "assets/2f605d941c04d295-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 55720
+        },
+        {
+          "src": "assets/2f605d941c04d295-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 80518
+        }
+      ]
+    },
+    "assets/30abb4f8329edd4a.webp": {
+      "src": "assets/30abb4f8329edd4a-opt2.webp",
+      "width": 400,
+      "height": 400,
+      "before_bytes": 47214,
+      "after_bytes": 32946,
+      "variants": [
+        {
+          "src": "assets/30abb4f8329edd4a-opt2.webp",
+          "width": 400,
+          "height": 400,
+          "bytes": 32946
+        }
+      ]
+    },
+    "assets/31e4c837e3bc70fd.webp": {
+      "src": "assets/31e4c837e3bc70fd-opt2.webp",
+      "width": 1080,
+      "height": 720,
+      "before_bytes": 92442,
+      "after_bytes": 60296,
+      "variants": [
+        {
+          "src": "assets/31e4c837e3bc70fd-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 19768
+        },
+        {
+          "src": "assets/31e4c837e3bc70fd-opt2-w800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 40366
+        },
+        {
+          "src": "assets/31e4c837e3bc70fd-opt2.webp",
+          "width": 1080,
+          "height": 720,
+          "bytes": 60296
+        }
+      ]
+    },
+    "assets/36230fd5ce434591.webp": {
+      "src": "assets/36230fd5ce434591-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 42310,
+      "after_bytes": 27076,
+      "variants": [
+        {
+          "src": "assets/36230fd5ce434591-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 20354
+        },
+        {
+          "src": "assets/36230fd5ce434591-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 27076
+        }
+      ]
+    },
+    "assets/3937d59c961e78a6.webp": {
+      "src": "assets/3937d59c961e78a6-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 89824,
+      "after_bytes": 65334,
+      "variants": [
+        {
+          "src": "assets/3937d59c961e78a6-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 46072
+        },
+        {
+          "src": "assets/3937d59c961e78a6-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 65334
+        }
+      ]
+    },
+    "assets/3b353013e306c49f.webp": {
+      "src": "assets/3b353013e306c49f-opt2.webp",
+      "width": 2136,
+      "height": 1528,
+      "before_bytes": 1112958,
+      "after_bytes": 954622,
+      "variants": [
+        {
+          "src": "assets/3b353013e306c49f-opt2-w480.webp",
+          "width": 480,
+          "height": 343,
+          "bytes": 50946
+        },
+        {
+          "src": "assets/3b353013e306c49f-opt2-w800.webp",
+          "width": 800,
+          "height": 572,
+          "bytes": 128582
+        },
+        {
+          "src": "assets/3b353013e306c49f-opt2-w1280.webp",
+          "width": 1280,
+          "height": 916,
+          "bytes": 338044
+        },
+        {
+          "src": "assets/3b353013e306c49f-opt2.webp",
+          "width": 2136,
+          "height": 1528,
+          "bytes": 954622
+        }
+      ]
+    },
+    "assets/3e0ef8a719f89cfa.webp": {
+      "src": "assets/3e0ef8a719f89cfa-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 52354,
+      "after_bytes": 35600,
+      "variants": [
+        {
+          "src": "assets/3e0ef8a719f89cfa-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 27700
+        },
+        {
+          "src": "assets/3e0ef8a719f89cfa-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 35600
+        }
+      ]
+    },
+    "assets/3eda4ee76551a7e7.webp": {
+      "src": "assets/3eda4ee76551a7e7-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 90188,
+      "after_bytes": 61920,
+      "variants": [
+        {
+          "src": "assets/3eda4ee76551a7e7-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 44786
+        },
+        {
+          "src": "assets/3eda4ee76551a7e7-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 61920
+        }
+      ]
+    },
+    "assets/40a41ef9a97486f7.webp": {
+      "src": "assets/40a41ef9a97486f7-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 62750,
+      "after_bytes": 44032,
+      "variants": [
+        {
+          "src": "assets/40a41ef9a97486f7-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 32862
+        },
+        {
+          "src": "assets/40a41ef9a97486f7-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 44032
+        }
+      ]
+    },
+    "assets/4a93a63f620fd97a.webp": {
+      "src": "assets/4a93a63f620fd97a-opt2.webp",
+      "width": 1080,
+      "height": 720,
+      "before_bytes": 43118,
+      "after_bytes": 28176,
+      "variants": [
+        {
+          "src": "assets/4a93a63f620fd97a-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 10904
+        },
+        {
+          "src": "assets/4a93a63f620fd97a-opt2-w800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 20158
+        },
+        {
+          "src": "assets/4a93a63f620fd97a-opt2.webp",
+          "width": 1080,
+          "height": 720,
+          "bytes": 28176
+        }
+      ]
+    },
+    "assets/4db47a4248c50cec.webp": {
+      "src": "assets/4db47a4248c50cec-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 79414,
+      "after_bytes": 58340,
+      "variants": [
+        {
+          "src": "assets/4db47a4248c50cec-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 40486
+        },
+        {
+          "src": "assets/4db47a4248c50cec-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 58340
+        }
+      ]
+    },
+    "assets/52256f80c30e2a82.webp": {
+      "src": "assets/52256f80c30e2a82-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 116354,
+      "after_bytes": 83940,
+      "variants": [
+        {
+          "src": "assets/52256f80c30e2a82-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 61596
+        },
+        {
+          "src": "assets/52256f80c30e2a82-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 83940
+        }
+      ]
+    },
+    "assets/547eba6cfb588cb5.webp": {
+      "src": "assets/547eba6cfb588cb5-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 71318,
+      "after_bytes": 52350,
+      "variants": [
+        {
+          "src": "assets/547eba6cfb588cb5-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 40440
+        },
+        {
+          "src": "assets/547eba6cfb588cb5-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 52350
+        }
+      ]
+    },
+    "assets/54903c7a5a90c3e2.webp": {
+      "src": "assets/54903c7a5a90c3e2-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 41622,
+      "after_bytes": 28140,
+      "variants": [
+        {
+          "src": "assets/54903c7a5a90c3e2-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 21680
+        },
+        {
+          "src": "assets/54903c7a5a90c3e2-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 28140
+        }
+      ]
+    },
+    "assets/57f040660c0058f7.webp": {
+      "src": "assets/57f040660c0058f7-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 82406,
+      "after_bytes": 59444,
+      "variants": [
+        {
+          "src": "assets/57f040660c0058f7-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 41478
+        },
+        {
+          "src": "assets/57f040660c0058f7-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 59444
+        }
+      ]
+    },
+    "assets/5cffb5cbeb543ff5.webp": {
+      "src": "assets/5cffb5cbeb543ff5-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 70562,
+      "after_bytes": 50248,
+      "variants": [
+        {
+          "src": "assets/5cffb5cbeb543ff5-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 37104
+        },
+        {
+          "src": "assets/5cffb5cbeb543ff5-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 50248
+        }
+      ]
+    },
+    "assets/5e0d8204fd6bc08f.webp": {
+      "src": "assets/5e0d8204fd6bc08f-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 85912,
+      "after_bytes": 56702,
+      "variants": [
+        {
+          "src": "assets/5e0d8204fd6bc08f-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 28982
+        },
+        {
+          "src": "assets/5e0d8204fd6bc08f-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 56702
+        }
+      ]
+    },
+    "assets/5e36010d32df90ef.webp": {
+      "src": "assets/5e36010d32df90ef-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 55344,
+      "after_bytes": 40772,
+      "variants": [
+        {
+          "src": "assets/5e36010d32df90ef-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 31498
+        },
+        {
+          "src": "assets/5e36010d32df90ef-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 40772
+        }
+      ]
+    },
+    "assets/5e8ce356c40b6a03.webp": {
+      "src": "assets/5e8ce356c40b6a03-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 76712,
+      "after_bytes": 55086,
+      "variants": [
+        {
+          "src": "assets/5e8ce356c40b6a03-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 37980
+        },
+        {
+          "src": "assets/5e8ce356c40b6a03-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 55086
+        }
+      ]
+    },
+    "assets/60e9193798a8be07.webp": {
+      "src": "assets/60e9193798a8be07-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 44800,
+      "after_bytes": 32518,
+      "variants": [
+        {
+          "src": "assets/60e9193798a8be07-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 24674
+        },
+        {
+          "src": "assets/60e9193798a8be07-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 32518
+        }
+      ]
+    },
+    "assets/623c18affa5bb8cd.webp": {
+      "src": "assets/623c18affa5bb8cd-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 33566,
+      "after_bytes": 22220,
+      "variants": [
+        {
+          "src": "assets/623c18affa5bb8cd-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 17238
+        },
+        {
+          "src": "assets/623c18affa5bb8cd-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 22220
+        }
+      ]
+    },
+    "assets/63c6f33c9ad14b4a.webp": {
+      "src": "assets/63c6f33c9ad14b4a-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 72518,
+      "after_bytes": 53692,
+      "variants": [
+        {
+          "src": "assets/63c6f33c9ad14b4a-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 38378
+        },
+        {
+          "src": "assets/63c6f33c9ad14b4a-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 53692
+        }
+      ]
+    },
+    "assets/646873663868bea3.webp": {
+      "src": "assets/646873663868bea3-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 65162,
+      "after_bytes": 41126,
+      "variants": [
+        {
+          "src": "assets/646873663868bea3-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 19906
+        },
+        {
+          "src": "assets/646873663868bea3-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 41126
+        }
+      ]
+    },
+    "assets/65898b5a96237839.webp": {
+      "src": "assets/65898b5a96237839-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 93156,
+      "after_bytes": 63230,
+      "variants": [
+        {
+          "src": "assets/65898b5a96237839-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 47020
+        },
+        {
+          "src": "assets/65898b5a96237839-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 63230
+        }
+      ]
+    },
+    "assets/671bf0e78f58847a.webp": {
+      "src": "assets/671bf0e78f58847a-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 51130,
+      "after_bytes": 30368,
+      "variants": [
+        {
+          "src": "assets/671bf0e78f58847a-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 22420
+        },
+        {
+          "src": "assets/671bf0e78f58847a-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 30368
+        }
+      ]
+    },
+    "assets/68d9fd7439fd91d9.webp": {
+      "src": "assets/68d9fd7439fd91d9-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 173810,
+      "after_bytes": 127302,
+      "variants": [
+        {
+          "src": "assets/68d9fd7439fd91d9-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 45130
+        },
+        {
+          "src": "assets/68d9fd7439fd91d9-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 127302
+        }
+      ]
+    },
+    "assets/69e4f08d87455337.webp": {
+      "src": "assets/69e4f08d87455337-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 43934,
+      "after_bytes": 26944,
+      "variants": [
+        {
+          "src": "assets/69e4f08d87455337-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 20122
+        },
+        {
+          "src": "assets/69e4f08d87455337-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 26944
+        }
+      ]
+    },
+    "assets/6a40d52fd8af0e0a.webp": {
+      "src": "assets/6a40d52fd8af0e0a-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 81284,
+      "after_bytes": 59754,
+      "variants": [
+        {
+          "src": "assets/6a40d52fd8af0e0a-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 41638
+        },
+        {
+          "src": "assets/6a40d52fd8af0e0a-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 59754
+        }
+      ]
+    },
+    "assets/6bc3e3f011274268.webp": {
+      "src": "assets/6bc3e3f011274268-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 60718,
+      "after_bytes": 39690,
+      "variants": [
+        {
+          "src": "assets/6bc3e3f011274268-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 20766
+        },
+        {
+          "src": "assets/6bc3e3f011274268-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 39690
+        }
+      ]
+    },
+    "assets/6fa1da3bd856902f.webp": {
+      "src": "assets/6fa1da3bd856902f-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 151056,
+      "after_bytes": 109918,
+      "variants": [
+        {
+          "src": "assets/6fa1da3bd856902f-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 78890
+        },
+        {
+          "src": "assets/6fa1da3bd856902f-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 109918
+        }
+      ]
+    },
+    "assets/723aa701f0bb74bc.webp": {
+      "src": "assets/723aa701f0bb74bc-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 182334,
+      "after_bytes": 135544,
+      "variants": [
+        {
+          "src": "assets/723aa701f0bb74bc-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 52732
+        },
+        {
+          "src": "assets/723aa701f0bb74bc-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 135544
+        }
+      ]
+    },
+    "assets/778fd3c9e6741359.webp": {
+      "src": "assets/778fd3c9e6741359-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 64374,
+      "after_bytes": 45530,
+      "variants": [
+        {
+          "src": "assets/778fd3c9e6741359-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 32926
+        },
+        {
+          "src": "assets/778fd3c9e6741359-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 45530
+        }
+      ]
+    },
+    "assets/786ce6ad1e95decd.webp": {
+      "src": "assets/786ce6ad1e95decd-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 137546,
+      "after_bytes": 102454,
+      "variants": [
+        {
+          "src": "assets/786ce6ad1e95decd-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 45012
+        },
+        {
+          "src": "assets/786ce6ad1e95decd-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 102454
+        }
+      ]
+    },
+    "assets/78a7509cb21fad66.webp": {
+      "src": "assets/78a7509cb21fad66-opt2.webp",
+      "width": 800,
+      "height": 652,
+      "before_bytes": 134022,
+      "after_bytes": 95254,
+      "variants": [
+        {
+          "src": "assets/78a7509cb21fad66-opt2-w480.webp",
+          "width": 480,
+          "height": 391,
+          "bytes": 43092
+        },
+        {
+          "src": "assets/78a7509cb21fad66-opt2.webp",
+          "width": 800,
+          "height": 652,
+          "bytes": 95254
+        }
+      ]
+    },
+    "assets/7d770eb45fe1d49e.webp": {
+      "src": "assets/7d770eb45fe1d49e-opt2.webp",
+      "width": 1087,
+      "height": 720,
+      "before_bytes": 120594,
+      "after_bytes": 80260,
+      "variants": [
+        {
+          "src": "assets/7d770eb45fe1d49e-opt2-w480.webp",
+          "width": 480,
+          "height": 318,
+          "bytes": 27162
+        },
+        {
+          "src": "assets/7d770eb45fe1d49e-opt2-w800.webp",
+          "width": 800,
+          "height": 530,
+          "bytes": 54354
+        },
+        {
+          "src": "assets/7d770eb45fe1d49e-opt2.webp",
+          "width": 1087,
+          "height": 720,
+          "bytes": 80260
+        }
+      ]
+    },
+    "assets/8401574c1b0bcb03.webp": {
+      "src": "assets/8401574c1b0bcb03-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 65408,
+      "after_bytes": 46554,
+      "variants": [
+        {
+          "src": "assets/8401574c1b0bcb03-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 34340
+        },
+        {
+          "src": "assets/8401574c1b0bcb03-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 46554
+        }
+      ]
+    },
+    "assets/8b556b141ae16f8c.webp": {
+      "src": "assets/8b556b141ae16f8c-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 179428,
+      "after_bytes": 131298,
+      "variants": [
+        {
+          "src": "assets/8b556b141ae16f8c-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 54654
+        },
+        {
+          "src": "assets/8b556b141ae16f8c-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 131298
+        }
+      ]
+    },
+    "assets/8fd651ef34f9a772.webp": {
+      "src": "assets/8fd651ef34f9a772-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 68184,
+      "after_bytes": 48376,
+      "variants": [
+        {
+          "src": "assets/8fd651ef34f9a772-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 33572
+        },
+        {
+          "src": "assets/8fd651ef34f9a772-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 48376
+        }
+      ]
+    },
+    "assets/91b22d1d07cc3753.webp": {
+      "src": "assets/91b22d1d07cc3753-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 157306,
+      "after_bytes": 114914,
+      "variants": [
+        {
+          "src": "assets/91b22d1d07cc3753-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 76872
+        },
+        {
+          "src": "assets/91b22d1d07cc3753-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 114914
+        }
+      ]
+    },
+    "assets/950d3a61d3417da7.webp": {
+      "src": "assets/950d3a61d3417da7-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 170452,
+      "after_bytes": 126942,
+      "variants": [
+        {
+          "src": "assets/950d3a61d3417da7-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 50186
+        },
+        {
+          "src": "assets/950d3a61d3417da7-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 126942
+        }
+      ]
+    },
+    "assets/9812c308b92e6a84.webp": {
+      "src": "assets/9812c308b92e6a84-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 67942,
+      "after_bytes": 44146,
+      "variants": [
+        {
+          "src": "assets/9812c308b92e6a84-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 20402
+        },
+        {
+          "src": "assets/9812c308b92e6a84-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 44146
+        }
+      ]
+    },
+    "assets/98a35ccd7fa6fa97.webp": {
+      "src": "assets/98a35ccd7fa6fa97-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 59738,
+      "after_bytes": 41088,
+      "variants": [
+        {
+          "src": "assets/98a35ccd7fa6fa97-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 29602
+        },
+        {
+          "src": "assets/98a35ccd7fa6fa97-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 41088
+        }
+      ]
+    },
+    "assets/9c9f679324abac30.webp": {
+      "src": "assets/9c9f679324abac30-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 68756,
+      "after_bytes": 48202,
+      "variants": [
+        {
+          "src": "assets/9c9f679324abac30-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 36316
+        },
+        {
+          "src": "assets/9c9f679324abac30-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 48202
+        }
+      ]
+    },
+    "assets/9d1545f65b98839d.webp": {
+      "src": "assets/9d1545f65b98839d-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 68318,
+      "after_bytes": 49908,
+      "variants": [
+        {
+          "src": "assets/9d1545f65b98839d-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 36412
+        },
+        {
+          "src": "assets/9d1545f65b98839d-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 49908
+        }
+      ]
+    },
+    "assets/9db3b0726eeb7921.webp": {
+      "src": "assets/9db3b0726eeb7921-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 163874,
+      "after_bytes": 120290,
+      "variants": [
+        {
+          "src": "assets/9db3b0726eeb7921-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 43180
+        },
+        {
+          "src": "assets/9db3b0726eeb7921-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 120290
+        }
+      ]
+    },
+    "assets/9fd646c219b50319.webp": {
+      "src": "assets/9fd646c219b50319-opt2.webp",
+      "width": 960,
+      "height": 640,
+      "before_bytes": 30510,
+      "after_bytes": 20666,
+      "variants": [
+        {
+          "src": "assets/9fd646c219b50319-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 9206
+        },
+        {
+          "src": "assets/9fd646c219b50319-opt2-w800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 16684
+        },
+        {
+          "src": "assets/9fd646c219b50319-opt2.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 20666
+        }
+      ]
+    },
+    "assets/a02df7463f26ef29.webp": {
+      "src": "assets/a02df7463f26ef29-opt2.webp",
+      "width": 800,
+      "height": 462,
+      "before_bytes": 35552,
+      "after_bytes": 19358,
+      "variants": [
+        {
+          "src": "assets/a02df7463f26ef29-opt2-w480.webp",
+          "width": 480,
+          "height": 277,
+          "bytes": 6898
+        },
+        {
+          "src": "assets/a02df7463f26ef29-opt2.webp",
+          "width": 800,
+          "height": 462,
+          "bytes": 19358
+        }
+      ]
+    },
+    "assets/a06d82bef0f68a7c.webp": {
+      "src": "assets/a06d82bef0f68a7c-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 125226,
+      "after_bytes": 92626,
+      "variants": [
+        {
+          "src": "assets/a06d82bef0f68a7c-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 66068
+        },
+        {
+          "src": "assets/a06d82bef0f68a7c-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 92626
+        }
+      ]
+    },
+    "assets/a0c3a82d6eacbcd6.webp": {
+      "src": "assets/a0c3a82d6eacbcd6-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 76644,
+      "after_bytes": 55734,
+      "variants": [
+        {
+          "src": "assets/a0c3a82d6eacbcd6-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 41362
+        },
+        {
+          "src": "assets/a0c3a82d6eacbcd6-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 55734
+        }
+      ]
+    },
+    "assets/a1a6244311370b09.webp": {
+      "src": "assets/a1a6244311370b09-opt2.webp",
+      "width": 585,
+      "height": 780,
+      "before_bytes": 134972,
+      "after_bytes": 97400,
+      "variants": [
+        {
+          "src": "assets/a1a6244311370b09-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 66198
+        },
+        {
+          "src": "assets/a1a6244311370b09-opt2.webp",
+          "width": 585,
+          "height": 780,
+          "bytes": 97400
+        }
+      ]
+    },
+    "assets/a6107dfcc40e5b76.webp": {
+      "src": "assets/a6107dfcc40e5b76-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 46106,
+      "after_bytes": 32250,
+      "variants": [
+        {
+          "src": "assets/a6107dfcc40e5b76-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 25718
+        },
+        {
+          "src": "assets/a6107dfcc40e5b76-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 32250
+        }
+      ]
+    },
+    "assets/a9e8f3ebba6f9b1c.webp": {
+      "src": "assets/a9e8f3ebba6f9b1c-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 87268,
+      "after_bytes": 63886,
+      "variants": [
+        {
+          "src": "assets/a9e8f3ebba6f9b1c-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 45272
+        },
+        {
+          "src": "assets/a9e8f3ebba6f9b1c-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 63886
+        }
+      ]
+    },
+    "assets/aa700cc065b390ef.webp": {
+      "src": "assets/aa700cc065b390ef-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 171182,
+      "after_bytes": 126588,
+      "variants": [
+        {
+          "src": "assets/aa700cc065b390ef-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 52068
+        },
+        {
+          "src": "assets/aa700cc065b390ef-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 126588
+        }
+      ]
+    },
+    "assets/af6172c0082f85de.webp": {
+      "src": "assets/af6172c0082f85de-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 109874,
+      "after_bytes": 76086,
+      "variants": [
+        {
+          "src": "assets/af6172c0082f85de-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 34530
+        },
+        {
+          "src": "assets/af6172c0082f85de-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 76086
+        }
+      ]
+    },
+    "assets/b15e219a96de7ab1.webp": {
+      "src": "assets/b15e219a96de7ab1-opt2.webp",
+      "width": 585,
+      "height": 780,
+      "before_bytes": 132664,
+      "after_bytes": 93284,
+      "variants": [
+        {
+          "src": "assets/b15e219a96de7ab1-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 68094
+        },
+        {
+          "src": "assets/b15e219a96de7ab1-opt2.webp",
+          "width": 585,
+          "height": 780,
+          "bytes": 93284
+        }
+      ]
+    },
+    "assets/b40dd35715f3b7bc.webp": {
+      "src": "assets/b40dd35715f3b7bc-opt2.webp",
+      "width": 1080,
+      "height": 664,
+      "before_bytes": 76418,
+      "after_bytes": 52446,
+      "variants": [
+        {
+          "src": "assets/b40dd35715f3b7bc-opt2-w480.webp",
+          "width": 480,
+          "height": 295,
+          "bytes": 22254
+        },
+        {
+          "src": "assets/b40dd35715f3b7bc-opt2-w800.webp",
+          "width": 800,
+          "height": 492,
+          "bytes": 37962
+        },
+        {
+          "src": "assets/b40dd35715f3b7bc-opt2.webp",
+          "width": 1080,
+          "height": 664,
+          "bytes": 52446
+        }
+      ]
+    },
+    "assets/b52f03633bb12b21.webp": {
+      "src": "assets/b52f03633bb12b21-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 43560,
+      "after_bytes": 29786,
+      "variants": [
+        {
+          "src": "assets/b52f03633bb12b21-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 23236
+        },
+        {
+          "src": "assets/b52f03633bb12b21-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 29786
+        }
+      ]
+    },
+    "assets/bb44611dbcb92ea9.webp": {
+      "src": "assets/bb44611dbcb92ea9-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 63392,
+      "after_bytes": 44906,
+      "variants": [
+        {
+          "src": "assets/bb44611dbcb92ea9-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 33010
+        },
+        {
+          "src": "assets/bb44611dbcb92ea9-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 44906
+        }
+      ]
+    },
+    "assets/bed95f4054891202.webp": {
+      "src": "assets/bed95f4054891202-opt2.webp",
+      "width": 1138,
+      "height": 759,
+      "before_bytes": 77816,
+      "after_bytes": 49962,
+      "variants": [
+        {
+          "src": "assets/bed95f4054891202-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 17152
+        },
+        {
+          "src": "assets/bed95f4054891202-opt2-w800.webp",
+          "width": 800,
+          "height": 534,
+          "bytes": 32660
+        },
+        {
+          "src": "assets/bed95f4054891202-opt2.webp",
+          "width": 1138,
+          "height": 759,
+          "bytes": 49962
+        }
+      ]
+    },
+    "assets/c17c86191712e2e2.webp": {
+      "src": "assets/c17c86191712e2e2-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 64118,
+      "after_bytes": 39856,
+      "variants": [
+        {
+          "src": "assets/c17c86191712e2e2-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 20346
+        },
+        {
+          "src": "assets/c17c86191712e2e2-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 39856
+        }
+      ]
+    },
+    "assets/c1e9994c6917e303.webp": {
+      "src": "assets/c1e9994c6917e303-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 125950,
+      "after_bytes": 88338,
+      "variants": [
+        {
+          "src": "assets/c1e9994c6917e303-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 42042
+        },
+        {
+          "src": "assets/c1e9994c6917e303-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 88338
+        }
+      ]
+    },
+    "assets/c8443c5301e8c276.webp": {
+      "src": "assets/c8443c5301e8c276-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 87372,
+      "after_bytes": 62916,
+      "variants": [
+        {
+          "src": "assets/c8443c5301e8c276-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 43714
+        },
+        {
+          "src": "assets/c8443c5301e8c276-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 62916
+        }
+      ]
+    },
+    "assets/c90b7f6bc88528c9.webp": {
+      "src": "assets/c90b7f6bc88528c9-opt2.webp",
+      "width": 1080,
+      "height": 674,
+      "before_bytes": 89956,
+      "after_bytes": 57612,
+      "variants": [
+        {
+          "src": "assets/c90b7f6bc88528c9-opt2-w480.webp",
+          "width": 480,
+          "height": 300,
+          "bytes": 20464
+        },
+        {
+          "src": "assets/c90b7f6bc88528c9-opt2-w800.webp",
+          "width": 800,
+          "height": 499,
+          "bytes": 39960
+        },
+        {
+          "src": "assets/c90b7f6bc88528c9-opt2.webp",
+          "width": 1080,
+          "height": 674,
+          "bytes": 57612
+        }
+      ]
+    },
+    "assets/ca74d86bbf6c3bac.webp": {
+      "src": "assets/ca74d86bbf6c3bac-opt2.webp",
+      "width": 1920,
+      "height": 1089,
+      "before_bytes": 93366,
+      "after_bytes": 65240,
+      "variants": [
+        {
+          "src": "assets/ca74d86bbf6c3bac-opt2-w480.webp",
+          "width": 480,
+          "height": 272,
+          "bytes": 6808
+        },
+        {
+          "src": "assets/ca74d86bbf6c3bac-opt2-w800.webp",
+          "width": 800,
+          "height": 454,
+          "bytes": 13588
+        },
+        {
+          "src": "assets/ca74d86bbf6c3bac-opt2-w1280.webp",
+          "width": 1280,
+          "height": 726,
+          "bytes": 25114
+        },
+        {
+          "src": "assets/ca74d86bbf6c3bac-opt2.webp",
+          "width": 1920,
+          "height": 1089,
+          "bytes": 65240
+        }
+      ]
+    },
+    "assets/ccb175428257ad14.webp": {
+      "src": "assets/ccb175428257ad14-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 166502,
+      "after_bytes": 120512,
+      "variants": [
+        {
+          "src": "assets/ccb175428257ad14-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 78716
+        },
+        {
+          "src": "assets/ccb175428257ad14-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 120512
+        }
+      ]
+    },
+    "assets/cd3f441608eb7c35.webp": {
+      "src": "assets/cd3f441608eb7c35-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 48388,
+      "after_bytes": 31652,
+      "variants": [
+        {
+          "src": "assets/cd3f441608eb7c35-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 16584
+        },
+        {
+          "src": "assets/cd3f441608eb7c35-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 31652
+        }
+      ]
+    },
+    "assets/d055a481ca043f45.webp": {
+      "src": "assets/d055a481ca043f45-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 91034,
+      "after_bytes": 58442,
+      "variants": [
+        {
+          "src": "assets/d055a481ca043f45-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 27588
+        },
+        {
+          "src": "assets/d055a481ca043f45-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 58442
+        }
+      ]
+    },
+    "assets/d0b7b28962f10d06.webp": {
+      "src": "assets/d0b7b28962f10d06-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 122564,
+      "after_bytes": 85360,
+      "variants": [
+        {
+          "src": "assets/d0b7b28962f10d06-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 41652
+        },
+        {
+          "src": "assets/d0b7b28962f10d06-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 85360
+        }
+      ]
+    },
+    "assets/d399028ad098efdf.webp": {
+      "src": "assets/d399028ad098efdf-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 100320,
+      "after_bytes": 69606,
+      "variants": [
+        {
+          "src": "assets/d399028ad098efdf-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 53124
+        },
+        {
+          "src": "assets/d399028ad098efdf-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 69606
+        }
+      ]
+    },
+    "assets/d42b065b7b948a03.webp": {
+      "src": "assets/d42b065b7b948a03-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 176468,
+      "after_bytes": 123068,
+      "variants": [
+        {
+          "src": "assets/d42b065b7b948a03-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 79160
+        },
+        {
+          "src": "assets/d42b065b7b948a03-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 123068
+        }
+      ]
+    },
+    "assets/ddc27a9f0a9a0d8b.webp": {
+      "src": "assets/ddc27a9f0a9a0d8b-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 85664,
+      "after_bytes": 61184,
+      "variants": [
+        {
+          "src": "assets/ddc27a9f0a9a0d8b-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 43616
+        },
+        {
+          "src": "assets/ddc27a9f0a9a0d8b-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 61184
+        }
+      ]
+    },
+    "assets/dde5752e205d77d3.webp": {
+      "src": "assets/dde5752e205d77d3-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 53258,
+      "after_bytes": 39144,
+      "variants": [
+        {
+          "src": "assets/dde5752e205d77d3-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 32090
+        },
+        {
+          "src": "assets/dde5752e205d77d3-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 39144
+        }
+      ]
+    },
+    "assets/dec31faeea8a50f0.webp": {
+      "src": "assets/dec31faeea8a50f0-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 141682,
+      "after_bytes": 102098,
+      "variants": [
+        {
+          "src": "assets/dec31faeea8a50f0-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 47038
+        },
+        {
+          "src": "assets/dec31faeea8a50f0-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 102098
+        }
+      ]
+    },
+    "assets/def6d9565bc1245b.webp": {
+      "src": "assets/def6d9565bc1245b-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 173000,
+      "after_bytes": 131164,
+      "variants": [
+        {
+          "src": "assets/def6d9565bc1245b-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 79136
+        },
+        {
+          "src": "assets/def6d9565bc1245b-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 131164
+        }
+      ]
+    },
+    "assets/e42e854d3bdef689.webp": {
+      "src": "assets/e42e854d3bdef689-opt2.webp",
+      "width": 600,
+      "height": 800,
+      "before_bytes": 116390,
+      "after_bytes": 83222,
+      "variants": [
+        {
+          "src": "assets/e42e854d3bdef689-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 62122
+        },
+        {
+          "src": "assets/e42e854d3bdef689-opt2.webp",
+          "width": 600,
+          "height": 800,
+          "bytes": 83222
+        }
+      ]
+    },
+    "assets/e4aefaed84d2cd25.webp": {
+      "src": "assets/e4aefaed84d2cd25-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 174980,
+      "after_bytes": 127584,
+      "variants": [
+        {
+          "src": "assets/e4aefaed84d2cd25-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 50892
+        },
+        {
+          "src": "assets/e4aefaed84d2cd25-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 127584
+        }
+      ]
+    },
+    "assets/e8a4577142f7e0a0.webp": {
+      "src": "assets/e8a4577142f7e0a0-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 45952,
+      "after_bytes": 30200,
+      "variants": [
+        {
+          "src": "assets/e8a4577142f7e0a0-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22294
+        },
+        {
+          "src": "assets/e8a4577142f7e0a0-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 30200
+        }
+      ]
+    },
+    "assets/emblema-web.webp": {
+      "src": "assets/emblema-web-opt2.webp",
+      "width": 768,
+      "height": 768,
+      "before_bytes": 189770,
+      "after_bytes": 125086,
+      "variants": [
+        {
+          "src": "assets/emblema-web-opt2-w480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 68826
+        },
+        {
+          "src": "assets/emblema-web-opt2.webp",
+          "width": 768,
+          "height": 768,
+          "bytes": 125086
+        }
+      ]
+    },
+    "assets/f1f0c4aed696c5fc.webp": {
+      "src": "assets/f1f0c4aed696c5fc-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 55036,
+      "after_bytes": 37868,
+      "variants": [
+        {
+          "src": "assets/f1f0c4aed696c5fc-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 27692
+        },
+        {
+          "src": "assets/f1f0c4aed696c5fc-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 37868
+        }
+      ]
+    },
+    "assets/f3da41c4353cb6ea.webp": {
+      "src": "assets/f3da41c4353cb6ea-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 168260,
+      "after_bytes": 121272,
+      "variants": [
+        {
+          "src": "assets/f3da41c4353cb6ea-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 49812
+        },
+        {
+          "src": "assets/f3da41c4353cb6ea-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 121272
+        }
+      ]
+    },
+    "assets/f5ae1f4dc7c238d7.webp": {
+      "src": "assets/f5ae1f4dc7c238d7-opt2.webp",
+      "width": 585,
+      "height": 439,
+      "before_bytes": 71320,
+      "after_bytes": 51394,
+      "variants": [
+        {
+          "src": "assets/f5ae1f4dc7c238d7-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 38094
+        },
+        {
+          "src": "assets/f5ae1f4dc7c238d7-opt2.webp",
+          "width": 585,
+          "height": 439,
+          "bytes": 51394
+        }
+      ]
+    },
+    "assets/f678d6541932c8ac.webp": {
+      "src": "assets/f678d6541932c8ac-opt2.webp",
+      "width": 800,
+      "height": 600,
+      "before_bytes": 133838,
+      "after_bytes": 96326,
+      "variants": [
+        {
+          "src": "assets/f678d6541932c8ac-opt2-w480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 44258
+        },
+        {
+          "src": "assets/f678d6541932c8ac-opt2.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 96326
+        }
+      ]
+    },
+    "assets/fdfc603e1bff8117.webp": {
+      "src": "assets/fdfc603e1bff8117-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 39700,
+      "after_bytes": 27036,
+      "variants": [
+        {
+          "src": "assets/fdfc603e1bff8117-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 20698
+        },
+        {
+          "src": "assets/fdfc603e1bff8117-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 27036
+        }
+      ]
+    },
+    "assets/fe23e3d219f56cc9.webp": {
+      "src": "assets/fe23e3d219f56cc9-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 35126,
+      "after_bytes": 23804,
+      "variants": [
+        {
+          "src": "assets/fe23e3d219f56cc9-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 18882
+        },
+        {
+          "src": "assets/fe23e3d219f56cc9-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 23804
+        }
+      ]
+    },
+    "assets/fe5bbad3c1534115.webp": {
+      "src": "assets/fe5bbad3c1534115-opt2.webp",
+      "width": 2400,
+      "height": 1835,
+      "before_bytes": 119874,
+      "after_bytes": 96346,
+      "variants": [
+        {
+          "src": "assets/fe5bbad3c1534115-opt2-w480.webp",
+          "width": 480,
+          "height": 367,
+          "bytes": 12064
+        },
+        {
+          "src": "assets/fe5bbad3c1534115-opt2-w800.webp",
+          "width": 800,
+          "height": 612,
+          "bytes": 21974
+        },
+        {
+          "src": "assets/fe5bbad3c1534115-opt2-w1280.webp",
+          "width": 1280,
+          "height": 979,
+          "bytes": 37716
+        },
+        {
+          "src": "assets/fe5bbad3c1534115-opt2.webp",
+          "width": 2400,
+          "height": 1835,
+          "bytes": 96346
+        }
+      ]
+    },
+    "assets/feab491b7298ab72.webp": {
+      "src": "assets/feab491b7298ab72-opt2.webp",
+      "width": 585,
+      "height": 390,
+      "before_bytes": 73252,
+      "after_bytes": 52076,
+      "variants": [
+        {
+          "src": "assets/feab491b7298ab72-opt2-w480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 36536
+        },
+        {
+          "src": "assets/feab491b7298ab72-opt2.webp",
+          "width": 585,
+          "height": 390,
+          "bytes": 52076
+        }
+      ]
+    },
+    "assets/ffafd834135cec51.webp": {
+      "src": "assets/ffafd834135cec51-opt2.webp",
+      "width": 1080,
+      "height": 672,
+      "before_bytes": 116794,
+      "after_bytes": 79868,
+      "variants": [
+        {
+          "src": "assets/ffafd834135cec51-opt2-w480.webp",
+          "width": 480,
+          "height": 299,
+          "bytes": 26916
+        },
+        {
+          "src": "assets/ffafd834135cec51-opt2-w800.webp",
+          "width": 800,
+          "height": 498,
+          "bytes": 54570
+        },
+        {
+          "src": "assets/ffafd834135cec51-opt2.webp",
+          "width": 1080,
+          "height": 672,
+          "bytes": 79868
+        }
+      ]
+    },
+    "assets/home-banner-2-v2.webp": {
+      "src": "assets/home-banner-2-v2-opt2.webp",
+      "width": 1280,
+      "height": 1259,
+      "before_bytes": 177478,
+      "after_bytes": 114010,
+      "variants": [
+        {
+          "src": "assets/home-banner-2-v2-opt2-w480.webp",
+          "width": 480,
+          "height": 472,
+          "bytes": 34204
+        },
+        {
+          "src": "assets/home-banner-2-v2-opt2-w800.webp",
+          "width": 800,
+          "height": 787,
+          "bytes": 65730
+        },
+        {
+          "src": "assets/home-banner-2-v2-opt2.webp",
+          "width": 1280,
+          "height": 1259,
+          "bytes": 114010
+        }
+      ]
+    },
+    "assets/maestro-2027/autoridades-1995.webp": {
+      "src": "assets/maestro-2027/autoridades-1995-opt2.webp",
+      "width": 1080,
+      "height": 788,
+      "before_bytes": 85570,
+      "after_bytes": 52792,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/autoridades-1995-opt2-w480.webp",
+          "width": 480,
+          "height": 350,
+          "bytes": 21634
+        },
+        {
+          "src": "assets/maestro-2027/autoridades-1995-opt2-w800.webp",
+          "width": 800,
+          "height": 584,
+          "bytes": 38390
+        },
+        {
+          "src": "assets/maestro-2027/autoridades-1995-opt2.webp",
+          "width": 1080,
+          "height": 788,
+          "bytes": 52792
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-1-large.webp": {
+      "src": "assets/maestro-2027/banner-1-large-opt2.webp",
+      "width": 989,
+      "height": 1024,
+      "before_bytes": 78620,
+      "after_bytes": 45030,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-1-large-opt2-w480.webp",
+          "width": 480,
+          "height": 497,
+          "bytes": 20152
+        },
+        {
+          "src": "assets/maestro-2027/banner-1-large-opt2-w800.webp",
+          "width": 800,
+          "height": 828,
+          "bytes": 35620
+        },
+        {
+          "src": "assets/maestro-2027/banner-1-large-opt2.webp",
+          "width": 989,
+          "height": 1024,
+          "bytes": 45030
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-1-mobile.webp": {
+      "src": "assets/maestro-2027/banner-1-mobile-opt2.webp",
+      "width": 800,
+      "height": 828,
+      "before_bytes": 59782,
+      "after_bytes": 34976,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-1-mobile-opt2-w480.webp",
+          "width": 480,
+          "height": 497,
+          "bytes": 20020
+        },
+        {
+          "src": "assets/maestro-2027/banner-1-mobile-opt2.webp",
+          "width": 800,
+          "height": 828,
+          "bytes": 34976
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-2-large.webp": {
+      "src": "assets/maestro-2027/banner-2-large-opt2.webp",
+      "width": 1280,
+      "height": 1259,
+      "before_bytes": 185572,
+      "after_bytes": 112964,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-2-large-opt2-w480.webp",
+          "width": 480,
+          "height": 472,
+          "bytes": 33912
+        },
+        {
+          "src": "assets/maestro-2027/banner-2-large-opt2-w800.webp",
+          "width": 800,
+          "height": 787,
+          "bytes": 65400
+        },
+        {
+          "src": "assets/maestro-2027/banner-2-large-opt2.webp",
+          "width": 1280,
+          "height": 1259,
+          "bytes": 112964
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-2-mobile.webp": {
+      "src": "assets/maestro-2027/banner-2-mobile-opt2.webp",
+      "width": 800,
+      "height": 787,
+      "before_bytes": 104696,
+      "after_bytes": 65764,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-2-mobile-opt2-w480.webp",
+          "width": 480,
+          "height": 472,
+          "bytes": 33732
+        },
+        {
+          "src": "assets/maestro-2027/banner-2-mobile-opt2.webp",
+          "width": 800,
+          "height": 787,
+          "bytes": 65764
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-3-large.webp": {
+      "src": "assets/maestro-2027/banner-3-large-opt2.webp",
+      "width": 1217,
+      "height": 1433,
+      "before_bytes": 122808,
+      "after_bytes": 73562,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-3-large-opt2-w480.webp",
+          "width": 480,
+          "height": 565,
+          "bytes": 24634
+        },
+        {
+          "src": "assets/maestro-2027/banner-3-large-opt2-w800.webp",
+          "width": 800,
+          "height": 942,
+          "bytes": 44602
+        },
+        {
+          "src": "assets/maestro-2027/banner-3-large-opt2.webp",
+          "width": 1217,
+          "height": 1433,
+          "bytes": 73562
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-3-mobile.webp": {
+      "src": "assets/maestro-2027/banner-3-mobile-opt2.webp",
+      "width": 800,
+      "height": 942,
+      "before_bytes": 73728,
+      "after_bytes": 43270,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-3-mobile-opt2-w480.webp",
+          "width": 480,
+          "height": 565,
+          "bytes": 24312
+        },
+        {
+          "src": "assets/maestro-2027/banner-3-mobile-opt2.webp",
+          "width": 800,
+          "height": 942,
+          "bytes": 43270
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-4-large.webp": {
+      "src": "assets/maestro-2027/banner-4-large-opt2.webp",
+      "width": 1024,
+      "height": 960,
+      "before_bytes": 54552,
+      "after_bytes": 29208,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-4-large-opt2-w480.webp",
+          "width": 480,
+          "height": 450,
+          "bytes": 11466
+        },
+        {
+          "src": "assets/maestro-2027/banner-4-large-opt2-w800.webp",
+          "width": 800,
+          "height": 750,
+          "bytes": 21780
+        },
+        {
+          "src": "assets/maestro-2027/banner-4-large-opt2.webp",
+          "width": 1024,
+          "height": 960,
+          "bytes": 29208
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-4-mobile.webp": {
+      "src": "assets/maestro-2027/banner-4-mobile-opt2.webp",
+      "width": 800,
+      "height": 750,
+      "before_bytes": 39188,
+      "after_bytes": 21440,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-4-mobile-opt2-w480.webp",
+          "width": 480,
+          "height": 450,
+          "bytes": 11398
+        },
+        {
+          "src": "assets/maestro-2027/banner-4-mobile-opt2.webp",
+          "width": 800,
+          "height": 750,
+          "bytes": 21440
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-5-large.webp": {
+      "src": "assets/maestro-2027/banner-5-large-opt2.webp",
+      "width": 1536,
+      "height": 1556,
+      "before_bytes": 148642,
+      "after_bytes": 89736,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-5-large-opt2-w480.webp",
+          "width": 480,
+          "height": 486,
+          "bytes": 23350
+        },
+        {
+          "src": "assets/maestro-2027/banner-5-large-opt2-w800.webp",
+          "width": 800,
+          "height": 810,
+          "bytes": 42648
+        },
+        {
+          "src": "assets/maestro-2027/banner-5-large-opt2-w1280.webp",
+          "width": 1280,
+          "height": 1297,
+          "bytes": 73460
+        },
+        {
+          "src": "assets/maestro-2027/banner-5-large-opt2.webp",
+          "width": 1536,
+          "height": 1556,
+          "bytes": 89736
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-5-mobile.webp": {
+      "src": "assets/maestro-2027/banner-5-mobile-opt2.webp",
+      "width": 800,
+      "height": 810,
+      "before_bytes": 67204,
+      "after_bytes": 41638,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-5-mobile-opt2-w480.webp",
+          "width": 480,
+          "height": 486,
+          "bytes": 23186
+        },
+        {
+          "src": "assets/maestro-2027/banner-5-mobile-opt2.webp",
+          "width": 800,
+          "height": 810,
+          "bytes": 41638
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-6-large.webp": {
+      "src": "assets/maestro-2027/banner-6-large-opt2.webp",
+      "width": 1024,
+      "height": 1028,
+      "before_bytes": 145628,
+      "after_bytes": 89364,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-6-large-opt2-w480.webp",
+          "width": 480,
+          "height": 482,
+          "bytes": 34494
+        },
+        {
+          "src": "assets/maestro-2027/banner-6-large-opt2-w800.webp",
+          "width": 800,
+          "height": 803,
+          "bytes": 66636
+        },
+        {
+          "src": "assets/maestro-2027/banner-6-large-opt2.webp",
+          "width": 1024,
+          "height": 1028,
+          "bytes": 89364
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-6-mobile.webp": {
+      "src": "assets/maestro-2027/banner-6-mobile-opt2.webp",
+      "width": 800,
+      "height": 803,
+      "before_bytes": 105394,
+      "after_bytes": 66194,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-6-mobile-opt2-w480.webp",
+          "width": 480,
+          "height": 482,
+          "bytes": 34954
+        },
+        {
+          "src": "assets/maestro-2027/banner-6-mobile-opt2.webp",
+          "width": 800,
+          "height": 803,
+          "bytes": 66194
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-7-large.webp": {
+      "src": "assets/maestro-2027/banner-7-large-opt2.webp",
+      "width": 992,
+      "height": 1068,
+      "before_bytes": 64788,
+      "after_bytes": 37256,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-7-large-opt2-w480.webp",
+          "width": 480,
+          "height": 517,
+          "bytes": 16696
+        },
+        {
+          "src": "assets/maestro-2027/banner-7-large-opt2-w800.webp",
+          "width": 800,
+          "height": 861,
+          "bytes": 29216
+        },
+        {
+          "src": "assets/maestro-2027/banner-7-large-opt2.webp",
+          "width": 992,
+          "height": 1068,
+          "bytes": 37256
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-7-mobile.webp": {
+      "src": "assets/maestro-2027/banner-7-mobile-opt2.webp",
+      "width": 800,
+      "height": 861,
+      "before_bytes": 49060,
+      "after_bytes": 29016,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-7-mobile-opt2-w480.webp",
+          "width": 480,
+          "height": 517,
+          "bytes": 16554
+        },
+        {
+          "src": "assets/maestro-2027/banner-7-mobile-opt2.webp",
+          "width": 800,
+          "height": 861,
+          "bytes": 29016
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-8-large.webp": {
+      "src": "assets/maestro-2027/banner-8-large-opt2.webp",
+      "width": 1600,
+      "height": 1596,
+      "before_bytes": 118254,
+      "after_bytes": 61578,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-8-large-opt2-w480.webp",
+          "width": 480,
+          "height": 479,
+          "bytes": 14128
+        },
+        {
+          "src": "assets/maestro-2027/banner-8-large-opt2-w800.webp",
+          "width": 800,
+          "height": 798,
+          "bytes": 26282
+        },
+        {
+          "src": "assets/maestro-2027/banner-8-large-opt2-w1280.webp",
+          "width": 1280,
+          "height": 1277,
+          "bytes": 46526
+        },
+        {
+          "src": "assets/maestro-2027/banner-8-large-opt2.webp",
+          "width": 1600,
+          "height": 1596,
+          "bytes": 61578
+        }
+      ]
+    },
+    "assets/maestro-2027/banner-8-mobile.webp": {
+      "src": "assets/maestro-2027/banner-8-mobile-opt2.webp",
+      "width": 800,
+      "height": 798,
+      "before_bytes": 48490,
+      "after_bytes": 26486,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/banner-8-mobile-opt2-w480.webp",
+          "width": 480,
+          "height": 479,
+          "bytes": 14114
+        },
+        {
+          "src": "assets/maestro-2027/banner-8-mobile-opt2.webp",
+          "width": 800,
+          "height": 798,
+          "bytes": 26486
+        }
+      ]
+    },
+    "assets/maestro-2027/coa.webp": {
+      "src": "assets/maestro-2027/coa-opt2.webp",
+      "width": 368,
+      "height": 590,
+      "before_bytes": 39836,
+      "after_bytes": 33244,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/coa-opt2.webp",
+          "width": 368,
+          "height": 590,
+          "bytes": 33244
+        }
+      ]
+    },
+    "assets/maestro-2027/comision-directiva.webp": {
+      "src": "assets/maestro-2027/comision-directiva-opt2.webp",
+      "width": 1280,
+      "height": 691,
+      "before_bytes": 129806,
+      "after_bytes": 80154,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/comision-directiva-opt2-w480.webp",
+          "width": 480,
+          "height": 259,
+          "bytes": 19364
+        },
+        {
+          "src": "assets/maestro-2027/comision-directiva-opt2-w800.webp",
+          "width": 800,
+          "height": 432,
+          "bytes": 41640
+        },
+        {
+          "src": "assets/maestro-2027/comision-directiva-opt2.webp",
+          "width": 1280,
+          "height": 691,
+          "bytes": 80154
+        }
+      ]
+    },
+    "assets/maestro-2027/emblema-2027.webp": {
+      "src": "assets/maestro-2027/emblema-2027-opt2.webp",
+      "width": 768,
+      "height": 768,
+      "before_bytes": 121964,
+      "after_bytes": 85516,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/emblema-2027-opt2-w480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 43420
+        },
+        {
+          "src": "assets/maestro-2027/emblema-2027-opt2.webp",
+          "width": 768,
+          "height": 768,
+          "bytes": 85516
+        }
+      ]
+    },
+    "assets/maestro-2027/escuela-buenos-aires.webp": {
+      "src": "assets/maestro-2027/escuela-buenos-aires-opt2.webp",
+      "width": 1080,
+      "height": 835,
+      "before_bytes": 193360,
+      "after_bytes": 130030,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/escuela-buenos-aires-opt2-w480.webp",
+          "width": 480,
+          "height": 371,
+          "bytes": 32352
+        },
+        {
+          "src": "assets/maestro-2027/escuela-buenos-aires-opt2-w800.webp",
+          "width": 800,
+          "height": 619,
+          "bytes": 80040
+        },
+        {
+          "src": "assets/maestro-2027/escuela-buenos-aires-opt2.webp",
+          "width": 1080,
+          "height": 835,
+          "bytes": 130030
+        }
+      ]
+    },
+    "assets/maestro-2027/escuela-posadas.webp": {
+      "src": "assets/maestro-2027/escuela-posadas-opt2.webp",
+      "width": 1080,
+      "height": 696,
+      "before_bytes": 165848,
+      "after_bytes": 109136,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/escuela-posadas-opt2-w480.webp",
+          "width": 480,
+          "height": 309,
+          "bytes": 30954
+        },
+        {
+          "src": "assets/maestro-2027/escuela-posadas-opt2-w800.webp",
+          "width": 800,
+          "height": 516,
+          "bytes": 72164
+        },
+        {
+          "src": "assets/maestro-2027/escuela-posadas-opt2.webp",
+          "width": 1080,
+          "height": 696,
+          "bytes": 109136
+        }
+      ]
+    },
+    "assets/maestro-2027/fawk.webp": {
+      "src": "assets/maestro-2027/fawk-opt2.webp",
+      "width": 640,
+      "height": 640,
+      "before_bytes": 45872,
+      "after_bytes": 31278,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/fawk-opt2-w480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 21746
+        },
+        {
+          "src": "assets/maestro-2027/fawk-opt2.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 31278
+        }
+      ]
+    },
+    "assets/maestro-2027/kwoon-1973.webp": {
+      "src": "assets/maestro-2027/kwoon-1973-opt2.webp",
+      "width": 1080,
+      "height": 750,
+      "before_bytes": 101468,
+      "after_bytes": 61844,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/kwoon-1973-opt2-w480.webp",
+          "width": 480,
+          "height": 333,
+          "bytes": 24206
+        },
+        {
+          "src": "assets/maestro-2027/kwoon-1973-opt2-w800.webp",
+          "width": 800,
+          "height": 556,
+          "bytes": 43986
+        },
+        {
+          "src": "assets/maestro-2027/kwoon-1973-opt2.webp",
+          "width": 1080,
+          "height": 750,
+          "bytes": 61844
+        }
+      ]
+    },
+    "assets/maestro-2027/kwoon-1975.webp": {
+      "src": "assets/maestro-2027/kwoon-1975-opt2.webp",
+      "width": 1080,
+      "height": 859,
+      "before_bytes": 95720,
+      "after_bytes": 58246,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/kwoon-1975-opt2-w480.webp",
+          "width": 480,
+          "height": 382,
+          "bytes": 21494
+        },
+        {
+          "src": "assets/maestro-2027/kwoon-1975-opt2-w800.webp",
+          "width": 800,
+          "height": 636,
+          "bytes": 40972
+        },
+        {
+          "src": "assets/maestro-2027/kwoon-1975-opt2.webp",
+          "width": 1080,
+          "height": 859,
+          "bytes": 58246
+        }
+      ]
+    },
+    "assets/maestro-2027/sello-ancestral.webp": {
+      "src": "assets/maestro-2027/sello-ancestral-opt2.webp",
+      "width": 1080,
+      "height": 1080,
+      "before_bytes": 87844,
+      "after_bytes": 50020,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/sello-ancestral-opt2-w480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 15792
+        },
+        {
+          "src": "assets/maestro-2027/sello-ancestral-opt2-w800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 33676
+        },
+        {
+          "src": "assets/maestro-2027/sello-ancestral-opt2.webp",
+          "width": 1080,
+          "height": 1080,
+          "bytes": 50020
+        }
+      ]
+    },
+    "assets/maestro-2027/shi-gung-1978.webp": {
+      "src": "assets/maestro-2027/shi-gung-1978-opt2.webp",
+      "width": 1080,
+      "height": 1200,
+      "before_bytes": 78372,
+      "after_bytes": 43670,
+      "variants": [
+        {
+          "src": "assets/maestro-2027/shi-gung-1978-opt2-w480.webp",
+          "width": 480,
+          "height": 533,
+          "bytes": 15224
+        },
+        {
+          "src": "assets/maestro-2027/shi-gung-1978-opt2-w800.webp",
+          "width": 800,
+          "height": 889,
+          "bytes": 29216
+        },
+        {
+          "src": "assets/maestro-2027/shi-gung-1978-opt2.webp",
+          "width": 1080,
+          "height": 1200,
+          "bytes": 43670
+        }
+      ]
+    },
+    "assets/practica-final.webp": {
+      "src": "assets/practica-final-opt2.webp",
+      "width": 586,
+      "height": 719,
+      "before_bytes": 79374,
+      "after_bytes": 56246,
+      "variants": [
+        {
+          "src": "assets/practica-final-opt2-w480.webp",
+          "width": 480,
+          "height": 589,
+          "bytes": 42974
+        },
+        {
+          "src": "assets/practica-final-opt2.webp",
+          "width": 586,
+          "height": 719,
+          "bytes": 56246
+        }
+      ]
+    },
+    "assets/practica-inicio.webp": {
+      "src": "assets/practica-inicio-opt2.webp",
+      "width": 774,
+      "height": 1032,
+      "before_bytes": 111972,
+      "after_bytes": 75320,
+      "variants": [
+        {
+          "src": "assets/practica-inicio-opt2-w480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 39266
+        },
+        {
+          "src": "assets/practica-inicio-opt2.webp",
+          "width": 774,
+          "height": 1032,
+          "bytes": 75320
+        }
+      ]
+    }
+  },
+  "originals_preserved": true,
+  "cropping": false,
+  "before_bytes": 13832670,
+  "after_bytes": 9689076
+}
