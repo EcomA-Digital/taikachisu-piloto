@@ -234,7 +234,7 @@ function showRoute(initial=false) {
   window.SchoolSEO?.apply();
   dispatchEvent(new Event('taika:page'));
 }
-fetch('content.json?v=20261023-maestro1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
+fetch('content.json?v=20261023-images2').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   records=data.records;
   sedes=readSedes(records.find(item=>item.slug==='sedes'));
   const articles=await SchoolFeatures.init(records,sedes);
