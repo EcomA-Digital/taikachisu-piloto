@@ -1,15 +1,15 @@
-/* Institutional strip and restrained editorial footer. */
+/* Compact institutional seals integrated into the dark footer. */
 footer.school-footer{padding:0;background:#080907}
-.footer-institutions{background:var(--paper);color:var(--muted);padding:36px var(--side) 26px;text-align:center}
-.footer-institutions ul{list-style:none;margin:0 auto 22px;padding:0;max-width:1050px;display:grid;grid-template-columns:repeat(5,1fr);gap:32px;align-items:center}
+.footer-institutions{margin-top:22px;max-width:290px;color:#92958b;text-align:left}
+.footer-institutions ul{list-style:none;margin:0 0 12px;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:center}
 .footer-institutions li{display:flex;align-items:center;justify-content:center}
-.footer-institutions img{width:120px;height:88px;object-fit:contain;max-width:100%}
-.footer-institutions p{font-size:12px;line-height:1.6;margin:0 auto;max-width:70ch}
+.footer-institutions img{width:44px;height:44px;object-fit:contain;max-width:100%;filter:grayscale(1) invert(1);mix-blend-mode:screen;opacity:.65}
+.footer-institutions p{font-size:10px;line-height:1.6;margin:0;max-width:44ch}
 .footer-content{padding:56px var(--side) 26px;max-width:1600px;margin:auto}
-.school-footer .footer-top{display:grid;grid-template-columns:1.15fr .85fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
+.school-footer .footer-top{display:grid;grid-template-columns:1.1fr 1.15fr 1fr;gap:clamp(28px,3.5vw,56px);align-items:start}
 .footer-identity>p{font-size:14px;line-height:1.8;color:#bdbdb5;margin:24px 0 0}
 .school-footer h2{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;letter-spacing:.03em;color:var(--paper);margin:0 0 18px;line-height:1.5}
-.footer-navigation ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.footer-navigation ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
 .footer-navigation a{display:inline-flex;align-items:center;min-height:36px;font-size:14px;color:#bdbdb5}
 .footer-contact address{font-style:normal;font-size:14px;color:#bdbdb5;line-height:1.8;display:grid;gap:12px}
 .footer-contact address>span{font-size:12px;color:#92958b;margin-bottom:-10px}
@@ -28,4 +28,4 @@ footer.school-footer{padding:0;background:#080907}
 .school-footer .footer-utilities :is(a,button){font:inherit;font-size:12px;color:#a3a399;min-height:44px;display:inline-flex;align-items:center;margin:0;padding:0;border:0;background:none;cursor:pointer;text-decoration:none}
 .school-footer .ecoma-credit{opacity:.6}
 @media(max-width:1000px){.school-footer .footer-top{grid-template-columns:1fr 1fr;gap:36px}.footer-identity{grid-column:1/-1}.footer-identity>p{margin-top:16px}.footer-legal{gap:12px 24px}}
-@media(max-width:760px){.footer-institutions{padding:28px 24px 24px}.footer-institutions ul{grid-template-columns:repeat(6,1fr);gap:24px 16px;max-width:420px;margin-bottom:22px}.footer-institutions li{grid-column:span 2}.footer-institutions li:nth-child(4){grid-column:2/span 2}.footer-institutions li:nth-child(5){grid-column:4/span 2}.footer-institutions img{height:70px;width:96px}.footer-institutions p{font-size:11px}.footer-content{padding:36px 24px 24px}.school-footer .footer-top{grid-template-columns:1fr;gap:32px}.footer-identity{grid-column:auto}.footer-identity .brand span{font-size:22px}.footer-navigation ul{grid-template-columns:1fr 1fr;gap:0 20px}.footer-navigation a{min-height:44px}.school-footer .social-links{margin-top:20px;gap:8px 22px}.school-footer .social-links a{font-size:13px}.school-footer .dedication{margin-top:32px;font-size:20px;padding:24px 0}.school-footer .footer-bottom{align-items:flex-start;gap:20px}.footer-legal{display:block}.footer-utilities{margin-top:8px;gap:0 24px}.school-footer .ecoma-credit{align-self:flex-start}}
+@media(max-width:760px){.footer-content{padding:36px 24px 24px}.school-footer .footer-top{grid-template-columns:1fr;gap:32px}.footer-identity{grid-column:auto}.footer-identity .brand span{font-size:22px}.footer-navigation ul{grid-template-columns:1fr 1fr;gap:0 20px}.footer-navigation a{min-height:44px}.school-footer .social-links{margin-top:20px;gap:8px 22px}.school-footer .social-links a{font-size:13px}.school-footer .dedication{margin-top:32px;font-size:20px;padding:24px 0}.school-footer .footer-bottom{align-items:flex-start;gap:20px}.footer-legal{display:block}.footer-utilities{margin-top:8px;gap:0 24px}.school-footer .ecoma-credit{align-self:flex-start}}
