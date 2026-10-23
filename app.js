@@ -59,7 +59,6 @@ else {
   document.body.classList.add('intro-pending'); header.inert = true;
   document.querySelector('#home').inert = true; document.querySelector('footer').inert = true;
 }
-if (!introDismissed) stopFire = createLogoFire(document.querySelector('#logo-fire'));
 const home = document.querySelector('#home');
 const reading = document.querySelector('#reading');
 const locality = document.querySelector('#locality');
@@ -90,6 +89,7 @@ function deactivateIntro() { dismissIntro(true); }
 function formatReading(record) {
   const content=document.querySelector('#reading-content');
   content.dataset.kind=record.slug;
+  content.classList.toggle('maestro-article', Boolean(record.editorialSource));
   content.querySelectorAll('h1').forEach(heading=>{const replacement=document.createElement('h2');replacement.innerHTML=heading.innerHTML;heading.replaceWith(replacement);});
   SchoolFeatures.prepareVideos(content);
 
@@ -274,7 +274,7 @@ function renderRoute(initial=false) {
     home.hidden=false;reading.hidden=true;document.title='Taikachisu · Wushu Kung Fu';
     if(hash || !initial) {
       deactivateIntro();
-      const target = ['sedes','clases','escuela','articulos','practice-film'].includes(slug) ? document.getElementById(slug) : null;
+      const target = ['sedes','asociacion','escuela','estilo','articulos','practice-film'].includes(slug) ? document.getElementById(slug) : null;
       requestAnimationFrame(()=> target ? target.scrollIntoView({behavior:reducedMotion?'instant':'smooth'}) : scrollTo({top:0,behavior:'instant'}));
     }
     observeSections();
@@ -289,15 +289,8 @@ function showRoute(initial=false) {
   window.SchoolSEO?.apply();
   dispatchEvent(new Event('taika:page'));
 }
-fetch('content.json?v=20261010-photos1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
+fetch('content.json?v=20261023-maestro1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   records=data.records;
-  document.querySelector('#practice-image').src='assets/practica-inicio.webp';
-  const practice=records.find(item=>item.slug==='la-practica-de-taikachisu');
-  const school=records.find(item=>item.slug==='escuela');
-  document.querySelector('#practice-text').textContent=documentFor(practice).querySelector('p')?.textContent || '';
-  document.querySelector('#school-text').textContent=[...documentFor(school).querySelectorAll('p')].find(p=>p.textContent.trim().length>30)?.textContent || '';
-  const style=records.find(r=>r.slug==='que-es-taikachisu-wushu-kung-fu');
-  document.querySelector('#style-text').textContent=style?[...documentFor(style).querySelectorAll('p')].find(p=>p.textContent.trim().length>40)?.textContent||'':'';
   sedes=readSedes(records.find(item=>item.slug==='sedes'));
   const articles=await SchoolFeatures.init(records,sedes);
   records=[...records.filter(item=>item.type!=='post'),...articles];

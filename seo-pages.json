@@ -388,10 +388,10 @@
     },
     "institucional": {
       "title": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-      "description": "Aquí podrás leer la cronología de la ASOCIACIÓN TAIKACHISU (1975) desde sus comienzos hasta la actualidad, sus Objetivos, Organización y Reconocimientos.",
-      "image": "https://taikachisu.com/preview/assets/385666fbfa4179c6.webp",
-      "imageAlt": "Institucional",
-      "type": "website",
+      "description": "La Asociación Taikachisu Wushu Kung Fu Argentina fue la primera institución oficial de la Escuela Taikachisu en el país. Desde su creación, organiza y…",
+      "image": "https://taikachisu.com/preview/assets/maestro-2027/comision-directiva.webp",
+      "imageAlt": "Asociación Taikachisu Wushu Kung Fu Argentina",
+      "type": "article",
       "schema": {
         "@context": "https://schema.org",
         "@graph": [
@@ -422,7 +422,7 @@
             "@id": "https://taikachisu.com/preview/institucional/",
             "url": "https://taikachisu.com/preview/institucional/",
             "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-            "description": "Aquí podrás leer la cronología de la ASOCIACIÓN TAIKACHISU (1975) desde sus comienzos hasta la actualidad, sus Objetivos, Organización y Reconocimientos.",
+            "description": "La Asociación Taikachisu Wushu Kung Fu Argentina fue la primera institución oficial de la Escuela Taikachisu en el país. Desde su creación, organiza y…",
             "inLanguage": "es-AR",
             "isPartOf": {
               "@id": "https://taikachisu.com/preview/#website"
@@ -444,22 +444,53 @@
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Institucional",
+                "name": "El camino marcial",
+                "item": "https://taikachisu.com/preview/camino-marcial/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Asociación Taikachisu Wushu Kung Fu Argentina",
                 "item": "https://taikachisu.com/preview/institucional/"
               }
             ]
+          },
+          {
+            "@type": "Article",
+            "@id": "https://taikachisu.com/preview/institucional/#article",
+            "headline": "Asociación Taikachisu Wushu Kung Fu Argentina",
+            "mainEntityOfPage": {
+              "@id": "https://taikachisu.com/preview/institucional/"
+            },
+            "image": [
+              "https://taikachisu.com/preview/assets/maestro-2027/comision-directiva.webp"
+            ],
+            "author": {
+              "@type": "Person",
+              "name": "Maestro Alejandro R. Di Grigoli",
+              "url": "https://taikachisu.com/preview/"
+            },
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR",
+            "datePublished": "2026-10-23",
+            "dateModified": "2026-10-23"
           }
         ]
       },
-      "articleMeta": {},
-      "original_text": "LA ASOCIACIÓN TAIKACHISU 1975-2017 La Asociación Taika-Chisu Wu Shu Kung Fu Argentina fue la primera Institución oficial de la Escuela Taikachisu en conseguir la Resolución de su Personería Jurídica en Buenos Aires e integrarse al Deporte Federado. DESARROLLO INSTITUCIONAL 1975 Fundación Asociación Argentina Taika-Chisu, con sede en Burzaco, Buenos Aires. 1976 Fundación U.S.B.O.A. (Unión Sudamericana de Boxeo Oriental Argentino). 1976 Conformación Asociación Misonera Taika-Chisu / Fundación Federación Taika-Chisu. 1980 Fundación Escuela Municipal de Kung Fu en Posadas. 1989 Fundación “A.F.A.D.A.M.” (Asociación Fronteriza Argentina de Artes Marciales). 1992 Fundación ASOCIACION TAIKACHISU WUSHU KUNG FU ARGENTINA (Alfa). 1996 Afiliación Asociación Americana de Artes Marciales. 2002 Afiliación Federación Argentina de Wushu Kung Fu. 2005 Participación Torneo Sudamericano de Wushu. 2008/2010/2012/2014 Participación Torneos Mundiales A.A.A.M. OBJETIVOS DE LA ENTIDAD La Asociación TaikaChisu Wushu Kung Fu Argentina se encuentra trabajando muy seriamente en la organización y desarrollo del arte marcial Taika-Chisu , su divulgación, documentación, reconocimiento y sobre todo en la vinculación con distintos organismos e instituciones relacionadas al arte marcial y el deporte en general. Dando continuidad al Proyecto Institucional de Escuela de los´70 , y actualizando los paradigmas de los mismos. Sus Objetivos son simples: 1. Difundir, organizar, supervisar, desarrollar, reglamentar, fomentar, promover la práctica y el estudio de la disciplina de la Escuela Taika-Chisu Whu-Su Kung-Fu . 2. Conservar la esencia del sistema del Estilo TaikaChisu Wushu Kung Fu : técnica, táctica y metodologías de entrenamiento, sus principios, tradiciones y conceptos filosóficos para generaciones futuras. 3. Representar y defender los intereses de las Escuela Taikachisu , en particular y el arte marcial en general entre los poderes públicos, las asociaciones y federaciones deportivas, tanto en el orden nacional como internacional. ORGANIZACIÓN Desde la Conformación de la Asociación Taika-Chisu Wu Shu Kung fu Argentina , se comezaron una serie de Torneos anuales de orden nacional que en numerosas ocasiones se transformaron en internacionales con la participación de delegaciones de Uruguay, Paraguay, Brasil y Okinawa. Estas competencias se vienen realizando en el mes de Octubre con motivo de festejar el cumpleaños de la Escuela Taika-Chisu . Continúa con la tradición de participar permanentemente en competencias abiertas con diferentes reglamentaciones que permiten gradualmente exponer a mayores exigencias al participante. RECONOCIMIENTOS Desde 2002 se encuentra afiliada a la Federación Argentina de Wushu Kung Fu (F.A.W.K.) siendo esta la única institución nacional de la especialidad reconocida por la Secretaría de Deportes de la Nación , Confederación Argentina del Deporte, Comité Olímpico Argentino (COA), Confederación Panamericana de Wushu y la International Wushu Federation (IWuF) . También se encuentra afiliada la Asociación Americana de Artes Marciales (A.A.A.M)."
+      "articleMeta": {
+        "article:published_time": "2026-10-23",
+        "article:modified_time": "2026-10-23"
+      },
+      "original_text": "La Asociación Taikachisu Wu Shu Kung Fu Argentina fue la primera institución oficial de la Escuela Taikachisu Wushu Kung Fu en el país. Emblema de Taikachisu Representación y desarrollo institucional Su función es organizar, desarrollar y representar institucionalmente a la misma. Su trayectoria se vincula con el proyecto de organización institucional iniciado en la década de 1970 y con la continuidad de un sistema que comprende conocimientos técnicos, tácticos, metodologías de entrenamiento, principios tradicionales y fundamentos filosóficos. A lo largo de su desarrollo, la organización impulsó iniciativas de formación, difusión y competencia deportiva, promoviendo la participación en encuentros nacionales, internacionales y mundiales, estableciendo vínculos con instituciones del ámbito de todas las artes marciales y del deporte federado. La obtención de la personería jurídica y la incorporación al ámbito deportivo federado constituyeron etapas importantes en este proceso de organización institucional. Preservar y transmitir el legado La Asociación tiene como propósito preservar la identidad de la Escuela Taikachisu Wushu Kung Fu, favorecer su transmisión a las nuevas generaciones y sostener un marco institucional para su desarrollo y representación, lo que implica no limitarse a promover una actividad marcial, sino asumir la responsabilidad de salvaguardar su patrimonio técnico y filosófico, documentar su historia y garantizar las condiciones necesarias para que sus conocimientos se transmitan de forma coherente. Vinculación con el deporte federado La Asociación Taikachisu Wushu Kung Fu Argentina, afiliada a la Federación Argentina de Wushu Kung Fu (F.A.W.K.) desde el año 2002, desarrolla su trayectoria en el ámbito del deporte federado, vinculada a través de esta Federación a organismos deportivos nacionales e internacionales de relevancia, y mantiene asimismo antecedentes de afiliación a la Asociación Americana de Artes Marciales (A.A.A.M.), en el marco de sus actividades institucionales y de competencia. En la foto la Comisión Directiva de la Asociación Taikachisu Wushu Kung Fu Argentina, junto al presidente Maestro Alejandro R. Di Grigoli. Organismos del ámbito deportivo mencionados en el marco institucional de la Federación."
     },
     "escuela": {
-      "title": "La escuela Taikachisu | Historia del Wushu Kung Fu",
-      "description": "En esta página se puede leer el desarrollo histórico de la Escuela Taikachisu Wushu Kung Fu, desde su fundación por el Si Gung Juan Carlos Gauna hasta hoy.",
-      "image": "https://taikachisu.com/preview/assets/809655df9cba4983.webp",
-      "imageAlt": "LA ESCUELA TAIKACHISU 1963-2017",
-      "type": "website",
+      "title": "Escuela Taikachisu | Historia, tradición y legado",
+      "description": "La Escuela Taikachisu Wushu Kung Fu continúa desarrollando el trabajo y la trayectoria transmitidos por el Shi Gung Gauna, fortaleciendo la formación de…",
+      "image": "https://taikachisu.com/preview/assets/maestro-2027/autoridades-1995.webp",
+      "imageAlt": "Escuela Taikachisu: tradición, legado e identidad marcial",
+      "type": "article",
       "schema": {
         "@context": "https://schema.org",
         "@graph": [
@@ -489,8 +520,8 @@
             "@type": "WebPage",
             "@id": "https://taikachisu.com/preview/escuela/",
             "url": "https://taikachisu.com/preview/escuela/",
-            "name": "La escuela Taikachisu | Historia del Wushu Kung Fu",
-            "description": "En esta página se puede leer el desarrollo histórico de la Escuela Taikachisu Wushu Kung Fu, desde su fundación por el Si Gung Juan Carlos Gauna hasta hoy.",
+            "name": "Escuela Taikachisu | Historia, tradición y legado",
+            "description": "La Escuela Taikachisu Wushu Kung Fu continúa desarrollando el trabajo y la trayectoria transmitidos por el Shi Gung Gauna, fortaleciendo la formación de…",
             "inLanguage": "es-AR",
             "isPartOf": {
               "@id": "https://taikachisu.com/preview/#website"
@@ -512,15 +543,46 @@
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "LA ESCUELA TAIKACHISU 1963-2017",
+                "name": "El camino marcial",
+                "item": "https://taikachisu.com/preview/camino-marcial/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Escuela Taikachisu: tradición, legado e identidad marcial",
                 "item": "https://taikachisu.com/preview/escuela/"
               }
             ]
+          },
+          {
+            "@type": "Article",
+            "@id": "https://taikachisu.com/preview/escuela/#article",
+            "headline": "Escuela Taikachisu: tradición, legado e identidad marcial",
+            "mainEntityOfPage": {
+              "@id": "https://taikachisu.com/preview/escuela/"
+            },
+            "image": [
+              "https://taikachisu.com/preview/assets/maestro-2027/autoridades-1995.webp"
+            ],
+            "author": {
+              "@type": "Person",
+              "name": "Maestro Alejandro R. Di Grigoli",
+              "url": "https://taikachisu.com/preview/"
+            },
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR",
+            "datePublished": "2026-10-23",
+            "dateModified": "2026-10-23"
           }
         ]
       },
-      "articleMeta": {},
-      "original_text": "Durante 33 años -1963/1996- el Si Gung Juan Carlos Gauna compartió su conocimiento del arte marcial Taikachisu y dictó clases a más de 25.000 alumnos. El tiempo y la cantidad nunca fueron importantes para él, quien solo pretendía compartir la práctica con aquellos interesados, lograr la madurez como adultos en el arte marcial, buscar calidad técnica y humana. 63 AÑOS de TRAYECTORIA 1963: se fundó la Escuela Taikachisu Wushu Kung Fu . 1967 – 1974: el Si Gung Gauna se desempeña laboralmente en varios ámbitos, entre los principales, en las fuerzas de seguridad de la Policía Provincial de Buenos Aires y a posteriori, Policía Federal Argentina. En este período compartió práctica y enseñanza con innumerables colegas. También fue donde puso a prueba todo su conocimiento del combate real. 1974: se crea la Escuela Taikachisu de Posadas , Misiones, Argentina. El Maestro Gauna dicta el primer Reglamento Interno de la Escuela , programa de exámenes. 1975 : Octubre,  se integra a la Asociación Argentina de Kung Fu. 29 de noviembre de 1975 se lleva a cabo el primer torneo «Nacional” de la Escuela, en Posadas, al que asisten algunos representantes de Corrientes, Encarnación (Paraguay) y Buenos Aires. 1976: Se funda la U.S.B.O.A. ( Unión Sudamericana de Boxeo Oriental Argentino ). Su reglamentación permitía el total desarrollo de nuestras técnicas marciales (es decir el combate por estrangulación). 1977: 15 de enero, se organiza el segundo Torneo Nacional Taika-Chisu en el Club Brown de la localidad de Posadas. 1978: primera afiliación a una organización Internacional: U.S.K.A. ( United Status Karate Asociation ). La Escuela Taika-Chisu realiza el Primer Torneo Internacional , a través de U.S.B.O.A. Comienzan los denominados Torneos «Fronteras Rojas» en Posadas, Misiones. Convirtiendo a la Escuela en la principal organizadora de eventos del nordeste argentino entre los años 1981/82/83/84/85/86 y 87 . 1983: Octubre, por intermedio de la Escuela Municipal de Kung Fu se logra el reconocimiento, por parte del Gobierno Municipal, de los certificados a los alumnos graduados dentro de la Escuela Taika-Chisu Internacional , hecho que nos pone a la vanguardia del desarrollo marcial y deportivo en la Argentina en ese momento. 1986: 14 de septiembre, se realizó el 6º torneo O.Y.K.A.M. en las modernas instalaciones del Complejo Polideportivo “El Zaiman” de la ciudad Posadas. La Escuela presenta categorías especiales para la época como la de formas musicales y una exhibición de gimnasia china femenina, única en su genero. 1989: reconocida por el gobierno provincial de Misiones. Se funda una nueva organización denominada “ U.F.A.D.A.M. ”; Por razones de inscripción jurídica, pasa a ser “ A.F.A.D.A.M. ” ( Asociación Fronteriza Argentina de Artes Marciales ). 1990: se comienza la instrucción en el Comando Radioeléctrico de Posadas. Proyecto « Rumbo al Mundial 1993 «. Desde 1990 hasta 1993 se realizaron alrededor de 16 Torneos selectivos, en diferentes localidades de las provincias de Misiones, Buenos Aires, Chaco, Corrientes, Entre Ríos y Capital Federal. El torneo mundialista fue realizado en el Polideportivo el Zaiman de la ciudad de Posadas, Misiones, los días 30 y 31 de Octubre de 1993, contó con el apoyo por parte de la municipalidad y la secretaría de Deportes provincial, conjuntamente con la Confederación Misionera de Deportes. La característica distintiva de este primer mundialista fue que participarían solamentes alumnos avanzados (kyu B) y cinturones Negros (danes o tuanes) en el evento. 1993: la Escuela en su desarrollo institucional, pasa a ser parte integrante de la Confederación Misionera de Deportes . Para este fin se realizó una modificación profunda de su estructura interna a finales de 1992. 1995: Mayo, el Si gung Gauna convoca a Alejandro Di Grigoli, Presidente de la Asociación Taika-chisu Wu shu Kung Fu Argentina , junto a dos de sus hijos de sangre para realizar una ceremonia privada de consagración al Estilo, conviertiéndolos en sus discípulos y otorgándoles como distinción las barras doradas en los cinturones negros, símbolos de la riqueza del conocimiento obtenido y por venir, junto a la responsabilidad de continuar el estudio y la práctica de este arte marcial de por vida, siendo la mayor graduación de la Escuela Taika-Chisu Whu-Su Kung-Fu Internacional . En un acto oficial del día 07-10-1995, el Si Gung Gauna presentó socialmente en el ámbito marcialista a sus 3 únicos discípulos oficiales, rectificando y ratificando el único orden jerárquico de su Escuela en adelante. Otorgándole las barras de color dorado a su graduaciones, simbolizando el nuevo nivel alcanzado, antesal del 5° tuan. 1996: Agosto, fallece el Si Gung Gauna. Reconocido por numerosas Escuelas, y organizaciones de las Artes Marciales a nivel Nacional e Internacional. Deja una Escuela muy bien conformada técnica y estructuralmente, proceso que le demandó casi toda su vida. Una persona, un profesional, que nos legó algo con lo que vivió y que constantemente doctrinaba sus premisas de vida: orden, fidelidad, conducta, respeto, progresión, constancia, análisis y organización."
+      "articleMeta": {
+        "article:published_time": "2026-10-23",
+        "article:modified_time": "2026-10-23"
+      },
+      "original_text": "La Escuela Taikachisu Wushu Kung Fu continúa desarrollando el trabajo y la trayectoria transmitidos por el Shi Gung Gauna, fortaleciendo la formación de practicantes, profesores y discípulos, así como la organización y el crecimiento de sus actividades. Esta labor representa la continuidad de una herencia técnica, filosófica e institucional que requiere ser conservada y transmitida a las nuevas generaciones. Autoridades de la Escuela Taikachisu · ceremonia de 1995 Nuestra Historia El Taikachisu es un estilo familiar de Wushu Kung Fu que arriba a la Argentina alrededor de 1949. La difusión, el desarrollo y la consolidación institucional estuvieron a cargo de Shi Gung Juan Carlos Gauna a partir de 1963, quien fundó una Escuela abierta al público. Practicó y estudió profundamente el Estilo y definió los fundamentos y objetivos estructurales y técnicos para ella. Desde sus inicios, priorizó la calidad técnica y humana por sobre la masividad, guiando a la escuela hacia un sólido orden competitivo e institucional que llevó la disciplina a centros privados y fuerzas de seguridad. La Escuela siempre presentó un perfil demostrativo, participando y organizando distintos torneos de orden nacional, internacional y mundial. Legado y Continuidad Tras décadas de crecimiento continuo, el Shi Gung Gauna estructuró el programa final y los niveles jerárquicos de la institución. En octubre de 1995, durante una ceremonia pública, consagró a sus tres discípulos, Juan C. Gauna (h), Carlos Gauna (h) y Alejandro R. Di Grigoli, como autoridades máximas, designando formalmente a Juan C. Gauna (h) como Director General de la Escuela Taikachisu Wushu Kung Fu, garantizando la continuidad histórica del legado. La Escuela Taikachisu en Buenos Aires · 2026 Organización Institucional Para dar un marco jurídico al desarrollo deportivo y federativo, se creó la Asociación Taikachisu Wushu Kung Fu Argentina, autorizada por el Shi Gung Gauna. Rol de la Asociación: Representación, organización y promoción deportiva. Conducción Técnica: La estructura jurídica acompaña sin modificar la conducción técnica, jerárquica y tradicional propia de la Escuela. Invitación y Compromiso Institucional Formar parte de nuestra escuela implica asumir el compromiso de respetar sus normativas, su programa técnico y sus principios. Invitamos a profesores, exalumnos y grupos que deseen vincularse a fortalecer su relación mediante una integración institucional canalizada a través de nuestro Director General. Integrarse significa renovar el compromiso con lo recibido y asegurar su desarrollo para las futuras generaciones. La Escuela Taikachisu en Posadas · 2026"
     },
     "secreto-del-estilo-taikachisu": {
       "title": "El verdadero Secreto del Estilo Taikachisu | Taikachisu",
@@ -1216,10 +1278,10 @@
       "original_text": "El Kung-Fu es la técnica de combate más antigua que ha mantenido su tradición ininterrumpidamente desde sus orígenes hasta nuestros días. A lo largo de 5.000 años, forma y contenido han sufrido numerosas modificaciones sustanciales, suscitando el aporte de estudios por importantes Maestros de distintas épocas y regiones. En la evolución de la organización social, que desplaza el combate personal por la lucha de masas, la lid individual típicamente caballeresca ha quedado sin sentido; pero el valor formativo que entrena la lucha ha representado el primer patrimonio del hombre y nadie puede negarlo , incluso hoy la educación psicológica. El principio del combate, como medio ofensivo-defensivo, lo transforma en un muy efectivo medio de expresión de sí mismo, sin artificios, ni falsedades. Está comprobado que un individuo que adquiere una disciplina puede enfrentar cualquier situación con mayores posibilidades de éxito, dado que cuenta con un medio para controlar sus miedos, angustias y demás presiones. Mejora su capacidad de concentración, se comporta de manera más segura y decidida. Qué significan «Kung Fu» y «Wu Shu»? El término “kung fu” significa “habilidad, experiencia o destreza” en cualquier cosa. Al ser introducido en occidente, por error de interpretación, se lo tradujo como “arte marcial”; pero la pronunciación para este término es “wu shu”. Por lo tanto el wu shu kung fu , arte chino, significa “ habilidad o destreza en el arte marcial ”, y es practicado para promoción de la salud, cultivo del espíritu y la defensa propia. En qué se basa su enseñanza filosófica? La enseñanza filosófica está basada en la búsqueda constante del “yo” , porque es en vano adquirir dominio técnico si no se contribuye a la expansión de la personalidad, por eso es un “arte” y no una simple forma de pelea. Entonces podemos observar que junto a la técnica de combate, el kung fu se preocupa por la ética del practicante, su salud, la armonía del ser e incluso su visión cósmica ; por eso se enlaza indisolublemente con el ideograma que representa al Tao , de acuerdo con las leyes que rigen a la naturaleza universal según la milenaria cultura china. La estructura básica se apoya en la teoría del yin-yang , proveniente del Taoísmo , fuerzas mutuamente complementarias que actúan constantemente en este Universo, es por esto que la práctica nos enseña a buscar y establecer un equilibrio en todos los órdenes de nuestras actividades. La aplicación de la teoría del yin-yang es conocida como “ley de la armonía”. De todo lo dicho anteriormente se puede notar que el kung fu no es una mera técnica de pelea para la agresión o violencia , ya que inutilizar a un oponente no es su fin principal. Es una filosofía de vida , es tener gran paciencia y constancia, es aprovechar los errores y lecciones de nuestras experiencias, es buscar un equilibrio emocional. Es decir, hay muchos aspectos colaterales que además de enseñar a luchar nos enseñar a vivir. Como mencionábamos anteriormente, Wu shu significa literalmente arte marcial , pero también se lo entiende en su aplicación como guerrero o guardián. Nos orienta hacia la formación de un guerrero completo, con un conocimiento “profundo” sobre la vida, un conocimiento de las ciencias y artes naturales que lo llevan a entender el funcionamiento del mundo, dando la oportunidad de ser realmente libres. Por supuesto, lo rige un código ético donde el honor , la verdad y el respeto prevalecen, como también la ayuda al prójimo para la propia superación espiritual y la evolución de su vida."
     },
     "el-estilo-taikachisu": {
-      "title": "EL ESTILO TAIKACHISU | Taikachisu",
-      "description": "¿Qué es y de dónde proviene el Taikachisu? Un breve recorrido histórico para conocer cómo se ha ido transmitiendo hasta nuestros días este estilo.",
-      "image": "https://taikachisu.com/preview/assets/1543c591c53a38d1.webp",
-      "imageAlt": "EL ESTILO TAIKACHISU",
+      "title": "El estilo Taikachisu: historia, técnica y tradición | Taikachisu",
+      "description": "El Estilo Taikachisu se define por la integración de tres sistemas de combate en una estructura técnica propia, transmitida mediante una metodología…",
+      "image": "https://taikachisu.com/preview/assets/maestro-2027/kwoon-1973.webp",
+      "imageAlt": "El estilo Taikachisu: historia, técnica y tradición",
       "type": "article",
       "schema": {
         "@context": "https://schema.org",
@@ -1250,8 +1312,8 @@
             "@type": "WebPage",
             "@id": "https://taikachisu.com/preview/el-estilo-taikachisu/",
             "url": "https://taikachisu.com/preview/el-estilo-taikachisu/",
-            "name": "EL ESTILO TAIKACHISU | Taikachisu",
-            "description": "¿Qué es y de dónde proviene el Taikachisu? Un breve recorrido histórico para conocer cómo se ha ido transmitiendo hasta nuestros días este estilo.",
+            "name": "El estilo Taikachisu: historia, técnica y tradición | Taikachisu",
+            "description": "El Estilo Taikachisu se define por la integración de tres sistemas de combate en una estructura técnica propia, transmitida mediante una metodología…",
             "inLanguage": "es-AR",
             "isPartOf": {
               "@id": "https://taikachisu.com/preview/#website"
@@ -1279,7 +1341,7 @@
               {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "EL ESTILO TAIKACHISU",
+                "name": "El estilo Taikachisu: historia, técnica y tradición",
                 "item": "https://taikachisu.com/preview/el-estilo-taikachisu/"
               }
             ]
@@ -1287,16 +1349,16 @@
           {
             "@type": "Article",
             "@id": "https://taikachisu.com/preview/el-estilo-taikachisu/#article",
-            "headline": "EL ESTILO TAIKACHISU",
+            "headline": "El estilo Taikachisu: historia, técnica y tradición",
             "mainEntityOfPage": {
               "@id": "https://taikachisu.com/preview/el-estilo-taikachisu/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/1543c591c53a38d1.webp"
+              "https://taikachisu.com/preview/assets/maestro-2027/kwoon-1973.webp"
             ],
             "author": {
-              "@type": "Organization",
-              "name": "TaikaChisu",
+              "@type": "Person",
+              "name": "Maestro Alejandro R. Di Grigoli",
               "url": "https://taikachisu.com/preview/"
             },
             "publisher": {
@@ -1304,15 +1366,15 @@
             },
             "inLanguage": "es-AR",
             "datePublished": "2017-02-16T01:08:44+00:00",
-            "dateModified": "2017-03-17T16:52:14+00:00"
+            "dateModified": "2026-10-23"
           }
         ]
       },
       "articleMeta": {
         "article:published_time": "2017-02-16T01:08:44+00:00",
-        "article:modified_time": "2017-03-17T16:52:14+00:00"
+        "article:modified_time": "2026-10-23"
       },
-      "original_text": "El nombre TAIKACHISU (Taika-chisu / Tai-ka-chi-su / tai ka chi su / T´ai ka chi zu/…y demás variables de escritura) es la fonética aproximada de como podemos escribir con nuestro alfabeto la pronunciación del dialecto en que hablaba el Maestro Depositario Swoon Hee Lee , quien a medias lenguas le tradujo al joven discípulo Gauna el significado del mismo como “Gran Familia 7 Manos». El Estilo TAIKA-CHISU nace como un estilo kung fu familiar , en algún punto de la frontera norte chino-mongola en el año 1300. Yu Che Sing es el Maestro creador del Taikachisu , hermano mayor de una familia de mercaderes. En 1950 el Si Gung Swoon Hee Lee , 32° Maestro Depositario del Estilo, arriba desde Estados Unidos a Oberá, Misiones, Argentina. Lee transmite su Arte solo a un Discípulo, el Si Gung Juan Carlos Gauna , a quien le entrega el Sello Depositario Taikachisu . Si Gung Gauna Funda la Escuela Taikachisu Wusu Kung Fu internacional en 1963."
+      "original_text": "El Estilo Taikachisu se define por la integración de tres sistemas de combate en una estructura técnica propia, transmitida mediante una metodología progresiva y acompañada por una concepción integral de la formación humana. Integra características de las culturas china y mongola, que le otorgan una identidad técnica particular. Tradición, Resiliencia y Legado Marcial De dónde nacen las grandes tradiciones que perduran a través de los siglos? Hoy te invitamos a conocer el fascinante origen del Taikachisu, un arte marcial cuya historia es un testimonio de adaptación, estrategia y hermandad. Origen y creación del estilo La tradición sitúa el origen del Taikachisu en el siglo XIII, en la región fronteriza entre China y Mongolia. Su creador, el monje Yu Che Sing, habría integrado conocimientos adquiridos en Shaolin y en otros sistemas marciales, dando origen a un método propio, orientado a las necesidades de defensa de su familia y sus caravanas comerciales. Shi Gung Juan Carlos Gauna · 1978 Transmisión generacional El estilo demostró ser rápido, poderoso y letal contra las amenazas de la época. Fue transmitido de padres a hijos y de maestro a discípulo de generación en generación hasta llegar a Swoon Hee Lee (32.ª generación), un hombre tranquilo, silencioso y prudente, Maestro portador depositario del estilo, digno representante de la estirpe Taikachisu, heredero y patriarca de una “tradición marcial” De la Tradición Milenaria a la Argentina Shi Gung Swoon Hee Lee emigró a los Estados Unidos y posteriormente llegó a la Argentina. Transmitió sus enseñanzas a Juan Carlos Gauna, reconocido por la tradición de la Escuela como su único discípulo y sucesor directo. Junto con los conocimientos recibidos, Gauna obtuvo el sello depositario como símbolo de continuidad y jerarquía. En 1963 abrió la Escuela Taikachisu, iniciando una etapa de difusión y enseñanza abierta al público. El sello ancestral en la tradición del estilo Taikachisu Gracias a la dedicación del si-gung Juan Carlos Gauna, el Taikachisu se pulió técnicamente y abrió sus puertas en 1963, permitiendo que este valioso conocimiento milenario trascienda las fronteras familiares y se comparta con la comunidad a través de su Escuela. Una disciplina que demuestra que la verdadera maestría no solo se trata de técnica, sino de resiliencia, honor y la fuerza de una comunidad unida. Taikachisu: Técnica, Características y Sistemas de un Arte Marcial Milenario El Taikachisu (cuyo significado es \"Gran familia de 7 manos\") es un sistema de Wushu Kung Fu familiar que fusiona de manera única las culturas mongol y china. Su metodología combina rigor técnico, filosofía y una alta efectividad táctica. Práctica en el kwoon · 1975 Características Principales y Filosofía Principio Táctico: Enseña a defenderse atacando, priorizando el combate cuerpo a cuerpo, en el suelo y frente a múltiples atacantes. Dinámica de Movimiento: Sus desplazamientos buscan escapar de los embates mediante patrones universales (pa kua), posicionándose de forma lateral o posterior al oponente para un contraataque eficiente. Respiración y Energía Interior: Para el Taikachisu, la respiración constituye un principio fundamental e intrínseco de la ejercitación interna y externa. Integrada al trabajo corporal y al desarrollo del Qi, se trabaja a través del binomio Chi Lei / Hei Lek (氣力). Ambas dimensiones (la energía interior y la fortaleza física) se relacionan en una unidad mediante una concentración dinámica para lograr que \"el puño golpee como una maza y la pierna como un látigo\". Metodología de Aprendizaje: Los movimientos se estructuran de forma correlativa (del 1 al 7 u 8) desde el cinturón blanco hasta el negro, garantizando un aprendizaje ordenado, progresivo y armónico. Los Tres Sistemas Globales del Estilo La ortodoxia técnica del Taikachisu se divide fundamentalmente en tres pilares interrelacionados: Boxeo Chadts (Origen Tibetano): Enfocado en la velocidad, precisión y contundencia de puños y piernas, tomando como referencia la resistencia extrema del yak. Su ataque es directo y devastador. Boxeo Chino: Caracterizado por la armonía plástica y la combinación de movimientos circulares y rectos. Imita posturas de animales y aves (grulla, gato, etc.) para esquivar, redirigir y anticipar la fuerza del rival. Lucha Mongol: Especializada en el trabajo articular, aplicando palancas, proyecciones, agarres y llaves de estrangulación para neutralizar al oponente. Alumnos de la Escuela Taikachisu · 1973 Evolución y Armamentismo En niveles avanzados, el sistema incorpora el uso tradicional de armas como: Palos articulados (2 o 3 secciones) Lanza, y palos largo y corto Cuchillos, sable y arco con flecha Nota: Como base técnica superior, el estilo adopta la ortodoxia de combate del tigre). Una disciplina integral que entrena el poder físico, la respiración consciente y el dominio mental, promoviendo el equilibrio, el respeto biológico y la superación personal."
     },
     "el-camino-del-practicante-de-artes-marciales": {
       "title": "EL CAMINO DEL PRACTICANTE DE ARTES MARCIALES | Taikachisu",

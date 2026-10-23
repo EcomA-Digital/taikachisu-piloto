@@ -1,0 +1,51 @@
+/* The master's texts use the existing yellow, red, ink and warm white palette. */
+.emblem-stage--2027::before{display:none}
+.emblem-stage--2027 .intro-emblem{clip-path:none;filter:none;aspect-ratio:1;object-fit:contain}
+.home-editorial{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:center;gap:clamp(36px,6vw,96px);padding:clamp(64px,7vw,112px) var(--side);scroll-margin-top:85px}
+.home-editorial--dark{background:var(--black);color:#f4f3eb}
+.home-editorial--reverse .home-editorial-photo{grid-column:2;grid-row:1}
+.home-editorial--reverse .home-editorial-copy{grid-column:1;grid-row:1}
+.home-editorial-photo{margin:0;min-width:0}
+.home-editorial-photo img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain}
+.home-editorial-photo figcaption{font-size:12px;line-height:1.5;color:var(--muted);padding-top:14px;border-top:2px solid var(--brand-red);margin-top:14px}
+.home-editorial--dark .home-editorial-photo figcaption{color:#bebdb1}
+.home-editorial-copy{min-width:0}
+.home-editorial-copy h2{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:clamp(38px,4.2vw,64px);line-height:1.08;margin-bottom:28px}
+.home-editorial-copy>p:not(.eyebrow){font-size:17px;line-height:1.8;max-width:60ch;margin-bottom:28px}
+.home-editorial-copy .text-link{display:inline-block;line-height:1.6;font-weight:600;border-color:var(--brand-red)}
+.home-editorial--dark .home-editorial-copy>p:not(.eyebrow){color:#d5d4c9}
+.home-editorial--dark .text-link{color:var(--gold)}
+.editorial-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:28px;font-size:13px;line-height:1.6}
+.editorial-links a{text-decoration:underline;text-underline-offset:5px}
+.home-systems{list-style:none;display:flex;flex-wrap:wrap;gap:12px 20px;padding:0;margin:0 0 30px;border-left:2px solid var(--brand-red);padding-left:16px;font-size:14px;font-weight:600}
+.maestro-article{max-width:850px;margin:auto}
+.maestro-article .editorial-media{padding:0;border:0;background:transparent;margin:44px 0}
+.maestro-article .editorial-media img{height:auto;max-height:620px;object-fit:contain}
+.maestro-article .editorial-media figcaption{font-size:13px;line-height:1.6;color:var(--muted);padding-top:14px;margin-top:0}
+.maestro-article .emblem-figure img{max-width:250px;height:250px}
+.maestro-article .institutional-logos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;align-items:center;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.maestro-article .institutional-logos img{width:100%;height:88px;max-width:120px;justify-self:center;object-fit:contain}
+.maestro-article .institutional-logos figcaption{grid-column:1/-1;max-width:65ch;text-align:center;justify-self:center}
+.maestro-article .style-systems{padding-left:30px}
+.maestro-article .style-systems li{padding:14px 0 18px 12px;border-bottom:1px solid var(--line)}
+.maestro-article .style-systems li::marker{color:var(--brand-red);font-weight:600}
+.hero-photo-nav{max-width:calc(100% - 2 * var(--side));flex-wrap:wrap}
+@media(max-width:1000px){.home-editorial{gap:36px}.home-editorial-copy>p:not(.eyebrow){font-size:16px}.home-editorial-copy h2{font-size:43px}}
+@media(max-width:760px){
+ .home-editorial{grid-template-columns:1fr;gap:28px;padding:58px 24px;scroll-margin-top:80px}
+ .home-editorial--reverse .home-editorial-photo,.home-editorial--reverse .home-editorial-copy{grid-column:auto;grid-row:auto}
+ .home-editorial-copy{grid-row:1!important}
+ .home-editorial-copy h2{font-size:42px;margin-bottom:22px}
+ .home-editorial-copy .eyebrow{margin-bottom:18px}
+ .home-editorial-copy>p:not(.eyebrow){font-size:16px;line-height:1.75;margin-bottom:22px}
+ .home-editorial-photo img{max-height:400px}
+ .home-editorial-photo figcaption{font-size:11px}
+ .maestro-article .editorial-media{margin:30px 0}
+ .maestro-article .editorial-media img{max-height:440px}
+ .maestro-article .institutional-logos{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+ .maestro-article .institutional-logos img{height:70px}
+ .hero-description{font-size:15px!important;line-height:1.6!important}
+ .hero-slides{height:max(240px,calc(100svh - 340px))}
+ .hero-photo-nav{gap:8px!important}
+ .hero-photo-nav button{width:24px!important;min-width:24px}
+}
