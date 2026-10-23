@@ -1,18 +1,20 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:2027';
-    let seen = false, state = 'waiting', autoTimer, exitTimer, deadline;
+    const sessionKey = 'taikachisu:intro:flow-first-v1';
+    const video = opening.querySelector('#intro-video');
+    let seen = false, state = 'waiting', loadTimer, exitTimer, deadline;
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
     const remember = () => { try { sessionStorage.setItem(sessionKey, 'seen'); } catch {} };
     function finish() {
-      clearTimeout(autoTimer); clearTimeout(exitTimer); clearTimeout(deadline);
+      clearTimeout(loadTimer); clearTimeout(exitTimer); clearTimeout(deadline);
       state = 'done';
-      opening.classList.add('inactive');
-      opening.setAttribute('aria-hidden', 'true');
+      video.pause();
+      // Release the decoder and cancel any pending transfer after a skip/failure.
+      if (video.hasAttribute('src')) { video.removeAttribute('src'); video.load(); }
+      opening.classList.add('inactive'); opening.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('intro-pending', 'intro-transitioning');
-      document.body.classList.add('intro-complete');
-      header.style.opacity = '1';
+      document.body.classList.add('intro-complete'); header.style.opacity = '1';
       header.inert = home.inert = footer.inert = false;
       if (opening.contains(document.activeElement)) {
         const heading = home.querySelector('h1');
@@ -20,41 +22,47 @@ window.SchoolMotion = (() => {
       }
     }
     function dismiss(instant = false) {
+      if (state === 'done') return;
+      remember();
       if (instant) { finish(); return; }
       if (state !== 'waiting') return;
-      state = 'leaving'; remember(); clearTimeout(autoTimer);
-      header.style.opacity = '1';
-      document.body.classList.add('intro-transitioning');
-      opening.classList.add('leaving');
-      // The timer is also a fallback if animation events are interrupted.
-      exitTimer = setTimeout(finish, 1100);
+      state = 'leaving'; clearTimeout(loadTimer); clearTimeout(deadline);
+      header.style.opacity = '1'; document.body.classList.add('intro-transitioning');
+      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 650);
     }
     document.querySelector('#intro-spacer').hidden = true;
     history.scrollRestoration = 'manual';
-    opening.querySelector('#enter-button').addEventListener('click', () => {remember(); dismiss(true);});
-    opening.addEventListener('animationend', event => {
-      if (event.target === opening && event.animationName === 'portal-open') finish();
-    });
-    // Input can skip the presentation, but is never required to progress.
-    const skip = () => { if (state === 'waiting') {remember(); dismiss(true);} };
+    const skip = () => dismiss(true);
+    opening.querySelector('#enter-button').addEventListener('click', skip);
     opening.addEventListener('wheel', skip, {passive:true});
     opening.addEventListener('touchmove', skip, {passive:true});
     document.addEventListener('keydown', event => {
-      if (state === 'waiting' && ['Escape', 'ArrowDown', 'PageDown', ' ', 'End'].includes(event.key)) {
+      if (state !== 'done' && ['Escape', 'ArrowDown', 'PageDown', ' ', 'End'].includes(event.key)) {
         event.preventDefault(); skip();
       }
     });
-    document.addEventListener('visibilitychange', () => {if (document.hidden && state !== 'done') {remember(); finish();}});
-    matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', event => {if (event.matches) finish();});
-    if (reduced || seen || location.hash || window.SchoolSEO?.key()) {
+    document.addEventListener('visibilitychange', () => {if (document.hidden && state !== 'done') skip();});
+    matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', event => {if (event.matches) skip();});
+    video.addEventListener('playing', () => {
+      if (state !== 'waiting') return;
+      clearTimeout(loadTimer);
+      // A stalled video must not leave the navigation locked indefinitely.
+      clearTimeout(deadline); deadline = setTimeout(skip, 9000);
+    }, {once:true});
+    video.addEventListener('ended', () => dismiss());
+    video.addEventListener('error', () => {if (state !== 'done') skip();});
+    if (reduced || seen || location.hash || window.SchoolSEO?.key() || navigator.connection?.saveData) {
       finish();
     } else {
       scrollTo({top:0, behavior:'instant'});
       opening.classList.remove('inactive', 'leaving'); opening.removeAttribute('aria-hidden');
-      document.body.classList.add('intro-pending');
-      header.inert = home.inert = footer.inert = true;
-      autoTimer = setTimeout(() => dismiss(), 1450);
-      deadline = setTimeout(() => {remember(); finish();}, 3200);
+      document.body.classList.add('intro-pending'); header.inert = home.inert = footer.inert = true;
+      video.muted = true; video.defaultMuted = true; video.loop = false;
+      video.poster = video.dataset.poster; video.src = video.dataset.src;
+      loadTimer = setTimeout(skip, 2000);
+      deadline = setTimeout(skip, 11000);
+      const playback = video.play();
+      if (playback) playback.catch(() => {if (state !== 'done') skip();});
     }
     return {dismiss};
   }
