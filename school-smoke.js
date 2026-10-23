@@ -68,12 +68,14 @@ window.SchoolSmoke = (() => {
       for(let i=0;i<count;i++) {
         const side=i%2?1:-1, seed=i*2.39996;
         const progress=(i/count+elapsed*(.11+(i%4)*.009))%1;
-        const size=unit*(.35+progress*.36+(i%3)*.035);
-        const x=cx+side*unit*(.30+Math.sin(seed+progress*4.2)*.10)
+        const wing=i%3===0;
+        const spread=wing?Math.min(unit*.58,width*.41):unit*.30;
+        const size=unit*(wing?.48+progress*.30:.35+progress*.36+(i%3)*.035);
+        const x=cx+side*(spread+Math.sin(seed+progress*4.2)*unit*(wing?.13:.10))
           +Math.sin(elapsed*.55+seed)*unit*.055;
-        const y=cy+unit*.62-progress*unit*1.28;
+        const y=cy+unit*(wing?.50:.62)-progress*unit*(wing?1.1:1.28);
         const fade=Math.sin(progress*Math.PI);
-        ctx.globalAlpha=fade*(compact?.68:.65);
+        ctx.globalAlpha=fade*(wing?.65:(compact?.72:.70));
         ctx.save();ctx.translate(x,y);ctx.rotate(seed+progress*.65);
         ctx.drawImage(sprites[i%sprites.length],-size/2,-size/2,size,size);
         ctx.restore();

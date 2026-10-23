@@ -3,6 +3,7 @@ window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
     const sessionKey = 'taikachisu:intro:native-smoke-v1';
     let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smoke;
+    const fist = opening.querySelector('#intro-fist');
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
     const remember = () => { try { sessionStorage.setItem(sessionKey, 'seen'); } catch {} };
     function finish() {
@@ -25,8 +26,10 @@ window.SchoolMotion = (() => {
       if (instant) { finish(); return; }
       if (state !== 'waiting') return;
       state = 'leaving'; clearTimeout(holdTimer);
+      // Optional artwork never delays entry when a connection is slow.
+      if (fist?.complete && fist.naturalWidth >= 768) fist.classList.add('ready');
       header.style.opacity = '1'; document.body.classList.add('intro-transitioning');
-      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 900);
+      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 1000);
     }
     document.querySelector('#intro-spacer').hidden = true;
     history.scrollRestoration = 'manual';
@@ -49,7 +52,8 @@ window.SchoolMotion = (() => {
       document.body.classList.add('intro-pending'); header.inert = home.inert = footer.inert = true;
       window.dispatchEvent(new Event('taika:intro-start'));
       // Time is independent of media loading and autoplay policies.
-      holdTimer = setTimeout(() => dismiss(), 3600);
+      holdTimer = setTimeout(() => dismiss(), 3500);
+      if (fist) {fist.fetchPriority = 'low'; fist.src = fist.dataset.src;}
       safetyTimer = setTimeout(() => {remember(); finish();}, 5100);
       try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }
