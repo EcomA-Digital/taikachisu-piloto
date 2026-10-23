@@ -1,24 +1,21 @@
-/* The selected film plays once, then hands over to the already rendered home. */
-.opening{background:#000;will-change:auto}
-.intro-film-stage{position:relative;width:min(100vw,960px,120svh);aspect-ratio:16/9;overflow:visible}
-.intro-film-stage video,.intro-film-stage .intro-poster{display:block;width:100%;height:100%;object-fit:contain}
-.intro-film-stage video{position:absolute;inset:0;opacity:0}
-.opening.film-playing .intro-film-stage video{opacity:1}
-#intro-fist{display:none;position:absolute;pointer-events:none;z-index:2;transform-origin:center}
-.opening.leaving #intro-fist.ready{display:block;animation:fist-handoff 1s cubic-bezier(.3,.05,.25,1) forwards;will-change:transform,opacity}
-.opening.leaving .intro-film-stage video,.opening.leaving .intro-poster{animation:film-settle .55s ease forwards}
-@keyframes fist-handoff{0%{opacity:1;transform:translate(0,0) scale(1)}55%{opacity:1;transform:translate(var(--fist-x),var(--fist-y)) scale(7.5)}75%{opacity:.9;transform:translate(var(--fist-x),var(--fist-y)) scale(10)}100%{opacity:0;transform:translate(var(--fist-x),var(--fist-y)) scale(12)}}
-/* One quiet pulse gives the red mark depth without adding another asset. */
-.intro-film-stage::after{content:'';position:absolute;z-index:1;left:50%;top:50%;width:min(60vw,460px);aspect-ratio:1;background:radial-gradient(circle,#d71a2855 0%,#d71a2822 35%,transparent 70%);opacity:0;transform:translate(-50%,-50%) scale(.6);pointer-events:none}
-.opening.leaving .intro-film-stage::after{animation:fist-light 1s ease-out forwards}
-@keyframes fist-light{0%{opacity:0;transform:translate(-50%,-50%) scale(.6)}35%{opacity:.65;transform:translate(-50%,-50%) scale(.95)}75%{opacity:.25;transform:translate(-50%,-50%) scale(1.12)}100%{opacity:0;transform:translate(-50%,-50%) scale(1.25)}}
-@keyframes film-settle{to{opacity:0}}
-.opening .opening-bottom{left:24px;right:24px;bottom:max(24px,env(safe-area-inset-bottom));justify-content:center}
+/* An immediate, unaltered emblem; native vapor and orbiting rim lights. */
+.opening{background:#000;will-change:auto;isolation:isolate}
+#intro-smoke{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.intro-native-stage{position:relative;z-index:1;width:min(94vw,620px,72svh);aspect-ratio:1;display:grid;place-items:center}
+.intro-native-emblem{display:block;width:78%;height:auto;aspect-ratio:1;object-fit:contain;position:relative;z-index:2;opacity:1;transition:opacity .8s ease,transform .85s ease}
+.intro-orbit{position:absolute;inset:5%;border-radius:50%;pointer-events:none;z-index:1;mask-image:radial-gradient(closest-side,transparent 86%,#000 91%,#000 95%,transparent 100%);filter:blur(3px);will-change:transform}
+.intro-orbit--gold{background:conic-gradient(transparent 0deg 218deg,#dcb33a22 245deg,#e8cb6b88 271deg,#fff5cbdd 282deg,#daaf39aa 293deg,transparent 325deg);animation:rim-gold 4.3s linear infinite}
+.intro-orbit--red{inset:4%;opacity:.65;background:conic-gradient(transparent 0deg 252deg,#8b071a33 270deg,#e51a2b99 287deg,#ffd4b5bb 294deg,transparent 317deg);animation:rim-red 4.4s linear infinite}
+.opening.inactive .intro-orbit{animation:none}
+@keyframes rim-gold{from{transform:rotate(-100deg)}to{transform:rotate(250deg)}}
+@keyframes rim-red{from{transform:rotate(100deg)}to{transform:rotate(-220deg)}}
+.opening .opening-bottom{left:24px;right:24px;bottom:max(24px,env(safe-area-inset-bottom));justify-content:center;z-index:3}
 .opening .enter-button{font-size:12px;padding:12px 8px;min-height:44px;color:#bdbdb5;border-bottom:1px solid #ffffff33}
-.opening.leaving{animation:intro-film-away 1.05s ease forwards;mask-image:none;pointer-events:none}
-.opening.leaving .opening-bottom{animation:none}
-body.intro-transitioning .hero-content{animation:home-arrive .65s ease both}
-@keyframes intro-film-away{0%,40%{opacity:1}100%{opacity:0}}
+.opening.leaving{animation:native-intro-away .85s ease forwards;mask-image:none;pointer-events:none}
+.opening.leaving .intro-native-emblem{opacity:0;transform:scale(1.035)}
+.opening.leaving .opening-bottom{animation:none;opacity:0;transition:opacity .2s}
+body.intro-transitioning .hero-content{animation:home-arrive .85s ease both}
+@keyframes native-intro-away{from{opacity:1}to{opacity:0}}
 @keyframes home-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
 /* Keep the outgoing photograph in place while the next one sweeps over it. */

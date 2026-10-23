@@ -1,18 +1,14 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:flow-first-v1';
-    const video = opening.querySelector('#intro-video');
-    let seen = false, state = 'waiting', loadTimer, exitTimer, deadline;
+    const sessionKey = 'taikachisu:intro:native-smoke-v1';
+    let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smoke;
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
     const remember = () => { try { sessionStorage.setItem(sessionKey, 'seen'); } catch {} };
     function finish() {
-      clearTimeout(loadTimer); clearTimeout(exitTimer); clearTimeout(deadline);
-      const wasDone = state === 'done';
-      state = 'done';
-      video.pause();
-      // Release the decoder and cancel any pending transfer after a skip/failure.
-      if (video.hasAttribute('src')) { video.removeAttribute('src'); video.load(); }
+      clearTimeout(holdTimer); clearTimeout(exitTimer); clearTimeout(safetyTimer);
+      const wasDone = state === 'done'; state = 'done';
+      smoke?.stop();
       opening.classList.add('inactive'); opening.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('intro-pending', 'intro-transitioning');
       document.body.classList.add('intro-complete'); header.style.opacity = '1';
@@ -23,28 +19,14 @@ window.SchoolMotion = (() => {
         heading.tabIndex = -1; heading.focus({preventScroll:true});
       }
     }
-    function prepareFist() {
-      const image = opening.querySelector('#intro-fist');
-      if (!image.complete || image.naturalWidth < 1000) return;
-      // AI-restored standalone artwork replaces the tiny compressed video crop.
-      const w = video.videoWidth || 960, h = video.videoHeight || 540;
-      const x = w * .5, y = h * .578;
-      const width = w * .04, height = width * image.naturalHeight / image.naturalWidth;
-      image.style.left = `${x/w*100}%`; image.style.top = `${y/h*100}%`;
-      image.style.width = `${width/w*100}%`; image.style.height = `${height/h*100}%`;
-      const stage = image.parentElement.getBoundingClientRect();
-      image.style.setProperty('--fist-x', `${(.5-(x+width/2)/w)*stage.width}px`);
-      image.style.setProperty('--fist-y', `${(.5-(y+height/2)/h)*stage.height}px`);
-      image.classList.add('ready');
-    }
     function dismiss(instant = false) {
       if (state === 'done') return;
       remember();
       if (instant) { finish(); return; }
       if (state !== 'waiting') return;
-      prepareFist(); state = 'leaving'; clearTimeout(loadTimer); clearTimeout(deadline);
+      state = 'leaving'; clearTimeout(holdTimer);
       header.style.opacity = '1'; document.body.classList.add('intro-transitioning');
-      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 1100);
+      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 900);
     }
     document.querySelector('#intro-spacer').hidden = true;
     history.scrollRestoration = 'manual';
@@ -59,30 +41,17 @@ window.SchoolMotion = (() => {
     });
     document.addEventListener('visibilitychange', () => {if (document.hidden && state !== 'done') skip();});
     matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', event => {if (event.matches) skip();});
-    video.addEventListener('playing', () => {
-      if (state !== 'waiting') return;
-      opening.classList.add('film-playing');
-      clearTimeout(loadTimer);
-      // A stalled video must not leave the navigation locked indefinitely.
-      clearTimeout(deadline); deadline = setTimeout(skip, 5000);
-    }, {once:true});
-    video.addEventListener('ended', () => dismiss());
-    video.addEventListener('error', () => {if (state !== 'done') skip();});
     if (reduced || seen || location.hash || window.SchoolSEO?.key() || navigator.connection?.saveData) {
       finish();
     } else {
       scrollTo({top:0, behavior:'instant'});
       opening.classList.remove('inactive', 'leaving'); opening.removeAttribute('aria-hidden');
       document.body.classList.add('intro-pending'); header.inert = home.inert = footer.inert = true;
-      video.muted = true; video.defaultMuted = true; video.loop = false;
-      const fist = opening.querySelector('#intro-fist');
-      fist.fetchPriority = 'low';
-      if (!fist.hasAttribute('src')) fist.src = fist.dataset.src;
-      video.src = video.dataset.src;
-      loadTimer = setTimeout(skip, 6500);
-      deadline = setTimeout(skip, 11500);
-      const playback = video.play();
-      if (playback) playback.catch(() => {if (state !== 'done') skip();});
+      window.dispatchEvent(new Event('taika:intro-start'));
+      // Time is independent of media loading and autoplay policies.
+      holdTimer = setTimeout(() => dismiss(), 3600);
+      safetyTimer = setTimeout(() => {remember(); finish();}, 5100);
+      try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }
     return {dismiss};
   }
