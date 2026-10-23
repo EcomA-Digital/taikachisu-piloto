@@ -62,11 +62,9 @@ window.SchoolMotion = (() => {
     video.addEventListener('playing', () => {
       if (state !== 'waiting') return;
       opening.classList.add('film-playing');
-      const fist = opening.querySelector('#intro-fist');
-      if (!fist.hasAttribute('src')) fist.src = fist.dataset.src;
       clearTimeout(loadTimer);
       // A stalled video must not leave the navigation locked indefinitely.
-      clearTimeout(deadline); deadline = setTimeout(skip, 9000);
+      clearTimeout(deadline); deadline = setTimeout(skip, 5000);
     }, {once:true});
     video.addEventListener('ended', () => dismiss());
     video.addEventListener('error', () => {if (state !== 'done') skip();});
@@ -77,9 +75,12 @@ window.SchoolMotion = (() => {
       opening.classList.remove('inactive', 'leaving'); opening.removeAttribute('aria-hidden');
       document.body.classList.add('intro-pending'); header.inert = home.inert = footer.inert = true;
       video.muted = true; video.defaultMuted = true; video.loop = false;
+      const fist = opening.querySelector('#intro-fist');
+      fist.fetchPriority = 'low';
+      if (!fist.hasAttribute('src')) fist.src = fist.dataset.src;
       video.src = video.dataset.src;
       loadTimer = setTimeout(skip, 6500);
-      deadline = setTimeout(skip, 15500);
+      deadline = setTimeout(skip, 11500);
       const playback = video.play();
       if (playback) playback.catch(() => {if (state !== 'done') skip();});
     }
