@@ -21,14 +21,38 @@ window.SchoolMotion = (() => {
         heading.tabIndex = -1; heading.focus({preventScroll:true});
       }
     }
+    function prepareFist() {
+      // Sample the actual last frame: keep the emblem's original red mark.
+      const canvas = opening.querySelector('#intro-fist');
+      if (!video.videoWidth || video.readyState < 2) return;
+      try {
+        const w = video.videoWidth, h = video.videoHeight;
+        const x = Math.round(w * .5), y = Math.round(h * .578);
+        canvas.width = Math.round(w * .04); canvas.height = Math.round(h * .065);
+        const ctx = canvas.getContext('2d', {willReadFrequently:true});
+        ctx.drawImage(video, x, y, canvas.width, canvas.height, 0, 0, canvas.width, canvas.height);
+        const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        for (let i = 0; i < pixels.data.length; i += 4) {
+          const r = pixels.data[i], g = pixels.data[i+1], b = pixels.data[i+2];
+          pixels.data[i+3] = Math.round(255 * Math.max(0, Math.min(1, (r - Math.max(g,b) - r * .2) / 18)));
+        }
+        ctx.putImageData(pixels, 0, 0);
+        canvas.style.left = `${x/w*100}%`; canvas.style.top = `${y/h*100}%`;
+        canvas.style.width = `${canvas.width/w*100}%`; canvas.style.height = `${canvas.height/h*100}%`;
+        const stage = canvas.parentElement.getBoundingClientRect();
+        canvas.style.setProperty('--fist-x', `${(.5-(x+canvas.width/2)/w)*stage.width}px`);
+        canvas.style.setProperty('--fist-y', `${(.5-(y+canvas.height/2)/h)*stage.height}px`);
+        canvas.classList.add('ready');
+      } catch { /* Fall back to the same clean fade if a frame cannot be sampled. */ }
+    }
     function dismiss(instant = false) {
       if (state === 'done') return;
       remember();
       if (instant) { finish(); return; }
       if (state !== 'waiting') return;
-      state = 'leaving'; clearTimeout(loadTimer); clearTimeout(deadline);
+      prepareFist(); state = 'leaving'; clearTimeout(loadTimer); clearTimeout(deadline);
       header.style.opacity = '1'; document.body.classList.add('intro-transitioning');
-      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 650);
+      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 1100);
     }
     document.querySelector('#intro-spacer').hidden = true;
     history.scrollRestoration = 'manual';
@@ -45,6 +69,7 @@ window.SchoolMotion = (() => {
     matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', event => {if (event.matches) skip();});
     video.addEventListener('playing', () => {
       if (state !== 'waiting') return;
+      opening.classList.add('film-playing');
       clearTimeout(loadTimer);
       // A stalled video must not leave the navigation locked indefinitely.
       clearTimeout(deadline); deadline = setTimeout(skip, 9000);
@@ -58,7 +83,7 @@ window.SchoolMotion = (() => {
       opening.classList.remove('inactive', 'leaving'); opening.removeAttribute('aria-hidden');
       document.body.classList.add('intro-pending'); header.inert = home.inert = footer.inert = true;
       video.muted = true; video.defaultMuted = true; video.loop = false;
-      video.poster = video.dataset.poster; video.src = video.dataset.src;
+      video.src = video.dataset.src;
       loadTimer = setTimeout(skip, 6500);
       deadline = setTimeout(skip, 15500);
       const playback = video.play();
