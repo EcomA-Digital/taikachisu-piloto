@@ -41,12 +41,12 @@ body.intro-pending .hero .motion-line{animation-play-state:paused}
 
 /* Reveal the whole photo, then settle each title line into its place. */
 .home-motion-ready .home-editorial-photo.reveal{opacity:1;transform:none;transition:none}
-.home-motion-ready .home-editorial-photo img{clip-path:inset(0 100% 0 0);transition:clip-path 1.15s cubic-bezier(.65,0,.2,1)}
+.home-motion-ready .home-editorial-photo img{clip-path:inset(0 100% 0 0);transition:clip-path .4s cubic-bezier(.25,.1,.25,1)}
 .home-motion-ready .home-editorial--reverse .home-editorial-photo img{clip-path:inset(0 0 0 100%)}
 .home-motion-ready .home-editorial-photo.visible img{clip-path:inset(0 0 0 0)}
 .motion-title-line{display:block;overflow:hidden;padding-bottom:.15em;margin-bottom:-.15em}
 .motion-title-line>span{display:block}
 .home-motion-ready .motion-title-line>span{transform:translateY(115%);opacity:0;transition:transform .85s cubic-bezier(.16,1,.3,1),opacity .5s;transition-delay:calc(var(--line-index)*.1s + .12s)}
 .home-motion-ready .visible .motion-title-line>span{transform:translateY(0);opacity:1}
-@media(max-width:760px){.home-motion-ready .home-editorial-photo img{transition-duration:.8s}.hero .motion-lines{opacity:.55}.hero-slides .hero-image.is-current.is-sweeping{transition-duration:.75s}}
+@media(max-width:760px){.home-motion-ready .home-editorial-photo img{transition-duration:.3s}.hero .motion-lines{opacity:.55}.hero-slides .hero-image.is-current.is-sweeping{transition-duration:.75s}}
 @media(prefers-reduced-motion:reduce){.opening{display:none!important}.home-motion-ready .home-editorial-photo img,.hero-slides .hero-image.is-current.is-sweeping{clip-path:none!important}.home-motion-ready .motion-title-line>span{opacity:1;transform:none}.hero .motion-line{animation:none;stroke-dashoffset:0;opacity:.2}}
