@@ -59,8 +59,8 @@ window.SchoolMotion = (() => {
       document.body.classList.add('intro-pending'); header.inert = home.inert = footer.inert = true;
       video.muted = true; video.defaultMuted = true; video.loop = false;
       video.poster = video.dataset.poster; video.src = video.dataset.src;
-      loadTimer = setTimeout(skip, 2000);
-      deadline = setTimeout(skip, 11000);
+      loadTimer = setTimeout(skip, 6500);
+      deadline = setTimeout(skip, 15500);
       const playback = video.play();
       if (playback) playback.catch(() => {if (state !== 'done') skip();});
     }
