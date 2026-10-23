@@ -53,7 +53,7 @@ window.SchoolMotion = (() => {
       window.dispatchEvent(new Event('taika:intro-start'));
       // Time is independent of media loading and autoplay policies.
       holdTimer = setTimeout(() => dismiss(), 3500);
-      if (fist) {fist.fetchPriority = 'low'; fist.src = fist.dataset.src;}
+      if (fist) {fist.fetchPriority = 'high'; fist.src = fist.dataset.src;}
       safetyTimer = setTimeout(() => {remember(); finish();}, 5100);
       try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }
