@@ -234,7 +234,16 @@ function showRoute(initial=false) {
   window.SchoolSEO?.apply();
   dispatchEvent(new Event('taika:page'));
 }
-fetch('content.json?v=20261023-images2').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
+fetch('content.json?v=20261025-content1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
+  // The static home is already visible. Build its interactive lists after the
+  // opening so large DOM updates cannot delay the final seal or entry timer.
+  if(document.body.classList.contains('intro-pending')) {
+    await new Promise(resolve=>addEventListener('taika:intro-complete',resolve,{once:true}));
+  }
+  document.querySelectorAll('#home iframe[data-intro-src]').forEach(frame=>{
+    frame.src=frame.dataset.introSrc;
+    delete frame.dataset.introSrc;
+  });
   records=data.records;
   sedes=readSedes(records.find(item=>item.slug==='sedes'));
   const articles=await SchoolFeatures.init(records,sedes);

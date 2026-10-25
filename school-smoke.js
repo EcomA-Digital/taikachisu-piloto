@@ -1,7 +1,7 @@
 /* Procedural vapor: no video, image sequence, shader download or animation library. */
 window.SchoolSmoke = (() => {
   function texture(seed) {
-    const size = 128, canvas = document.createElement('canvas');
+    const size = 96, canvas = document.createElement('canvas');
     canvas.width = canvas.height = size;
     const ctx = canvas.getContext('2d');
     if (!ctx) return null;
@@ -45,7 +45,7 @@ window.SchoolSmoke = (() => {
     const sprites=[texture(2),texture(13),texture(29)].filter(Boolean);
     if(!sprites.length) return {stop(){}};
     let width,height,ratio,raf=0,stopped=false,last=0,frames=0;
-    const compact=innerWidth<761, count=compact?20:28;
+    const compact=innerWidth<761, count=compact?16:24;
     function resize() {
       width=innerWidth;height=innerHeight;
       const limit=compact?720:960;
@@ -75,7 +75,7 @@ window.SchoolSmoke = (() => {
           +Math.sin(elapsed*.55+seed)*unit*.055;
         const y=cy+unit*(wing?.50:.62)-progress*unit*(wing?1.1:1.28);
         const fade=Math.sin(progress*Math.PI);
-        ctx.globalAlpha=fade*(wing?.65:(compact?.72:.70));
+        ctx.globalAlpha=fade*(wing?.76:(compact?.84:.80));
         ctx.save();ctx.translate(x,y);ctx.rotate(seed+progress*.65);
         ctx.drawImage(sprites[i%sprites.length],-size/2,-size/2,size,size);
         ctx.restore();
@@ -85,9 +85,10 @@ window.SchoolSmoke = (() => {
     }
     draw(start+34);
     addEventListener('resize',resize,{passive:true});
-    return {stop(){
+    return {stop(clear=true){
       stopped=true;cancelAnimationFrame(raf);removeEventListener('resize',resize);
-      ctx.clearRect(0,0,width,height);canvas.dataset.running='false';
+      if(clear)ctx.clearRect(0,0,width,height);
+      canvas.dataset.running='false';
     }};
   }
   return {start};

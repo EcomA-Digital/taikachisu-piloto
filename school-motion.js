@@ -1,7 +1,7 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:native-smoke-v1';
+    const sessionKey = 'taikachisu:intro:native-smoke-v2';
     let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smoke;
     const fist = opening.querySelector('#intro-fist');
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
@@ -26,10 +26,12 @@ window.SchoolMotion = (() => {
       if (instant) { finish(); return; }
       if (state !== 'waiting') return;
       state = 'leaving'; clearTimeout(holdTimer);
+      // Keep the last vapor frame for the CSS fade; free the main thread for entry.
+      smoke?.stop(false);
       // Optional artwork never delays entry when a connection is slow.
-      if (fist?.complete && fist.naturalWidth >= 768) fist.classList.add('ready');
+      if (fist?.complete && fist.naturalWidth >= 512) fist.classList.add('ready');
       header.style.opacity = '1'; document.body.classList.add('intro-transitioning');
-      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 1000);
+      opening.classList.add('leaving'); exitTimer = setTimeout(finish, 1100);
     }
     document.querySelector('#intro-spacer').hidden = true;
     history.scrollRestoration = 'manual';
@@ -52,9 +54,9 @@ window.SchoolMotion = (() => {
       document.body.classList.add('intro-pending'); header.inert = home.inert = footer.inert = true;
       window.dispatchEvent(new Event('taika:intro-start'));
       // Time is independent of media loading and autoplay policies.
-      holdTimer = setTimeout(() => dismiss(), 3500);
+      holdTimer = setTimeout(() => dismiss(), 1400);
       if (fist) {fist.fetchPriority = 'high'; fist.src = fist.dataset.src;}
-      safetyTimer = setTimeout(() => {remember(); finish();}, 5100);
+      safetyTimer = setTimeout(() => {remember(); finish();}, 2700);
       try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }
     return {dismiss};
