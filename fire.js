@@ -1,10 +1,10 @@
 // A flowing noise field gives the fire a continuous, irregular silhouette.
-function createLogoFire(canvas) {
+function createLogoFire(canvas, options={}) {
   const gl = canvas.getContext('webgl', {alpha:true, antialias:false, premultipliedAlpha:false, powerPreference:'low-power'});
   // Half precision erases the noise fractions and underflows small spark distances.
   const precision = gl?.getShaderPrecisionFormat(gl.FRAGMENT_SHADER, gl.HIGH_FLOAT);
   if (!gl || !precision || precision.precision < 16) return createSoftLogoFire(canvas);
-  canvas.width = canvas.height = innerWidth < 760 ? 480 : 640;
+  canvas.width = canvas.height = options.size || (innerWidth < 760 ? 480 : 640);
   const vertex = `attribute vec2 position; varying vec2 uv;
     void main(){uv=position*.5+.5;gl_Position=vec4(position,0.,1.);}`;
   const fragment = `precision highp float;
@@ -57,12 +57,12 @@ function createLogoFire(canvas) {
   const time=gl.getUniformLocation(program,'time');gl.viewport(0,0,canvas.width,canvas.height);
   canvas.classList.add('fire-ready');
   canvas.parentElement.classList.add('live-fire');
-  canvas.dataset.renderer = 'webgl-highp';
-  let frame, last=0, stopped=false;
+  canvas.dataset.renderer = 'webgl-highp';canvas.dataset.running='true';
+  let frame, last=0, stopped=false, frames=0;
   const started=performance.now();
   function draw(now){
     if(stopped)return;
-    if(!document.hidden && now-last>32){last=now;gl.uniform1f(time,(now-started)/1000);gl.drawArrays(gl.TRIANGLES,0,6);}
+    if(!document.hidden && now-last>(options.fps?1000/options.fps:32)){last=now;gl.uniform1f(time,(now-started)/1000);gl.drawArrays(gl.TRIANGLES,0,6);canvas.dataset.frames=String(++frames);}
     frame=requestAnimationFrame(draw);
   }
   frame=requestAnimationFrame(draw);
@@ -72,16 +72,16 @@ function createLogoFire(canvas) {
     if(stopped)return;
     stopped=true;cancelAnimationFrame(frame);fallbackStop=createSoftLogoFire(canvas);
   },{once:true});
-  return ()=>{stopped=true;cancelAnimationFrame(frame);fallbackStop();gl.deleteBuffer(buffer);gl.deleteProgram(program);gl.deleteShader(vs);gl.deleteShader(fs);};
+  return ()=>{stopped=true;canvas.dataset.running='false';cancelAnimationFrame(frame);fallbackStop();gl.deleteBuffer(buffer);gl.deleteProgram(program);gl.deleteShader(vs);gl.deleteShader(fs);};
 }
 
 // A CPU renderer keeps the effect animated when a phone cannot provide highp.
-function createSoftLogoFire(original) {
+function createSoftLogoFire(original, options={}) {
   const canvas = original.cloneNode(false);
   original.replaceWith(canvas);
   const ctx = canvas.getContext('2d');
   if (!ctx) return () => {};
-  const size = 480, center = size/2, radius = size*.222;
+  const size = options.size||480, count=options.particles||96, unit=size/480, center = size/2, radius = size*.222;
   canvas.width=canvas.height=size;
   canvas.classList.add('fire-ready');canvas.dataset.renderer='canvas-2d';
   canvas.parentElement.classList.add('live-fire');
@@ -91,8 +91,9 @@ function createSoftLogoFire(original) {
   glow.addColorStop(0,'rgba(255,221,115,.9)');glow.addColorStop(.22,'rgba(255,135,25,.65)');
   glow.addColorStop(.55,'rgba(220,45,3,.3)');glow.addColorStop(1,'rgba(120,14,0,0)');
   brush.fillStyle=glow;brush.fillRect(0,0,64,64);
-  const particles=Array.from({length:96},(_,i)=>({angle:i/96*Math.PI*2,phase:Math.random(),speed:.55+Math.random()*.5}));
-  let frame, stopped=false, last=0;
+  const particles=Array.from({length:count},(_,i)=>({angle:i/count*Math.PI*2,phase:Math.random(),speed:.55+Math.random()*.5}));
+  let frame, stopped=false, last=0, frames=0;
+  canvas.dataset.running='true';
   const start=performance.now();
   function draw(now) {
     if(stopped)return;
@@ -101,17 +102,18 @@ function createSoftLogoFire(original) {
       ctx.clearRect(0,0,size,size);ctx.globalCompositeOperation='lighter';
       for(const particle of particles){
         const life=(time*particle.speed+particle.phase)%1, angle=particle.angle;
-        const rise=life*(18+18*(.5+.5*Math.sin(angle)));
-        const x=center+Math.cos(angle)*(radius+life*7)+Math.sin(time*2+angle*5)*life*5;
+        const rise=life*(18+18*(.5+.5*Math.sin(angle)))*unit;
+        const x=center+Math.cos(angle)*(radius+life*7*unit)+Math.sin(time*2+angle*5)*life*5*unit;
         const y=center+Math.sin(angle)*radius-rise;
-        const width=11+life*13, height=width*(1+life*.7);
+        const width=(11+life*13)*unit, height=width*(1+life*.7);
         ctx.globalAlpha=Math.sin(life*Math.PI)*.6;
         ctx.drawImage(sprite,x-width/2,y-height/2,width,height);
       }
       ctx.globalAlpha=1;
+      canvas.dataset.frames=String(++frames);
     }
     frame=requestAnimationFrame(draw);
   }
   frame=requestAnimationFrame(draw);
-  return ()=>{stopped=true;cancelAnimationFrame(frame);};
+  return ()=>{stopped=true;cancelAnimationFrame(frame);canvas.dataset.running='false';};
 }

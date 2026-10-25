@@ -1379,7 +1379,7 @@
     "el-camino-del-practicante-de-artes-marciales": {
       "title": "EL CAMINO DEL PRACTICANTE DE ARTES MARCIALES | Taikachisu",
       "description": "Este artículo trata sobre las diversas etapas que debe recorrer el practicante de artes marciales en el camino hacia su búsqueda personal.",
-      "image": "https://taikachisu.com/preview/assets/df10359c3bdc31d3.webp",
+      "image": "https://taikachisu.com/preview/assets/646873663868bea3-opt2.webp",
       "imageAlt": "EL CAMINO DEL PRACTICANTE DE ARTES MARCIALES",
       "type": "article",
       "schema": {
@@ -1453,7 +1453,7 @@
               "@id": "https://taikachisu.com/preview/el-camino-del-practicante-de-artes-marciales/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/df10359c3bdc31d3.webp"
+              "https://taikachisu.com/preview/assets/646873663868bea3-opt2.webp"
             ],
             "author": {
               "@type": "Organization",

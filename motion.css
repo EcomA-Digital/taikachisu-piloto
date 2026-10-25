@@ -11,27 +11,36 @@
 @keyframes rim-red{from{transform:rotate(100deg)}to{transform:rotate(-220deg)}}
 .opening .opening-bottom{left:24px;right:24px;bottom:max(24px,env(safe-area-inset-bottom));justify-content:center;z-index:3}
 .opening .enter-button{font-size:12px;padding:12px 8px;min-height:44px;color:#bdbdb5;border-bottom:1px solid #ffffff33}
-.opening.leaving{animation:native-intro-away 1.1s ease forwards;mask-image:none;pointer-events:none}
-.opening.leaving .intro-native-emblem{animation:native-emblem-dissolve 1.1s ease both}
-.opening.leaving .intro-orbit{opacity:0;transition:opacity .3s}
-.opening.leaving #intro-smoke{opacity:0;transition:opacity 1.1s ease}
+#intro-fire{position:absolute;width:178%;height:178%;left:-39%;top:-39%;z-index:3;pointer-events:none;opacity:.8}
+.opening.leaving{animation:native-intro-away 2.3s ease forwards;mask-image:none;pointer-events:none}
+.opening.leaving .intro-native-emblem{animation:native-emblem-dissolve 2.3s ease both}
+.opening.leaving .intro-orbit--gold{animation:rim-gold 4.3s linear infinite,native-rim-away 2.3s ease both}
+.opening.leaving .intro-orbit--red{animation:rim-red 4.4s linear infinite,native-rim-away 2.3s ease both}
+.opening.leaving #intro-smoke{opacity:0;transition:opacity 2.3s ease}
 #intro-seal{position:absolute;inset:11%;width:78%;height:78%;object-fit:contain;z-index:2;opacity:0;pointer-events:none}
-.opening.leaving #intro-seal{animation:native-seal-reveal 1.1s ease both}
-@keyframes native-emblem-dissolve{0%{opacity:1;filter:blur(0);transform:scale(1)}45%,100%{opacity:0;filter:blur(4px);transform:scale(1.025)}}
-@keyframes native-seal-reveal{0%{opacity:0;filter:blur(3px);transform:scale(.96)}32%,100%{opacity:1;filter:blur(0);transform:scale(1)}}
+.opening.leaving #intro-seal{animation:native-seal-reveal 2.3s ease both}
+@keyframes native-emblem-dissolve{0%,31%{opacity:1;filter:blur(0);transform:scale(1)}47%,100%{opacity:0;filter:blur(4px);transform:scale(1.025)}}
+@keyframes native-seal-reveal{0%,31%{opacity:0;filter:blur(3px);transform:scale(.96)}47%,100%{opacity:1;filter:blur(0);transform:scale(1)}}
+@keyframes native-rim-away{0%,31%{opacity:.65}47%,100%{opacity:0}}
 .opening.leaving .opening-bottom{animation:none;opacity:0;transition:opacity .2s}
-body.intro-transitioning .hero-content{animation:home-arrive .85s ease both}
-@keyframes native-intro-away{0%,72%{opacity:1}100%{opacity:0}}
+body.intro-transitioning .hero-content{animation:home-arrive .35s 1.95s ease both}
+@keyframes native-intro-away{0%,85%{opacity:1}100%{opacity:0}}
 @keyframes home-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
 #intro-fist{display:none;position:absolute;z-index:4;left:49.8%;top:56%;width:5%;height:auto;pointer-events:none;transform-origin:center;filter:drop-shadow(0 0 8px #ad001a55)}
-.opening.leaving #intro-fist.ready{display:block;animation:native-fist-entry 1.1s cubic-bezier(.2,.65,.25,1) both}
-@keyframes native-fist-entry{0%{opacity:0;transform:translate(0,0) scale(1)}10%{opacity:1}35%{opacity:.95;transform:translate(-45%,-170%) scale(7)}68%,100%{opacity:0;transform:translate(-45%,-170%) scale(8)}}
+.opening.leaving #intro-fist.ready{display:block;animation:native-fist-entry 2.3s ease-in-out both}
+@keyframes native-fist-entry{0%{opacity:0;transform:translate(0,0) scale(1)}4%{opacity:1}14%{opacity:1;transform:translate(-45%,-170%) scale(7)}24%,29%{opacity:1;transform:translate(0,0) scale(1)}31%,100%{opacity:0;transform:translate(0,0) scale(1)}}
 
 /* Keep the outgoing photograph in place while the next one sweeps over it. */
 .hero-slides .hero-image{transition:none}
 .hero-slides .hero-image.is-outgoing{opacity:1;z-index:0}
 .hero-slides .hero-image.is-current{z-index:1}
+/* Keep the same animation on the departing photo until it is fully covered. */
+.hero-slides .hero-image.is-current,.hero-slides .hero-image.is-outgoing{animation:school-photo-drift 8s linear infinite alternate both;animation-play-state:paused}
+#hero.motion-active .hero-slides .hero-image:is(.is-current,.is-outgoing){animation-play-state:running}
+.hero-slides .hero-image.hero-image--maestro:is(.is-current,.is-outgoing){animation-name:school-master-drift}
+body.intro-pending #hero.motion-active .hero-slides .hero-image:is(.is-current,.is-outgoing){animation-play-state:paused}
+
 .hero-slides .hero-image.is-current.is-sweeping{clip-path:circle(0% at 0% 50%);transition:clip-path .95s cubic-bezier(.65,0,.2,1)}
 .hero-slides .hero-image.is-current.is-sweeping.sweep-open{clip-path:circle(150% at 0% 50%)}
 

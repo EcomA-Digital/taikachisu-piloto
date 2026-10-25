@@ -98,16 +98,23 @@ window.SchoolFeatures=(()=>{
     const hero=document.querySelector('#hero'),slides=[...hero.querySelectorAll('.hero-image')],controls=[...hero.querySelectorAll('[data-hero-slide]')];
     const reduced=matchMedia('(prefers-reduced-motion: reduce)');let current=0,timer,changing=false,pending=null;
     function stop(){clearInterval(timer);timer=null;}
+    function hydrate(slide){
+      if(!slide?.dataset.src)return;
+      slide.loading='eager';slide.fetchPriority='low';
+      slide.srcset=slide.dataset.srcset||'';slide.src=slide.dataset.src;
+      delete slide.dataset.src;delete slide.dataset.srcset;
+    }
     async function selectSlide(index){
       if(changing){pending=index;return;}if(index===current)return;
       changing=true;
       try{
         const next=slides[index],previous=slides[current];
-        if(next.dataset.src){next.srcset=next.dataset.srcset||'';next.src=next.dataset.src;delete next.dataset.src;delete next.dataset.srcset;}
+        hydrate(next);
         if(!next.complete||!next.naturalWidth)await next.decode();
         previous.classList.remove('is-current');
         if(!reduced.matches)previous.classList.add('is-outgoing');
         next.classList.add('is-current');current=index;
+        hydrate(slides[(current+1)%slides.length]);
         controls.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
         if(!reduced.matches){
           next.classList.add('is-sweeping');
@@ -119,7 +126,8 @@ window.SchoolFeatures=(()=>{
       }catch(error){console.warn('No se pudo mostrar la fotografía.',error.message);}
       finally{changing=false;if(pending!==null){const index=pending;pending=null;selectSlide(index);}}
     }
-    function sync(){stop();if(hero.classList.contains('motion-active')&&!document.hidden&&!document.body.classList.contains('intro-pending')&&!reduced.matches)timer=setInterval(()=>selectSlide((current+1)%slides.length),6500);}
+    function sync(){stop();if(hero.classList.contains('motion-active')&&!document.hidden&&!document.body.classList.contains('intro-pending')&&!reduced.matches)timer=setInterval(()=>selectSlide((current+1)%slides.length),4000);}
+    hydrate(slides[1]);
     controls.forEach((button,index)=>button.addEventListener('click',()=>{stop();selectSlide(index);}));
     const watch=new IntersectionObserver(entries=>{entries.forEach(entry=>entry.target.classList.toggle('motion-active',entry.isIntersecting));sync();},{threshold:.12});document.querySelectorAll('#hero,.practice-photo').forEach(target=>watch.observe(target));
     new MutationObserver(sync).observe(document.body,{attributes:true,attributeFilter:['class']});document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);
