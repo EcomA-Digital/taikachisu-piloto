@@ -40,12 +40,27 @@ function createLogoFire(canvas, options={}) {
         float light=(1.-smoothstep(.06,.28,length((p-spark)*100.)))*(1.-life);
         color+=vec3(1.,.55,.08)*light;alpha+=light;
       }
-      // A filled, turbulent flame body covers the center during ignition.
-      // It dissipates above the seal, leaving only the original outer ring.
-      float coreShape=1.-smoothstep(radius+.002,radius+.038,r+(turbulence-.5)*.016);
-      float coreHeat=clamp(.38+.55*detail+(.5-r/radius)*.2,0.,1.);
-      vec3 coreColor=mix(vec3(.85,.10,.008),vec3(1.,.72,.12),coreHeat);
-      float coreAlpha=ignition*coreShape*(.83+.17*detail);
+      // Separate tapered plumes rise and curl; there is no circular core fill.
+      vec2 q=p/radius;
+      float striations=fbm(vec2(q.x*19.+turbulence,q.y*4.-time*6.));
+      float density=0.,coreHeat=0.;
+      for(int j=0;j<7;j++){
+        float seed=float(j),baseX=(seed-3.)*.27+.05*sin(seed*4.7);
+        float height=1.45+.5*sin(time*4.7+seed*2.37)+.2*sin(time*6.+seed*4.)+.4*exp(-baseX*baseX*4.);
+        float along=max(0.,(q.y+.85)/height);
+        float sway=.16*sin(along*6.-time*5.+seed*2.)*along+.05*sin(along*15.-time*9.+seed)*along*along;
+        float width=.42*pow(max(1.-along,0.),.9)+.018;
+        float edgeX=abs(q.x-baseX-sway+(striations-.5)*.06)/width;
+        float tongue=(1.-smoothstep(.3,1.1,edgeX))*(1.-smoothstep(.86,1.04,along))*smoothstep(-1.+.1*sin(seed*3.1),-.66+.1*sin(seed*3.1),q.y);
+        float thermal=clamp(.95-.5*edgeX-.35*along+(striations-.5)*.45,0.,1.);
+        density=max(density,tongue);
+        coreHeat=max(coreHeat,tongue*thermal);
+      }
+      vec3 coreColor=mix(vec3(.65,.018,.001),vec3(1.,.24,.005),smoothstep(0.,.35,coreHeat));
+      coreColor=mix(coreColor,vec3(1.,.82,.13),smoothstep(.35,.72,coreHeat));
+      coreColor=mix(coreColor,vec3(1.,.97,.75),smoothstep(.76,.98,coreHeat));
+      float coreAlpha=ignition*density*(.7+.3*coreHeat);
+      alpha*=1.-ignition;
       float combined=alpha*(1.-coreAlpha)+coreAlpha;
       color=(color*alpha*(1.-coreAlpha)+coreColor*coreAlpha)/max(combined,.001);
       gl_FragColor=vec4(color,clamp(combined,0.,1.));
@@ -112,9 +127,19 @@ function createSoftLogoFire(original, options={}) {
   glow.addColorStop(0,'rgba(255,221,115,.9)');glow.addColorStop(.22,'rgba(255,135,25,.65)');
   glow.addColorStop(.55,'rgba(220,45,3,.3)');glow.addColorStop(1,'rgba(120,14,0,0)');
   brush.fillStyle=glow;brush.fillRect(0,0,64,64);
-  const core=ctx.createRadialGradient(center,center,0,center,center,radius*1.08);
-  core.addColorStop(0,'rgba(255,193,55,1)');core.addColorStop(.65,'rgba(255,129,17,1)');
-  core.addColorStop(.9,'rgba(229,62,5,.85)');core.addColorStop(1,'rgba(120,14,0,0)');
+  const flame=options.ignite?ctx.createLinearGradient(0,center+radius,0,center-radius*1.4):null;
+  const hot=options.ignite?ctx.createLinearGradient(0,center+radius,0,center-radius):null;
+  if(flame){
+    flame.addColorStop(0,'rgba(255,218,94,.95)');flame.addColorStop(.35,'rgba(255,180,22,.95)');
+    flame.addColorStop(.65,'rgba(255,81,5,.85)');flame.addColorStop(1,'rgba(155,19,0,0)');
+    hot.addColorStop(0,'rgba(255,255,216,.95)');hot.addColorStop(.45,'rgba(255,232,104,.9)');hot.addColorStop(1,'rgba(255,122,8,0)');
+  }
+  function tongue(x,y,width,height,sway){
+    ctx.beginPath();ctx.moveTo(x-width,y);
+    ctx.bezierCurveTo(x-width*1.1,y-height*.28,x+sway-width*.35,y-height*.72,x+sway,y-height);
+    ctx.bezierCurveTo(x+sway-width*.45,y-height*.75,x+width*1.2,y-height*.3,x+width,y);
+    ctx.quadraticCurveTo(x,y+height*.15,x-width,y);ctx.closePath();ctx.fill();
+  }
   const particles=Array.from({length:count},(_,i)=>({angle:i/count*Math.PI*2,phase:Math.random(),speed:.55+Math.random()*.5}));
   let frame, stopped=false, last=0, frames=0;
   canvas.dataset.running='true';
@@ -126,22 +151,27 @@ function createSoftLogoFire(original, options={}) {
       ctx.clearRect(0,0,size,size);ctx.globalCompositeOperation='lighter';
       const ignition=fireIgnition(time,options.ignite);
       if(ignition>0){
-        ctx.globalAlpha=ignition;ctx.fillStyle=core;
-        ctx.beginPath();ctx.arc(center,center,radius*1.08,0,Math.PI*2);ctx.fill();
-        for(let i=0;i<16;i++){
-          const angle=i*2.399+time*.3, spread=radius*.75*Math.sqrt((i+.5)/16);
-          const x=center+Math.cos(angle)*spread,y=center+Math.sin(angle)*spread-Math.sin(time*4+i)*6*unit;
-          ctx.globalAlpha=ignition*(.4+.2*Math.sin(time*5+i));
-          ctx.drawImage(sprite,x-14*unit,y-22*unit,28*unit,44*unit);
+        ctx.filter=`blur(${1.8*unit}px)`;ctx.globalCompositeOperation='screen';
+        for(let i=0;i<7;i++){
+          const baseX=(i-3)*.27+.05*Math.sin(i*4.7);
+          const x=center+baseX*radius,y=center+radius*(.85+.08*Math.sin(i*3.1));
+          let height=radius*(1.45+.5*Math.sin(time*4.7+i*2.37)+.2*Math.sin(time*6+i*4)+.4*Math.exp(-baseX*baseX*4));
+          let sway=radius*.2*Math.sin(time*5+i*2);
+          if(i===3){height=Math.max(height,radius*1.65);sway*=.35;}
+          ctx.globalAlpha=ignition*.75;ctx.fillStyle=flame;
+          tongue(x,y,radius*.42,height,sway);
+          ctx.globalAlpha=ignition*.5;ctx.fillStyle=hot;
+          tongue(x,y,radius*.1,height*.65,sway*.6);
         }
       }
+      ctx.filter='none';ctx.globalCompositeOperation='lighter';
       for(const particle of particles){
         const life=(time*particle.speed+particle.phase)%1, angle=particle.angle;
         const rise=life*(18+18*(.5+.5*Math.sin(angle)))*unit;
         const x=center+Math.cos(angle)*(radius+life*7*unit)+Math.sin(time*2+angle*5)*life*5*unit;
         const y=center+Math.sin(angle)*radius-rise;
         const width=(11+life*13)*unit, height=width*(1+life*.7);
-        ctx.globalAlpha=Math.sin(life*Math.PI)*.6;
+        ctx.globalAlpha=Math.sin(life*Math.PI)*.6*(1-ignition);
         ctx.drawImage(sprite,x-width/2,y-height/2,width,height);
       }
       ctx.globalAlpha=1;

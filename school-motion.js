@@ -1,7 +1,7 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:native-smoke-v7';
+    const sessionKey = 'taikachisu:intro:native-smoke-v8';
     let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smokeTimer, fireTimer, smoke, stopFire;
     const fist = opening.querySelector('#intro-fist');
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
