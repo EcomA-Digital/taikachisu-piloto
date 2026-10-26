@@ -1,15 +1,14 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:native-smoke-v18';
-    let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smokeTimer, fireTimer, smoke, stopFire;
-    const fist = opening.querySelector('#intro-fist');
+    const sessionKey = 'taikachisu:intro:native-smoke-v19';
+    let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smoke;
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
     const remember = () => { try { sessionStorage.setItem(sessionKey, 'seen'); } catch {} };
     function finish() {
-      clearTimeout(holdTimer); clearTimeout(exitTimer); clearTimeout(safetyTimer);clearTimeout(smokeTimer);clearTimeout(fireTimer);
+      clearTimeout(holdTimer); clearTimeout(exitTimer); clearTimeout(safetyTimer);
       const wasDone = state === 'done'; state = 'done';
-      smoke?.stop();stopFire?.();
+      smoke?.stop();
       opening.classList.add('inactive'); opening.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('intro-pending', 'intro-transitioning');
       document.body.classList.add('intro-complete'); header.style.opacity = '1';
@@ -26,14 +25,8 @@ window.SchoolMotion = (() => {
       if (instant) { finish(); return; }
       if (state !== 'waiting') return;
       state = 'leaving'; clearTimeout(holdTimer);
-      // The fist returns first; a circular light stroke bridges the two marks.
-      smokeTimer=setTimeout(()=>smoke?.stop(),998);
-      // Optional artwork never delays entry when a connection is slow.
-      if (fist?.complete && fist.naturalWidth >= 512) fist.classList.add('ready');
+      // Keep native smoke running through the entire emblem-to-seal dissolve.
       header.style.opacity = '1'; document.body.classList.add('intro-transitioning');
-      fireTimer=setTimeout(() => {
-        try {if(typeof createLogoFire==='function')stopFire=createLogoFire(opening.querySelector('#intro-fire'),{size:innerWidth<761?256:320,fps:20,ignite:false});} catch {}
-      },1482);
       opening.classList.add('leaving'); exitTimer = setTimeout(finish, 2850);
     }
     document.querySelector('#intro-spacer').hidden = true;
@@ -58,7 +51,6 @@ window.SchoolMotion = (() => {
       window.dispatchEvent(new Event('taika:intro-start'));
       // Time is independent of media loading and autoplay policies.
       holdTimer = setTimeout(() => dismiss(), 550);
-      if (fist) {fist.fetchPriority = 'high'; fist.src = fist.dataset.src;}
       safetyTimer = setTimeout(() => {remember(); finish();}, 3500);
       try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }

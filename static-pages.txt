@@ -16,8 +16,6 @@ maestros/alejandro-digrigoli/index.html
 maestros/cesar-caruso/index.html
 maestros/julio-diaz/index.html
 maestros/gabriel-llano/index.html
-maestros/ludmila-visgarra/index.html
-maestros/gerardo-corti/index.html
 maestros/carlos-valdivieso/index.html
 maestros/carol-jose/index.html
 maestros/leiva-luis/index.html
