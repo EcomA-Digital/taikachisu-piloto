@@ -17,24 +17,21 @@
 .opening.leaving .intro-orbit--gold{animation:rim-gold 4.3s linear infinite,native-rim-away 3.35s ease both}
 .opening.leaving .intro-orbit--red{animation:rim-red 4.4s linear infinite,native-rim-away 3.35s ease both}
 .opening.leaving #intro-smoke{animation:native-vapor-away 3.35s linear both}
-@keyframes native-vapor-away{0%,20%{opacity:1}30%,100%{opacity:0}}
+@keyframes native-vapor-away{0%,20%{opacity:1}35%,100%{opacity:0}}
 /* Mask only the baked flame fringe; preserve the original seal and its lettering. */
 #intro-seal{position:absolute;inset:-5%;width:110%;max-width:none;height:110%;object-fit:contain;clip-path:ellipse(35.94% 35.94% at 50.2% 49.61%);mask-image:radial-gradient(circle,#000 60%,transparent 70%);mask-size:0% 0%;mask-repeat:no-repeat;mask-position:center;z-index:2;opacity:0;pointer-events:none}
 .opening.leaving #intro-fire{animation:native-seal-fire 3.35s ease both}
-@keyframes native-seal-fire{0%,44%{opacity:0;transform:scale(1)}52%,100%{opacity:.85;transform:scale(1)}}
-/* Free, licensed real fire footage. Black blends away; the emblem stays underneath. */
-#intro-fire-film,#intro-fire-still{position:absolute;inset:7%;width:86%;max-width:none;height:86%;object-fit:cover;pointer-events:none;visibility:visible;opacity:0;z-index:4;mix-blend-mode:screen;mask-image:radial-gradient(closest-side,#000 80%,#000e 92%,transparent 100%)}
-.opening.film-playing #intro-fire-film{visibility:visible}
-#intro-fire-still{visibility:hidden}
-.opening.film-fallback #intro-fire-still{visibility:visible}
-.opening.film-fallback #intro-fire-film{visibility:hidden}
-.opening.leaving #intro-fire-still{animation:stock-fire-backup 3.35s linear both}
-@keyframes stock-fire-backup{0%,20%{opacity:0;transform:scale(.12)}33%,46%{opacity:1;transform:scale(1)}72%,100%{opacity:0;transform:scale(1.03)}}
-.opening.leaving #intro-fire-film{animation:stock-fire-veil 3.35s linear both}
-@keyframes stock-fire-veil{0%,20%{opacity:0;transform:scale(1)}33%,58%{opacity:1;transform:scale(1)}72%,100%{opacity:0;transform:scale(1)}}
+@keyframes native-seal-fire{0%,52%{opacity:0;transform:scale(1)}64%,100%{opacity:.85;transform:scale(1)}}
+/* A single drawn stroke carries the eye between the two circular marks. */
+.intro-transfer-ring{position:absolute;inset:10.5%;width:79%;height:79%;z-index:4;pointer-events:none;opacity:0;overflow:visible;transform:rotate(-90deg)}
+.intro-transfer-ring circle{fill:none;stroke:#f3d839;stroke-width:.45;stroke-linecap:round;stroke-dasharray:0 100;stroke-dashoffset:0}
+.opening.leaving .intro-transfer-ring{animation:mark-transfer 3.35s linear both}
+.opening.leaving .intro-transfer-ring circle{animation:mark-stroke 3.35s cubic-bezier(.4,0,.2,1) both}
+@keyframes mark-transfer{0%,22%{opacity:0;transform:rotate(-90deg) scale(.98)}28%,49%{opacity:.85}62%,100%{opacity:0;transform:rotate(45deg) scale(1.04)}}
+@keyframes mark-stroke{0%,22%{stroke-dasharray:0 100;stroke-dashoffset:0}39%{stroke-dasharray:75 100;stroke-dashoffset:0}58%,100%{stroke-dasharray:0 100;stroke-dashoffset:-100}}
 .opening.leaving #intro-seal{animation:native-seal-reveal 3.35s ease-in-out both}
-@keyframes native-emblem-dissolve{0%,26%{opacity:1;filter:brightness(1) blur(0);transform:scale(1)}33%,39%{opacity:1;filter:brightness(.18) blur(0);transform:scale(1)}42%,100%{opacity:0;filter:brightness(.18) blur(2px);transform:scale(1)}}
-@keyframes native-seal-reveal{0%,42%{opacity:0;mask-size:0% 0%;filter:brightness(.2);transform:scale(.985)}46%{opacity:1;mask-size:200% 200%;filter:brightness(.2);transform:scale(1)}72%,100%{opacity:1;mask-size:200% 200%;filter:brightness(1);transform:scale(1)}}
+@keyframes native-emblem-dissolve{0%,22%{opacity:1;filter:blur(0);transform:scale(1)}38%{opacity:.65;filter:blur(1px);transform:scale(.97)}54%,100%{opacity:0;filter:blur(3px);transform:scale(.94)}}
+@keyframes native-seal-reveal{0%,29%{opacity:0;mask-size:0% 0%;transform:scale(.94)}42%{opacity:.65;mask-size:115% 115%;transform:scale(.97)}62%,100%{opacity:1;mask-size:200% 200%;transform:scale(1)}}
 @keyframes native-rim-away{0%,20%{opacity:.65}30%,100%{opacity:0}}
 .opening.leaving .opening-bottom{animation:none;opacity:0;transition:opacity .2s}
 body.intro-transitioning .hero-content{animation:home-arrive .268s 3.082s ease both}
