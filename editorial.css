@@ -49,3 +49,90 @@
  .hero-photo-nav{gap:8px!important}
  .hero-photo-nav button{width:24px!important;min-width:24px}
 }
+
+/* Articles: a readable journal, preserving the school text and its reading order. */
+.reading--editorial .reading-heading{padding-top:135px;padding-bottom:48px}
+.reading--editorial .reading-heading h1{font-size:clamp(42px,5.1vw,72px);line-height:1.08;max-width:1020px;text-wrap:balance}
+.reading--editorial .reading-heading .eyebrow{font-size:11px;letter-spacing:.12em;margin-bottom:18px}
+.reading--editorial .heading-rule{height:2px;width:64px;margin-top:28px;background:var(--brand-red)}
+.reading--editorial .reading-heading.has-editorial-cover{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);column-gap:clamp(32px,5vw,80px);align-items:center}
+.has-editorial-cover>.reading-back,.has-editorial-cover>.eyebrow,.has-editorial-cover>.article-byline,.has-editorial-cover>h1,.has-editorial-cover>.heading-rule{grid-column:1}
+.reading-heading .editorial-cover{grid-column:2;grid-row:auto;margin:0;align-self:center;display:flex;justify-content:center;min-width:0}
+.editorial-cover img{width:auto;height:auto;max-width:100%;max-height:340px;object-fit:contain}
+.reading--editorial .reading-layout{padding-top:56px;padding-bottom:64px}
+.reading-content.editorial-article{max-width:1120px;font-size:17px;line-height:1.8}
+.editorial-article p{margin:0 0 24px}
+.editorial-article .reading-lead{font-family:'Libre Caslon Display',Georgia,serif;font-style:italic;font-size:clamp(24px,2.2vw,30px);line-height:1.48;color:var(--ink);max-width:800px;margin-bottom:42px}
+.editorial-article .editorial-kicker{font-size:12px;line-height:1.7;letter-spacing:.06em;color:var(--brand-red);margin-bottom:24px}
+.editorial-article h2{font-size:clamp(30px,3vw,42px);line-height:1.15;margin:40px auto 26px;padding-top:26px;border-color:var(--line);text-wrap:balance}
+.editorial-article .editorial-chapter{margin:44px 0}
+.editorial-chapter>h2{max-width:800px;margin-left:auto;margin-right:auto}
+.editorial-chapter>p,.editorial-chapter>ul,.editorial-chapter>ol,.editorial-chapter>h3,.editorial-chapter>h4{max-width:760px;margin-left:auto;margin-right:auto}
+.editorial-article .editorial-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,56px);margin:32px 0 40px}
+.editorial-columns>p{margin:0;min-width:0}
+.editorial-article .editorial-spread{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4.5vw,64px);align-items:center;margin:42px 0 54px;min-width:0}
+.editorial-spread>*{min-width:0}
+.editorial-spread-copy>p:last-child{margin-bottom:0}
+.editorial-spread .reading-lead{font-size:clamp(24px,2vw,29px);margin-bottom:26px}
+.editorial-article .editorial-media{background:transparent;border:0;padding:0;max-width:920px;margin:38px auto}
+.editorial-article .editorial-media img{width:100%;height:auto;max-height:580px;object-fit:contain;margin:0}
+.editorial-spread>.editorial-media{margin:0}
+.editorial-article .editorial-spread .editorial-media img{max-height:500px}
+.editorial-article .editorial-media figcaption{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--brand-red);text-align:left;font-size:12px;line-height:1.6}
+.editorial-article .editorial-pullquote{position:relative;font-family:'Libre Caslon Display',Georgia,serif;font-size:clamp(26px,2.65vw,36px);font-weight:400;line-height:1.38;color:var(--ink);background:#eeece3;border-left:3px solid var(--brand-red);padding:28px 38px 30px 78px;max-width:900px;margin:46px auto}
+.editorial-pullquote::before{content:'“';position:absolute;left:24px;top:16px;font-size:80px;line-height:1;color:var(--brand-red)}
+.editorial-pullquote p{font:inherit;margin:0}
+.editorial-article .editorial-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 28px;max-width:none;margin:30px 0;padding:0;list-style:none;border:0}
+.editorial-principles>li{padding:18px 0;border-top:2px solid var(--brand-red);font-size:16px;line-height:1.7;margin:0}
+.editorial-article .history-timeline.editorial-principles>li::before{display:none}
+.editorial-article .institutional-logos{margin:42px auto;max-width:900px;padding:26px 0}
+.editorial-article .institutional-logos img{height:88px;width:100%;max-width:120px}
+.editorial-article .school-video{width:100%;aspect-ratio:16/9;background:#111;min-width:0}
+.editorial-article .school-video iframe{width:100%;height:auto;aspect-ratio:16/9;margin:0;min-height:0}
+.editorial-article .document-gallery.editorial-document-strip{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(230px,29%);gap:20px;align-items:start;width:100%;max-width:100%;min-width:0;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--brand-red) #d7d5ca;padding:6px 0 22px;margin:28px 0 42px}
+.editorial-document-strip:focus-visible{outline:2px solid var(--brand-red);outline-offset:5px}
+.editorial-article .editorial-document-strip .editorial-media{padding:14px;margin:0;scroll-snap-align:start;background:#eeece3}
+.editorial-article .editorial-document-strip img{height:230px;width:100%;object-fit:contain}
+.editorial-document-strip figcaption{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.reading--editorial .article-related{max-width:1120px;margin:54px auto 0;padding-top:34px;border-top:1px solid var(--line)}
+.reading--editorial .article-related>h2{font-family:'Libre Caslon Display',Georgia,serif;font-size:38px;margin-top:30px}
+@media(max-width:900px){
+ .reading--editorial .reading-heading.has-editorial-cover{grid-template-columns:1fr}
+ .reading-heading .editorial-cover{grid-column:1;grid-row:auto;margin-top:28px;justify-content:flex-start}
+ .editorial-cover img{max-height:260px}
+ .editorial-article .editorial-columns,.editorial-article .editorial-spread{grid-template-columns:1fr;gap:26px}
+ .editorial-article .editorial-principles{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .reading--editorial .reading-heading{padding:112px 24px 34px}
+ .reading--editorial .reading-heading h1{font-size:43px;line-height:1.08}
+ .reading--editorial .reading-heading .eyebrow{font-size:10px;line-height:1.8;letter-spacing:.08em}
+ .reading--editorial .reading-layout{padding:36px 24px 48px}
+ .reading-content.editorial-article{font-size:16px;line-height:1.8}
+ .editorial-article .reading-lead,.editorial-spread .reading-lead{font-size:22px;line-height:1.55;margin-bottom:28px}
+ .editorial-article .editorial-spread{margin:30px 0 38px;gap:24px}
+ .editorial-article .editorial-chapter{margin:34px 0}
+ .editorial-article h2{font-size:32px;margin-top:30px;padding-top:22px}
+ .editorial-article .editorial-pullquote{font-size:26px;padding:24px 22px 26px 46px;margin:34px auto}
+ .editorial-pullquote::before{font-size:52px;left:10px;top:18px}
+ .editorial-article .editorial-spread .editorial-media img{max-height:420px}
+ .editorial-article .editorial-principles{grid-template-columns:1fr;gap:0}
+ .editorial-article .document-gallery.editorial-document-strip{grid-auto-columns:82%;gap:16px}
+ .editorial-article .editorial-document-strip img{height:245px}
+ .editorial-article .institutional-logos{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+ .reading--editorial .article-related>h2{font-size:32px}
+}
+
+.editorial-heading-copy{min-width:0}
+.reading--editorial .reading-heading .article-byline{font-size:12px;line-height:1.6;color:#c7c6bb;margin:0 0 18px}
+@media(max-width:760px){
+ .reading--editorial .article-related .journal-grid{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:85%;gap:18px;overflow-x:auto;max-width:100%;min-width:0;padding-bottom:16px;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--brand-red) #d7d5ca}
+ .reading--editorial .article-related .journal-card{scroll-snap-align:start;min-width:0}
+ .reading--editorial .article-related .journal-grid:focus-visible{outline:2px solid var(--brand-red);outline-offset:4px}
+}
+
+.editorial-gallery-tools{display:flex;align-items:center;gap:10px;margin:24px 0 0;font-size:12px;color:var(--muted)}
+.editorial-gallery-tools>span{margin-right:auto}
+.editorial-gallery-tools button{width:44px;min-height:44px;border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;font-size:22px;cursor:pointer}
+.editorial-gallery-tools button:hover{background:var(--gold)}
+.editorial-gallery-tools button:focus-visible{outline:2px solid var(--brand-red);outline-offset:3px}

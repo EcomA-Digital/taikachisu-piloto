@@ -120,7 +120,7 @@
       "description": "Practica artes marciales desde 1974 y se vinculó con la Escuela Taikachisu Wushu Kung Fu en diciembre de 1978, iniciando un camino de formación y enseñanza…",
       "image": "https://taikachisu.com/preview/assets/maestro-2027/revision25-directivo-3-0-large.webp",
       "imageAlt": "Directivo",
-      "type": "website",
+      "type": "article",
       "schema": {
         "@context": "https://schema.org",
         "@graph": [
@@ -173,14 +173,45 @@
               {
                 "@type": "ListItem",
                 "position": 2,
+                "name": "El camino marcial",
+                "item": "https://taikachisu.com/preview/camino-marcial/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
                 "name": "Directivo",
                 "item": "https://taikachisu.com/preview/maestro/"
               }
             ]
+          },
+          {
+            "@type": "Article",
+            "@id": "https://taikachisu.com/preview/maestro/#article",
+            "headline": "Directivo",
+            "mainEntityOfPage": {
+              "@id": "https://taikachisu.com/preview/maestro/"
+            },
+            "image": [
+              "https://taikachisu.com/preview/assets/maestro-2027/revision25-directivo-3-0-large.webp"
+            ],
+            "author": {
+              "@type": "Organization",
+              "name": "Taikachisu",
+              "url": "https://taikachisu.com/preview/"
+            },
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR",
+            "datePublished": "2017-03-16T03:04:46+00:00",
+            "dateModified": "2026-10-25"
           }
         ]
       },
-      "articleMeta": {},
+      "articleMeta": {
+        "article:published_time": "2017-03-16T03:04:46+00:00",
+        "article:modified_time": "2026-10-25"
+      },
       "original_text": "Maestro Alejandro R. Di Grigoli 7.º Tuan – Discípulo consagrado del Shi Gung Juan Carlos Gauna Practica artes marciales desde 1974 y se vinculó con la Escuela Taikachisu Wushu Kung Fu en diciembre de 1978, iniciando un camino de formación y enseñanza que ha sostenido a lo largo de décadas. Su trayectoria está estrechamente ligada a la misma sede, donde lleva casi 48 años contribuyendo a la continuidad de la práctica, la enseñanza y la transmisión de esta tradición marcial. Profesor Nacional de Educación Física, fue consagrado discípulo por el Shi Gung Juan Carlos Gauna el 7 de octubre de 1995, en una ceremonia tradicional. A lo largo de su recorrido participó en competencias nacionales e internacionales, obtuvo títulos sudamericanos e internacionales y se desempeñó como instructor, árbitro, director técnico y organizador de torneos. Asimismo, se capacitó en la instrucción de personal de fuerzas de seguridad y dictó cursos de defensa personal y formación técnica en distintas instituciones oficiales. Maestro Alejandro R. Di Grigoli en una demostración técnica Actualmente preside la Asociación Taikachisu Wushu Kung Fu Argentina, entidad adherida a la Federación Argentina de Wushu Kung Fu (FAWK), de la cual el Maestro Alejandro R. Di Grigoli es también miembro. Desde esta función, trabaja en la formación de practicantes y profesores, integrando los conocimientos de las artes marciales con los principios pedagógicos y metodológicos de la Educación Física. Su labor está orientada a preservar y transmitir la esencia técnica, táctica y filosófica de la Escuela Taikachisu Wushu Kung Fu, en concordancia con sus tradiciones y los lineamientos establecidos por el Shi Gung Gauna. En este sentido, trabaja en conjunto con el Director General de la Escuela, Juan Carlos Gauna (h), contribuyendo a la continuidad de sus fundamentos y a la transmisión de su legado. Asimismo, se dedica a recuperar, organizar y documentar materiales históricos, y a desarrollar herramientas de enseñanza y evaluación que favorezcan un aprendizaje progresivo, consciente y respetuoso de los tiempos de cada practicante. Maestro Alejandro R. Di Grigoli junto a integrantes de la Escuela Taikachisu Más que una trayectoria de logros personales, su compromiso es aportar a la continuidad de la Escuela, procurando que sus conocimientos, principios y tradiciones puedan ser comprendidos y transmitidos a las futuras generaciones."
     },
     "documentos-historicos": {
@@ -188,7 +219,7 @@
       "description": "Te invitamos a recorrer nuestra Galería de Documentos Históricos. Encontrarás notas en diarios y revistas de la Asoc. Taika-Chisu Wu Shu Kung Fu Argentina.",
       "image": "https://taikachisu.com/preview/assets/8401574c1b0bcb03-opt2.webp",
       "imageAlt": "Documentos Históricos",
-      "type": "website",
+      "type": "article",
       "schema": {
         "@context": "https://schema.org",
         "@graph": [
@@ -241,14 +272,45 @@
               {
                 "@type": "ListItem",
                 "position": 2,
+                "name": "El camino marcial",
+                "item": "https://taikachisu.com/preview/camino-marcial/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
                 "name": "Documentos Históricos",
                 "item": "https://taikachisu.com/preview/documentos-historicos/"
               }
             ]
+          },
+          {
+            "@type": "Article",
+            "@id": "https://taikachisu.com/preview/documentos-historicos/#article",
+            "headline": "Documentos Históricos",
+            "mainEntityOfPage": {
+              "@id": "https://taikachisu.com/preview/documentos-historicos/"
+            },
+            "image": [
+              "https://taikachisu.com/preview/assets/8401574c1b0bcb03-opt2.webp"
+            ],
+            "author": {
+              "@type": "Organization",
+              "name": "Taikachisu",
+              "url": "https://taikachisu.com/preview/"
+            },
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR",
+            "datePublished": "2017-03-09T04:16:51+00:00",
+            "dateModified": "2017-03-17T06:07:59+00:00"
           }
         ]
       },
-      "articleMeta": {},
+      "articleMeta": {
+        "article:published_time": "2017-03-09T04:16:51+00:00",
+        "article:modified_time": "2017-03-17T06:07:59+00:00"
+      },
       "original_text": "Te invitamos a recorrer nuestra Galería de Documentos Históricos . En ella encontrarás notas en diarios, revistas y fotos que datan prácticamente desde los inicios de nuestra Escuela y de la fundación de la Asociación Taika-Chisu Wu Shu Kung Fu Argentina . También podrás leer notas completas acerca de algunos Torneos de Taikachisu a nivel nacional, sudamericano y mundial. Hacer clic en las imágenes para verlas en tamaño completo Si tenés material digitalizado sobre la Escuela Taikachisu o sobre los torneos en los que participamos, te invitamos a compartirla con nosotros para hacer que esta galería siga creciendo. Podés enviarnos tus copias vía Facebook o en un correo desde la página de Contacto . ¡Gracias!"
     },
     "sedes": {

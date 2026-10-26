@@ -36,7 +36,6 @@ function formatReading(record) {
   content.dataset.kind=record.slug;
   content.classList.toggle('maestro-article', Boolean(record.editorialSource));
   content.querySelectorAll('h1').forEach(heading=>{const replacement=document.createElement('h2');replacement.innerHTML=heading.innerHTML;heading.replaceWith(replacement);});
-  SchoolFeatures.prepareVideos(content);
 
   // Flatten builder wrappers while retaining content and its order.
   [...content.querySelectorAll('div,section')].reverse().forEach(el=>el.replaceWith(...el.childNodes));
@@ -86,6 +85,8 @@ function formatReading(record) {
     });
     observeSections();
   }
+  SchoolFeatures.prepareVideos(content);
+  SchoolEditorial.enhance(content,record);
 }
 document.querySelector('#close-photo').addEventListener('click',()=>document.querySelector('#photo-viewer').close());
 function observeSections() {
@@ -234,7 +235,7 @@ function showRoute(initial=false) {
   window.SchoolSEO?.apply();
   dispatchEvent(new Event('taika:page'));
 }
-fetch('content.json?v=20261025-content2').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
+fetch('content.json?v=20261025-editorial1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   // The static home is already visible. Build its interactive lists after the
   // opening so large DOM updates cannot delay the final seal or entry timer.
   if(document.body.classList.contains('intro-pending')) {
