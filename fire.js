@@ -49,7 +49,7 @@ function createLogoFire(canvas, options={}) {
         float field=j==0?1.-turbulence:turbulence;
         float internalEdge=abs(field-.58)*(j==0?.16:.22);
         vec4 layer=flameSurface(internalEdge,1.,field,detail);
-        float layerAlpha=clamp(layer.a*veil,0.,1.);
+        float layerAlpha=clamp(layer.a*veil*1.65,0.,1.);
         float combined=alpha*(1.-layerAlpha)+layerAlpha;
         color=(color*alpha*(1.-layerAlpha)+layer.rgb*layerAlpha)/max(combined,.001);
         alpha=combined;
@@ -92,7 +92,7 @@ function createLogoFire(canvas, options={}) {
 // The central flame holds briefly, then uncovers the seal without extending entry.
 function fireIgnition(seconds, enabled) {
   if (!enabled) return 0;
-  const fade=Math.max(0,Math.min(1,(seconds-.55)/.8));
+  const fade=Math.max(0,Math.min(1,(seconds-.75)/.8));
   return 1-fade*fade*(3-2*fade);
 }
 
@@ -139,7 +139,7 @@ function createSoftLogoFire(original, options={}) {
         const x=center+Math.cos(angle)*particle.spread+Math.sin(time*2+angle*5)*life*5*unit;
         const y=center+Math.sin(angle)*particle.spread-rise;
         const width=(26+life*22)*unit,height=width*(1+life*.7);
-        ctx.globalAlpha=Math.sin(life*Math.PI)*.6*ignition;
+        ctx.globalAlpha=Math.sin(life*Math.PI)*.9*ignition;
         ctx.drawImage(sprite,x-width/2,y-height/2,width,height);
       }
       for(const particle of particles){

@@ -17,15 +17,15 @@
 .opening.leaving .intro-orbit--gold{animation:rim-gold 4.3s linear infinite,native-rim-away 3.35s ease both}
 .opening.leaving .intro-orbit--red{animation:rim-red 4.4s linear infinite,native-rim-away 3.35s ease both}
 .opening.leaving #intro-smoke{animation:native-vapor-away 3.35s linear both}
-@keyframes native-vapor-away{0%,21%{opacity:1}33%,100%{opacity:0}}
+@keyframes native-vapor-away{0%,20%{opacity:1}30%,100%{opacity:0}}
 /* Mask only the baked flame fringe; preserve the original seal and its lettering. */
 #intro-seal{position:absolute;inset:-5%;width:110%;max-width:none;height:110%;object-fit:contain;clip-path:ellipse(35.94% 35.94% at 50.2% 49.61%);mask-image:radial-gradient(circle,#000 60%,transparent 70%);mask-size:0% 0%;mask-repeat:no-repeat;mask-position:center;z-index:2;opacity:0;pointer-events:none}
 .opening.leaving #intro-fire{animation:native-seal-fire 3.35s ease both}
-@keyframes native-seal-fire{0%,34%{opacity:0;transform:scale(.12)}36%{opacity:.95;transform:scale(.12)}56%,100%{opacity:.85;transform:scale(1)}}
+@keyframes native-seal-fire{0%,20%{opacity:0;transform:scale(.12);filter:brightness(1)}23%{opacity:.95;transform:scale(.3);filter:brightness(1.15)}33%,44%{opacity:1;transform:scale(1.03);filter:brightness(1.25)}70%,100%{opacity:.85;transform:scale(1);filter:brightness(1)}}
 .opening.leaving #intro-seal{animation:native-seal-reveal 3.35s ease-in-out both}
-@keyframes native-emblem-dissolve{0%,21%{opacity:1;filter:blur(0);transform:scale(1)}33%,100%{opacity:0;filter:blur(4px);transform:scale(.985)}}
-@keyframes native-seal-reveal{0%,42%{opacity:0;mask-size:0% 0%;filter:brightness(1.5);transform:scale(.985)}74%,100%{opacity:1;mask-size:200% 200%;filter:brightness(1);transform:scale(1)}}
-@keyframes native-rim-away{0%,21%{opacity:.65}33%,100%{opacity:0}}
+@keyframes native-emblem-dissolve{0%,39%{opacity:1;filter:blur(0);transform:scale(1)}42%,100%{opacity:0;filter:blur(2px);transform:scale(1)}}
+@keyframes native-seal-reveal{0%,42%{opacity:0;mask-size:0% 0%;filter:brightness(1.5);transform:scale(.985)}46%,100%{opacity:1;mask-size:200% 200%;filter:brightness(1);transform:scale(1)}}
+@keyframes native-rim-away{0%,20%{opacity:.65}30%,100%{opacity:0}}
 .opening.leaving .opening-bottom{animation:none;opacity:0;transition:opacity .2s}
 body.intro-transitioning .hero-content{animation:home-arrive .268s 3.082s ease both}
 @keyframes native-intro-away{0%,92%{opacity:1}100%{opacity:0}}
