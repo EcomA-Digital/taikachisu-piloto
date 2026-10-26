@@ -23,7 +23,7 @@
 .opening.leaving #intro-fire{animation:native-seal-fire 3.35s ease both}
 @keyframes native-seal-fire{0%,44%{opacity:0;transform:scale(1)}52%,100%{opacity:.85;transform:scale(1)}}
 /* Free, licensed real fire footage. Black blends away; the emblem stays underneath. */
-#intro-fire-film{position:absolute;inset:-6%;width:112%;max-width:none;height:112%;object-fit:cover;pointer-events:none;visibility:visible;opacity:0;z-index:4;mix-blend-mode:screen;mask-image:radial-gradient(closest-side,#000 55%,#000d 72%,transparent 96%)}
+#intro-fire-film{position:absolute;inset:7%;width:86%;max-width:none;height:86%;object-fit:cover;pointer-events:none;visibility:visible;opacity:0;z-index:4;mix-blend-mode:screen;mask-image:radial-gradient(closest-side,#000 80%,#000e 92%,transparent 100%)}
 .opening.film-playing #intro-fire-film{visibility:visible}
 .opening.leaving #intro-fire-film{animation:stock-fire-veil 3.35s linear both}
 @keyframes stock-fire-veil{0%,20%{opacity:0;transform:scale(1)}33%,58%{opacity:1;transform:scale(1)}72%,100%{opacity:0;transform:scale(1)}}
