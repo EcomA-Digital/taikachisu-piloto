@@ -11,24 +11,26 @@
 @keyframes rim-red{from{transform:rotate(100deg)}to{transform:rotate(-220deg)}}
 .opening .opening-bottom{left:24px;right:24px;bottom:max(24px,env(safe-area-inset-bottom));justify-content:center;z-index:3}
 .opening .enter-button{font-size:12px;padding:12px 8px;min-height:44px;color:#bdbdb5;border-bottom:1px solid #ffffff33}
-#intro-fire{position:absolute;width:178%;height:178%;left:-39%;top:-39%;z-index:3;pointer-events:none;opacity:.8}
-.opening.leaving{animation:native-intro-away 2.3s ease forwards;mask-image:none;pointer-events:none}
-.opening.leaving .intro-native-emblem{animation:native-emblem-dissolve 2.3s ease both}
-.opening.leaving .intro-orbit--gold{animation:rim-gold 4.3s linear infinite,native-rim-away 2.3s ease both}
-.opening.leaving .intro-orbit--red{animation:rim-red 4.4s linear infinite,native-rim-away 2.3s ease both}
-.opening.leaving #intro-smoke{opacity:0;transition:opacity 2.3s ease}
+#intro-fire{position:absolute;width:178%;height:178%;left:-39%;top:-39%;z-index:3;pointer-events:none;opacity:0}
+.opening.leaving{animation:native-intro-away 2.9s ease forwards;mask-image:none;pointer-events:none}
+.opening.leaving .intro-native-emblem{animation:native-emblem-dissolve 2.9s ease both}
+.opening.leaving .intro-orbit--gold{animation:rim-gold 4.3s linear infinite,native-rim-away 2.9s ease both}
+.opening.leaving .intro-orbit--red{animation:rim-red 4.4s linear infinite,native-rim-away 2.9s ease both}
+.opening.leaving #intro-smoke{opacity:0;transition:opacity 2.9s ease}
 #intro-seal{position:absolute;inset:11%;width:78%;height:78%;object-fit:contain;z-index:2;opacity:0;pointer-events:none}
-.opening.leaving #intro-seal{animation:native-seal-reveal 2.3s ease both}
+.opening.leaving #intro-fire{animation:native-seal-fire 2.9s ease both}
+@keyframes native-seal-fire{0%,47%{opacity:0}57%,100%{opacity:.8}}
+.opening.leaving #intro-seal{animation:native-seal-reveal 2.9s ease both}
 @keyframes native-emblem-dissolve{0%,31%{opacity:1;filter:blur(0);transform:scale(1)}47%,100%{opacity:0;filter:blur(4px);transform:scale(1.025)}}
 @keyframes native-seal-reveal{0%,31%{opacity:0;filter:blur(3px);transform:scale(.96)}47%,100%{opacity:1;filter:blur(0);transform:scale(1)}}
 @keyframes native-rim-away{0%,31%{opacity:.65}47%,100%{opacity:0}}
 .opening.leaving .opening-bottom{animation:none;opacity:0;transition:opacity .2s}
-body.intro-transitioning .hero-content{animation:home-arrive .35s 1.95s ease both}
+body.intro-transitioning .hero-content{animation:home-arrive .435s 2.465s ease both}
 @keyframes native-intro-away{0%,85%{opacity:1}100%{opacity:0}}
 @keyframes home-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
 #intro-fist{display:none;position:absolute;z-index:4;left:49.8%;top:56%;width:5%;height:auto;pointer-events:none;transform-origin:center;filter:drop-shadow(0 0 8px #ad001a55)}
-.opening.leaving #intro-fist.ready{display:block;animation:native-fist-entry 2.3s ease-in-out both}
+.opening.leaving #intro-fist.ready{display:block;animation:native-fist-entry 2.9s ease-in-out both}
 @keyframes native-fist-entry{0%{opacity:0;transform:translate(0,0) scale(1)}4%{opacity:1}14%{opacity:1;transform:translate(-45%,-170%) scale(7)}24%,29%{opacity:1;transform:translate(0,0) scale(1)}31%,100%{opacity:0;transform:translate(0,0) scale(1)}}
 
 /* Keep the outgoing photograph in place while the next one sweeps over it. */
