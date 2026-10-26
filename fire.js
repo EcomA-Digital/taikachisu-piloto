@@ -3,12 +3,12 @@ function createLogoFire(canvas, options={}) {
   const gl = canvas.getContext('webgl', {alpha:true, antialias:false, premultipliedAlpha:false, powerPreference:'low-power'});
   // Half precision erases the noise fractions and underflows small spark distances.
   const precision = gl?.getShaderPrecisionFormat(gl.FRAGMENT_SHADER, gl.HIGH_FLOAT);
-  if (!gl || !precision || precision.precision < 16) return createSoftLogoFire(canvas);
+  if (!gl || !precision || precision.precision < 16) return createSoftLogoFire(canvas, options);
   canvas.width = canvas.height = options.size || (innerWidth < 760 ? 480 : 640);
   const vertex = `attribute vec2 position; varying vec2 uv;
     void main(){uv=position*.5+.5;gl_Position=vec4(position,0.,1.);}`;
   const fragment = `precision highp float;
-    varying vec2 uv; uniform float time;
+    varying vec2 uv; uniform float time; uniform float ignition;
     float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
     float noise(vec2 p){vec2 i=floor(p), f=fract(p);f=f*f*(3.-2.*f);
       return mix(mix(hash(i),hash(i+vec2(1.,0.)),f.x),mix(hash(i+vec2(0.,1.)),hash(i+vec2(1.,1.)),f.x),f.y);}
@@ -40,21 +40,29 @@ function createLogoFire(canvas, options={}) {
         float light=(1.-smoothstep(.06,.28,length((p-spark)*100.)))*(1.-life);
         color+=vec3(1.,.55,.08)*light;alpha+=light;
       }
-      gl_FragColor=vec4(color,clamp(alpha,0.,1.));
+      // A filled, turbulent flame body covers the center during ignition.
+      // It dissipates above the seal, leaving only the original outer ring.
+      float coreShape=1.-smoothstep(radius+.002,radius+.038,r+(turbulence-.5)*.016);
+      float coreHeat=clamp(.38+.55*detail+(.5-r/radius)*.2,0.,1.);
+      vec3 coreColor=mix(vec3(.85,.10,.008),vec3(1.,.72,.12),coreHeat);
+      float coreAlpha=ignition*coreShape*(.83+.17*detail);
+      float combined=alpha*(1.-coreAlpha)+coreAlpha;
+      color=(color*alpha*(1.-coreAlpha)+coreColor*coreAlpha)/max(combined,.001);
+      gl_FragColor=vec4(color,clamp(combined,0.,1.));
     }`;
   function compile(type, source) {
     const shader=gl.createShader(type);gl.shaderSource(shader,source);gl.compileShader(shader);
     if(!gl.getShaderParameter(shader,gl.COMPILE_STATUS)){gl.deleteShader(shader);return null;}return shader;
   }
   const vs=compile(gl.VERTEX_SHADER,vertex), fs=compile(gl.FRAGMENT_SHADER,fragment);
-  if(!vs || !fs) return createSoftLogoFire(canvas);
+  if(!vs || !fs) return createSoftLogoFire(canvas, options);
   const program=gl.createProgram();gl.attachShader(program,vs);gl.attachShader(program,fs);gl.linkProgram(program);
-  if(!gl.getProgramParameter(program,gl.LINK_STATUS))return createSoftLogoFire(canvas);
+  if(!gl.getProgramParameter(program,gl.LINK_STATUS))return createSoftLogoFire(canvas, options);
   gl.useProgram(program);
   const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
   gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
   const position=gl.getAttribLocation(program,'position');gl.enableVertexAttribArray(position);gl.vertexAttribPointer(position,2,gl.FLOAT,false,0,0);
-  const time=gl.getUniformLocation(program,'time');gl.viewport(0,0,canvas.width,canvas.height);
+  const time=gl.getUniformLocation(program,'time'), ignition=gl.getUniformLocation(program,'ignition');gl.viewport(0,0,canvas.width,canvas.height);
   canvas.classList.add('fire-ready');
   canvas.parentElement.classList.add('live-fire');
   canvas.dataset.renderer = 'webgl-highp';canvas.dataset.running='true';
@@ -62,7 +70,7 @@ function createLogoFire(canvas, options={}) {
   const started=performance.now();
   function draw(now){
     if(stopped)return;
-    if(!document.hidden && now-last>(options.fps?1000/options.fps:32)){last=now;gl.uniform1f(time,(now-started)/1000);gl.drawArrays(gl.TRIANGLES,0,6);canvas.dataset.frames=String(++frames);}
+    if(!document.hidden && now-last>(options.fps?1000/options.fps:32)){last=now;const elapsed=(now-started)/1000;gl.uniform1f(time,elapsed);gl.uniform1f(ignition,fireIgnition(elapsed,options.ignite));gl.drawArrays(gl.TRIANGLES,0,6);canvas.dataset.frames=String(++frames);}
     frame=requestAnimationFrame(draw);
   }
   frame=requestAnimationFrame(draw);
@@ -70,15 +78,28 @@ function createLogoFire(canvas, options={}) {
   canvas.addEventListener('webglcontextlost',event=>{
     event.preventDefault();
     if(stopped)return;
-    stopped=true;cancelAnimationFrame(frame);fallbackStop=createSoftLogoFire(canvas);
+    stopped=true;cancelAnimationFrame(frame);fallbackStop=createSoftLogoFire(canvas, options);
   },{once:true});
   return ()=>{stopped=true;canvas.dataset.running='false';cancelAnimationFrame(frame);fallbackStop();gl.deleteBuffer(buffer);gl.deleteProgram(program);gl.deleteShader(vs);gl.deleteShader(fs);};
 }
 
+// The central flame holds briefly, then uncovers the seal without extending entry.
+function fireIgnition(seconds, enabled) {
+  if (!enabled) return 0;
+  const fade=Math.max(0,Math.min(1,(seconds-.55)/.8));
+  return 1-fade*fade*(3-2*fade);
+}
+
 // A CPU renderer keeps the effect animated when a phone cannot provide highp.
 function createSoftLogoFire(original, options={}) {
+  // Replacing a WebGL canvas must not restart its CSS scene at frame zero.
+  const scene=(original.getAnimations?.()||[]).map(a=>({name:a.animationName,time:a.currentTime}));
   const canvas = original.cloneNode(false);
   original.replaceWith(canvas);
+  for(const animation of canvas.getAnimations?.()||[]){
+    const previous=scene.find(a=>a.name===animation.animationName);
+    if(previous && previous.time!==null)animation.currentTime=previous.time;
+  }
   const ctx = canvas.getContext('2d');
   if (!ctx) return () => {};
   const size = options.size||480, count=options.particles||96, unit=size/480, center = size/2, radius = size*.222;
@@ -91,15 +112,29 @@ function createSoftLogoFire(original, options={}) {
   glow.addColorStop(0,'rgba(255,221,115,.9)');glow.addColorStop(.22,'rgba(255,135,25,.65)');
   glow.addColorStop(.55,'rgba(220,45,3,.3)');glow.addColorStop(1,'rgba(120,14,0,0)');
   brush.fillStyle=glow;brush.fillRect(0,0,64,64);
+  const core=ctx.createRadialGradient(center,center,0,center,center,radius*1.08);
+  core.addColorStop(0,'rgba(255,193,55,1)');core.addColorStop(.65,'rgba(255,129,17,1)');
+  core.addColorStop(.9,'rgba(229,62,5,.85)');core.addColorStop(1,'rgba(120,14,0,0)');
   const particles=Array.from({length:count},(_,i)=>({angle:i/count*Math.PI*2,phase:Math.random(),speed:.55+Math.random()*.5}));
   let frame, stopped=false, last=0, frames=0;
   canvas.dataset.running='true';
   const start=performance.now();
   function draw(now) {
     if(stopped)return;
-    if(!document.hidden && now-last>32){
+    if(!document.hidden && now-last>(options.fps?1000/options.fps:32)){
       last=now;const time=(now-start)/1000;
       ctx.clearRect(0,0,size,size);ctx.globalCompositeOperation='lighter';
+      const ignition=fireIgnition(time,options.ignite);
+      if(ignition>0){
+        ctx.globalAlpha=ignition;ctx.fillStyle=core;
+        ctx.beginPath();ctx.arc(center,center,radius*1.08,0,Math.PI*2);ctx.fill();
+        for(let i=0;i<16;i++){
+          const angle=i*2.399+time*.3, spread=radius*.75*Math.sqrt((i+.5)/16);
+          const x=center+Math.cos(angle)*spread,y=center+Math.sin(angle)*spread-Math.sin(time*4+i)*6*unit;
+          ctx.globalAlpha=ignition*(.4+.2*Math.sin(time*5+i));
+          ctx.drawImage(sprite,x-14*unit,y-22*unit,28*unit,44*unit);
+        }
+      }
       for(const particle of particles){
         const life=(time*particle.speed+particle.phase)%1, angle=particle.angle;
         const rise=life*(18+18*(.5+.5*Math.sin(angle)))*unit;

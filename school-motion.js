@@ -1,7 +1,7 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:native-smoke-v6';
+    const sessionKey = 'taikachisu:intro:native-smoke-v7';
     let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smokeTimer, fireTimer, smoke, stopFire;
     const fist = opening.querySelector('#intro-fist');
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
@@ -33,7 +33,7 @@ window.SchoolMotion = (() => {
       if (fist?.complete && fist.naturalWidth >= 512) fist.classList.add('ready');
       header.style.opacity = '1'; document.body.classList.add('intro-transitioning');
       fireTimer=setTimeout(() => {
-        try {if(typeof createLogoFire==='function')stopFire=createLogoFire(opening.querySelector('#intro-fire'),{size:innerWidth<761?256:320,fps:20});} catch {}
+        try {if(typeof createLogoFire==='function')stopFire=createLogoFire(opening.querySelector('#intro-fire'),{size:innerWidth<761?256:320,fps:20,ignite:true});} catch {}
       },1139);
       opening.classList.add('leaving'); exitTimer = setTimeout(finish, 3350);
     }
