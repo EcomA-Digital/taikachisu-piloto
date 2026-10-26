@@ -1,16 +1,18 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:native-smoke-v10';
-    let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smokeTimer, fireTimer, smoke, stopFire;
-    const fist = opening.querySelector('#intro-fist');
+    const sessionKey = 'taikachisu:intro:native-smoke-v11';
+    let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smokeTimer, fireTimer, filmTimer, smoke, stopFire;
+    const fist = opening.querySelector('#intro-fist'), film = opening.querySelector('#intro-fire-film');
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
     const remember = () => { try { sessionStorage.setItem(sessionKey, 'seen'); } catch {} };
     function finish() {
-      clearTimeout(holdTimer); clearTimeout(exitTimer); clearTimeout(safetyTimer);clearTimeout(smokeTimer);clearTimeout(fireTimer);
+      clearTimeout(holdTimer); clearTimeout(exitTimer); clearTimeout(safetyTimer);clearTimeout(smokeTimer);clearTimeout(fireTimer);clearTimeout(filmTimer);
       const wasDone = state === 'done'; state = 'done';
       smoke?.stop();
       stopFire?.();
+      opening.classList.remove('film-playing');
+      if(film?.hasAttribute('src')){film.pause();film.removeAttribute('src');film.load();}
       opening.classList.add('inactive'); opening.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('intro-pending', 'intro-transitioning');
       document.body.classList.add('intro-complete'); header.style.opacity = '1';
@@ -33,7 +35,15 @@ window.SchoolMotion = (() => {
       if (fist?.complete && fist.naturalWidth >= 512) fist.classList.add('ready');
       header.style.opacity = '1'; document.body.classList.add('intro-transitioning');
       fireTimer=setTimeout(() => {
-        try {if(typeof createLogoFire==='function')stopFire=createLogoFire(opening.querySelector('#intro-fire'),{size:innerWidth<761?256:320,fps:20,ignite:true});} catch {}
+        try {if(typeof createLogoFire==='function')stopFire=createLogoFire(opening.querySelector('#intro-fire'),{size:innerWidth<761?256:320,fps:20,ignite:false});} catch {}
+      },1541);
+      filmTimer=setTimeout(() => {
+        // The still remains visible while loading; a late/blocked effect never delays entry.
+        if(!film || film.readyState<2){finish();return;}
+        film.muted=true;film.defaultMuted=true;film.playsInline=true;
+        film.play().then(()=>{
+          if(state!=='done')opening.classList.add('film-playing');
+        }).catch(()=>{if(state!=='done')finish();});
       },704);
       opening.classList.add('leaving'); exitTimer = setTimeout(finish, 3350);
     }
@@ -60,6 +70,7 @@ window.SchoolMotion = (() => {
       // Time is independent of media loading and autoplay policies.
       holdTimer = setTimeout(() => dismiss(), 650);
       if (fist) {fist.fetchPriority = 'high'; fist.src = fist.dataset.src;}
+      if(film){film.preload='auto';film.muted=true;film.defaultMuted=true;film.src=innerWidth<761?film.dataset.mobileSrc:film.dataset.desktopSrc;}
       safetyTimer = setTimeout(() => {remember(); finish();}, 4400);
       try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }
