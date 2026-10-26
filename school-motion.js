@@ -70,7 +70,7 @@ window.SchoolMotion = (() => {
       // Time is independent of media loading and autoplay policies.
       holdTimer = setTimeout(() => dismiss(), 650);
       if (fist) {fist.fetchPriority = 'high'; fist.src = fist.dataset.src;}
-      if(film){film.preload='auto';film.muted=true;film.defaultMuted=true;film.src=innerWidth<761?film.dataset.mobileSrc:film.dataset.desktopSrc;}
+      if(film){film.preload='auto';film.muted=true;film.defaultMuted=true;if(!film.hasAttribute('src'))film.src=innerWidth<761?film.dataset.mobileSrc:film.dataset.desktopSrc;}
       safetyTimer = setTimeout(() => {remember(); finish();}, 4400);
       try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }
