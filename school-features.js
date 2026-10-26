@@ -115,15 +115,17 @@ window.SchoolFeatures=(()=>{
         if(!next.complete||!next.naturalWidth)await next.decode();
         previous.classList.remove('is-current');
         if(!reduced.matches)previous.classList.add('is-outgoing');
+        if(!reduced.matches)next.classList.add('is-entering');
         next.classList.add('is-current');current=index;
         hydrate(slides[(current+1)%slides.length]);
         controls.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
         if(!reduced.matches){
-          next.classList.add('is-sweeping');
-          next.getBoundingClientRect();
-          next.classList.add('sweep-open');
-          await new Promise(resolve=>setTimeout(resolve,1000));
-          next.classList.remove('is-sweeping','sweep-open');previous.classList.remove('is-outgoing');
+          previous.getBoundingClientRect();
+          previous.classList.add('is-fading-out');
+          await new Promise(resolve=>setTimeout(resolve,450));
+          next.classList.remove('is-entering');
+          await new Promise(resolve=>setTimeout(resolve,450));
+          previous.classList.remove('is-outgoing','is-fading-out');
         }
       }catch(error){console.warn('No se pudo mostrar la fotografía.',error.message);}
       finally{changing=false;if(pending!==null){const index=pending;pending=null;selectSlide(index);}}

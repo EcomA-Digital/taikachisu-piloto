@@ -116,9 +116,9 @@ body.intro-pending #hero.motion-active .hero-slides .hero-image.is-current{anima
 @media(max-width:760px){.footer-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:24px}}
 @media(prefers-reduced-motion:reduce){.ecoma-credit{transition:none}}
 
-/* All hero photographs cover one shared frame, without letterbox gutters. */
+/* Preserve the supplied photo framing; the handoff fades through the backdrop. */
 .hero-slides{inset:100px var(--side) 70px 40%}
-.hero-slides .hero-image{object-fit:cover;object-position:center;transform:none}
+.hero-slides .hero-image{object-fit:contain;object-position:center;transform:none}
 .hero-slides .hero-image.is-current{animation:school-photo-drift 8s ease-in-out both;animation-play-state:paused}
 .hero-shade{background:linear-gradient(90deg,#090908 0%,#090908ed 24%,#0909088a 48%,#09090810 75%),linear-gradient(0deg,#090908b0,transparent 30%)}
 .school-section-photo{width:100%;height:auto;display:block;margin-top:34px}

@@ -16,18 +16,17 @@ body.intro-transitioning .hero-content{animation:home-arrive .228s 2.622s ease b
 @keyframes native-intro-away{0%,92%{opacity:1}100%{opacity:0}}
 @keyframes home-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
-/* Keep the outgoing photograph in place while the next one sweeps over it. */
-.hero-slides .hero-image{transition:none}
+/* Fade photos in sequence so different aspect ratios never overlap. */
+.hero-slides .hero-image{transition:opacity .45s ease;clip-path:none}
 .hero-slides .hero-image.is-outgoing{opacity:1;z-index:0}
 .hero-slides .hero-image.is-current{z-index:1}
-/* Keep the same animation on the departing photo until it is fully covered. */
+/* Keep the zoom running while each photograph fades. */
 .hero-slides .hero-image.is-current,.hero-slides .hero-image.is-outgoing{animation:school-photo-drift 8s linear infinite alternate both;animation-play-state:paused}
 #hero.motion-active .hero-slides .hero-image:is(.is-current,.is-outgoing){animation-play-state:running}
 .hero-slides .hero-image.hero-image--maestro:is(.is-current,.is-outgoing){animation-name:school-master-drift}
 body.intro-pending #hero.motion-active .hero-slides .hero-image:is(.is-current,.is-outgoing){animation-play-state:paused}
 
-.hero-slides .hero-image.is-current.is-sweeping{clip-path:circle(0% at 0% 50%);transition:clip-path .95s cubic-bezier(.65,0,.2,1)}
-.hero-slides .hero-image.is-current.is-sweeping.sweep-open{clip-path:circle(150% at 0% 50%)}
+.hero-slides .hero-image.is-outgoing.is-fading-out,.hero-slides .hero-image.is-current.is-entering{opacity:0}
 
 /* Drawn arcs remain above the photos, below text and controls on every device. */
 .hero .motion-lines{z-index:1;opacity:.65}
@@ -48,7 +47,7 @@ body.intro-pending .hero .motion-line{animation-play-state:paused}
 .motion-title-line>span{display:block}
 .home-motion-ready .motion-title-line>span{transform:translateY(115%);opacity:0;transition:transform .85s cubic-bezier(.16,1,.3,1),opacity .5s;transition-delay:calc(var(--line-index)*.1s + .12s)}
 .home-motion-ready .visible .motion-title-line>span{transform:translateY(0);opacity:1}
-@media(max-width:760px){.home-motion-ready .home-editorial-photo.reveal{transition-duration:.8s,.9s}.hero .motion-lines{opacity:.55}.hero-slides .hero-image.is-current.is-sweeping{transition-duration:.75s}}
-@media(prefers-reduced-motion:reduce){.opening{display:none!important}.home-motion-ready .home-editorial-photo img,.hero-slides .hero-image.is-current.is-sweeping{clip-path:none!important}.home-motion-ready .motion-title-line>span{opacity:1;transform:none}.hero .motion-line{animation:none;stroke-dashoffset:0;opacity:.2}}
+@media(max-width:760px){.home-motion-ready .home-editorial-photo.reveal{transition-duration:.8s,.9s}.hero .motion-lines{opacity:.55}}
+@media(prefers-reduced-motion:reduce){.opening{display:none!important}.home-motion-ready .home-editorial-photo img, .hero-slides .hero-image{clip-path:none!important}.home-motion-ready .motion-title-line>span{opacity:1;transform:none}.hero .motion-line{animation:none;stroke-dashoffset:0;opacity:.2}}
 
 @media(prefers-reduced-motion:reduce){.home-motion-ready .home-editorial-photo.reveal{opacity:1!important;transform:none!important;transition:none!important}}
