@@ -1,7 +1,7 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:native-smoke-v12';
+    const sessionKey = 'taikachisu:intro:native-smoke-v13';
     let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smokeTimer, fireTimer, filmTimer, smoke, stopFire;
     const fist = opening.querySelector('#intro-fist'), film = opening.querySelector('#intro-fire-film');
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
@@ -12,7 +12,9 @@ window.SchoolMotion = (() => {
       smoke?.stop();
       stopFire?.();
       opening.classList.remove('film-playing');
+      film?.introMedia?.controller.abort();
       if(film?.hasAttribute('src')){film.pause();film.removeAttribute('src');film.load();}
+      if(film?.introMedia?.url){URL.revokeObjectURL(film.introMedia.url);film.introMedia.url=null;}
       opening.classList.add('inactive'); opening.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('intro-pending', 'intro-transitioning');
       document.body.classList.add('intro-complete'); header.style.opacity = '1';
@@ -70,7 +72,7 @@ window.SchoolMotion = (() => {
       // Time is independent of media loading and autoplay policies.
       holdTimer = setTimeout(() => dismiss(), 650);
       if (fist) {fist.fetchPriority = 'high'; fist.src = fist.dataset.src;}
-      if(film){film.preload='auto';film.muted=true;film.defaultMuted=true;if(!film.hasAttribute('src'))film.src=innerWidth<761?film.dataset.mobileSrc:film.dataset.desktopSrc;}
+      if(film){film.preload='auto';film.muted=true;film.defaultMuted=true;if(!film.hasAttribute('src')&&!film.introMedia)film.src=innerWidth<761?film.dataset.mobileSrc:film.dataset.desktopSrc;}
       safetyTimer = setTimeout(() => {remember(); finish();}, 4400);
       try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }
