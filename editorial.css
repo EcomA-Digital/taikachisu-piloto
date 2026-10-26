@@ -147,3 +147,5 @@
 .editorial-article li+li{margin-top:12px}
 .editorial-article .editorial-media{align-items:stretch}
 .editorial-article .editorial-media figcaption{width:100%}
+
+.editorial-article .timeline-step{padding:0}
