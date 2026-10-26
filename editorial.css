@@ -80,7 +80,9 @@
 .editorial-article .editorial-spread .editorial-media img{max-height:500px}
 .editorial-article .editorial-media figcaption{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--brand-red);text-align:left;font-size:12px;line-height:1.6}
 .editorial-article .editorial-pullquote{font:inherit;font-style:italic;color:var(--ink);background:#eeece3;border-left:3px solid var(--brand-red);padding:18px 24px;max-width:none;margin:24px 0;text-align:left}
-.editorial-pullquote::before{content:none}
+.editorial-article .editorial-pullquote{font-weight:700}
+.editorial-pullquote:not(:has(p))::before,.editorial-pullquote>p:first-child::before{content:"“"}
+.editorial-pullquote:not(:has(p))::after,.editorial-pullquote>p:last-child::after{content:"”"}
 .editorial-pullquote p{font:inherit;margin:0}
 .editorial-article .editorial-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 28px;max-width:none;margin:30px 0;padding:0;list-style:none;border:0}
 .editorial-principles>li{padding:18px 0;border-top:2px solid var(--brand-red);font-size:inherit;line-height:inherit;margin:0}
