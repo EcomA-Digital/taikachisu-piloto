@@ -1,9 +1,10 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:native-smoke-v14';
+    const sessionKey = 'taikachisu:intro:native-smoke-v15';
     let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smokeTimer, fireTimer, filmTimer, smoke, stopFire;
     const fist = opening.querySelector('#intro-fist'), film = opening.querySelector('#intro-fire-film');
+    if(film&&window.SchoolIntroMedia)film.introMedia=window.SchoolIntroMedia;
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
     const remember = () => { try { sessionStorage.setItem(sessionKey, 'seen'); } catch {} };
     function finish() {
@@ -72,7 +73,7 @@ window.SchoolMotion = (() => {
       // Time is independent of media loading and autoplay policies.
       holdTimer = setTimeout(() => dismiss(), 650);
       if (fist) {fist.fetchPriority = 'high'; fist.src = fist.dataset.src;}
-      if(film){film.preload='auto';film.muted=true;film.defaultMuted=true;if(!film.hasAttribute('src')&&!film.introMedia)film.src=innerWidth<761?film.dataset.mobileSrc:film.dataset.desktopSrc;}
+      if(film){film.preload='auto';film.muted=true;film.defaultMuted=true;if(film.introMedia?.ready){film.introMedia.ready.then(url=>{if(url&&state!=='done')film.src=url;});}else if(!film.hasAttribute('src'))film.src=film.getBoundingClientRect().width<=384?film.dataset.mobileSrc:film.dataset.desktopSrc;}
       safetyTimer = setTimeout(() => {remember(); finish();}, 4400);
       try {smoke = window.SchoolSmoke?.start(opening.querySelector('#intro-smoke'), opening.querySelector('.intro-native-stage'));} catch {}
     }
