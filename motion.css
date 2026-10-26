@@ -5,7 +5,7 @@
 .intro-native-emblem{display:block;width:78%;height:auto;aspect-ratio:1;object-fit:contain;position:relative;z-index:2;opacity:1}
 .opening .opening-bottom{left:24px;right:24px;bottom:max(24px,env(safe-area-inset-bottom));justify-content:center;z-index:3}
 .opening .enter-button{font-size:12px;padding:12px 8px;min-height:44px;color:#bdbdb5;border-bottom:1px solid #ffffff33}
-#intro-seal{position:absolute;inset:-5%;width:110%;max-width:none;height:110%;object-fit:contain;clip-path:ellipse(35.94% 35.94% at 50.2% 49.61%);z-index:2;opacity:0;pointer-events:none}
+#intro-seal{position:absolute;inset:11%;width:78%;max-width:none;height:78%;object-fit:contain;z-index:2;opacity:0;pointer-events:none}
 .opening.leaving{animation:native-intro-away 2.85s ease forwards;mask-image:none;pointer-events:none}
 .opening.leaving .intro-native-emblem{animation:native-emblem-dissolve 2.85s ease-in-out both}
 .opening.leaving #intro-seal{animation:native-seal-reveal 2.85s ease-in-out both}
