@@ -208,7 +208,7 @@ body.intro-transitioning .hero-content{animation:portada-content 1.9s cubic-bezi
 .reading-content tr:first-child{background:#eeeadc;font-weight:600}
 .reading-content td{border-color:var(--line);padding:16px 20px}
 .reading-content iframe{margin:45px auto}
-.reading-content blockquote{font-family:'Libre Caslon Display',Georgia,serif;font-size:28px;line-height:1.5;padding:22px 28px;background:#eeeadc;border-color:var(--gold)}
+.reading-content blockquote{font:inherit;font-style:italic;padding:18px 24px;background:#eeece3;border-color:var(--brand-red)}
 .reading-end{padding:40px var(--side);border-top:1px solid #ffffff22;display:flex;gap:24px;align-items:center;justify-content:space-between}
 .photo-viewer{position:fixed;background:#10110f;color:white;border:1px solid #1b1b17;padding:65px 24px 20px;max-width:95vw;max-height:95svh;width:1100px}
 .photo-viewer::backdrop{background:#000e}

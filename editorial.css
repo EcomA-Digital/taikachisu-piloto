@@ -62,7 +62,7 @@
 .reading--editorial .reading-layout{padding-top:56px;padding-bottom:64px}
 .reading-content.editorial-article{max-width:1120px;font-size:17px;line-height:1.8}
 .editorial-article p{margin:0 0 24px}
-.editorial-article .reading-lead{font-family:'Libre Caslon Display',Georgia,serif;font-style:italic;font-size:clamp(24px,2.2vw,30px);line-height:1.48;color:var(--ink);max-width:800px;margin-bottom:42px}
+.editorial-article .reading-lead{font:inherit;font-style:italic;color:var(--ink);max-width:800px;margin-bottom:32px}
 .editorial-article .editorial-kicker{font-size:12px;line-height:1.7;letter-spacing:.06em;color:var(--brand-red);margin-bottom:24px}
 .editorial-article h2{font-size:clamp(30px,3vw,42px);line-height:1.15;margin:40px auto 26px;padding-top:26px;border-color:var(--line);text-wrap:balance}
 .editorial-article .editorial-chapter{margin:44px 0}
@@ -73,17 +73,17 @@
 .editorial-article .editorial-spread{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4.5vw,64px);align-items:center;margin:42px 0 54px;min-width:0}
 .editorial-spread>*{min-width:0}
 .editorial-spread-copy>p:last-child{margin-bottom:0}
-.editorial-spread .reading-lead{font-size:clamp(24px,2vw,29px);margin-bottom:26px}
+.editorial-spread .reading-lead{font-size:inherit;margin-bottom:26px}
 .editorial-article .editorial-media{background:transparent;border:0;padding:0;max-width:920px;margin:38px auto}
 .editorial-article .editorial-media img{width:100%;height:auto;max-height:580px;object-fit:contain;margin:0}
 .editorial-spread>.editorial-media{margin:0}
 .editorial-article .editorial-spread .editorial-media img{max-height:500px}
 .editorial-article .editorial-media figcaption{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--brand-red);text-align:left;font-size:12px;line-height:1.6}
-.editorial-article .editorial-pullquote{position:relative;font-family:'Libre Caslon Display',Georgia,serif;font-size:clamp(26px,2.65vw,36px);font-weight:400;line-height:1.38;color:var(--ink);background:#eeece3;border-left:3px solid var(--brand-red);padding:28px 38px 30px 78px;max-width:900px;margin:46px auto}
-.editorial-pullquote::before{content:'“';position:absolute;left:24px;top:16px;font-size:80px;line-height:1;color:var(--brand-red)}
+.editorial-article .editorial-pullquote{font:inherit;font-style:italic;color:var(--ink);background:#eeece3;border-left:3px solid var(--brand-red);padding:18px 24px;max-width:760px;margin:30px auto}
+.editorial-pullquote::before{content:none}
 .editorial-pullquote p{font:inherit;margin:0}
 .editorial-article .editorial-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 28px;max-width:none;margin:30px 0;padding:0;list-style:none;border:0}
-.editorial-principles>li{padding:18px 0;border-top:2px solid var(--brand-red);font-size:16px;line-height:1.7;margin:0}
+.editorial-principles>li{padding:18px 0;border-top:2px solid var(--brand-red);font-size:inherit;line-height:inherit;margin:0}
 .editorial-article .history-timeline.editorial-principles>li::before{display:none}
 .editorial-article .institutional-logos{margin:42px auto;max-width:900px;padding:26px 0}
 .editorial-article .institutional-logos img{height:88px;width:100%;max-width:120px}
@@ -109,12 +109,11 @@
  .reading--editorial .reading-heading .eyebrow{font-size:10px;line-height:1.8;letter-spacing:.08em}
  .reading--editorial .reading-layout{padding:36px 24px 48px}
  .reading-content.editorial-article{font-size:16px;line-height:1.8}
- .editorial-article .reading-lead,.editorial-spread .reading-lead{font-size:22px;line-height:1.55;margin-bottom:28px}
+ .editorial-article .reading-lead,.editorial-spread .reading-lead{font-size:inherit;line-height:inherit;margin-bottom:28px}
  .editorial-article .editorial-spread{margin:30px 0 38px;gap:24px}
  .editorial-article .editorial-chapter{margin:34px 0}
  .editorial-article h2{font-size:32px;margin-top:30px;padding-top:22px}
- .editorial-article .editorial-pullquote{font-size:26px;padding:24px 22px 26px 46px;margin:34px auto}
- .editorial-pullquote::before{font-size:52px;left:10px;top:18px}
+ .editorial-article .editorial-pullquote{font-size:inherit;padding:16px 20px;margin:28px auto}
  .editorial-article .editorial-spread .editorial-media img{max-height:420px}
  .editorial-article .editorial-principles{grid-template-columns:1fr;gap:0}
  .editorial-article .document-gallery.editorial-document-strip{grid-auto-columns:82%;gap:16px}

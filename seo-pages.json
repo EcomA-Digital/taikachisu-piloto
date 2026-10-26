@@ -451,7 +451,7 @@
     "institucional": {
       "title": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
       "description": "La Asociación Taikachisu Wushu Kung Fu Argentina fue la primera institución oficial de la Escuela Taikachisu en el país. Desde su creación, organiza y…",
-      "image": "https://taikachisu.com/preview/assets/maestro-2027/revision25-inicio-12-0-large.webp",
+      "image": "https://taikachisu.com/preview/assets/maestro-2027/revision25-inicio-17-0-large.webp",
       "imageAlt": "Asociación Taikachisu Wushu Kung Fu Argentina",
       "type": "article",
       "schema": {
@@ -525,7 +525,7 @@
               "@id": "https://taikachisu.com/preview/institucional/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/maestro-2027/revision25-inicio-12-0-large.webp"
+              "https://taikachisu.com/preview/assets/maestro-2027/revision25-inicio-17-0-large.webp"
             ],
             "author": {
               "@type": "Person",
@@ -537,15 +537,15 @@
             },
             "inLanguage": "es-AR",
             "datePublished": "2026-10-23",
-            "dateModified": "2026-10-25"
+            "dateModified": "2026-10-26"
           }
         ]
       },
       "articleMeta": {
         "article:published_time": "2026-10-23",
-        "article:modified_time": "2026-10-25"
+        "article:modified_time": "2026-10-26"
       },
-      "original_text": "La Asociación Taikachisu Wu Shu Kung Fu Argentina fue la primera institución oficial de la Escuela Taikachisu Wushu Kung Fu en el país. Su función es organizar, desarrollar y representar institucionalmente a la misma. Su trayectoria se vincula con el proyecto de organización institucional iniciado en la década de 1970 y con la continuidad de un sistema que comprende conocimientos técnicos, tácticos, metodologías de entrenamiento, principios tradicionales y fundamentos filosóficos. Práctica y encuentro de la Escuela Taikachisu A lo largo de su desarrollo, la organización impulsó iniciativas de formación, difusión y competencia deportiva, promoviendo la participación en encuentros nacionales, internacionales y mundiales, estableciendo vínculos con instituciones del ámbito de todas las artes marciales y del deporte federado. La obtención de la personería jurídica y la incorporación al ámbito deportivo federado constituyeron etapas importantes en este proceso de organización institucional. La Asociación tiene como propósito preservar la identidad de la Escuela Taikachisu Wushu Kung Fu, favorecer su transmisión a las nuevas generaciones y sostener un marco institucional para su desarrollo y representación, lo que implica no limitarse a promover una actividad marcial, sino asumir la responsabilidad de salvaguardar su patrimonio técnico y filosófico, documentar su historia y garantizar las condiciones necesarias para que sus conocimientos se transmitan de forma coherente. La Asociación Taikachisu Wushu Kung Fu Argentina, afiliada a la Federación Argentina de Wushu Kung Fu (F.A.W.K.) desde el año 2002, desarrolla su trayectoria en el ámbito del deporte federado, vinculada a través de esta Federación a organismos deportivos nacionales e internacionales de relevancia, y mantiene asimismo antecedentes de afiliación a la Asociación Americana de Artes Marciales (A.A.A.M.), en el marco de sus actividades institucionales y de competencia. Comisión Directiva de la Asociación Taikachisu Wushu Kung Fu Argentina En la foto la Comisión Directiva de la Asociación Taikachisu Wushu Kung Fu Argentina, junto al presidente Maestro Alejandro R. Di Grigoli. Organismos del ámbito deportivo mencionados en el marco institucional de la Federación."
+      "original_text": "La Asociación Taikachisu Wu Shu Kung Fu Argentina fue la primera institución oficial de la Escuela Taikachisu Wushu Kung Fu en el país. Su función es organizar, desarrollar y representar institucionalmente a la misma. Su trayectoria se vincula con el proyecto de organización institucional iniciado en la década de 1970 y con la continuidad de un sistema que comprende conocimientos técnicos, tácticos, metodologías de entrenamiento, principios tradicionales y fundamentos filosóficos. Comisión Directiva de la Asociación Taikachisu Wushu Kung Fu Argentina A lo largo de su desarrollo, la organización impulsó iniciativas de formación, difusión y competencia deportiva, promoviendo la participación en encuentros nacionales, internacionales y mundiales, estableciendo vínculos con instituciones del ámbito de todas las artes marciales y del deporte federado. La obtención de la personería jurídica y la incorporación al ámbito deportivo federado constituyeron etapas importantes en este proceso de organización institucional. La Asociación tiene como propósito preservar la identidad de la Escuela Taikachisu Wushu Kung Fu, favorecer su transmisión a las nuevas generaciones y sostener un marco institucional para su desarrollo y representación, lo que implica no limitarse a promover una actividad marcial, sino asumir la responsabilidad de salvaguardar su patrimonio técnico y filosófico, documentar su historia y garantizar las condiciones necesarias para que sus conocimientos se transmitan de forma coherente. La Asociación Taikachisu Wushu Kung Fu Argentina, afiliada a la Federación Argentina de Wushu Kung Fu (F.A.W.K.) desde el año 2002, desarrolla su trayectoria en el ámbito del deporte federado, vinculada a través de esta Federación a organismos deportivos nacionales e internacionales de relevancia, y mantiene asimismo antecedentes de afiliación a la Asociación Americana de Artes Marciales (A.A.A.M.), en el marco de sus actividades institucionales y de competencia. Práctica y encuentro de la Escuela Taikachisu En la foto la Comisión Directiva de la Asociación Taikachisu Wushu Kung Fu Argentina, junto al presidente Maestro Alejandro R. Di Grigoli. Organismos del ámbito deportivo mencionados en el marco institucional de la Federación."
     },
     "escuela": {
       "title": "Escuela Taikachisu | Historia, tradición y legado",
@@ -646,703 +646,10 @@
       },
       "original_text": "La Escuela Taikachisu Wushu Kung Fu continúa desarrollando el trabajo y la trayectoria transmitidos por el Shi Gung Gauna, fortaleciendo la formación de practicantes, profesores y discípulos, así como la organización y el crecimiento de sus actividades. Esta labor representa la continuidad de una herencia técnica, filosófica e institucional que requiere ser conservada y transmitida a las nuevas generaciones. Autoridades de la Escuela Taikachisu · ceremonia de 1995 Nuestra Historia El Taikachisu es un estilo familiar de Wushu Kung Fu que arriba a la Argentina alrededor de 1949. La difusión, el desarrollo y la consolidación institucional estuvieron a cargo de Shi Gung Juan Carlos Gauna a partir de 1963, quien fundó una Escuela abierta al público. Practicó y estudió profundamente el Estilo y definió los fundamentos y objetivos estructurales y técnicos para ella. Desde sus inicios, priorizó la calidad técnica y humana por sobre la masividad, guiando a la escuela hacia un sólido orden competitivo e institucional que llevó la disciplina a centros privados y fuerzas de seguridad. La Escuela siempre presentó un perfil demostrativo, participando y organizando distintos torneos de orden nacional, internacional y mundial. Legado y Continuidad Tras décadas de crecimiento continuo, el Shi Gung Gauna estructuró el programa final y los niveles jerárquicos de la institución. En octubre de 1995, durante una ceremonia pública, consagró a sus tres discípulos, Juan C. Gauna (h), Carlos Gauna (h) y Alejandro R. Di Grigoli, como autoridades máximas, designando formalmente a Juan C. Gauna (h) como Director General de la Escuela Taikachisu Wushu Kung Fu, garantizando la continuidad histórica del legado. La Escuela Taikachisu en Buenos Aires · 2026 Organización Institucional Para dar un marco jurídico al desarrollo deportivo y federativo, se creó la Asociación Taikachisu Wushu Kung Fu Argentina, autorizada por el Shi Gung Gauna. Rol de la Asociación: Representación, organización y promoción deportiva. Conducción Técnica: La estructura jurídica acompaña sin modificar la conducción técnica, jerárquica y tradicional propia de la Escuela. Invitación y Compromiso Institucional Formar parte de nuestra escuela implica asumir el compromiso de respetar sus normativas, su programa técnico y sus principios. Invitamos a profesores, exalumnos y grupos que deseen vincularse a fortalecer su relación mediante una integración institucional canalizada a través de nuestro Director General. Integrarse significa renovar el compromiso con lo recibido y asegurar su desarrollo para las futuras generaciones. La Escuela Taikachisu en Posadas · 2026"
     },
-    "secreto-del-estilo-taikachisu": {
-      "title": "El verdadero Secreto del Estilo Taikachisu | Taikachisu",
-      "description": "En este artículo explicamos un concepto clave para el desarrollo de las cualidades necesarias para la práctica de nuestra disciplina.",
-      "image": "https://taikachisu.com/preview/assets/a02df7463f26ef29-opt2.webp",
-      "imageAlt": "El verdadero Secreto del Estilo Taikachisu",
-      "type": "article",
-      "schema": {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://taikachisu.com/preview/#organization",
-            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-            "url": "https://taikachisu.com/preview/",
-            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
-            "sameAs": [
-              "https://www.facebook.com/taikachisu.wushu.kungfu/",
-              "https://www.instagram.com/taikachisuwushukungfu/",
-              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://taikachisu.com/preview/#website",
-            "name": "Taikachisu",
-            "url": "https://taikachisu.com/preview/",
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://taikachisu.com/preview/secreto-del-estilo-taikachisu/",
-            "url": "https://taikachisu.com/preview/secreto-del-estilo-taikachisu/",
-            "name": "El verdadero Secreto del Estilo Taikachisu | Taikachisu",
-            "description": "En este artículo explicamos un concepto clave para el desarrollo de las cualidades necesarias para la práctica de nuestra disciplina.",
-            "inLanguage": "es-AR",
-            "isPartOf": {
-              "@id": "https://taikachisu.com/preview/#website"
-            },
-            "breadcrumb": {
-              "@id": "https://taikachisu.com/preview/secreto-del-estilo-taikachisu/#breadcrumb"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://taikachisu.com/preview/secreto-del-estilo-taikachisu/#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://taikachisu.com/preview/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "El camino marcial",
-                "item": "https://taikachisu.com/preview/camino-marcial/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "El verdadero Secreto del Estilo Taikachisu",
-                "item": "https://taikachisu.com/preview/secreto-del-estilo-taikachisu/"
-              }
-            ]
-          },
-          {
-            "@type": "Article",
-            "@id": "https://taikachisu.com/preview/secreto-del-estilo-taikachisu/#article",
-            "headline": "El verdadero Secreto del Estilo Taikachisu",
-            "mainEntityOfPage": {
-              "@id": "https://taikachisu.com/preview/secreto-del-estilo-taikachisu/"
-            },
-            "image": [
-              "https://taikachisu.com/preview/assets/a02df7463f26ef29-opt2.webp"
-            ],
-            "author": {
-              "@type": "Organization",
-              "name": "TaikaChisu",
-              "url": "https://taikachisu.com/preview/"
-            },
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR",
-            "datePublished": "2020-05-07T19:14:30+00:00",
-            "dateModified": "2020-05-13T18:48:51+00:00"
-          }
-        ]
-      },
-      "articleMeta": {
-        "article:published_time": "2020-05-07T19:14:30+00:00",
-        "article:modified_time": "2020-05-13T18:48:51+00:00"
-      },
-      "original_text": "Quiero refrescarles algo muy valioso para que se enfoquen y logren sus metas, y es el verdadero secreto del estilo Taikachisu: «El Poder de la Mente domina al Cuerpo» … Esta frase, aunque parezca simple, expresa mucho y refiere a que nuestros pensamientos construyen el mundo en el que vivimos. Espero que reflexionar sobre esto sirva como punta de lanza para que puedan desarrollar las cualidades de un verdadero cinturón negro que quiere avanzar en la disciplina que compartimos. Las múltiples dimensiones del estilo Taikachisu se enriquecen y completan cuando sobrepasamos el plano de la práctica física y pragmática. El cuerpo difícilmente pueda lograr lo que nuestra mente no puede siquiera imaginar que pueda hacer. La «carroña», es una palabra asociada a Lao Ying. Ya he hablado acerca de este término en el artículo: Lao Ying en coversación con un practicante de Taika , del cual recomiendo la lectura. Transmite un concepto del uso técnico, táctico y estratégico relacionado al movimiento, la actitud y la conducta de lucha en el todo del estilo Taikachisu, hoy expresado en la Escuela que formó SiGung Gauna, nuestra Escuela. El análisis pormenor de ello y cada uno de los aspectos del desarrollo en tu formación marcial, conlleva a un vínculo con lo que denominamos «Depositario» dentro de la Escuela. Estos son los bienes que cuidamos, desarrollamos con nuestra práctica y transmitimos. No les hablo de un «secreto» porque el mismo se mantenga oculto o tengamos recelo de compartirlo. Les hablo de «secreto» en tanto CLAVE para su desarrollo. Texto compartido por el Maestro Alejandro Di Grigoli"
-    },
-    "lao-ying": {
-      "title": "Lao ying en conversación con un practicante de Taika | Taikachisu",
-      "description": "Algunas reflexiones sobre el sentido de las palabras que heredamos en Taikachisu y la profundidad de lo que significan para nosotros.",
-      "image": "https://taikachisu.com/preview/assets/ca74d86bbf6c3bac-opt2.webp",
-      "imageAlt": "Lao ying en conversación con un practicante de Taika",
-      "type": "article",
-      "schema": {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://taikachisu.com/preview/#organization",
-            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-            "url": "https://taikachisu.com/preview/",
-            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
-            "sameAs": [
-              "https://www.facebook.com/taikachisu.wushu.kungfu/",
-              "https://www.instagram.com/taikachisuwushukungfu/",
-              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://taikachisu.com/preview/#website",
-            "name": "Taikachisu",
-            "url": "https://taikachisu.com/preview/",
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://taikachisu.com/preview/lao-ying/",
-            "url": "https://taikachisu.com/preview/lao-ying/",
-            "name": "Lao ying en conversación con un practicante de Taika | Taikachisu",
-            "description": "Algunas reflexiones sobre el sentido de las palabras que heredamos en Taikachisu y la profundidad de lo que significan para nosotros.",
-            "inLanguage": "es-AR",
-            "isPartOf": {
-              "@id": "https://taikachisu.com/preview/#website"
-            },
-            "breadcrumb": {
-              "@id": "https://taikachisu.com/preview/lao-ying/#breadcrumb"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://taikachisu.com/preview/lao-ying/#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://taikachisu.com/preview/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "El camino marcial",
-                "item": "https://taikachisu.com/preview/camino-marcial/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Lao ying en conversación con un practicante de Taika",
-                "item": "https://taikachisu.com/preview/lao-ying/"
-              }
-            ]
-          },
-          {
-            "@type": "Article",
-            "@id": "https://taikachisu.com/preview/lao-ying/#article",
-            "headline": "Lao ying en conversación con un practicante de Taika",
-            "mainEntityOfPage": {
-              "@id": "https://taikachisu.com/preview/lao-ying/"
-            },
-            "image": [
-              "https://taikachisu.com/preview/assets/ca74d86bbf6c3bac-opt2.webp"
-            ],
-            "author": {
-              "@type": "Organization",
-              "name": "TaikaChisu",
-              "url": "https://taikachisu.com/preview/"
-            },
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR",
-            "datePublished": "2020-04-22T18:04:00+00:00",
-            "dateModified": "2020-04-22T18:49:40+00:00"
-          }
-        ]
-      },
-      "articleMeta": {
-        "article:published_time": "2020-04-22T18:04:00+00:00",
-        "article:modified_time": "2020-04-22T18:49:40+00:00"
-      },
-      "original_text": "Hace un tiempo me encontré con un practicante de Taikachisu, que fue alumno de otro profesor años atrás. En la conversación me planteó dudas personales que tenía sobre nuestro dialecto y me preguntó sobre qué se trataba el estilo Taikachisu del SiGung Gauna . Me comentó sobre la traducción de la palabra en mandarín Lao ying ( Lao inn ), que significa “vieja águila”, pero para nosotros es simplemente “águila”. Lo traducción era correcta, pero yo tenía el presentimiento que le faltaba algo, y fue ahí cuando recordé que SiGung me había explicado que si bien la palabra se traducía como águila, aludía a la carroña . Fue entonces cuando el practicante expresó exactamente lo mismo que yo había pensado cuando mi Maestro me lo enseñó: “claro, ave de carroña” . Pero él, con la gran paciencia que lo identificaba, me comentó que su significado no era tan literal como pensábamos. El término carroña se utilizaba como una interpretación en el contexto cultural del estilo, que se entendía como toda la suciedad o mugre en el uso técnico de la pelea. Las palabras son más que lo que «dicen» Dejando lo anecdótico de lado, ahí me di cuenta de por qué les es tan difícil conectarse con un análisis más profundo de la interpretación técnica. Del verdadero bagaje que recibí como discípulo, en la convivencia de más de 20 años con el SiGung. Hoy en día, cada persona está acostumbrada a buscar información a través de los medios de comunicación modernos que tenemos a nuestro alcance, descartando a los que no tienen interés. Lo que es muy difícil de encontrar en estos canales es la cultura, eso que involucra ceremoniales, tradiciones y los modos de la familia que durante generaciones desarrolló como rutina el estilo Taikachisu del cual surge la escuela. Un ejemplo actual en nuestras casas y con nuestras familias sería algo así: «…Má, me traes el coso que va en el cosito…», donde coso y cosito pueden significar una infinidad de elementos, pero por arte de magia o traductora universal mamá aparece y trae lo que necesitábamos . A lo que quiero referirme con todo esto, es que una simple palabra no alcanza para expresar y entenderlo todo. Se trata de comunicar . Si lo aislamos del contexto cultural, su tradición, de su filosofía en un momento y lugar, muy difícil será poder entenderlo. Un concepto aprendido en el seno familiar sirve para entender qué debemos hacer, qué no, y por qué. Pero a medida que crecemos y nos desarrollamos como personas adultas, nos damos cuenta de que nuestra formación también se compone de una conducta ética, social y cultural que solía transferirse . Cuando nuestra familia marcial nos enriquece en valores A veces cuando hablo de comunicarnos, o de familia marcial, uso esos términos como los recibí de mi Maestro. Yo tengo 56 años, la cultura donde crecí no existe más, pero los valores que aprendí son eternos . Por eso trato de comunicarme con ustedes permanentemente, con el fin de que se trasmitan estos conceptos importantes de la Escuela Taika. Por esto cualquiera puede interpretar un texto como la Biblia en su cultura local, por el hecho de que es la historia humana desde lo cotidiano a lo absoluto, pero redactado en un lenguaje de términos conocidos por todos. Pero, lo que cada uno entiende es otra cosa. Sin embargo, es el mismo pensamiento que pudo descifrar la naturaleza del universo mismo a través de otro lenguaje no tan sencillo para muchos, las matemáticas . Texto compartido por el Maestro Alejandro Di Grigoli"
-    },
-    "que-es-taikachisu-wushu-kung-fu": {
-      "title": "QUE ES TAIKACHISU WUSHU KUNG FU? | Taikachisu",
-      "description": "A través de un desarrollo técnico especializado, el Taikachisu transmite un conocimiento integral que abarca la salud, el espíritu y la defensa personal.",
-      "image": "https://taikachisu.com/preview/assets/2df5efe9ff16c1d2-opt2.webp",
-      "imageAlt": "QUE ES TAIKACHISU WUSHU KUNG FU?",
-      "type": "article",
-      "schema": {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://taikachisu.com/preview/#organization",
-            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-            "url": "https://taikachisu.com/preview/",
-            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
-            "sameAs": [
-              "https://www.facebook.com/taikachisu.wushu.kungfu/",
-              "https://www.instagram.com/taikachisuwushukungfu/",
-              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://taikachisu.com/preview/#website",
-            "name": "Taikachisu",
-            "url": "https://taikachisu.com/preview/",
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://taikachisu.com/preview/que-es-taikachisu-wushu-kung-fu/",
-            "url": "https://taikachisu.com/preview/que-es-taikachisu-wushu-kung-fu/",
-            "name": "QUE ES TAIKACHISU WUSHU KUNG FU? | Taikachisu",
-            "description": "A través de un desarrollo técnico especializado, el Taikachisu transmite un conocimiento integral que abarca la salud, el espíritu y la defensa personal.",
-            "inLanguage": "es-AR",
-            "isPartOf": {
-              "@id": "https://taikachisu.com/preview/#website"
-            },
-            "breadcrumb": {
-              "@id": "https://taikachisu.com/preview/que-es-taikachisu-wushu-kung-fu/#breadcrumb"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://taikachisu.com/preview/que-es-taikachisu-wushu-kung-fu/#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://taikachisu.com/preview/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "El camino marcial",
-                "item": "https://taikachisu.com/preview/camino-marcial/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "QUE ES TAIKACHISU WUSHU KUNG FU?",
-                "item": "https://taikachisu.com/preview/que-es-taikachisu-wushu-kung-fu/"
-              }
-            ]
-          },
-          {
-            "@type": "Article",
-            "@id": "https://taikachisu.com/preview/que-es-taikachisu-wushu-kung-fu/#article",
-            "headline": "QUE ES TAIKACHISU WUSHU KUNG FU?",
-            "mainEntityOfPage": {
-              "@id": "https://taikachisu.com/preview/que-es-taikachisu-wushu-kung-fu/"
-            },
-            "image": [
-              "https://taikachisu.com/preview/assets/2df5efe9ff16c1d2-opt2.webp"
-            ],
-            "author": {
-              "@type": "Organization",
-              "name": "TaikaChisu",
-              "url": "https://taikachisu.com/preview/"
-            },
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR",
-            "datePublished": "2017-02-17T03:48:37+00:00",
-            "dateModified": "2026-10-04T10:21:57+00:00"
-          }
-        ]
-      },
-      "articleMeta": {
-        "article:published_time": "2017-02-17T03:48:37+00:00",
-        "article:modified_time": "2026-10-04T10:21:57+00:00"
-      },
-      "original_text": "Taikachisu wushu kung fu es un arte marcial completo que promueve la salud, el cultivo del espíritu y la defensa personal. Por medio de una técnica especializada transmite un conocimiento primordial y milenario, basado en una filosofia ancestral. El 80% de la enseñanza es positivar la energía de cada uno y ayudar a vencerse a sí mismos. QUÉ ENSEÑA TAIKACHISU? Taikachisu enseña a defenderse atacando cuerpo a cuerpo, en el suelo, contra uno o varios atacantes y en un grado más avanzado se aprende el empleo de diversas armas como son: Los 2 palos articulados (chai pam) Lanza Palo largo Palo corto Cuchillos Sable 3 palos articulados (sa chai pam) Utiliza al 100% sus manos y pies, combinando movimientos largos y cortos, posiciones firmes pero dinámicas, siendo sus movimientos veloces, explosivos y contundentes. Los movimientos son fáciles de aprender. La esencia final de los mismos es superar nuestro propio instinto, programando una respuesta eficiente a las situaciones requeridas."
-    },
-    "nuestra-tecnica": {
-      "title": "NUESTRA TÉCNICA | Taikachisu",
-      "description": "La técnica del Taikachisu está compuesta por tres sistemas estrechamente relacionados entre sí: Boxeo Chadts, Boxeo Chino y Lucha Mongol.",
-      "image": "https://taikachisu.com/preview/assets/421b4b05a7b2c406.webp",
-      "imageAlt": "NUESTRA TÉCNICA",
-      "type": "article",
-      "schema": {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://taikachisu.com/preview/#organization",
-            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-            "url": "https://taikachisu.com/preview/",
-            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
-            "sameAs": [
-              "https://www.facebook.com/taikachisu.wushu.kungfu/",
-              "https://www.instagram.com/taikachisuwushukungfu/",
-              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://taikachisu.com/preview/#website",
-            "name": "Taikachisu",
-            "url": "https://taikachisu.com/preview/",
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://taikachisu.com/preview/nuestra-tecnica/",
-            "url": "https://taikachisu.com/preview/nuestra-tecnica/",
-            "name": "NUESTRA TÉCNICA | Taikachisu",
-            "description": "La técnica del Taikachisu está compuesta por tres sistemas estrechamente relacionados entre sí: Boxeo Chadts, Boxeo Chino y Lucha Mongol.",
-            "inLanguage": "es-AR",
-            "isPartOf": {
-              "@id": "https://taikachisu.com/preview/#website"
-            },
-            "breadcrumb": {
-              "@id": "https://taikachisu.com/preview/nuestra-tecnica/#breadcrumb"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://taikachisu.com/preview/nuestra-tecnica/#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://taikachisu.com/preview/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "El camino marcial",
-                "item": "https://taikachisu.com/preview/camino-marcial/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "NUESTRA TÉCNICA",
-                "item": "https://taikachisu.com/preview/nuestra-tecnica/"
-              }
-            ]
-          },
-          {
-            "@type": "Article",
-            "@id": "https://taikachisu.com/preview/nuestra-tecnica/#article",
-            "headline": "NUESTRA TÉCNICA",
-            "mainEntityOfPage": {
-              "@id": "https://taikachisu.com/preview/nuestra-tecnica/"
-            },
-            "image": [
-              "https://taikachisu.com/preview/assets/421b4b05a7b2c406.webp"
-            ],
-            "author": {
-              "@type": "Organization",
-              "name": "TaikaChisu",
-              "url": "https://taikachisu.com/preview/"
-            },
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR",
-            "datePublished": "2017-02-17T03:48:16+00:00",
-            "dateModified": "2017-03-17T06:07:44+00:00"
-          }
-        ]
-      },
-      "articleMeta": {
-        "article:published_time": "2017-02-17T03:48:16+00:00",
-        "article:modified_time": "2017-03-17T06:07:44+00:00"
-      },
-      "original_text": "El Taika-Chisu se compone por tres sistemas interrelacionados a desarrollar, fusionados por su creador Yu Chen Sing , que sólo se dividen para su análisis: 1º) Boxeo Chadts : Es un sistema originario del Tibet, que emplea tanto puño como piernas, apuntando a la velocidad , la precisión , contundencia y fiereza como cualidades fundamentales. El Boxeo Chadts desarrolla la capacidad de proteger con los miembros el eje patrón o central del cuerpo, utilizando para ello las rodillas, pies, canillas, muslos, cadera, manos, brazos, codos, hombros y la cabeza tanto en ataque como defensa. Los golpes en este sistema son por penetración y se utiliza generalmente “sam pu” , que traducido sería “clavo” , aunque debe entenderse como “la acción de martillar un clavo” . Los esquives no son muy amplios ni rebuscados, sino mas bien naturales o instintivos. 2º) Boxeo Chino : «La técnica del tai-ka-chi-su» nota a Juan Carlos Gauna 7º Thuan Hacer Clic para leer la nota completa Es donde se trabaja la plástica y armonía del movimiento . Tiene que ver con lo que se conoce como kung fu tradicional , con movimientos imitativos de aves y animales, encontrando dentro de este grupo técnicas de los sistemas Hsing I, Pa kua, Tai Chi, Chuan Tsu, Tang Tue, Hung Chuan y Chuan Feng que  lo conformaron en su origen. El Boxeo Chino utiliza tanto movimientos circulares como rectos. Se apunta a la coordinación del paso con el puño, la mirada con el golpe, la cadera con el desplazamiento. En este sistema se encuentran movimientos, no solo posiciones, que despliegan la técnica de cada animal. Se trata de desarrollar las cualidades físicas, tácticas y estratégicas de cada uno para encontrar nuestro instinto dormido. 3º) Lucha Mongol : Es un sistema de lucha que se aplica netamente en la defensa personal , donde pueden verse algunas técnicas de boxeo, pero son pocas. La Lucha Mongol apunta a llevar al oponente al suelo a través de lanzamientos, planchas, agarres, palancas y trabas. Este sistema trabaja principalmente sobre las articulaciones, debiendo ejercitarse con sumo cuidado, porque producen mucho daño físico. Pertenecen a este grupo las estrangulaciones."
-    },
-    "la-practica-de-taikachisu": {
-      "title": "LA PRACTICA DE TAIKACHISU | Taikachisu",
-      "description": "El criterio de nuestras clases es de formación integral, a través de la cual se busca alcanzar los objetivos de la práctica del Taikachisu.",
-      "image": "https://taikachisu.com/preview/assets/646873663868bea3-opt2.webp",
-      "imageAlt": "LA PRACTICA DE TAIKACHISU",
-      "type": "article",
-      "schema": {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://taikachisu.com/preview/#organization",
-            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-            "url": "https://taikachisu.com/preview/",
-            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
-            "sameAs": [
-              "https://www.facebook.com/taikachisu.wushu.kungfu/",
-              "https://www.instagram.com/taikachisuwushukungfu/",
-              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://taikachisu.com/preview/#website",
-            "name": "Taikachisu",
-            "url": "https://taikachisu.com/preview/",
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://taikachisu.com/preview/la-practica-de-taikachisu/",
-            "url": "https://taikachisu.com/preview/la-practica-de-taikachisu/",
-            "name": "LA PRACTICA DE TAIKACHISU | Taikachisu",
-            "description": "El criterio de nuestras clases es de formación integral, a través de la cual se busca alcanzar los objetivos de la práctica del Taikachisu.",
-            "inLanguage": "es-AR",
-            "isPartOf": {
-              "@id": "https://taikachisu.com/preview/#website"
-            },
-            "breadcrumb": {
-              "@id": "https://taikachisu.com/preview/la-practica-de-taikachisu/#breadcrumb"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://taikachisu.com/preview/la-practica-de-taikachisu/#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://taikachisu.com/preview/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "El camino marcial",
-                "item": "https://taikachisu.com/preview/camino-marcial/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "LA PRACTICA DE TAIKACHISU",
-                "item": "https://taikachisu.com/preview/la-practica-de-taikachisu/"
-              }
-            ]
-          },
-          {
-            "@type": "Article",
-            "@id": "https://taikachisu.com/preview/la-practica-de-taikachisu/#article",
-            "headline": "LA PRACTICA DE TAIKACHISU",
-            "mainEntityOfPage": {
-              "@id": "https://taikachisu.com/preview/la-practica-de-taikachisu/"
-            },
-            "image": [
-              "https://taikachisu.com/preview/assets/646873663868bea3-opt2.webp"
-            ],
-            "author": {
-              "@type": "Organization",
-              "name": "TaikaChisu",
-              "url": "https://taikachisu.com/preview/"
-            },
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR",
-            "datePublished": "2017-02-17T02:13:11+00:00",
-            "dateModified": "2017-03-17T06:07:44+00:00"
-          }
-        ]
-      },
-      "articleMeta": {
-        "article:published_time": "2017-02-17T02:13:11+00:00",
-        "article:modified_time": "2017-03-17T06:07:44+00:00"
-      },
-      "original_text": "Nuestras clases de Taika-chisu wu shu kung fu se orientan con un criterio de formacion integral, estimulando la voluntad y canalizando las diferentes necesidades de cada practicante por medio de tres disciplinas: Una gimnasia integral Ejercicios en series de movimientos Técnicas: lucha de eje y los Xing Shi (formas o rutinas preestablecidas). Qué son los Xing Shi? Los Xing Shi preservan los fundamentos tecnicos del kung fu familiar Taikachisu . Nos brindan un patron de estudio aplicativo de sus principios de combate. Nuestros xing shi fundamentales son: I Chienpu I xing Yao Pu I xing Lao Inn Pang Chuan Ti Mao Ye Pa I sung Hung Chuan Xun Saa Chuan Jung Su Su Ma Hung Chuan Chi Su Kua Lao Hu Chuan shu Pak Hoc Pai Hung Chuan La práctica del Taikachisu nos enseña a tener un poder mental sobre lo fisico, a superarnos en todos los órdenes de la vida, a establecer una conducta equilibrada y respetar siempre nuestro ritmo biológico, por medio de una metodología ordenada, progresiva a traves de ejercicios en series de movimientos y técnicas correlativas. Los movimientos son fáciles y simples, naturales a nuestro accionar cotidiano, acordes a la necesidades y condiciones individuales de cada practicante. A través de la práctica del Taikachisu desarrollamos la fortaleza física (energía hei lek ) y la vital (energía chi lei ) a partir de una concentración dinámica. Además, incentivamos el hábito de la práctica diaria y el estudio en profundidad de las diversas disciplinas que involucra. Este arte marcial puede ser practicado tanto niños como por adultos."
-    },
-    "videos-de-taikachisu": {
-      "title": "VIDEOS DE TAIKACHISU 2017 | Taikachisu",
-      "description": "En esta sección pueden encontrarse algunos videos de diversos momentos de las clases, en los que se muestran las rutinas que guardan nuestras técnicas.",
-      "image": "https://taikachisu.com/preview/assets/c17c86191712e2e2-opt2.webp",
-      "imageAlt": "VIDEOS DE TAIKACHISU 2017",
-      "type": "article",
-      "schema": {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://taikachisu.com/preview/#organization",
-            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-            "url": "https://taikachisu.com/preview/",
-            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
-            "sameAs": [
-              "https://www.facebook.com/taikachisu.wushu.kungfu/",
-              "https://www.instagram.com/taikachisuwushukungfu/",
-              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://taikachisu.com/preview/#website",
-            "name": "Taikachisu",
-            "url": "https://taikachisu.com/preview/",
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://taikachisu.com/preview/videos-de-taikachisu/",
-            "url": "https://taikachisu.com/preview/videos-de-taikachisu/",
-            "name": "VIDEOS DE TAIKACHISU 2017 | Taikachisu",
-            "description": "En esta sección pueden encontrarse algunos videos de diversos momentos de las clases, en los que se muestran las rutinas que guardan nuestras técnicas.",
-            "inLanguage": "es-AR",
-            "isPartOf": {
-              "@id": "https://taikachisu.com/preview/#website"
-            },
-            "breadcrumb": {
-              "@id": "https://taikachisu.com/preview/videos-de-taikachisu/#breadcrumb"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://taikachisu.com/preview/videos-de-taikachisu/#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://taikachisu.com/preview/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "El camino marcial",
-                "item": "https://taikachisu.com/preview/camino-marcial/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "VIDEOS DE TAIKACHISU 2017",
-                "item": "https://taikachisu.com/preview/videos-de-taikachisu/"
-              }
-            ]
-          },
-          {
-            "@type": "Article",
-            "@id": "https://taikachisu.com/preview/videos-de-taikachisu/#article",
-            "headline": "VIDEOS DE TAIKACHISU 2017",
-            "mainEntityOfPage": {
-              "@id": "https://taikachisu.com/preview/videos-de-taikachisu/"
-            },
-            "image": [
-              "https://taikachisu.com/preview/assets/c17c86191712e2e2-opt2.webp"
-            ],
-            "author": {
-              "@type": "Organization",
-              "name": "TaikaChisu",
-              "url": "https://taikachisu.com/preview/"
-            },
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR",
-            "datePublished": "2017-02-17T02:10:23+00:00",
-            "dateModified": "2017-03-19T20:35:48+00:00"
-          }
-        ]
-      },
-      "articleMeta": {
-        "article:published_time": "2017-02-17T02:10:23+00:00",
-        "article:modified_time": "2017-03-19T20:35:48+00:00"
-      },
-      "original_text": "Taikachisu Armas: En este video se muestra el manejo de chai pam y sa chai pam . Parte del arsenal de nuestra ortodoxia Tecnica. Leer más acerca de Nuestra Técnica. Taikachisu Xing Shi 2017: Denominamos Xing Shi a las formas o rutinas preestablecidas que guardan la tecnica esencial de Taikachisu Wushu Kung fu. En este video podrás ver de qué se tratan algunas de ellas. Sigue leyendo acerca del Xing Shi haciendo clic aquí. Taikachisu Defensa Personal: Algunas tecnicas de Defensa personal , xiao sin hao , y defensas basicas contra agarres, chi su. Más información acerca de qué comprende el Taikachisu. Taikachisu Niños 2017: En este video pueden verse distintos momentos de las clases de Taikachisu Wushu Kung Fu para Niños : entrenamiento físico, formas y combates. Clic aquí para ver los Días y Horarios en que se dan clases de Taikachisu para Niños."
-    },
-    "nuestra-base-filosofica": {
-      "title": "NUESTRA BASE FILOSÓFICA | Taikachisu",
-      "description": "Kung Fu: este artículo es un repaso acerca de la enseñanza filosófica y de vida que representa una de las técnicas de combate más antiguas.",
-      "image": "https://taikachisu.com/preview/assets/489558083673ac4b.webp",
-      "imageAlt": "NUESTRA BASE FILOSÓFICA",
-      "type": "article",
-      "schema": {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "https://taikachisu.com/preview/#organization",
-            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
-            "url": "https://taikachisu.com/preview/",
-            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
-            "sameAs": [
-              "https://www.facebook.com/taikachisu.wushu.kungfu/",
-              "https://www.instagram.com/taikachisuwushukungfu/",
-              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
-            ]
-          },
-          {
-            "@type": "WebSite",
-            "@id": "https://taikachisu.com/preview/#website",
-            "name": "Taikachisu",
-            "url": "https://taikachisu.com/preview/",
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR"
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://taikachisu.com/preview/nuestra-base-filosofica/",
-            "url": "https://taikachisu.com/preview/nuestra-base-filosofica/",
-            "name": "NUESTRA BASE FILOSÓFICA | Taikachisu",
-            "description": "Kung Fu: este artículo es un repaso acerca de la enseñanza filosófica y de vida que representa una de las técnicas de combate más antiguas.",
-            "inLanguage": "es-AR",
-            "isPartOf": {
-              "@id": "https://taikachisu.com/preview/#website"
-            },
-            "breadcrumb": {
-              "@id": "https://taikachisu.com/preview/nuestra-base-filosofica/#breadcrumb"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://taikachisu.com/preview/nuestra-base-filosofica/#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Inicio",
-                "item": "https://taikachisu.com/preview/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "El camino marcial",
-                "item": "https://taikachisu.com/preview/camino-marcial/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "NUESTRA BASE FILOSÓFICA",
-                "item": "https://taikachisu.com/preview/nuestra-base-filosofica/"
-              }
-            ]
-          },
-          {
-            "@type": "Article",
-            "@id": "https://taikachisu.com/preview/nuestra-base-filosofica/#article",
-            "headline": "NUESTRA BASE FILOSÓFICA",
-            "mainEntityOfPage": {
-              "@id": "https://taikachisu.com/preview/nuestra-base-filosofica/"
-            },
-            "image": [
-              "https://taikachisu.com/preview/assets/489558083673ac4b.webp"
-            ],
-            "author": {
-              "@type": "Organization",
-              "name": "TaikaChisu",
-              "url": "https://taikachisu.com/preview/"
-            },
-            "publisher": {
-              "@id": "https://taikachisu.com/preview/#organization"
-            },
-            "inLanguage": "es-AR",
-            "datePublished": "2017-02-17T00:55:34+00:00",
-            "dateModified": "2017-03-17T06:07:44+00:00"
-          }
-        ]
-      },
-      "articleMeta": {
-        "article:published_time": "2017-02-17T00:55:34+00:00",
-        "article:modified_time": "2017-03-17T06:07:44+00:00"
-      },
-      "original_text": "El Kung-Fu es la técnica de combate más antigua que ha mantenido su tradición ininterrumpidamente desde sus orígenes hasta nuestros días. A lo largo de 5.000 años, forma y contenido han sufrido numerosas modificaciones sustanciales, suscitando el aporte de estudios por importantes Maestros de distintas épocas y regiones. En la evolución de la organización social, que desplaza el combate personal por la lucha de masas, la lid individual típicamente caballeresca ha quedado sin sentido; pero el valor formativo que entrena la lucha ha representado el primer patrimonio del hombre y nadie puede negarlo , incluso hoy la educación psicológica. El principio del combate, como medio ofensivo-defensivo, lo transforma en un muy efectivo medio de expresión de sí mismo, sin artificios, ni falsedades. Está comprobado que un individuo que adquiere una disciplina puede enfrentar cualquier situación con mayores posibilidades de éxito, dado que cuenta con un medio para controlar sus miedos, angustias y demás presiones. Mejora su capacidad de concentración, se comporta de manera más segura y decidida. Qué significan «Kung Fu» y «Wu Shu»? El término “kung fu” significa “habilidad, experiencia o destreza” en cualquier cosa. Al ser introducido en occidente, por error de interpretación, se lo tradujo como “arte marcial”; pero la pronunciación para este término es “wu shu”. Por lo tanto el wu shu kung fu , arte chino, significa “ habilidad o destreza en el arte marcial ”, y es practicado para promoción de la salud, cultivo del espíritu y la defensa propia. En qué se basa su enseñanza filosófica? La enseñanza filosófica está basada en la búsqueda constante del “yo” , porque es en vano adquirir dominio técnico si no se contribuye a la expansión de la personalidad, por eso es un “arte” y no una simple forma de pelea. Entonces podemos observar que junto a la técnica de combate, el kung fu se preocupa por la ética del practicante, su salud, la armonía del ser e incluso su visión cósmica ; por eso se enlaza indisolublemente con el ideograma que representa al Tao , de acuerdo con las leyes que rigen a la naturaleza universal según la milenaria cultura china. La estructura básica se apoya en la teoría del yin-yang , proveniente del Taoísmo , fuerzas mutuamente complementarias que actúan constantemente en este Universo, es por esto que la práctica nos enseña a buscar y establecer un equilibrio en todos los órdenes de nuestras actividades. La aplicación de la teoría del yin-yang es conocida como “ley de la armonía”. De todo lo dicho anteriormente se puede notar que el kung fu no es una mera técnica de pelea para la agresión o violencia , ya que inutilizar a un oponente no es su fin principal. Es una filosofía de vida , es tener gran paciencia y constancia, es aprovechar los errores y lecciones de nuestras experiencias, es buscar un equilibrio emocional. Es decir, hay muchos aspectos colaterales que además de enseñar a luchar nos enseñar a vivir. Como mencionábamos anteriormente, Wu shu significa literalmente arte marcial , pero también se lo entiende en su aplicación como guerrero o guardián. Nos orienta hacia la formación de un guerrero completo, con un conocimiento “profundo” sobre la vida, un conocimiento de las ciencias y artes naturales que lo llevan a entender el funcionamiento del mundo, dando la oportunidad de ser realmente libres. Por supuesto, lo rige un código ético donde el honor , la verdad y el respeto prevalecen, como también la ayuda al prójimo para la propia superación espiritual y la evolución de su vida."
-    },
     "el-estilo-taikachisu": {
       "title": "El estilo Taikachisu: historia, técnica y tradición | Taikachisu",
       "description": "El Estilo Taikachisu se define por la integración de tres sistemas de combate en una estructura técnica propia, transmitida mediante una metodología…",
-      "image": "https://taikachisu.com/preview/assets/maestro-2027/revision25-estilo-6-0-large.webp",
+      "image": "https://taikachisu.com/preview/assets/maestro-2027/shigung-1978-v1-large.webp",
       "imageAlt": "El estilo Taikachisu: historia, técnica y tradición",
       "type": "article",
       "schema": {
@@ -1416,7 +723,7 @@
               "@id": "https://taikachisu.com/preview/el-estilo-taikachisu/"
             },
             "image": [
-              "https://taikachisu.com/preview/assets/maestro-2027/revision25-estilo-6-0-large.webp"
+              "https://taikachisu.com/preview/assets/maestro-2027/shigung-1978-v1-large.webp"
             ],
             "author": {
               "@type": "Person",
@@ -1428,15 +735,15 @@
             },
             "inLanguage": "es-AR",
             "datePublished": "2017-02-16T01:08:44+00:00",
-            "dateModified": "2026-10-25"
+            "dateModified": "2026-10-26"
           }
         ]
       },
       "articleMeta": {
         "article:published_time": "2017-02-16T01:08:44+00:00",
-        "article:modified_time": "2026-10-25"
+        "article:modified_time": "2026-10-26"
       },
-      "original_text": "El Estilo Taikachisu se define por la integración de tres sistemas de combate en una estructura técnica propia, transmitida mediante una metodología progresiva y acompañada por una concepción integral de la formación humana. Integra características de las culturas china y mongola, que le otorgan una identidad técnica particular. Tradición, Resiliencia y Legado Marcial De dónde nacen las grandes tradiciones que perduran a través de los siglos? Hoy te invitamos a conocer el fascinante origen del Taikachisu, un arte marcial cuya historia es un testimonio de adaptación, estrategia y hermandad. Origen y creación del estilo Transmisión y práctica del estilo Taikachisu La tradición sitúa el origen del Taikachisu en el siglo XIII, en la región fronteriza entre China y Mongolia. Su creador, el monje Yu Che Sing, habría integrado conocimientos adquiridos en Shaolin y en otros sistemas marciales, dando origen a un método propio, orientado a las necesidades de defensa de su familia y sus caravanas comerciales. Transmisión generacional El estilo demostró ser rápido, poderoso y letal contra las amenazas de la época. Fue transmitido de padres a hijos y de maestro a discípulo de generación en generación hasta llegar a Swoon Hee Lee (32.ª generación), un hombre tranquilo, silencioso y prudente, Maestro portador depositario del estilo, digno representante de la estirpe Taikachisu, heredero y patriarca de una “tradición marcial” De la Tradición Milenaria a la Argentina Encuentro y transmisión del legado marcial Shi Gung Swoon Hee Lee emigró a los Estados Unidos y posteriormente llegó a la Argentina. Transmitió sus enseñanzas a Juan Carlos Gauna, reconocido por la tradición de la Escuela como su único discípulo y sucesor directo. Junto con los conocimientos recibidos, Gauna obtuvo el sello depositario como símbolo de continuidad y jerarquía. En 1963 abrió la Escuela Taikachisu, iniciando una etapa de difusión y enseñanza abierta al público. Gracias a la dedicación del si-gung Juan Carlos Gauna, el Taikachisu se pulió técnicamente y abrió sus puertas en 1963, permitiendo que este valioso conocimiento milenario trascienda las fronteras familiares y se comparta con la comunidad a través de su Escuela. Una disciplina que demuestra que la verdadera maestría no solo se trata de técnica, sino de resiliencia, honor y la fuerza de una comunidad unida. Taikachisu: Técnica, Características y Sistemas de un Arte Marcial Milenario El Taikachisu (cuyo significado es \"Gran familia de 7 manos\") es un sistema de Wushu Kung Fu familiar que fusiona de manera única las culturas mongol y china. Su metodología combina rigor técnico, filosofía y una alta efectividad táctica. Características Principales y Filosofía Principio Táctico: Enseña a defenderse atacando, priorizando el combate cuerpo a cuerpo, en el suelo y frente a múltiples atacantes. Dinámica de Movimiento: Sus desplazamientos buscan escapar de los embates mediante patrones universales (pa kua), posicionándose de forma lateral o posterior al oponente para un contraataque eficiente. Respiración y Energía Interior: Para el Taikachisu, la respiración constituye un principio fundamental e intrínseco de la ejercitación interna y externa. Integrada al trabajo corporal y al desarrollo del Qi, se trabaja a través del binomio Chi Lei / Hei Lek (氣力). Ambas dimensiones (la energía interior y la fortaleza física) se relacionan en una unidad mediante una concentración dinámica para lograr que \"el puño golpee como una maza y la pierna como un látigo\". Metodología de Aprendizaje: Los movimientos se estructuran de forma correlativa (del 1 al 7 u 8) desde el cinturón blanco hasta el negro, garantizando un aprendizaje ordenado, progresivo y armónico. Práctica técnica en el kwoon · 1975 Los Tres Sistemas Globales del Estilo La ortodoxia técnica del Taikachisu se divide fundamentalmente en tres pilares interrelacionados: Boxeo Chadts (Origen Tibetano): Enfocado en la velocidad, precisión y contundencia de puños y piernas, tomando como referencia la resistencia extrema del yak. Su ataque es directo y devastador. Boxeo Chino: Caracterizado por la armonía plástica y la combinación de movimientos circulares y rectos. Imita posturas de animales y aves (grulla, gato, etc.) para esquivar, redirigir y anticipar la fuerza del rival. Lucha Mongol: Especializada en el trabajo articular, aplicando palancas, proyecciones, agarres y llaves de estrangulación para neutralizar al oponente. Alumnos de la Escuela Taikachisu · 1973 Evolución y Armamentismo En niveles avanzados, el sistema incorpora el uso tradicional de armas como: Palos articulados (2 o 3 secciones) Lanza, y palos largo y corto Cuchillos, sable y arco con flecha Nota: Como base técnica superior, el estilo adopta la ortodoxia de combate del tigre). Una disciplina integral que entrena el poder físico, la respiración consciente y el dominio mental, promoviendo el equilibrio, el respeto biológico y la superación personal."
+      "original_text": "El Estilo Taikachisu se define por la integración de tres sistemas de combate en una estructura técnica propia, transmitida mediante una metodología progresiva y acompañada por una concepción integral de la formación humana. Integra características de las culturas china y mongola, que le otorgan una identidad técnica particular. Tradición, Resiliencia y Legado Marcial De dónde nacen las grandes tradiciones que perduran a través de los siglos? Hoy te invitamos a conocer el fascinante origen del Taikachisu, un arte marcial cuya historia es un testimonio de adaptación, estrategia y hermandad. Origen y creación del estilo Si Gung de la Escuela Taikachisu · 1978 La tradición sitúa el origen del Taikachisu en el siglo XIII, en la región fronteriza entre China y Mongolia. Su creador, el monje Yu Che Sing, habría integrado conocimientos adquiridos en Shaolin y en otros sistemas marciales, dando origen a un método propio, orientado a las necesidades de defensa de su familia y sus caravanas comerciales. Transmisión generacional El estilo demostró ser rápido, poderoso y letal contra las amenazas de la época. Fue transmitido de padres a hijos y de maestro a discípulo de generación en generación hasta llegar a Swoon Hee Lee (32.ª generación), un hombre tranquilo, silencioso y prudente, Maestro portador depositario del estilo, digno representante de la estirpe Taikachisu, heredero y patriarca de una “tradición marcial” De la Tradición Milenaria a la Argentina Encuentro y transmisión del legado marcial Shi Gung Swoon Hee Lee emigró a los Estados Unidos y posteriormente llegó a la Argentina. Transmitió sus enseñanzas a Juan Carlos Gauna, reconocido por la tradición de la Escuela como su único discípulo y sucesor directo. Junto con los conocimientos recibidos, Gauna obtuvo el sello depositario como símbolo de continuidad y jerarquía. En 1963 abrió la Escuela Taikachisu, iniciando una etapa de difusión y enseñanza abierta al público. Gracias a la dedicación del si-gung Juan Carlos Gauna, el Taikachisu se pulió técnicamente y abrió sus puertas en 1963, permitiendo que este valioso conocimiento milenario trascienda las fronteras familiares y se comparta con la comunidad a través de su Escuela. Una disciplina que demuestra que la verdadera maestría no solo se trata de técnica, sino de resiliencia, honor y la fuerza de una comunidad unida. Taikachisu: Técnica, Características y Sistemas de un Arte Marcial Milenario El Taikachisu (cuyo significado es \"Gran familia de 7 manos\") es un sistema de Wushu Kung Fu familiar que fusiona de manera única las culturas mongol y china. Su metodología combina rigor técnico, filosofía y una alta efectividad táctica. Características Principales y Filosofía Principio Táctico: Enseña a defenderse atacando, priorizando el combate cuerpo a cuerpo, en el suelo y frente a múltiples atacantes. Dinámica de Movimiento: Sus desplazamientos buscan escapar de los embates mediante patrones universales (pa kua), posicionándose de forma lateral o posterior al oponente para un contraataque eficiente. Respiración y Energía Interior: Para el Taikachisu, la respiración constituye un principio fundamental e intrínseco de la ejercitación interna y externa. Integrada al trabajo corporal y al desarrollo del Qi, se trabaja a través del binomio Chi Lei / Hei Lek (氣力). Ambas dimensiones (la energía interior y la fortaleza física) se relacionan en una unidad mediante una concentración dinámica para lograr que \"el puño golpee como una maza y la pierna como un látigo\". Metodología de Aprendizaje: Los movimientos se estructuran de forma correlativa (del 1 al 7 u 8) desde el cinturón blanco hasta el negro, garantizando un aprendizaje ordenado, progresivo y armónico. Práctica técnica en el kwoon · 1975 Los Tres Sistemas Globales del Estilo La ortodoxia técnica del Taikachisu se divide fundamentalmente en tres pilares interrelacionados: Boxeo Chadts (Origen Tibetano): Enfocado en la velocidad, precisión y contundencia de puños y piernas, tomando como referencia la resistencia extrema del yak. Su ataque es directo y devastador. Boxeo Chino: Caracterizado por la armonía plástica y la combinación de movimientos circulares y rectos. Imita posturas de animales y aves (grulla, gato, etc.) para esquivar, redirigir y anticipar la fuerza del rival. Lucha Mongol: Especializada en el trabajo articular, aplicando palancas, proyecciones, agarres y llaves de estrangulación para neutralizar al oponente. Alumnos de la Escuela Taikachisu · 1973 Evolución y Armamentismo En niveles avanzados, el sistema incorpora el uso tradicional de armas como: Palos articulados (2 o 3 secciones) Lanza, y palos largo y corto Cuchillos, sable y arco con flecha Nota: Como base técnica superior, el estilo adopta la ortodoxia de combate del tigre). Una disciplina integral que entrena el poder físico, la respiración consciente y el dominio mental, promoviendo el equilibrio, el respeto biológico y la superación personal. La técnica del tai-ka-chi-su · publicación histórica"
     },
     "el-camino-del-practicante-de-artes-marciales": {
       "title": "EL CAMINO DEL PRACTICANTE DE ARTES MARCIALES | Taikachisu",
@@ -1765,6 +1072,811 @@
                 "item": "https://taikachisu.com/preview/calendario/"
               }
             ]
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros": {
+      "title": "Maestros y profesores de Taikachisu | Sedes a cargo",
+      "description": "Conocé a los maestros y profesores de Taikachisu. Consultá sus sedes, localidades y los horarios de clases de wushu kung fu.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://taikachisu.com/preview/maestros/",
+            "url": "https://taikachisu.com/preview/maestros/",
+            "name": "Maestros y profesores de Taikachisu | Sedes a cargo",
+            "description": "Conocé a los maestros y profesores de Taikachisu. Consultá sus sedes, localidades y los horarios de clases de wushu kung fu.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros y profesores de Taikachisu | Sedes a cargo",
+                "item": "https://taikachisu.com/preview/maestros/"
+              }
+            ]
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/alejandro-digrigoli": {
+      "title": "Alejandro Digrigoli | Maestro de Taikachisu",
+      "description": "Consultá las sedes a cargo de Alejandro Digrigoli, maestro 7° Tuan de Taikachisu, en Longchamps. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/alejandro-digrigoli/",
+            "url": "https://taikachisu.com/preview/maestros/alejandro-digrigoli/",
+            "name": "Alejandro Digrigoli | Maestro de Taikachisu",
+            "description": "Consultá las sedes a cargo de Alejandro Digrigoli, maestro 7° Tuan de Taikachisu, en Longchamps. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/alejandro-digrigoli/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/alejandro-digrigoli/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Alejandro Digrigoli | Maestro de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/alejandro-digrigoli/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/alejandro-digrigoli/#person",
+            "name": "Alejandro Digrigoli",
+            "jobTitle": "Maestro",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/cesar-caruso": {
+      "title": "Cesar Caruso | Maestro de Taikachisu",
+      "description": "Consultá las sedes a cargo de Cesar Caruso, maestro 5° Tuan de Taikachisu, en Posadas. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/cesar-caruso/",
+            "url": "https://taikachisu.com/preview/maestros/cesar-caruso/",
+            "name": "Cesar Caruso | Maestro de Taikachisu",
+            "description": "Consultá las sedes a cargo de Cesar Caruso, maestro 5° Tuan de Taikachisu, en Posadas. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/cesar-caruso/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/cesar-caruso/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Cesar Caruso | Maestro de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/cesar-caruso/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/cesar-caruso/#person",
+            "name": "Cesar Caruso",
+            "jobTitle": "Maestro",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/julio-diaz": {
+      "title": "Julio Diaz | Maestro de Taikachisu",
+      "description": "Consultá las sedes a cargo de Julio Diaz, maestro 4° Tuan de Taikachisu, en Neuquén. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/julio-diaz/",
+            "url": "https://taikachisu.com/preview/maestros/julio-diaz/",
+            "name": "Julio Diaz | Maestro de Taikachisu",
+            "description": "Consultá las sedes a cargo de Julio Diaz, maestro 4° Tuan de Taikachisu, en Neuquén. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/julio-diaz/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/julio-diaz/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Julio Diaz | Maestro de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/julio-diaz/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/julio-diaz/#person",
+            "name": "Julio Diaz",
+            "jobTitle": "Maestro",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/gabriel-llano": {
+      "title": "Gabriel Llano | Maestro de Taikachisu",
+      "description": "Consultá las sedes a cargo de Gabriel Llano, maestro 4° Tuan de Taikachisu, en Lanús. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/gabriel-llano/",
+            "url": "https://taikachisu.com/preview/maestros/gabriel-llano/",
+            "name": "Gabriel Llano | Maestro de Taikachisu",
+            "description": "Consultá las sedes a cargo de Gabriel Llano, maestro 4° Tuan de Taikachisu, en Lanús. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/gabriel-llano/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/gabriel-llano/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Gabriel Llano | Maestro de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/gabriel-llano/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/gabriel-llano/#person",
+            "name": "Gabriel Llano",
+            "jobTitle": "Maestro",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/ludmila-visgarra": {
+      "title": "Ludmila Visgarra | Profesora de Taikachisu",
+      "description": "Consultá las sedes a cargo de Ludmila Visgarra, profesora 1° Tuan de Taikachisu, en Monte Grande. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/ludmila-visgarra/",
+            "url": "https://taikachisu.com/preview/maestros/ludmila-visgarra/",
+            "name": "Ludmila Visgarra | Profesora de Taikachisu",
+            "description": "Consultá las sedes a cargo de Ludmila Visgarra, profesora 1° Tuan de Taikachisu, en Monte Grande. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/ludmila-visgarra/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/ludmila-visgarra/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ludmila Visgarra | Profesora de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/ludmila-visgarra/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/ludmila-visgarra/#person",
+            "name": "Ludmila Visgarra",
+            "jobTitle": "Profesora",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/gerardo-corti": {
+      "title": "Gerardo Corti | Profesor de Taikachisu",
+      "description": "Consultá las sedes a cargo de Gerardo Corti, profesor 1° Tuan de Taikachisu, en Monte Chingolo. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/gerardo-corti/",
+            "url": "https://taikachisu.com/preview/maestros/gerardo-corti/",
+            "name": "Gerardo Corti | Profesor de Taikachisu",
+            "description": "Consultá las sedes a cargo de Gerardo Corti, profesor 1° Tuan de Taikachisu, en Monte Chingolo. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/gerardo-corti/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/gerardo-corti/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Gerardo Corti | Profesor de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/gerardo-corti/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/gerardo-corti/#person",
+            "name": "Gerardo Corti",
+            "jobTitle": "Profesor",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/carlos-valdivieso": {
+      "title": "Carlos Valdivieso | Maestro de Taikachisu",
+      "description": "Consultá las sedes a cargo de Carlos Valdivieso, maestro 4° Tuan de Taikachisu, en Burzaco. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/carlos-valdivieso/",
+            "url": "https://taikachisu.com/preview/maestros/carlos-valdivieso/",
+            "name": "Carlos Valdivieso | Maestro de Taikachisu",
+            "description": "Consultá las sedes a cargo de Carlos Valdivieso, maestro 4° Tuan de Taikachisu, en Burzaco. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/carlos-valdivieso/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/carlos-valdivieso/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Carlos Valdivieso | Maestro de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/carlos-valdivieso/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/carlos-valdivieso/#person",
+            "name": "Carlos Valdivieso",
+            "jobTitle": "Maestro",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/carol-jose": {
+      "title": "Carol Jose | Maestro de Taikachisu",
+      "description": "Consultá las sedes a cargo de Carol Jose, maestro 4° Tuan de Taikachisu, en Villa Allende. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/carol-jose/",
+            "url": "https://taikachisu.com/preview/maestros/carol-jose/",
+            "name": "Carol Jose | Maestro de Taikachisu",
+            "description": "Consultá las sedes a cargo de Carol Jose, maestro 4° Tuan de Taikachisu, en Villa Allende. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/carol-jose/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/carol-jose/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Carol Jose | Maestro de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/carol-jose/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/carol-jose/#person",
+            "name": "Carol Jose",
+            "jobTitle": "Maestro",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
+          }
+        ]
+      },
+      "articleMeta": {}
+    },
+    "maestros/leiva-luis": {
+      "title": "Leiva Luis | Maestro de Taikachisu",
+      "description": "Consultá las sedes a cargo de Leiva Luis, maestro 4° Tuan de Taikachisu, en Posadas. Ubicación y horarios de clases.",
+      "image": "https://taikachisu.com/preview/assets/home-banner-2-v2-opt2.webp",
+      "imageAlt": "Escuela Taikachisu Wushu Kung Fu",
+      "type": "website",
+      "schema": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://taikachisu.com/preview/#organization",
+            "name": "Asociación Taika-Chisu Wu Shu Kung Fu Argentina",
+            "url": "https://taikachisu.com/preview/",
+            "logo": "https://taikachisu.com/preview/assets/emblema-web-opt2.webp",
+            "sameAs": [
+              "https://www.facebook.com/taikachisu.wushu.kungfu/",
+              "https://www.instagram.com/taikachisuwushukungfu/",
+              "https://www.youtube.com/channel/UC3DxPDL_ZVSj8A1q_NaDyOg"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://taikachisu.com/preview/#website",
+            "name": "Taikachisu",
+            "url": "https://taikachisu.com/preview/",
+            "publisher": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://taikachisu.com/preview/maestros/leiva-luis/",
+            "url": "https://taikachisu.com/preview/maestros/leiva-luis/",
+            "name": "Leiva Luis | Maestro de Taikachisu",
+            "description": "Consultá las sedes a cargo de Leiva Luis, maestro 4° Tuan de Taikachisu, en Posadas. Ubicación y horarios de clases.",
+            "inLanguage": "es-AR",
+            "isPartOf": {
+              "@id": "https://taikachisu.com/preview/#website"
+            },
+            "breadcrumb": {
+              "@id": "https://taikachisu.com/preview/maestros/leiva-luis/#breadcrumb"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://taikachisu.com/preview/maestros/leiva-luis/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://taikachisu.com/preview/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Maestros",
+                "item": "https://taikachisu.com/preview/maestros/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Leiva Luis | Maestro de Taikachisu",
+                "item": "https://taikachisu.com/preview/maestros/leiva-luis/"
+              }
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://taikachisu.com/preview/maestros/leiva-luis/#person",
+            "name": "Leiva Luis",
+            "jobTitle": "Maestro",
+            "affiliation": {
+              "@id": "https://taikachisu.com/preview/#organization"
+            }
           }
         ]
       },
@@ -3299,5 +3411,124 @@
       },
       "articleMeta": {}
     }
-  }
+  },
+  "teachers": [
+    {
+      "slug": "alejandro-digrigoli",
+      "name": "Alejandro Digrigoli",
+      "role": "Maestro",
+      "grade": "7° Tuan",
+      "sedeSlugs": [
+        "sede-central"
+      ],
+      "localities": [
+        "Longchamps"
+      ]
+    },
+    {
+      "slug": "cesar-caruso",
+      "name": "Cesar Caruso",
+      "role": "Maestro",
+      "grade": "5° Tuan",
+      "sedeSlugs": [
+        "nea"
+      ],
+      "localities": [
+        "Posadas"
+      ]
+    },
+    {
+      "slug": "julio-diaz",
+      "name": "Julio Diaz",
+      "role": "Maestro",
+      "grade": "4° Tuan",
+      "sedeSlugs": [
+        "neuquen"
+      ],
+      "localities": [
+        "Neuquén"
+      ]
+    },
+    {
+      "slug": "gabriel-llano",
+      "name": "Gabriel Llano",
+      "role": "Maestro",
+      "grade": "4° Tuan",
+      "sedeSlugs": [
+        "lanus"
+      ],
+      "localities": [
+        "Lanús"
+      ]
+    },
+    {
+      "slug": "ludmila-visgarra",
+      "name": "Ludmila Visgarra",
+      "role": "Profesora",
+      "grade": "1° Tuan",
+      "sedeSlugs": [
+        "monte-grande"
+      ],
+      "localities": [
+        "Monte Grande"
+      ]
+    },
+    {
+      "slug": "gerardo-corti",
+      "name": "Gerardo Corti",
+      "role": "Profesor",
+      "grade": "1° Tuan",
+      "sedeSlugs": [
+        "monte-chingolo"
+      ],
+      "localities": [
+        "Monte Chingolo"
+      ]
+    },
+    {
+      "slug": "carlos-valdivieso",
+      "name": "Carlos Valdivieso",
+      "role": "Maestro",
+      "grade": "4° Tuan",
+      "sedeSlugs": [
+        "burzaco"
+      ],
+      "localities": [
+        "Burzaco"
+      ]
+    },
+    {
+      "slug": "carol-jose",
+      "name": "Carol Jose",
+      "role": "Maestro",
+      "grade": "4° Tuan",
+      "sedeSlugs": [
+        "villa-allende"
+      ],
+      "localities": [
+        "Villa Allende"
+      ]
+    },
+    {
+      "slug": "leiva-luis",
+      "name": "Leiva Luis",
+      "role": "Maestro",
+      "grade": "4° Tuan",
+      "sedeSlugs": [
+        "asociacion-misionera"
+      ],
+      "localities": [
+        "Posadas"
+      ]
+    }
+  ],
+  "retiredArticles": [
+    "que-es-taikachisu-wushu-kung-fu",
+    "nuestra-base-filosofica",
+    "nuestra-tecnica",
+    "la-practica-de-taikachisu",
+    "secreto-del-estilo-taikachisu",
+    "lao-ying",
+    "videos-de-taikachisu"
+  ]
 }

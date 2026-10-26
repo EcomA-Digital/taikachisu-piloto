@@ -8,6 +8,7 @@ const home = document.querySelector('#home');
 const reading = document.querySelector('#reading');
 const locality = document.querySelector('#locality');
 const age = document.querySelector('#age');
+const teacherFilter = document.querySelector('#teacher');
 const navigation = document.querySelector('#navigation');
 const menu = document.querySelector('#menu-button');
 const parser = new DOMParser();
@@ -129,10 +130,11 @@ function readSedes(record) {
 }
 const groupNames={menores:'Niños',juveniles:'Juveniles',adultos:'Adultos'};
 function groupTags(sede) {return sede.groups.map(group=>`<span>${groupNames[group]}</span>`).join('');}
+function renderSedeCard(sede) {return `<article class="sede-card"><a class="sede-photo" href="#/sedes/${sede.slug}" aria-label="Ver ${escapeHTML(sede.title)}"><img src="${escapeHTML(sede.image)}" alt="${escapeHTML(sede.title)}" loading="lazy"><span>${escapeHTML(sede.locality)}</span></a><div class="sede-card-body"><h3>${escapeHTML(sede.title.replace(/^KWOON\s/,''))}</h3><p class="sede-teacher">${escapeHTML(sede.teacher)}</p><p class="sede-address">${escapeHTML(sede.address)}</p><div class="sede-tags">${groupTags(sede)}</div><a class="sede-card-link" href="#/sedes/${sede.slug}">Ver sede y horarios <span aria-hidden="true">↗</span></a></div></article>`;}
 function renderSedes() {
-  const filtered=sedes.filter(sede=>(!locality.value || sede.locality===locality.value) && (!age.value || sede.groups.includes(age.value)));
+  const filtered=SchoolTeachers.filterSedes(sedes,{locality:locality.value,age:age.value,teacher:teacherFilter.value});
   document.querySelector('#result-count').textContent=`${filtered.length} ${filtered.length===1?'sede':'sedes'}`;
-  document.querySelector('#sede-grid').innerHTML=filtered.length ? filtered.map(sede=>`<article class="sede-card"><a class="sede-photo" href="#/sedes/${sede.slug}" aria-label="Ver ${escapeHTML(sede.title)}"><img src="${escapeHTML(sede.image)}" alt="${escapeHTML(sede.title)}" loading="lazy"><span>${escapeHTML(sede.locality)}</span></a><div class="sede-card-body"><h3>${escapeHTML(sede.title.replace(/^KWOON\s/,''))}</h3><p class="sede-teacher">${escapeHTML(sede.teacher)}</p><p class="sede-address">${escapeHTML(sede.address)}</p><div class="sede-tags">${groupTags(sede)}</div><a class="sede-card-link" href="#/sedes/${sede.slug}">Ver sede y horarios <span aria-hidden="true">↗</span></a></div></article>`).join('') : '<p class="empty">No hay sedes para esta selección. Probá otra localidad o grupo.</p>';
+  document.querySelector('#sede-grid').innerHTML=filtered.length ? filtered.map(renderSedeCard).join('') : '<p class="empty">No hay sedes para esta selección. Probá otra localidad o grupo.</p>';
 }
 function scheduleCards(sede) {
   const doc=parser.parseFromString(sede.schedule,'text/html');
@@ -165,7 +167,7 @@ function scheduleCards(sede) {
 function renderSedeDetail(sede) {
   const detail=document.querySelector('#sede-detail');
   const mapsLink='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(sede.address);
-  detail.innerHTML=`<section class="sede-heading"><a class="reading-back" href="#sedes">← Volver al buscador de sedes</a><div class="sede-heading-grid"><div><p class="eyebrow">TAIKACHISU · ${escapeHTML(sede.locality)}</p><h1 tabindex="-1">${escapeHTML(sede.title)}</h1>${sede.venue?`<p class="sede-venue">${escapeHTML(sede.venue)}</p>`:''}<div class="sede-tags">${groupTags(sede)}</div><a class="button gold" href="#horarios-${sede.slug}">Ver horarios ↓</a></div><figure class="sede-detail-photo"><img src="${escapeHTML(sede.image)}" alt="${escapeHTML(sede.title)}"><figcaption>${escapeHTML(sede.locality)} · Wushu Kung Fu</figcaption></figure></div></section><div class="sede-detail-body"><section class="sede-instructor"><p class="eyebrow dark-label">QUIÉN GUÍA LA PRÁCTICA</p><h2>${escapeHTML(sede.teacher)}</h2>${sede.notes.length?`<div class="sede-notes">${sede.notes.join('')}</div>`:''}</section><section class="sede-schedule" id="horarios-${sede.slug}"><div class="sede-section-title"><div><p class="eyebrow dark-label">LA PRÁCTICA</p><h2>Días y horarios.</h2></div><span>Información publicada por la escuela</span></div>${scheduleCards(sede)}<details class="original-schedule"><summary>Ver tabla de horarios original</summary><div class="schedule-table">${sede.schedule}</div></details></section><section class="sede-location"><div><p class="eyebrow dark-label">DÓNDE ENTRENAR</p><h2>La ubicación.</h2><p>${escapeHTML(sede.address)}</p><a class="button dark" href="${escapeHTML(mapsLink)}" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div>${sede.map?`<iframe title="Mapa de ${escapeHTML(sede.title)}" src="${escapeHTML(sede.map)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>`:''}</section><div class="sede-detail-end"><a class="underlined" href="#sedes">← Buscar otra sede</a><a class="button dark" href="#/inscripcion">Inscripción</a></div></div>`;
+  detail.innerHTML=`<section class="sede-heading"><a class="reading-back" href="#sedes">← Volver al buscador de sedes</a><div class="sede-heading-grid"><div><p class="eyebrow">TAIKACHISU · ${escapeHTML(sede.locality)}</p><h1 tabindex="-1">${escapeHTML(sede.title)}</h1>${sede.venue?`<p class="sede-venue">${escapeHTML(sede.venue)}</p>`:''}<div class="sede-tags">${groupTags(sede)}</div><a class="button gold" href="#horarios-${sede.slug}">Ver horarios ↓</a></div><figure class="sede-detail-photo"><img src="${escapeHTML(sede.image)}" alt="${escapeHTML(sede.title)}"><figcaption>${escapeHTML(sede.locality)} · Wushu Kung Fu</figcaption></figure></div></section><div class="sede-detail-body"><section class="sede-instructor"><p class="eyebrow dark-label">QUIÉN GUÍA LA PRÁCTICA</p><h2><a href="#/maestros/${SchoolTeachers.teacherSlug(sede.teacher)}">${escapeHTML(sede.teacher)}</a></h2>${sede.notes.length?`<div class="sede-notes">${sede.notes.join('')}</div>`:''}</section><section class="sede-schedule" id="horarios-${sede.slug}"><div class="sede-section-title"><div><p class="eyebrow dark-label">LA PRÁCTICA</p><h2>Días y horarios.</h2></div><span>Información publicada por la escuela</span></div>${scheduleCards(sede)}<details class="original-schedule"><summary>Ver tabla de horarios original</summary><div class="schedule-table">${sede.schedule}</div></details></section><section class="sede-location"><div><p class="eyebrow dark-label">DÓNDE ENTRENAR</p><h2>La ubicación.</h2><p>${escapeHTML(sede.address)}</p><a class="button dark" href="${escapeHTML(mapsLink)}" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div>${sede.map?`<iframe title="Mapa de ${escapeHTML(sede.title)}" src="${escapeHTML(sede.map)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>`:''}</section><div class="sede-detail-end"><a class="underlined" href="#sedes">← Buscar otra sede</a><a class="button dark" href="#/inscripcion">Inscripción</a></div></div>`;
   // The schedule anchor belongs to this view; keep its route when navigating within it.
   detail.querySelector('a[href^="#horarios-"]').addEventListener('click',event=>{event.preventDefault();detail.querySelector('.sede-schedule').scrollIntoView({behavior:reducedMotion?'instant':'smooth'});});
   document.title=`${sede.title} · Taikachisu`;
@@ -176,6 +178,7 @@ function renderSedeDetail(sede) {
 document.querySelector('#finder').addEventListener('submit',event=>{event.preventDefault();renderSedes(); document.querySelector('#result-count').scrollIntoView({behavior:reducedMotion?'instant':'smooth',block:'center'});});
 locality.addEventListener('change',renderSedes);
 age.addEventListener('change',renderSedes);
+teacherFilter.addEventListener('change',renderSedes);
 function renderRoute(initial=false) {
   const hash = window.SchoolSEO?.route() || location.hash;
   const parts = hash.replace(/^#\/?/,'').split('/');
@@ -188,6 +191,10 @@ function renderRoute(initial=false) {
   document.querySelector('#reading-heading-byline')?.remove();
   document.querySelector('#reading .reading-back').href='#/';
   document.querySelector('#reading .reading-back').textContent='← Volver al inicio';
+  if(slug==='maestros') {
+    deactivateIntro();home.hidden=true;reading.hidden=true;features.hidden=false;
+    SchoolTeachers.render(parts,sedes,renderSedeCard);closeMenu();return;
+  }
   if(['camino-marcial','calendario','evento'].includes(slug)) {
     deactivateIntro();home.hidden=true;reading.hidden=true;features.hidden=false;
     SchoolFeatures.route(parts);closeMenu();return;
@@ -235,7 +242,7 @@ function showRoute(initial=false) {
   window.SchoolSEO?.apply();
   dispatchEvent(new Event('taika:page'));
 }
-fetch('content.json?v=20261025-editorial1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
+fetch('content.json?v=20261026-correcciones1').then(response=>{if(!response.ok)throw new Error('content');return response.json();}).then(async data=>{
   // The static home is already visible. Build its interactive lists after the
   // opening so large DOM updates cannot delay the final seal or entry timer.
   if(document.body.classList.contains('intro-pending')) {
@@ -252,7 +259,10 @@ fetch('content.json?v=20261025-editorial1').then(response=>{if(!response.ok)thro
   SchoolFeatures.setupMotion();
   SchoolMotion.initHome();
   const management=document.createElement('a');management.href='admin.html';management.className='management-link';management.textContent='Gestión de la escuela';(document.querySelector('.footer-utilities') || document.querySelector('.footer-bottom')).append(management);
+  locality.replaceChildren(new Option('Todas las localidades',''));
+  teacherFilter.replaceChildren(new Option('Todos',''));
   [...new Set(sedes.map(sede=>sede.locality))].sort().forEach(city=>{const option=document.createElement('option');option.value=city;option.textContent=city;locality.append(option);});
+  SchoolTeachers.groupSedes(sedes).forEach(profile=>{const option=document.createElement('option');option.value=profile.slug;option.textContent=profile.name;teacherFilter.append(option);});
   renderSedes();showRoute(true);
 }).catch(()=>{
   deactivateIntro();
