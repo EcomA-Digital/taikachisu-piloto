@@ -100,7 +100,7 @@
 .reading--editorial .reading-layout{padding-top:56px;padding-bottom:64px}
 .reading-content.editorial-article{width:100%;max-width:800px;margin:0 auto;font-size:17px;line-height:1.8;text-align:left}
 .editorial-article p{margin:0 0 24px}
-.editorial-article .reading-lead{font:inherit;font-style:italic;color:var(--ink);max-width:none;margin-bottom:24px}
+.editorial-article .reading-lead{font:inherit;font-family:Georgia,"Times New Roman",serif;font-style:italic;color:var(--ink);max-width:none;margin-bottom:24px}
 .editorial-article .editorial-kicker{font-size:12px;line-height:1.7;letter-spacing:.06em;color:var(--brand-red);margin-bottom:24px}
 .editorial-article h2{font-size:clamp(30px,3vw,42px);line-height:1.15;margin:40px 0 24px;padding-top:24px;border-color:var(--line);text-wrap:wrap}
 .editorial-article .editorial-chapter{margin:40px 0}
