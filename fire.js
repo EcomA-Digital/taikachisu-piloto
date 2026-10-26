@@ -13,15 +13,8 @@ function createLogoFire(canvas, options={}) {
     float noise(vec2 p){vec2 i=floor(p), f=fract(p);f=f*f*(3.-2.*f);
       return mix(mix(hash(i),hash(i+vec2(1.,0.)),f.x),mix(hash(i+vec2(0.,1.)),hash(i+vec2(1.,1.)),f.x),f.y);}
     float fbm(vec2 p){float v=0.;float a=.5;for(int i=0;i<4;i++){v+=a*noise(p);p=p*2.03+vec2(7.1,3.7);a*=.5;}return v;}
-    void main(){
-      vec2 p=uv-.5;float r=length(p);float radius=.222;
-      // Upward flow is shared by the ring, flame tongues and smoke.
-      vec2 flow=p*vec2(24.,13.)-vec2(time*.12,time*1.15);
-      float turbulence=fbm(flow+vec2(fbm(flow*.6+time*.12)*2.,0.));
-      float detail=fbm(p*34.-vec2(time*.16,time*1.7));
-      float top=.5+.5*p.y/max(r,.001);
+    vec4 flameSurface(float d,float top,float turbulence,float detail){
       float edge=.014+(.034+.15*top)*pow(turbulence,1.8);
-      float d=r-radius;
       float outer=1.-smoothstep(edge*.25,edge+detail*.012,d);
       float inner=smoothstep(-.007,.003,d);
       float body=outer*inner*(.65+.35*detail);
@@ -29,8 +22,16 @@ function createLogoFire(canvas, options={}) {
       vec3 color=mix(vec3(.7,.075,.008),vec3(1.,.42,.025),smoothstep(.15,.65,heat));
       color=mix(color,vec3(1.,.83,.32),smoothstep(.72,1.,heat));
       float glow=exp(-abs(d)*52.)*.12;
-      float alpha=body*(.45+detail*.5)+glow;
       color+=vec3(.65,.18,.015)*glow;
+      return vec4(color,body*(.45+detail*.5)+glow);
+    }
+    void main(){
+      vec2 p=uv-.5;float r=length(p);float radius=.222;
+      vec2 flow=p*vec2(24.,13.)-vec2(time*.12,time*1.15);
+      float turbulence=fbm(flow+vec2(fbm(flow*.6+time*.12)*2.,0.));
+      float detail=fbm(p*34.-vec2(time*.16,time*1.7));
+      vec4 rim=flameSurface(r-radius,.5+.5*p.y/max(r,.001),turbulence,detail);
+      vec3 color=rim.rgb;float alpha=rim.a;
       // Sparse embers drift upward with their own lifetimes.
       for(int i=0;i<12;i++){
         float seed=float(i);float life=fract(time*.14+seed*.0833);
@@ -40,30 +41,20 @@ function createLogoFire(canvas, options={}) {
         float light=(1.-smoothstep(.06,.28,length((p-spark)*100.)))*(1.-life);
         color+=vec3(1.,.55,.08)*light;alpha+=light;
       }
-      // Separate tapered plumes rise and curl; there is no circular core fill.
-      vec2 q=p/radius;
-      float striations=fbm(vec2(q.x*19.+turbulence,q.y*4.-time*6.));
-      float density=0.,coreHeat=0.;
-      for(int j=0;j<7;j++){
-        float seed=float(j),baseX=(seed-3.)*.27+.05*sin(seed*4.7);
-        float height=1.45+.5*sin(time*4.7+seed*2.37)+.2*sin(time*6.+seed*4.)+.4*exp(-baseX*baseX*4.);
-        float along=max(0.,(q.y+.85)/height);
-        float sway=.16*sin(along*6.-time*5.+seed*2.)*along+.05*sin(along*15.-time*9.+seed)*along*along;
-        float width=.42*pow(max(1.-along,0.),.9)+.018;
-        float edgeX=abs(q.x-baseX-sway+(striations-.5)*.06)/width;
-        float tongue=(1.-smoothstep(.3,1.1,edgeX))*(1.-smoothstep(.86,1.04,along))*smoothstep(-1.+.1*sin(seed*3.1),-.66+.1*sin(seed*3.1),q.y);
-        float thermal=clamp(.95-.5*edgeX-.35*along+(striations-.5)*.45,0.,1.);
-        density=max(density,tongue);
-        coreHeat=max(coreHeat,tongue*thermal);
+      // Extend the exact rim material across the seal, without a new flame style.
+      float veil=ignition*(1.-smoothstep(radius-.005,radius+.018,r));
+      // Fold the same rising noise field into irregular internal flame edges.
+      // No cones, geometric stripes, or independent central color palette.
+      for(int j=0;j<2;j++){
+        float field=j==0?1.-turbulence:turbulence;
+        float internalEdge=abs(field-.58)*(j==0?.16:.22);
+        vec4 layer=flameSurface(internalEdge,1.,field,detail);
+        float layerAlpha=clamp(layer.a*veil,0.,1.);
+        float combined=alpha*(1.-layerAlpha)+layerAlpha;
+        color=(color*alpha*(1.-layerAlpha)+layer.rgb*layerAlpha)/max(combined,.001);
+        alpha=combined;
       }
-      vec3 coreColor=mix(vec3(.65,.018,.001),vec3(1.,.24,.005),smoothstep(0.,.35,coreHeat));
-      coreColor=mix(coreColor,vec3(1.,.82,.13),smoothstep(.35,.72,coreHeat));
-      coreColor=mix(coreColor,vec3(1.,.97,.75),smoothstep(.76,.98,coreHeat));
-      float coreAlpha=ignition*density*(.7+.3*coreHeat);
-      alpha*=1.-ignition;
-      float combined=alpha*(1.-coreAlpha)+coreAlpha;
-      color=(color*alpha*(1.-coreAlpha)+coreColor*coreAlpha)/max(combined,.001);
-      gl_FragColor=vec4(color,clamp(combined,0.,1.));
+      gl_FragColor=vec4(color,clamp(alpha,0.,1.));
     }`;
   function compile(type, source) {
     const shader=gl.createShader(type);gl.shaderSource(shader,source);gl.compileShader(shader);
@@ -127,20 +118,11 @@ function createSoftLogoFire(original, options={}) {
   glow.addColorStop(0,'rgba(255,221,115,.9)');glow.addColorStop(.22,'rgba(255,135,25,.65)');
   glow.addColorStop(.55,'rgba(220,45,3,.3)');glow.addColorStop(1,'rgba(120,14,0,0)');
   brush.fillStyle=glow;brush.fillRect(0,0,64,64);
-  const flame=options.ignite?ctx.createLinearGradient(0,center+radius,0,center-radius*1.4):null;
-  const hot=options.ignite?ctx.createLinearGradient(0,center+radius,0,center-radius):null;
-  if(flame){
-    flame.addColorStop(0,'rgba(255,218,94,.95)');flame.addColorStop(.35,'rgba(255,180,22,.95)');
-    flame.addColorStop(.65,'rgba(255,81,5,.85)');flame.addColorStop(1,'rgba(155,19,0,0)');
-    hot.addColorStop(0,'rgba(255,255,216,.95)');hot.addColorStop(.45,'rgba(255,232,104,.9)');hot.addColorStop(1,'rgba(255,122,8,0)');
-  }
-  function tongue(x,y,width,height,sway){
-    ctx.beginPath();ctx.moveTo(x-width,y);
-    ctx.bezierCurveTo(x-width*1.1,y-height*.28,x+sway-width*.35,y-height*.72,x+sway,y-height);
-    ctx.bezierCurveTo(x+sway-width*.45,y-height*.75,x+width*1.2,y-height*.3,x+width,y);
-    ctx.quadraticCurveTo(x,y+height*.15,x-width,y);ctx.closePath();ctx.fill();
-  }
   const particles=Array.from({length:count},(_,i)=>({angle:i/count*Math.PI*2,phase:Math.random(),speed:.55+Math.random()*.5}));
+  // Same brush, upward drift and lifetime as the rim, distributed over its disk.
+  const veil=Array.from({length:options.ignite?240:0},(_,i)=>({
+    angle:i*2.399963,spread:radius*Math.sqrt((i+.5)/240),phase:Math.random(),speed:.55+Math.random()*.5
+  }));
   let frame, stopped=false, last=0, frames=0;
   canvas.dataset.running='true';
   const start=performance.now();
@@ -150,28 +132,23 @@ function createSoftLogoFire(original, options={}) {
       last=now;const time=(now-start)/1000;
       ctx.clearRect(0,0,size,size);ctx.globalCompositeOperation='lighter';
       const ignition=fireIgnition(time,options.ignite);
-      if(ignition>0){
-        ctx.filter=`blur(${1.8*unit}px)`;ctx.globalCompositeOperation='screen';
-        for(let i=0;i<7;i++){
-          const baseX=(i-3)*.27+.05*Math.sin(i*4.7);
-          const x=center+baseX*radius,y=center+radius*(.85+.08*Math.sin(i*3.1));
-          let height=radius*(1.45+.5*Math.sin(time*4.7+i*2.37)+.2*Math.sin(time*6+i*4)+.4*Math.exp(-baseX*baseX*4));
-          let sway=radius*.2*Math.sin(time*5+i*2);
-          if(i===3){height=Math.max(height,radius*1.65);sway*=.35;}
-          ctx.globalAlpha=ignition*.75;ctx.fillStyle=flame;
-          tongue(x,y,radius*.42,height,sway);
-          ctx.globalAlpha=ignition*.5;ctx.fillStyle=hot;
-          tongue(x,y,radius*.1,height*.65,sway*.6);
-        }
+      for(const particle of veil){
+        if(ignition<=0)break;
+        const life=(time*particle.speed+particle.phase)%1,angle=particle.angle;
+        const rise=life*(18+18*(.5+.5*Math.sin(angle)))*unit;
+        const x=center+Math.cos(angle)*particle.spread+Math.sin(time*2+angle*5)*life*5*unit;
+        const y=center+Math.sin(angle)*particle.spread-rise;
+        const width=(26+life*22)*unit,height=width*(1+life*.7);
+        ctx.globalAlpha=Math.sin(life*Math.PI)*.6*ignition;
+        ctx.drawImage(sprite,x-width/2,y-height/2,width,height);
       }
-      ctx.filter='none';ctx.globalCompositeOperation='lighter';
       for(const particle of particles){
         const life=(time*particle.speed+particle.phase)%1, angle=particle.angle;
         const rise=life*(18+18*(.5+.5*Math.sin(angle)))*unit;
         const x=center+Math.cos(angle)*(radius+life*7*unit)+Math.sin(time*2+angle*5)*life*5*unit;
         const y=center+Math.sin(angle)*radius-rise;
         const width=(11+life*13)*unit, height=width*(1+life*.7);
-        ctx.globalAlpha=Math.sin(life*Math.PI)*.6*(1-ignition);
+        ctx.globalAlpha=Math.sin(life*Math.PI)*.6;
         ctx.drawImage(sprite,x-width/2,y-height/2,width,height);
       }
       ctx.globalAlpha=1;
