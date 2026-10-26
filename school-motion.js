@@ -1,21 +1,32 @@
 /* A short, optional entrance and a small shared vocabulary of martial movement. */
 window.SchoolMotion = (() => {
   function startIntro({opening, header, home, footer, reduced}) {
-    const sessionKey = 'taikachisu:intro:native-smoke-v15';
+    const sessionKey = 'taikachisu:intro:native-smoke-v16';
     let seen = false, state = 'waiting', holdTimer, exitTimer, safetyTimer, smokeTimer, fireTimer, filmTimer, smoke, stopFire;
-    const fist = opening.querySelector('#intro-fist'), film = opening.querySelector('#intro-fire-film');
+    const fist = opening.querySelector('#intro-fist'), film = opening.querySelector('#intro-fire-film'), still = opening.querySelector('#intro-fire-still');
     if(film&&window.SchoolIntroMedia)film.introMedia=window.SchoolIntroMedia;
     try { seen = sessionStorage.getItem(sessionKey) === 'seen'; } catch {}
     const remember = () => { try { sessionStorage.setItem(sessionKey, 'seen'); } catch {} };
-    function finish() {
-      clearTimeout(holdTimer); clearTimeout(exitTimer); clearTimeout(safetyTimer);clearTimeout(smokeTimer);clearTimeout(fireTimer);clearTimeout(filmTimer);
-      const wasDone = state === 'done'; state = 'done';
-      smoke?.stop();
-      stopFire?.();
+    function stopFilm() {
       opening.classList.remove('film-playing');
       film?.introMedia?.controller.abort();
       if(film?.hasAttribute('src')){film.pause();film.removeAttribute('src');film.load();}
       if(film?.introMedia?.url){URL.revokeObjectURL(film.introMedia.url);film.introMedia.url=null;}
+    }
+    function useStillFire() {
+      if(state==='done'||opening.classList.contains('film-fallback'))return;
+      if(still)still.src=still.dataset.src;
+      opening.classList.add('film-fallback');
+      stopFilm();
+    }
+    function finish() {
+      clearTimeout(holdTimer); clearTimeout(exitTimer); clearTimeout(safetyTimer);clearTimeout(smokeTimer);clearTimeout(fireTimer);clearTimeout(filmTimer);
+      const wasDone = state === 'done'; state = 'done';
+      smoke?.stop();stopFire?.();stopFilm();
+      opening.classList.remove('film-fallback');
+      still?.removeAttribute('src');
+      const poster=film?.introMedia?.poster;
+      if(poster){poster.removeAttribute('src');film.introMedia.poster=null;}
       opening.classList.add('inactive'); opening.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('intro-pending', 'intro-transitioning');
       document.body.classList.add('intro-complete'); header.style.opacity = '1';
@@ -41,15 +52,16 @@ window.SchoolMotion = (() => {
         try {if(typeof createLogoFire==='function')stopFire=createLogoFire(opening.querySelector('#intro-fire'),{size:innerWidth<761?256:320,fps:20,ignite:false});} catch {}
       },1541);
       filmTimer=setTimeout(() => {
-        // The still remains visible while loading; a late/blocked effect never delays entry.
-        if(!film || film.readyState<2){finish();return;}
+        // Missing media may replace the fire layer, never skip the seal or the sequence.
+        if(!film || film.readyState<2){useStillFire();return;}
         film.muted=true;film.defaultMuted=true;film.playsInline=true;
-        film.play().then(()=>{
-          if(state!=='done')opening.classList.add('film-playing');
-        }).catch(()=>{if(state!=='done')finish();});
+        try{Promise.resolve(film.play()).then(()=>{
+          if(state!=='done'&&!opening.classList.contains('film-fallback'))opening.classList.add('film-playing');
+        }).catch(useStillFire);}catch{useStillFire();}
       },704);
       opening.classList.add('leaving'); exitTimer = setTimeout(finish, 3350);
     }
+    film?.addEventListener('error',()=>{if(state==='leaving')useStillFire();});
     document.querySelector('#intro-spacer').hidden = true;
     history.scrollRestoration = 'manual';
     const skip = () => dismiss(true);
